@@ -1,5 +1,5 @@
 export const SITE_NAME = "Realtors in Elizabethtown, KY";
-export const SITE_URL = "https://realtorsrelizabethtownky.com";
+export const SITE_URL = "https://www.etownkyrealtors.com";
 export const SITE_DESCRIPTION =
   "Find the best realtors and real estate agents in Elizabethtown, KY. Local directory featuring expert agents serving Elizabethtown, Fort Knox, and Hardin County.";
 
