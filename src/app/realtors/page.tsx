@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
@@ -87,8 +88,14 @@ export default function DirectoryPage() {
             </div>
             <div className="flex flex-col md:flex-row items-start gap-6">
               <div className="flex-shrink-0">
-                <div className="w-24 h-24 bg-navy rounded-full flex items-center justify-center" style={{ backgroundColor: "#1B365D" }}>
-                  <span className="text-white text-3xl font-bold" style={{ color: "#ffffff" }}>AK</span>
+                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gold">
+                  <Image
+                    src="/images/austin-kutz-headshot-600.png"
+                    alt="Austin Kutz - Compass and Key Group"
+                    width={600}
+                    height={753}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="flex-1">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -68,8 +69,15 @@ export default function CKGProfilePage() {
           />
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-shrink-0">
-              <div className="w-32 h-32 bg-gold rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: "#D4A843" }}>
-                <span className="text-navy text-4xl font-bold" style={{ color: "#1B365D" }}>AK</span>
+              <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-gold">
+                <Image
+                  src="/images/austin-kutz-headshot-600.png"
+                  alt="Austin Kutz - Owner and Lead Agent at Compass and Key Group"
+                  width={600}
+                  height={753}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
             <div className="flex-1">
@@ -81,6 +89,13 @@ export default function CKGProfilePage() {
                   Veteran-Owned
                 </span>
               </div>
+              <Image
+                src="/images/ckg-logo.png"
+                alt="Compass and Key Group logo"
+                width={434}
+                height={200}
+                className="h-10 w-auto mb-3"
+              />
               <h1 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: "#ffffff" }}>
                 {CKG.name}
               </h1>
@@ -129,6 +144,16 @@ export default function CKGProfilePage() {
           {/* About Section */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-navy mb-4">About Compass and Key Group</h2>
+            <div className="float-right ml-6 mb-4 hidden md:block">
+              <Image
+                src="/images/austin-kutz-headshot-600.png"
+                alt="Austin Kutz, USMC veteran and founder of Compass and Key Group in Elizabethtown, KY"
+                width={280}
+                height={351}
+                className="rounded-lg shadow-md"
+              />
+              <p className="text-xs text-gray-medium text-center mt-2">Austin Kutz, Owner / Lead Agent</p>
+            </div>
             <p className="text-gray-body mb-4">
               Compass and Key Group was founded by Austin Kutz, a proud United States Marine Corps veteran
               who served five years on active duty, including two overseas tours. After transitioning from
@@ -393,9 +418,18 @@ export default function CKGProfilePage() {
                   Call {CKG.phone}
                 </a>
               </div>
-              <p className="text-gray-400 text-sm" style={{ color: "#9ca3af" }}>
-                {CKG.address} | Brokered by {CKG.brokerage}
-              </p>
+              <div className="flex items-center justify-center gap-3">
+                <p className="text-gray-400 text-sm" style={{ color: "#9ca3af" }}>
+                  {CKG.address} | Brokered by {CKG.brokerage}
+                </p>
+                <Image
+                  src="/images/real-broker-logo.png"
+                  alt="Real Broker, LLC"
+                  width={130}
+                  height={60}
+                  className="h-6 w-auto opacity-70"
+                />
+              </div>
             </div>
           </section>
         </div>

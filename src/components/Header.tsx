@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/constants";
 
@@ -46,12 +47,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <NavLink href="/" className="flex items-center gap-2">
-            <svg className="w-8 h-8" style={{ color: "#D4A843" }} fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" fill="none" />
-            </svg>
-            <span style={{ color: "#ffffff", fontWeight: 700, fontSize: "1.125rem" }} className="hidden sm:block">
-              Realtors in E-town
-            </span>
+            <Image
+              src="/images/ckg-logo.png"
+              alt="Compass and Key Group - Realtors in Elizabethtown, KY"
+              width={434}
+              height={200}
+              className="h-9 w-auto"
+              priority
+            />
           </NavLink>
 
           {/* Desktop Nav */}
