@@ -47,7 +47,7 @@ export default function PrivacyPage() {
         <p>
           The real estate agent and agency information displayed on this site is sourced from publicly
           available business listings, websites, and public records. If you are a listed agent or agency and
-          wish to update or remove your information, please contact us at info@realtorsrelizabethtownky.com.
+          wish to update or remove your information, please contact us at info@etownkyrealtors.com.
         </p>
 
         <h2 className="text-2xl font-bold text-navy mt-8 mb-3">Children&apos;s Privacy</h2>
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
 
         <h2 className="text-2xl font-bold text-navy mt-8 mb-3">Contact Us</h2>
         <p>
-          If you have questions about this privacy policy, contact us at info@realtorsrelizabethtownky.com.
+          If you have questions about this privacy policy, contact us at info@etownkyrealtors.com.
         </p>
       </div>
     </ContentLayout>

@@ -1,4 +1,4 @@
-# Content Generation Guide: realtorsrelizabethtownky.com
+# Content Generation Guide: www.etownkyrealtors.com
 ## Addendum to Project Blueprint — Feed Both Documents to Claude Code
 
 ---

@@ -39,7 +39,7 @@ export default function ContactPage() {
             For questions about this website, corrections to directory listings, or general inquiries about
             Elizabethtown real estate resources, contact us via email.
           </p>
-          <p className="text-navy font-semibold">info@realtorsrelizabethtownky.com</p>
+          <p className="text-navy font-semibold">info@etownkyrealtors.com</p>
         </div>
 
         <div className="bg-gold/10 border-2 border-gold rounded-lg p-6">
@@ -115,7 +115,7 @@ export default function ContactPage() {
         <h3 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Are You a Local Real Estate Agent?</h3>
         <p className="text-sm" style={{ color: "#d1d5db" }}>
           If you&apos;re a real estate agent or agency serving the Elizabethtown and Hardin County area and
-          would like to be included in our directory, please email us at info@realtorsrelizabethtownky.com
+          would like to be included in our directory, please email us at info@etownkyrealtors.com
           with your agency information.
         </p>
       </div>

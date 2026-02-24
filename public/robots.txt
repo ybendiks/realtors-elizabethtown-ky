@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://realtorsrelizabethtownky.com/sitemap.xml
+Sitemap: https://www.etownkyrealtors.com/sitemap.xml

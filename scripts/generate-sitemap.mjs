@@ -9,7 +9,7 @@ import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const SITE_URL = "https://realtorsrelizabethtownky.com";
+const SITE_URL = "https://www.etownkyrealtors.com";
 
 // All static routes (trailing slashes enforced)
 const staticPages = [

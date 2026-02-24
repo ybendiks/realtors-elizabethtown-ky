@@ -1,4 +1,4 @@
-# Project Blueprint: realtorsrelizabethtownky.com
+# Project Blueprint: www.etownkyrealtors.com
 
 ## Executive Summary
 
@@ -15,7 +15,7 @@ Build a local real estate directory + community resource site for Elizabethtown,
 | Framework | Next.js 14 (App Router) | Static site generation (SSG) for all pages |
 | Styling | Tailwind CSS | Utility-first, fast to build |
 | Deployment | Vercel | Free tier, auto-deploy from GitHub |
-| Domain | realtorsrelizabethtownky.com | Migrate after proof of concept |
+| Domain | www.etownkyrealtors.com | Migrate after proof of concept |
 | CMS | None | All content baked into codebase |
 | Analytics | Plausible or GA4 | Add post-launch |
 
@@ -318,8 +318,8 @@ Rotate these anchor texts across pages (never use the same one more than 3x):
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://realtorsrelizabethtownky.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Category", "item": "https://realtorsrelizabethtownky.com/category/" },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.etownkyrealtors.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Category", "item": "https://www.etownkyrealtors.com/category/" },
     { "@type": "ListItem", "position": 3, "name": "Page Title" }
   ]
 }
@@ -332,7 +332,7 @@ Rotate these anchor texts across pages (never use the same one more than 3x):
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Realtors in Elizabethtown, KY",
-  "url": "https://realtorsrelizabethtownky.com",
+  "url": "https://www.etownkyrealtors.com",
   "description": "Find the best realtors and real estate agents in Elizabethtown, KY. Local directory featuring expert agents serving Elizabethtown, Fort Knox, and Hardin County."
 }
 ```
@@ -545,7 +545,7 @@ Austin Kutz is a USMC veteran. This is CKG's strongest differentiator for the mi
 User-agent: *
 Allow: /
 
-Sitemap: https://realtorsrelizabethtownky.com/sitemap.xml
+Sitemap: https://www.etownkyrealtors.com/sitemap.xml
 ```
 
 ---
