@@ -71,10 +71,10 @@ export default function CKGProfilePage() {
             <div className="flex-shrink-0">
               <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-gold">
                 <Image
-                  src="/images/austin-kutz-headshot-600.png"
+                  src="/images/austin-kutz-headshot.png"
                   alt="Austin Kutz - Owner and Lead Agent at Compass and Key Group"
-                  width={600}
-                  height={753}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover"
                   priority
                 />
@@ -90,9 +90,9 @@ export default function CKGProfilePage() {
                 </span>
               </div>
               <Image
-                src="/images/ckg-logo.png"
+                src="/images/ckg-compass-logo.png"
                 alt="Compass and Key Group logo"
-                width={434}
+                width={213}
                 height={200}
                 className="h-10 w-auto mb-3"
               />
@@ -146,10 +146,10 @@ export default function CKGProfilePage() {
             <h2 className="text-2xl font-bold text-navy mb-4">About Compass and Key Group</h2>
             <div className="float-right ml-6 mb-4 hidden md:block">
               <Image
-                src="/images/austin-kutz-headshot-600.png"
+                src="/images/austin-kutz-headshot.png"
                 alt="Austin Kutz, USMC veteran and founder of Compass and Key Group in Elizabethtown, KY"
                 width={280}
-                height={351}
+                height={280}
                 className="rounded-lg shadow-md"
               />
               <p className="text-xs text-gray-medium text-center mt-2">Austin Kutz, Owner / Lead Agent</p>
@@ -418,18 +418,9 @@ export default function CKGProfilePage() {
                   Call {CKG.phone}
                 </a>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <p className="text-gray-400 text-sm" style={{ color: "#9ca3af" }}>
-                  {CKG.address} | Brokered by {CKG.brokerage}
-                </p>
-                <Image
-                  src="/images/real-broker-logo.png"
-                  alt="Real Broker, LLC"
-                  width={130}
-                  height={60}
-                  className="h-6 w-auto opacity-70"
-                />
-              </div>
+              <p className="text-gray-400 text-sm" style={{ color: "#9ca3af" }}>
+                {CKG.address} | Brokered by {CKG.brokerage}
+              </p>
             </div>
           </section>
         </div>

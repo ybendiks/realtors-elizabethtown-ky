@@ -69,10 +69,10 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gold">
                   <Image
-                    src="/images/austin-kutz-headshot-600.png"
+                    src="/images/austin-kutz-headshot.png"
                     alt="Austin Kutz - Compass and Key Group"
-                    width={600}
-                    height={753}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover"
                   />
                 </div>

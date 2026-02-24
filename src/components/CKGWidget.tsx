@@ -8,10 +8,10 @@ export default function CKGWidget() {
       {/* Austin Headshot */}
       <div className="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden">
         <Image
-          src="/images/austin-kutz-headshot-600.png"
+          src="/images/austin-kutz-headshot.png"
           alt="Austin Kutz - Lead Agent at Compass and Key Group"
-          width={600}
-          height={753}
+          width={400}
+          height={400}
           className="w-full h-full object-cover"
         />
       </div>
