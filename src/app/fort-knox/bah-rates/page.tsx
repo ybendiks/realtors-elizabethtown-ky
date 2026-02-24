@@ -12,30 +12,30 @@ export const metadata: Metadata = {
 };
 
 const bahRates = [
-  { rank: "E-1", withDep: "$1,236", withoutDep: "$927" },
-  { rank: "E-2", withDep: "$1,287", withoutDep: "$987" },
-  { rank: "E-3", withDep: "$1,338", withoutDep: "$1,044" },
-  { rank: "E-4", withDep: "$1,398", withoutDep: "$1,098" },
-  { rank: "E-5", withDep: "$1,551", withoutDep: "$1,194" },
-  { rank: "E-6", withDep: "$1,608", withoutDep: "$1,296" },
-  { rank: "E-7", withDep: "$1,668", withoutDep: "$1,362" },
-  { rank: "E-8", withDep: "$1,728", withoutDep: "$1,431" },
-  { rank: "E-9", withDep: "$1,791", withoutDep: "$1,500" },
-  { rank: "W-1", withDep: "$1,608", withoutDep: "$1,296" },
-  { rank: "W-2", withDep: "$1,698", withoutDep: "$1,371" },
-  { rank: "W-3", withDep: "$1,773", withoutDep: "$1,455" },
-  { rank: "W-4", withDep: "$1,851", withoutDep: "$1,542" },
-  { rank: "W-5", withDep: "$1,935", withoutDep: "$1,623" },
-  { rank: "O-1", withDep: "$1,551", withoutDep: "$1,236" },
-  { rank: "O-1E", withDep: "$1,608", withoutDep: "$1,296" },
-  { rank: "O-2", withDep: "$1,668", withoutDep: "$1,338" },
-  { rank: "O-2E", withDep: "$1,728", withoutDep: "$1,398" },
-  { rank: "O-3", withDep: "$1,845", withoutDep: "$1,500" },
-  { rank: "O-3E", withDep: "$1,845", withoutDep: "$1,500" },
-  { rank: "O-4", withDep: "$1,953", withoutDep: "$1,623" },
-  { rank: "O-5", withDep: "$2,079", withoutDep: "$1,734" },
-  { rank: "O-6", withDep: "$2,166", withoutDep: "$1,836" },
-  { rank: "O-7", withDep: "$2,250", withoutDep: "$1,935" },
+  { rank: "E-1", withDep: "$1,575", withoutDep: "$1,350" },
+  { rank: "E-2", withDep: "$1,575", withoutDep: "$1,350" },
+  { rank: "E-3", withDep: "$1,575", withoutDep: "$1,350" },
+  { rank: "E-4", withDep: "$1,575", withoutDep: "$1,350" },
+  { rank: "E-5", withDep: "$1,647", withoutDep: "$1,443" },
+  { rank: "E-6", withDep: "$2,136", withoutDep: "$1,602" },
+  { rank: "E-7", withDep: "$2,241", withoutDep: "$1,680" },
+  { rank: "E-8", withDep: "$2,352", withoutDep: "$1,764" },
+  { rank: "E-9", withDep: "$2,505", withoutDep: "$1,893" },
+  { rank: "W-1", withDep: "$2,157", withoutDep: "$1,617" },
+  { rank: "W-2", withDep: "$2,286", withoutDep: "$1,746" },
+  { rank: "W-3", withDep: "$2,424", withoutDep: "$1,911" },
+  { rank: "W-4", withDep: "$2,538", withoutDep: "$2,157" },
+  { rank: "W-5", withDep: "$2,679", withoutDep: "$2,265" },
+  { rank: "O-1", withDep: "$1,710", withoutDep: "$1,503" },
+  { rank: "O-1E", withDep: "$2,259", withoutDep: "$1,695" },
+  { rank: "O-2", withDep: "$2,133", withoutDep: "$1,683" },
+  { rank: "O-2E", withDep: "$2,403", withoutDep: "$1,860" },
+  { rank: "O-3", withDep: "$2,421", withoutDep: "$1,956" },
+  { rank: "O-3E", withDep: "$2,559", withoutDep: "$2,130" },
+  { rank: "O-4", withDep: "$2,724", withoutDep: "$2,241" },
+  { rank: "O-5", withDep: "$2,943", withoutDep: "$2,301" },
+  { rank: "O-6", withDep: "$2,964", withoutDep: "$2,403" },
+  { rank: "O-7", withDep: "$2,985", withoutDep: "$2,442" },
 ];
 
 export default function BAHRates() {
@@ -72,11 +72,12 @@ export default function BAHRates() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         2026 BAH Rates for Fort Knox, KY
       </h1>
+      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
 
       <p className="text-lg text-gray-body mb-6">
         Basic Allowance for Housing (BAH) is the monthly stipend the military pays service members
         to cover housing costs when government quarters are not provided. For Fort Knox, the 2026
-        BAH rates increased approximately <strong>5-7% over 2025 rates</strong>, reflecting rising
+        BAH rates increased approximately <strong>7.2% over 2025 rates</strong>, reflecting rising
         housing costs in the region. The rates below apply to ZIP codes <strong>40121</strong> (Fort
         Knox), <strong>40160</strong> (Radcliff), and <strong>42701</strong> (Elizabethtown).
       </p>
@@ -90,7 +91,7 @@ export default function BAHRates() {
           </div>
           <div className="flex flex-col">
             <dt className="text-xs font-semibold text-gray-medium uppercase tracking-wide">YOY Change</dt>
-            <dd className="text-sm text-gray-body font-medium">~5-7% increase over 2025</dd>
+            <dd className="text-sm text-gray-body font-medium">7.2% increase over 2025</dd>
           </div>
           <div className="flex flex-col">
             <dt className="text-xs font-semibold text-gray-medium uppercase tracking-wide">ZIP Codes</dt>
@@ -114,10 +115,10 @@ export default function BAHRates() {
       <div className="overflow-x-auto mb-8">
         <table className="w-full border-collapse text-sm">
           <thead>
-            <tr className="bg-navy text-white">
-              <th className="text-left p-3 font-semibold">Pay Grade</th>
-              <th className="text-right p-3 font-semibold">With Dependents</th>
-              <th className="text-right p-3 font-semibold">Without Dependents</th>
+            <tr className="bg-navy text-white" style={{ backgroundColor: "#1B365D" }}>
+              <th className="text-left p-3 font-semibold" style={{ color: "#ffffff" }}>Pay Grade</th>
+              <th className="text-right p-3 font-semibold" style={{ color: "#ffffff" }}>With Dependents</th>
+              <th className="text-right p-3 font-semibold" style={{ color: "#ffffff" }}>Without Dependents</th>
             </tr>
           </thead>
           <tbody>
@@ -155,20 +156,20 @@ export default function BAHRates() {
       </p>
       <p className="text-gray-body mb-4">
         Consider a typical scenario. An <strong>E-5 with dependents</strong> receives approximately{" "}
-        <strong>$1,551/month</strong> in BAH. The median home price in Elizabethtown is roughly
+        <strong>$1,647/month</strong> in BAH. The median home price in Elizabethtown is roughly
         $250,000. With a{" "}
         <Link href="/fort-knox/va-loans-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
           VA loan
         </Link>{" "}
         at zero down and a 6.5% interest rate, the estimated monthly PITI on a $250,000 home is
         approximately <strong>$1,500-$1,600</strong>. That E-5&apos;s BAH covers the payment
-        entirely — and they are building equity instead of paying rent.
+        with room to spare — and they are building equity instead of paying rent.
       </p>
       <p className="text-gray-body mb-4">
-        At the <strong>O-3 level with dependents ($1,845/month)</strong>, the picture is even more
-        comfortable. You can afford homes in the $275,000-$320,000 range while still having BAH
-        cover the full PITI. At the <strong>O-5 level ($2,079/month)</strong>, you&apos;re looking
-        at homes up to $350,000+ with BAH fully covering the mortgage.
+        At the <strong>O-3 level with dependents ($2,421/month)</strong>, the picture is even more
+        comfortable. You can afford homes in the $325,000-$380,000 range while still having BAH
+        cover the full PITI. At the <strong>O-5 level ($2,943/month)</strong>, you&apos;re looking
+        at homes up to $450,000+ with BAH fully covering the mortgage.
       </p>
 
       <div className="bg-gray-light rounded-lg p-5 mb-8">
@@ -257,24 +258,25 @@ export default function BAHRates() {
       </p>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">Make Your BAH Work Harder</h2>
-        <p className="text-gray-300 text-sm mb-4">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Make Your BAH Work Harder</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           As a Marine Corps veteran, Austin Kutz at{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           understands BAH budgeting from personal experience. He helps military families find homes
           where BAH covers the full mortgage — turning a housing allowance into real equity. Whether
           you&apos;re an E-5 looking at your first home or an O-5 ready to invest, Austin can match
           your BAH to the right{" "}
-          <Link href="/elizabethtown/neighborhoods/" className="text-gold hover:text-gold-light">
+          <Link href="/elizabethtown/neighborhoods/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Elizabethtown neighborhood
           </Link>.
         </p>
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

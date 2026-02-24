@@ -172,7 +172,7 @@ export default function InvestmentProperties() {
         <li>
           <strong>BAH-based affordability.</strong> Military tenants budget their housing based on
           their Basic Allowance for Housing. For an E-5 with dependents, that is approximately
-          $1,551/month in 2026. Most military renters look for homes at or below their BAH rate.
+          $1,647/month in 2026. Most military renters look for homes at or below their BAH rate.
           Pricing your rental at or slightly under the BAH rate for your target rank ensures fast
           occupancy.
         </li>
@@ -216,14 +216,15 @@ export default function InvestmentProperties() {
       </p>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
           Find Your Next Investment Property
         </h2>
-        <p className="text-gray-300 text-sm mb-4">
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"
+            style={{ color: "#D4A843" }}
           >
             Compass and Key Group
           </Link>{" "}
@@ -235,6 +236,7 @@ export default function InvestmentProperties() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { SITE_URL, CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Realtors in Elizabethtown, KY | Find Local Real Estate Agents",
+  title: { absolute: "Realtors in Elizabethtown, KY | Find Local Real Estate Agents" },
   description:
     "Find the best realtors and real estate agents in Elizabethtown, KY. Local directory covering E-town, Fort Knox, and Hardin County neighborhoods, schools, and market data.",
   openGraph: {
@@ -31,13 +31,13 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+      <section style={{ background: "linear-gradient(to bottom right, #1B365D, #0F1F3D, #1B365D)" }}>
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+            <h1 style={{ color: "#ffffff", fontSize: "clamp(2.25rem, 5vw, 3rem)", fontWeight: 700, lineHeight: 1.1, marginBottom: "1.5rem" }}>
               Find the Best Realtors in Elizabethtown, KY
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+            <p style={{ color: "#d1d5db", fontSize: "1.125rem", lineHeight: 1.7, marginBottom: "2rem" }}>
               Your complete guide to real estate agents, neighborhoods, schools, and living in the
               Elizabethtown and Fort Knox area. Whether you&apos;re buying your first home, PCSing to
               Fort Knox, or selling in Hardin County, we&apos;ll help you find the right agent.
@@ -45,13 +45,13 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/realtors/"
-                className="bg-gold hover:bg-gold-dark text-navy font-bold px-8 py-3.5 rounded-lg text-lg transition-colors"
+                style={{ backgroundColor: "#D4A843", color: "#1B365D", fontWeight: 700, padding: "0.875rem 2rem", borderRadius: "0.5rem", fontSize: "1.125rem" }}
               >
                 Browse Realtors
               </Link>
               <Link
                 href="/fort-knox/pcs-guide/"
-                className="border-2 border-white/30 hover:border-gold text-white hover:text-gold font-semibold px-8 py-3.5 rounded-lg text-lg transition-colors"
+                style={{ color: "#ffffff", border: "2px solid rgba(255,255,255,0.3)", fontWeight: 600, padding: "0.875rem 2rem", borderRadius: "0.5rem", fontSize: "1.125rem" }}
               >
                 PCS to Fort Knox?
               </Link>
@@ -230,15 +230,15 @@ export default function HomePage() {
       {/* Military Relocation Callout */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-navy rounded-xl p-8 md:p-12 text-white">
+          <div style={{ backgroundColor: "#1B365D" }} className="rounded-xl p-8 md:p-12">
             <div className="max-w-2xl">
-              <span className="inline-block bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4">
+              <span style={{ backgroundColor: "#D4A843", color: "#1B365D" }} className="inline-block text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4">
                 Military Families
               </span>
-              <h2 className="text-3xl font-bold text-white mb-4">
+              <h2 style={{ color: "#ffffff", fontSize: "1.875rem", fontWeight: 700, marginBottom: "1rem" }}>
                 PCSing to Fort Knox? We&apos;ve Got You Covered.
               </h2>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p style={{ color: "#d1d5db", lineHeight: 1.7, marginBottom: "1.5rem" }}>
                 Moving to Fort Knox is a big transition. Our comprehensive military relocation guides cover
                 everything from BAH rates and VA loans to the best off-post neighborhoods and schools for
                 military families. As a site founded with military families in mind, we understand the unique
@@ -247,13 +247,13 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   href="/fort-knox/pcs-guide/"
-                  className="bg-gold hover:bg-gold-dark text-navy font-bold px-6 py-3 rounded transition-colors"
+                  style={{ backgroundColor: "#D4A843", color: "#1B365D", fontWeight: 700, padding: "0.75rem 1.5rem", borderRadius: "0.25rem" }}
                 >
                   Fort Knox PCS Guide
                 </Link>
                 <Link
                   href="/fort-knox/bah-rates/"
-                  className="border border-white/30 hover:border-gold text-white hover:text-gold font-semibold px-6 py-3 rounded transition-colors"
+                  style={{ color: "#ffffff", border: "1px solid rgba(255,255,255,0.3)", fontWeight: 600, padding: "0.75rem 1.5rem", borderRadius: "0.25rem" }}
                 >
                   2026 BAH Rates
                 </Link>
@@ -274,7 +274,7 @@ export default function HomePage() {
               { label: "Median Home Price", value: "$249,900", note: "Hardin County" },
               { label: "Avg. Days on Market", value: "49", note: "Faster than national avg." },
               { label: "Price Per Sq Ft", value: "$145", note: "Below state average" },
-              { label: "BAH E-5 w/ Dep.", value: "$2,034+/mo", note: "2026 Fort Knox rate" },
+              { label: "BAH E-5 w/ Dep.", value: "$1,647/mo", note: "2026 Fort Knox rate" },
             ].map((stat) => (
               <div key={stat.label} className="bg-white rounded-lg p-6 text-center shadow-sm">
                 <p className="text-3xl font-bold text-navy">{stat.value}</p>

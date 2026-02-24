@@ -59,12 +59,12 @@ export default function NeighborhoodsHub() {
             ))}
           </div>
 
-          <div className="mt-10 bg-navy rounded-lg p-6 text-white">
-            <h2 className="text-xl font-bold text-white mb-2">Need Help Choosing a Neighborhood?</h2>
-            <p className="text-gray-300 text-sm mb-4">
+          <div className="mt-10 bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
+            <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Need Help Choosing a Neighborhood?</h2>
+            <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
               Every family has different priorities — school districts, commute times, lot sizes, and budget.
               Austin Kutz at{" "}
-              <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+              <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
                 Compass and Key Group
               </Link>{" "}
               has helped dozens of families find the right neighborhood in Elizabethtown. As a veteran who
@@ -73,6 +73,7 @@ export default function NeighborhoodsHub() {
             <a
               href="tel:2707353897"
               className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+              style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
             >
               Call (270) 735-3897
             </a>

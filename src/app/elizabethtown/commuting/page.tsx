@@ -189,15 +189,16 @@ export default function Commuting() {
         30 minutes or less.
       </p>
 
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
           Find a Home That Fits Your Commute
         </h2>
-        <p className="text-gray-300 text-sm mb-4">
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Your daily commute shapes your quality of life more than almost any other factor.{" "}
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"
+            style={{ color: "#D4A843" }}
           >
             Compass and Key Group
           </Link>{" "}
@@ -209,6 +210,7 @@ export default function Commuting() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

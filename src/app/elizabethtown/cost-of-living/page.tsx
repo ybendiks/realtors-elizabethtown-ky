@@ -32,6 +32,7 @@ export default function CostOfLiving() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Cost of Living in Elizabethtown, KY
       </h1>
+      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
 
       <p className="text-lg text-gray-body mb-6">
         One of the biggest reasons people relocate to Elizabethtown is the affordability. Whether
@@ -185,16 +186,17 @@ export default function CostOfLiving() {
         increasingly hard to find.
       </p>
 
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
           Stretch Your Budget Further
         </h2>
-        <p className="text-gray-300 text-sm mb-4">
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Understanding the numbers is one thing — finding the right home at the right price is
           another.{" "}
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"
+            style={{ color: "#D4A843" }}
           >
             Compass and Key Group
           </Link>{" "}
@@ -206,6 +208,7 @@ export default function CostOfLiving() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

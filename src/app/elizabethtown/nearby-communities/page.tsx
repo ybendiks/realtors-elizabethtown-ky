@@ -65,11 +65,11 @@ export default function NearbyCommunities() {
       <div className="overflow-x-auto mb-8">
         <table className="w-full text-sm border border-gray-border">
           <thead>
-            <tr className="bg-navy text-white">
-              <th className="text-left p-3">Community</th>
-              <th className="text-left p-3">Distance to E-town</th>
-              <th className="text-left p-3">Home Prices</th>
-              <th className="text-left p-3">Best For</th>
+            <tr className="bg-navy text-white" style={{ backgroundColor: "#1B365D" }}>
+              <th className="text-left p-3" style={{ color: "#ffffff" }}>Community</th>
+              <th className="text-left p-3" style={{ color: "#ffffff" }}>Distance to E-town</th>
+              <th className="text-left p-3" style={{ color: "#ffffff" }}>Home Prices</th>
+              <th className="text-left p-3" style={{ color: "#ffffff" }}>Best For</th>
             </tr>
           </thead>
           <tbody>
@@ -107,10 +107,10 @@ export default function NearbyCommunities() {
         </table>
       </div>
 
-      <div className="bg-navy rounded-lg p-6 text-white">
-        <h2 className="text-xl font-bold text-white mb-2">Exploring Beyond E-town?</h2>
-        <p className="text-gray-300 text-sm mb-4">
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+      <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Exploring Beyond E-town?</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           serves the entire greater Hardin County region, including all the communities listed above.
@@ -120,6 +120,7 @@ export default function NearbyCommunities() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

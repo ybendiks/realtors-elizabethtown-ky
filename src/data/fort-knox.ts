@@ -41,7 +41,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Consider these factors when picking your neighborhood:</p>
 <ul>
 <li><strong>Tour length:</strong> Under 2 years? Rent in Radcliff or E-town. 3+ years? Consider buying for equity.</li>
-<li><strong>BAH budget:</strong> E-5 w/dep (~$1,551) covers most of Radcliff and Vine Grove comfortably. E-7+ can look at mid-range E-town neighborhoods.</li>
+<li><strong>BAH budget:</strong> E-5 w/dep (~$1,647) covers most of Radcliff and Vine Grove comfortably. E-7+ can look at mid-range E-town neighborhoods.</li>
 <li><strong>School priorities:</strong> E-town offers the most school choice between Hardin County and E-town Independent districts.</li>
 <li><strong>Lifestyle:</strong> Want walkability and restaurants? E-town. Want shortest commute? Radcliff. Want acres? Brandenburg.</li>
 </ul>
@@ -266,13 +266,13 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>What Your BAH Can Buy in Elizabethtown</h2>
 <p>Here's what your <a href="/fort-knox/bah-rates/">Fort Knox BAH</a> translates to in the E-town housing market:</p>
 
-<h3>E-5 with Dependents (~$1,551/mo BAH)</h3>
+<h3>E-5 with Dependents (~$1,647/mo BAH)</h3>
 <p>With a VA loan at current rates, an E-5's BAH can support a purchase price of roughly <strong>$200,000-$230,000</strong>. In Elizabethtown, that opens up established neighborhoods like <a href="/elizabethtown/neighborhoods/helmwood-heights/">Helmwood Heights</a>, <a href="/elizabethtown/neighborhoods/the-cedars/">The Cedars</a>, and <a href="/elizabethtown/neighborhoods/ring-road/">Ring Road area</a> homes. In <a href="/fort-knox/radcliff-ky/">Radcliff</a> or <a href="/fort-knox/vine-grove-ky/">Vine Grove</a>, you'll find even more options with BAH to spare.</p>
 
-<h3>O-3 with Dependents (~$1,845/mo BAH)</h3>
+<h3>O-3 with Dependents (~$2,421/mo BAH)</h3>
 <p>An O-3's BAH supports roughly <strong>$270,000-$310,000</strong> in purchasing power. This opens up newer neighborhoods like <a href="/elizabethtown/neighborhoods/nicholas-ridge/">Nicholas Ridge</a>, <a href="/elizabethtown/neighborhoods/covington-ridge/">Covington Ridge</a>, and <a href="/elizabethtown/neighborhoods/foxborough-estates/">Foxborough Estates</a> — move-in-ready homes with modern finishes.</p>
 
-<h3>O-5 with Dependents (~$2,079/mo BAH)</h3>
+<h3>O-5 with Dependents (~$2,943/mo BAH)</h3>
 <p>Senior officers can look at premium properties in <a href="/elizabethtown/neighborhoods/thousand-oaks/">Thousand Oaks</a> or new construction in <a href="/elizabethtown/neighborhoods/foxwood/">Foxwood</a>, with purchasing power in the <strong>$320,000-$380,000+</strong> range.</p>
 
 <h2>The VA Loan Process: Step by Step</h2>

@@ -286,19 +286,19 @@ export default function KnoxHillsHousing() {
       </p>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">Considering Off-Post Instead?</h2>
-        <p className="text-gray-300 text-sm mb-4">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Considering Off-Post Instead?</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           If the Knox Hills waitlist is too long or you would rather build equity in your own home,{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           can help. Austin Kutz is a Marine Corps veteran who specializes in helping Fort Knox
           families find off-post homes that fit their{" "}
-          <Link href="/fort-knox/bah-rates/" className="text-gold hover:text-gold-light">
+          <Link href="/fort-knox/bah-rates/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             BAH budget
           </Link>. From{" "}
-          <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light">
+          <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             VA loan
           </Link>{" "}
           pre-approval to closing, Austin handles the process so you can focus on your mission.
@@ -306,6 +306,7 @@ export default function KnoxHillsHousing() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

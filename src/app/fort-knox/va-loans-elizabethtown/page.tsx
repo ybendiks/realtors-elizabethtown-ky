@@ -142,8 +142,8 @@ export default function VALoans() {
             Fort Knox BAH
           </Link>{" "}
           fully covers the PITI payment on a median-priced home. An E-5 with dependents
-          ($1,551/month) can comfortably finance a $230,000-$250,000 home. An O-3 with dependents
-          ($1,845/month) has room for homes in the $275,000-$320,000 range.
+          ($1,647/month) can comfortably finance a $250,000-$270,000 home. An O-3 with dependents
+          ($2,421/month) has room for homes in the $350,000-$400,000 range.
         </li>
         <li>
           <strong>Seller-friendly to VA buyers.</strong> In some hot markets, sellers avoid VA offers
@@ -242,10 +242,10 @@ export default function VALoans() {
         ratio, effectively increasing your buying power.
       </p>
       <p className="text-gray-body mb-4">
-        For example, an E-5 receiving $1,551/month in BAH may have that counted as approximately
-        $1,939/month for qualifying purposes. Combined with base pay and BAS, this gives most
+        For example, an E-5 receiving $1,647/month in BAH may have that counted as approximately
+        $2,059/month for qualifying purposes. Combined with base pay and BAS, this gives most
         mid-grade enlisted service members enough qualifying income to purchase homes in the
-        $230,000-$270,000 range in{" "}
+        $250,000-$290,000 range in{" "}
         <Link href="/elizabethtown/neighborhoods/" className="text-navy font-semibold hover:text-gold-dark">
           Elizabethtown neighborhoods
         </Link>{" "}
@@ -285,11 +285,11 @@ export default function VALoans() {
       </ol>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">Connect with VA-Experienced Professionals</h2>
-        <p className="text-gray-300 text-sm mb-4">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Connect with VA-Experienced Professionals</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Austin Kutz at{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           is a U.S. Marine Corps veteran who has guided dozens of military families through the VA
@@ -297,13 +297,14 @@ export default function VALoans() {
           area and can connect you with professionals who close VA loans every week — not once a
           year. From pre-approval to closing day, Austin understands the process and the urgency of
           a{" "}
-          <Link href="/fort-knox/pcs-guide/" className="text-gold hover:text-gold-light">
+          <Link href="/fort-knox/pcs-guide/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             PCS timeline
           </Link>.
         </p>
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

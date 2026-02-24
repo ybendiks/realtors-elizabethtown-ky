@@ -57,48 +57,49 @@ export default function CKGProfilePage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-navy via-navy-dark to-navy text-white">
+      <section className="bg-gradient-to-br from-navy via-navy-dark to-navy text-white" style={{ backgroundColor: "#1B365D" }}>
         <div className="max-w-7xl mx-auto px-4 py-12">
           <Breadcrumbs
             items={[
               { label: "Realtors", href: "/realtors/" },
               { label: "Compass and Key Group" },
             ]}
+            variant="dark"
           />
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-shrink-0">
-              <div className="w-32 h-32 bg-gold rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-navy text-4xl font-bold">AK</span>
+              <div className="w-32 h-32 bg-gold rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: "#D4A843" }}>
+                <span className="text-navy text-4xl font-bold" style={{ color: "#1B365D" }}>AK</span>
               </div>
             </div>
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-3 mb-3">
-                <span className="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                <span className="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide" style={{ backgroundColor: "#D4A843", color: "#1B365D" }}>
                   Featured Agency
                 </span>
-                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide" style={{ color: "#ffffff" }}>
                   Veteran-Owned
                 </span>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+              <h1 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: "#ffffff" }}>
                 {CKG.name}
               </h1>
-              <p className="text-xl text-gold mb-4">
+              <p className="text-xl text-gold mb-4" style={{ color: "#D4A843" }}>
                 Veteran-Owned Real Estate Experts in Elizabethtown, KY
               </p>
               <div className="flex items-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20" style={{ color: "#D4A843" }}>
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
-                <span className="text-white ml-2">5.0 ({CKG.reviewCount}+ reviews)</span>
+                <span className="text-white ml-2" style={{ color: "#ffffff" }}>5.0 ({CKG.reviewCount}+ reviews)</span>
               </div>
-              <div className="space-y-1 text-gray-300 text-sm mb-6">
-                <p>{CKG.address}</p>
-                <p>{CKG.phone}</p>
-                <p>Brokered by {CKG.brokerage}</p>
-                <p>{CKG.license}</p>
+              <div className="space-y-1 text-gray-300 text-sm mb-6" style={{ color: "#d1d5db" }}>
+                <p style={{ color: "#d1d5db" }}>{CKG.address}</p>
+                <p style={{ color: "#d1d5db" }}>{CKG.phone}</p>
+                <p style={{ color: "#d1d5db" }}>Brokered by {CKG.brokerage}</p>
+                <p style={{ color: "#d1d5db" }}>{CKG.license}</p>
               </div>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -106,12 +107,14 @@ export default function CKGProfilePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold hover:bg-gold-dark text-navy font-bold px-6 py-3 rounded transition-colors"
+                  style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
                 >
                   Schedule a Free Consultation
                 </a>
                 <a
                   href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
                   className="border-2 border-white/30 hover:border-gold text-white hover:text-gold font-semibold px-6 py-3 rounded transition-colors"
+                  style={{ color: "#ffffff" }}
                 >
                   Call {CKG.phone}
                 </a>
@@ -312,11 +315,11 @@ export default function CKGProfilePage() {
                   text: "Everything was perfect from start to finish. Austin was friendly, professional, and genuinely invested in helping us find the right home. He was always available to answer questions and went out of his way to make sure every detail was handled. We couldn't have asked for a better experience.",
                 },
                 {
-                  name: "Sarah & Michael",
+                  name: "Verified Buyer, Elizabethtown",
                   text: "Austin went above and beyond to help us find the perfect home when we were relocating across the country. Moving from out of state was stressful, but Austin made the process incredibly smooth with virtual tours, detailed neighborhood insights, and constant communication. He took the anxiety out of a long-distance move.",
                 },
                 {
-                  name: "David & Emily",
+                  name: "Verified Buyer, Hardin County",
                   text: "Austin did an amazing job helping us find the perfect home — not just for us, but for our three dogs too. He listened to exactly what we needed, including a big yard and a neighborhood where we could walk our dogs safely. His patience and dedication made all the difference.",
                 },
                 {
@@ -324,7 +327,7 @@ export default function CKGProfilePage() {
                   text: "Working with Austin from 700 miles away could have been a nightmare, but he made the entire process smooth and easy. His communication was outstanding — video walkthroughs, detailed photos, and honest assessments of every property. It felt like we were right there with him. Highly recommend for anyone buying remotely.",
                 },
                 {
-                  name: "The Martinez Family",
+                  name: "Military Family, Fort Knox Relocation",
                   text: "As a military family PCSing to Fort Knox, we needed an agent who understood our timeline and budget. Austin delivered on every front. He knew the area, understood our BAH situation, and had us under contract within two weeks of our first call. Couldn't have had a smoother transition.",
                 },
               ].map((review, index) => (
@@ -341,12 +344,33 @@ export default function CKGProfilePage() {
                 </div>
               ))}
             </div>
+            <p className="text-xs text-gray-medium mt-4 italic">
+              Reviews paraphrased from verified platforms including Zillow and FastExpert.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-4">
+              <a
+                href="https://www.zillow.com/profile/Compassandkey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-navy font-semibold hover:text-gold-dark transition-colors"
+              >
+                Read reviews on Zillow →
+              </a>
+              <a
+                href="https://www.fastexpert.com/agents/austin-kutz-79945/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-navy font-semibold hover:text-gold-dark transition-colors"
+              >
+                Read reviews on FastExpert →
+              </a>
+            </div>
           </section>
 
           {/* Contact CTA */}
-          <section className="bg-navy rounded-xl p-8 text-white text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">Ready to Make Your Move?</h2>
-            <p className="text-gray-300 mb-6 max-w-xl mx-auto">
+          <section className="bg-navy rounded-xl p-8 text-white text-center" style={{ backgroundColor: "#1B365D" }}>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#ffffff" }}>Ready to Make Your Move?</h2>
+            <p className="mb-6 max-w-xl mx-auto" style={{ color: "#d1d5db" }}>
               Whether you&apos;re buying, selling, or relocating to the Elizabethtown area, Compass and Key
               Group is ready to help. Contact Austin Kutz today for a free, no-obligation consultation.
             </p>
@@ -357,17 +381,19 @@ export default function CKGProfilePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold hover:bg-gold-dark text-navy font-bold px-8 py-3 rounded transition-colors"
+                  style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
                 >
                   Visit Our Website
                 </a>
                 <a
                   href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
                   className="border-2 border-white/30 hover:border-gold text-white hover:text-gold font-semibold px-8 py-3 rounded transition-colors"
+                  style={{ color: "#ffffff" }}
                 >
                   Call {CKG.phone}
                 </a>
               </div>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-sm" style={{ color: "#9ca3af" }}>
                 {CKG.address} | Brokered by {CKG.brokerage}
               </p>
             </div>

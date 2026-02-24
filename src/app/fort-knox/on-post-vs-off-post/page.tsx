@@ -59,10 +59,10 @@ export default function OnPostVsOffPost() {
       <div className="overflow-x-auto mb-8">
         <table className="w-full border-collapse text-sm">
           <thead>
-            <tr className="bg-navy text-white">
-              <th className="text-left p-3 font-semibold">Factor</th>
-              <th className="text-left p-3 font-semibold">On-Post (Knox Hills)</th>
-              <th className="text-left p-3 font-semibold">Off-Post</th>
+            <tr className="bg-navy text-white" style={{ backgroundColor: "#1B365D" }}>
+              <th className="text-left p-3 font-semibold" style={{ color: "#ffffff" }}>Factor</th>
+              <th className="text-left p-3 font-semibold" style={{ color: "#ffffff" }}>On-Post (Knox Hills)</th>
+              <th className="text-left p-3 font-semibold" style={{ color: "#ffffff" }}>Off-Post</th>
             </tr>
           </thead>
           <tbody>
@@ -172,7 +172,7 @@ export default function OnPostVsOffPost() {
         <li>
           <strong>You give up your entire BAH.</strong> Every dollar of your housing allowance goes
           to Knox Hills. There is no opportunity to pocket the difference or build equity. At an
-          E-5 rate of $1,551/month, that is $55,836 over three years with nothing to show for it
+          E-5 rate of $1,647/month, that is $59,292 over three years with nothing to show for it
           at the end.
         </li>
         <li>
@@ -313,14 +313,14 @@ export default function OnPostVsOffPost() {
         </li>
         <li>
           <strong>Mid-grade enlisted (E-5 to E-7):</strong> Off-post buying becomes very attractive.
-          An E-5 with dependents at $1,551/month can comfortably afford a home in Radcliff,
-          Vine Grove, or entry-level E-town neighborhoods. An E-7 at $1,668/month has even more
+          An E-5 with dependents at $1,647/month can comfortably afford a home in Radcliff,
+          Vine Grove, or entry-level E-town neighborhoods. An E-7 at $2,241/month has even more
           room.
         </li>
         <li>
           <strong>Officers (O-1 to O-5+):</strong> Off-post is the norm. BAH at officer ranks
-          provides significant purchasing power in the E-town market. An O-3 at $1,845/month and
-          an O-5 at $2,079/month can afford spacious family homes in E-town&apos;s best
+          provides significant purchasing power in the E-town market. An O-3 at $2,421/month and
+          an O-5 at $2,943/month can afford spacious family homes in E-town&apos;s best
           neighborhoods.
         </li>
       </ul>
@@ -343,21 +343,21 @@ export default function OnPostVsOffPost() {
       </ul>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white mt-10">
-        <h2 className="text-xl font-bold text-white mb-2">Leaning Toward Off-Post? Let a Veteran Guide You.</h2>
-        <p className="text-gray-300 text-sm mb-4">
+      <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Leaning Toward Off-Post? Let a Veteran Guide You.</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Austin Kutz at{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           is a Marine Corps veteran who understands exactly what you are weighing. He has helped
           military families at every rank find the right off-post home — from E-5s buying their
           first home in Radcliff to O-5s settling into E-town&apos;s best neighborhoods. Austin
           can walk you through the{" "}
-          <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light">
+          <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             VA loan process
           </Link>, match your{" "}
-          <Link href="/fort-knox/bah-rates/" className="text-gold hover:text-gold-light">
+          <Link href="/fort-knox/bah-rates/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             BAH
           </Link>{" "}
           to a home, and close on your timeline.
@@ -365,6 +365,7 @@ export default function OnPostVsOffPost() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

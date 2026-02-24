@@ -87,13 +87,13 @@ export default function DirectoryPage() {
             </div>
             <div className="flex flex-col md:flex-row items-start gap-6">
               <div className="flex-shrink-0">
-                <div className="w-24 h-24 bg-navy rounded-full flex items-center justify-center">
-                  <span className="text-white text-3xl font-bold">AK</span>
+                <div className="w-24 h-24 bg-navy rounded-full flex items-center justify-center" style={{ backgroundColor: "#1B365D" }}>
+                  <span className="text-white text-3xl font-bold" style={{ color: "#ffffff" }}>AK</span>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <span className="bg-navy text-white text-xs font-bold px-2.5 py-0.5 rounded-full">
+                  <span className="bg-navy text-white text-xs font-bold px-2.5 py-0.5 rounded-full" style={{ backgroundColor: "#1B365D", color: "#ffffff" }}>
                     Veteran-Owned
                   </span>
                   <span className="bg-gold/20 text-navy text-xs font-bold px-2.5 py-0.5 rounded-full">
@@ -140,6 +140,7 @@ export default function DirectoryPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-navy hover:bg-navy-dark text-white font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+                    style={{ backgroundColor: "#1B365D", color: "#ffffff" }}
                   >
                     Contact Compass and Key Group
                   </a>

@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "What is the BAH rate for Fort Knox in 2026?",
     answer:
-      "2026 BAH rates for Fort Knox increased approximately 5-7% over 2025. For example, an E-5 with dependents receives roughly $1,551 per month, an O-3 with dependents receives approximately $1,845 per month, and an O-5 with dependents receives about $2,079 per month. These rates cover the ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. In most cases, BAH fully covers a mortgage payment in the area.",
+      "2026 BAH rates for Fort Knox increased 7.2% over 2025. For example, an E-5 with dependents receives $1,647 per month, an O-3 with dependents receives $2,421 per month, and an O-5 with dependents receives $2,943 per month. These rates cover the ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. In most cases, BAH fully covers a mortgage payment in the area.",
   },
   {
     question: "What should I do the first week after arriving at Fort Knox?",
@@ -387,11 +387,11 @@ export default function PCSGuide() {
       </div>
 
       {/* CKG CTA */}
-      <div className="bg-navy rounded-lg p-6 text-white">
-        <h2 className="text-xl font-bold text-white mb-2">Need a Realtor Who Understands PCS Moves?</h2>
-        <p className="text-gray-300 text-sm mb-4">
+      <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Need a Realtor Who Understands PCS Moves?</h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Austin Kutz at{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light">
+          <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
           is a U.S. Marine Corps veteran who has been through military relocations himself. He
@@ -403,6 +403,7 @@ export default function PCSGuide() {
         <a
           href="tel:2707353897"
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Call (270) 735-3897
         </a>

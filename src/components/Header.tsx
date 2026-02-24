@@ -4,21 +4,55 @@ import { useState } from "react";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/constants";
 
+function NavLink({
+  href,
+  children,
+  onClick,
+  baseColor = "#ffffff",
+  hoverColor = "#D4A843",
+  style,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  onClick?: () => void;
+  baseColor?: string;
+  hoverColor?: string;
+  style?: React.CSSProperties;
+  className?: string;
+}) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ color: hovered ? hoverColor : baseColor, ...style }}
+      className={className}
+    >
+      {children}
+    </Link>
+  );
+}
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="bg-navy text-white sticky top-0 z-50 shadow-lg">
+    <header style={{ backgroundColor: "#1B365D" }} className="sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-white hover:text-gold transition-colors">
-            <svg className="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 24 24">
+          <NavLink href="/" className="flex items-center gap-2">
+            <svg className="w-8 h-8" style={{ color: "#D4A843" }} fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" fill="none" />
             </svg>
-            <span className="font-bold text-lg hidden sm:block">Realtors in E-town</span>
-          </Link>
+            <span style={{ color: "#ffffff", fontWeight: 700, fontSize: "1.125rem" }} className="hidden sm:block">
+              Realtors in E-town
+            </span>
+          </NavLink>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
@@ -29,27 +63,30 @@ export default function Header() {
                 onMouseEnter={() => setOpenDropdown(item.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <Link
+                <NavLink
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-white hover:text-gold transition-colors rounded"
+                  className="px-3 py-2 text-sm font-medium rounded inline-flex items-center"
                 >
                   {item.label}
                   {item.children && (
-                    <svg className="inline-block w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   )}
-                </Link>
+                </NavLink>
                 {item.children && openDropdown === item.label && (
-                  <div className="absolute top-full left-0 bg-white text-gray-body shadow-xl rounded-md py-2 min-w-[220px] border border-gray-border">
+                  <div style={{ backgroundColor: "#ffffff", borderColor: "#E5E7EB" }} className="absolute top-full left-0 shadow-xl rounded-md py-2 min-w-[220px] border">
                     {item.children.map((child) => (
-                      <Link
+                      <NavLink
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm text-gray-body hover:bg-gray-light hover:text-navy transition-colors"
+                        baseColor="#333333"
+                        hoverColor="#1B365D"
+                        className="block px-4 py-2 text-sm"
+                        style={{ backgroundColor: "transparent" }}
                       >
                         {child.label}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 )}
@@ -59,15 +96,19 @@ export default function Header() {
 
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-3">
-            <Link
+            <NavLink
               href="/realtors/compass-and-key-group/"
-              className="hidden md:inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-4 py-2 rounded text-sm transition-colors"
+              baseColor="#1B365D"
+              hoverColor="#1B365D"
+              className="hidden md:inline-block font-semibold px-4 py-2 rounded text-sm"
+              style={{ backgroundColor: "#D4A843" }}
             >
               Featured Agent
-            </Link>
+            </NavLink>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-white p-2"
+              style={{ color: "#ffffff" }}
+              className="lg:hidden p-2"
               aria-label="Toggle menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,40 +125,44 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden bg-navy-dark border-t border-navy-light">
+        <div style={{ backgroundColor: "#0F1F3D", borderTopColor: "#2A4A7F" }} className="lg:hidden border-t">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
             {NAV_ITEMS.map((item) => (
               <div key={item.label}>
-                <Link
+                <NavLink
                   href={item.href}
-                  className="block px-3 py-2 text-white hover:text-gold font-medium"
+                  className="block px-3 py-2 font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
                 {item.children && (
                   <div className="pl-6 space-y-1">
                     {item.children.map((child) => (
-                      <Link
+                      <NavLink
                         key={child.href}
                         href={child.href}
-                        className="block px-3 py-1.5 text-sm text-gray-300 hover:text-gold"
+                        baseColor="#d1d5db"
+                        className="block px-3 py-1.5 text-sm"
                         onClick={() => setMobileOpen(false)}
                       >
                         {child.label}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 )}
               </div>
             ))}
-            <Link
+            <NavLink
               href="/realtors/compass-and-key-group/"
-              className="block bg-gold hover:bg-gold-dark text-navy font-semibold px-4 py-2 rounded text-center mt-4"
+              baseColor="#1B365D"
+              hoverColor="#1B365D"
+              className="block font-semibold px-4 py-2 rounded text-center mt-4"
+              style={{ backgroundColor: "#D4A843" }}
               onClick={() => setMobileOpen(false)}
             >
               Featured Agent
-            </Link>
+            </NavLink>
           </div>
         </div>
       )}

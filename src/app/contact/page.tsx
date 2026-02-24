@@ -111,9 +111,9 @@ export default function ContactPage() {
         </li>
       </ul>
 
-      <div className="bg-navy rounded-lg p-6 text-white">
-        <h3 className="text-xl font-bold text-white mb-2">Are You a Local Real Estate Agent?</h3>
-        <p className="text-gray-300 text-sm">
+      <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
+        <h3 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Are You a Local Real Estate Agent?</h3>
+        <p className="text-sm" style={{ color: "#d1d5db" }}>
           If you&apos;re a real estate agent or agency serving the Elizabethtown and Hardin County area and
           would like to be included in our directory, please email us at info@realtorsrelizabethtownky.com
           with your agency information.

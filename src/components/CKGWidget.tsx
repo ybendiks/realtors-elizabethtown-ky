@@ -5,8 +5,8 @@ export default function CKGWidget() {
   return (
     <div className="bg-white border-2 border-gold rounded-lg p-5 shadow-md">
       {/* Photo Placeholder */}
-      <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-3 flex items-center justify-center">
-        <span className="text-white text-2xl font-bold">AK</span>
+      <div className="w-20 h-20 bg-navy rounded-full mx-auto mb-3 flex items-center justify-center" style={{ backgroundColor: "#1B365D" }}>
+        <span className="text-white text-2xl font-bold" style={{ color: "#ffffff" }}>AK</span>
       </div>
 
       <h3 className="text-center font-bold text-navy text-lg">{CKG.name}</h3>

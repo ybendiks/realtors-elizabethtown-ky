@@ -13,12 +13,14 @@ export default function NotFound() {
         <Link
           href="/"
           className="bg-navy hover:bg-navy-dark text-white font-semibold px-6 py-3 rounded transition-colors"
+          style={{ backgroundColor: "#1B365D", color: "#ffffff" }}
         >
           Go Home
         </Link>
         <Link
           href="/realtors/"
           className="bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded transition-colors"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
           Browse Realtors
         </Link>
