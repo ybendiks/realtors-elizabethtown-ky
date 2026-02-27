@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /*?_rsc=
+Disallow: /*__next*
 
 Sitemap: https://www.etownkyrealtors.com/sitemap.xml
