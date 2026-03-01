@@ -60,6 +60,20 @@ export const NAV_ITEMS = [
   },
 ];
 
+export const RYAN_WHEELER = {
+  name: "Ryan Wheeler",
+  title: "President",
+  company: "United Residential Mortgage",
+  phone: "(270) 228-0074",
+  address: "209 N Mulberry St. Suite 100, Elizabethtown, KY 42701",
+  website: "https://www.unitedresidential.net",
+  nmls: "NMLS #1326012",
+  rating: 5.0,
+  reviewCount: 311,
+  reviewSource: "Google",
+  tagline: "Personalized Mortgage Solutions in Elizabethtown, KY",
+};
+
 export const CKG_ANCHOR_TEXTS = [
   "Compass and Key Group",
   "Austin Kutz at Compass and Key Group",

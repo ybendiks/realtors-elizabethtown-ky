@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CKGWidget from "@/components/CKGWidget";
+import RyanWheelerWidget from "@/components/RyanWheelerWidget";
 import { schools } from "@/data/schools";
 
 export const metadata: Metadata = {
@@ -226,6 +227,7 @@ export default function SchoolsHub() {
         <div className="w-full lg:w-80 flex-shrink-0">
           <div className="lg:sticky lg:top-24 space-y-6">
             <CKGWidget />
+            <RyanWheelerWidget />
             <div className="bg-gray-light rounded-lg p-5">
               <h3 className="font-bold text-navy mb-3">Explore More</h3>
               <ul className="space-y-2 text-sm">

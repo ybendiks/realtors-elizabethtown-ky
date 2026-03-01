@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CKGWidget from "./CKGWidget";
+import RyanWheelerWidget from "./RyanWheelerWidget";
 
 interface RelatedLink {
   label: string;
@@ -15,6 +16,7 @@ export default function Sidebar({ relatedPages, relatedTitle = "Related Pages" }
   return (
     <aside className="space-y-6">
       <CKGWidget />
+      <RyanWheelerWidget />
 
       {relatedPages && relatedPages.length > 0 && (
         <div className="bg-gray-light rounded-lg p-5">
