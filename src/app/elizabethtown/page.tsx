@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import {
+  POPULATION,
+  MEDIAN_SALE_PRICE,
+  MEDIAN_SALE_PRICE_YOY,
+  MORTGAGE_RATE_30YR,
+  usd,
+} from "@/data/market-facts";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
@@ -46,7 +53,7 @@ export default function ElizabethtownHub() {
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
-        Elizabethtown — &quot;E-town&quot; to the locals — is a city of roughly <strong>33,000 residents</strong> nestled
+        Elizabethtown — &quot;E-town&quot; to the locals — is a city of roughly <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> nestled
         in Hardin County, Kentucky, about <strong>35 miles south of Louisville</strong> along the I-65 corridor. It&apos;s
         the kind of place that surprises people: affordable enough to buy a home on a modest income, close enough
         to Louisville for big-city access, and community-oriented in a way that larger cities can&apos;t replicate.
@@ -63,9 +70,11 @@ export default function ElizabethtownHub() {
         that E-town is one of the rare places where homeownership is genuinely attainable on a single income.
       </p>
       <p className="text-gray-body mb-4">
-        The median home price in Elizabethtown hovers around <strong>$250,000</strong> — roughly 35% below the national median.
-        With Fort Knox BAH rates that often cover a full mortgage payment and property taxes that are among the lowest in
-        the state, the math works for a wide range of buyers.
+        The median sale price in Elizabethtown reached <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> over the three
+        months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year. Property taxes remain
+        among the lowest in the state, but buyers should know that rising prices and {MORTGAGE_RATE_30YR.value}% mortgage
+        rates mean Fort Knox BAH no longer stretches as far as it did — at the E-5 level it no longer covers a full
+        payment on a median-priced home.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">The Community</h2>

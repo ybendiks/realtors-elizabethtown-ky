@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
 import { SITE_URL } from "@/lib/constants";
+import JsonLd from "@/components/JsonLd";
 import { communities } from "@/data/nearby-communities";
 
 interface Props {
@@ -57,6 +58,22 @@ export default async function CommunityPage({ params }: Props) {
         relatedTitle: "Related Guides",
       }}
     >
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Place",
+          name: community.name,
+          description: community.metaDesc,
+          url: `${SITE_URL}/elizabethtown/nearby-communities/${community.slug}/`,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: community.name,
+            addressRegion: "KY",
+            addressCountry: "US",
+          },
+        }}
+      />
+
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         {community.name} — Community Guide
       </h1>

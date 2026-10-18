@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import {
+  MEDIAN_SALE_PRICE,
+  MEDIAN_SALE_PRICE_YOY,
+  PROPERTY_TAX_RATES,
+  LAST_DATA_REVIEW,
+  usd,
+} from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "Cost of Living in Elizabethtown, KY",
@@ -32,7 +39,10 @@ export default function CostOfLiving() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Cost of Living in Elizabethtown, KY
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Housing figures from Redfin, {MEDIAN_SALE_PRICE.asOf}; tax rates from the Hardin County PVA
+        {" "}{PROPERTY_TAX_RATES.asOf}. Page last reviewed {LAST_DATA_REVIEW}.
+      </p>
 
       <p className="text-lg text-gray-body mb-6">
         One of the biggest reasons people relocate to Elizabethtown is the affordability. Whether
@@ -48,8 +58,9 @@ export default function CostOfLiving() {
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Housing Costs</h2>
       <p className="text-gray-body mb-4">
-        Housing is where Elizabethtown truly stands apart. The median home price in E-town is
-        approximately <strong>$250,000</strong>, compared to the national median of around $390,000.
+        Housing is where Elizabethtown truly stands apart. The median sale price in E-town is{" "}
+        <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> as of {MEDIAN_SALE_PRICE.asOf}, up{" "}
+        {MEDIAN_SALE_PRICE_YOY.value}% year over year.
         That means you can purchase a well-maintained, three- or four-bedroom home with a yard and
         a garage for roughly 35% less than what the same property would cost in most American
         metros.
@@ -107,9 +118,15 @@ export default function CostOfLiving() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Property Taxes</h2>
       <p className="text-gray-body mb-4">
         Kentucky&apos;s property tax rates are among the lowest in the nation, and Elizabethtown
-        is no exception. Within city limits, the combined property tax rate is approximately{" "}
-        <strong>$1.07 per $100 of assessed value</strong>. For a home assessed at $250,000, that
-        works out to roughly $2,675 per year in property taxes. Homes outside city limits but
+        is no exception. Within city limits the combined rate is{" "}
+        <strong>${PROPERTY_TAX_RATES.hardinCountySchool.toFixed(4)} per $100</strong> in the Hardin
+        County Schools district, or{" "}
+        <strong>${PROPERTY_TAX_RATES.etownIndependentSchool.toFixed(2)} per $100</strong> in the
+        Elizabethtown Independent district. On a home at the {usd(MEDIAN_SALE_PRICE.value)} median
+        that is roughly{" "}
+        {usd(Math.round((MEDIAN_SALE_PRICE.value / 100) * PROPERTY_TAX_RATES.hardinCountySchool))} to{" "}
+        {usd(Math.round((MEDIAN_SALE_PRICE.value / 100) * PROPERTY_TAX_RATES.etownIndependentSchool))}{" "}
+        a year, depending on district. Homes outside city limits but
         within Hardin County pay only the county and state rates, which are even lower. By
         comparison, property taxes in Indiana (just across the river from Louisville) and many
         other neighboring states are significantly higher, making Kentucky an attractive state for

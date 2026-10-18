@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
-import JsonLd from "@/components/JsonLd";
+import Faq from "@/components/Faq";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -64,21 +64,6 @@ export default function FirstTimeHomebuyerGuide() {
         relatedTitle: "Buyer Resources",
       }}
     >
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqData.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }}
-      />
-
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         First-Time Homebuyer Guide for Elizabethtown, KY
       </h1>
@@ -327,16 +312,7 @@ export default function FirstTimeHomebuyerGuide() {
         </li>
       </ul>
 
-      {/* FAQ Section */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
-        Frequently Asked Questions
-      </h2>
-      {faqData.map((faq, index) => (
-        <div key={index} className="mb-6">
-          <h3 className="text-lg font-bold text-navy mb-2">{faq.question}</h3>
-          <p className="text-gray-body">{faq.answer}</p>
-        </div>
-      ))}
+      <Faq items={faqData} />
 
       {/* CKG CTA */}
       <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>

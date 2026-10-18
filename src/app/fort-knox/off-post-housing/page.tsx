@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import { POPULATION, MEDIAN_SALE_PRICE, usd } from "@/data/market-facts";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
@@ -86,9 +87,11 @@ export default function OffPostHousing() {
             <tr className="bg-white border-b border-gray-border">
               <td className="p-3 font-semibold text-navy">Elizabethtown</td>
               <td className="p-3 text-center text-gray-body">~15 min</td>
-              <td className="p-3 text-center text-gray-body">~$250,000</td>
+              <td className="p-3 text-center text-gray-body">{usd(MEDIAN_SALE_PRICE.value)}</td>
               <td className="p-3 text-center text-gray-body">$1,100-$1,300</td>
-              <td className="p-3 text-center text-gray-body">~33,000</td>
+              <td className="p-3 text-center text-gray-body">
+                {POPULATION.value.toLocaleString("en-US")}
+              </td>
             </tr>
             <tr className="bg-gray-light border-b border-gray-border">
               <td className="p-3 font-semibold text-navy">Radcliff</td>
@@ -119,7 +122,8 @@ export default function OffPostHousing() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Elizabethtown — 15 Minutes South</h2>
       <p className="text-gray-body mb-4">
         Elizabethtown — &quot;E-town&quot; — is the largest community near Fort Knox and where most
-        military families choose to live. The city of roughly <strong>33,000 residents</strong> sits
+        military families choose to live. The city of roughly{" "}
+        <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> sits
         about 15 minutes south of Fort Knox&apos;s main gate via US-31W. It is the Hardin County
         seat and the commercial center of the region, which means you will find everything you need
         here without driving to Louisville.

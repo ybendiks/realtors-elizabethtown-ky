@@ -175,8 +175,14 @@ export default function DirectoryPage() {
               </h3>
               <p className="text-sm text-gray-body mb-3 line-clamp-3">{realtor.description}</p>
               <div className="text-xs text-gray-medium space-y-1">
-                <p>{realtor.address}</p>
-                <p>{realtor.phone}</p>
+                {realtor.address && realtor.phone ? (
+                  <>
+                    <p>{realtor.address}</p>
+                    <p>{realtor.phone}</p>
+                  </>
+                ) : (
+                  <p className="italic">Contact details under review</p>
+                )}
                 <p>Areas: {realtor.areas.join(", ")}</p>
               </div>
               <Link

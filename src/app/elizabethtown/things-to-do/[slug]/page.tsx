@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, SITE_NAME } from "@/lib/constants";
+import JsonLd from "@/components/JsonLd";
 import { thingsToDo } from "@/data/things-to-do";
+import { LAST_DATA_REVIEW } from "@/data/market-facts";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -51,6 +53,28 @@ export default async function ThingToDoPage({ params }: Props) {
         ],
       }}
     >
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: t.name,
+          description: t.metaDesc,
+          url: `${SITE_URL}/elizabethtown/things-to-do/${t.slug}/`,
+          dateModified: LAST_DATA_REVIEW,
+          isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+          about: { "@type": "Place", name: "Elizabethtown, Kentucky" },
+          mainEntity: {
+            "@type": "ItemList",
+            itemListElement: t.picks.map((p, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: p.name,
+              description: p.desc,
+            })),
+          },
+        }}
+      />
+
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">{t.name}</h1>
 
       <p className="text-lg text-gray-body mb-8">{t.intro}</p>

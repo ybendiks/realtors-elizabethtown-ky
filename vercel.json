@@ -11,6 +11,48 @@
       ],
       "destination": "https://www.etownkyrealtors.com/$1",
       "permanent": true
+    },
+
+    {
+      "source": "/realtors/coldwell-banker-legacy/",
+      "destination": "/realtors/coldwell-banker-mcmahan/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/coldwell-banker-legacy",
+      "destination": "/realtors/coldwell-banker-mcmahan/",
+      "permanent": true
+    },
+
+    {
+      "source": "/realtors/greystone-realtors/",
+      "destination": "/realtors/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/greystone-realtors",
+      "destination": "/realtors/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/network-realty/",
+      "destination": "/realtors/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/network-realty",
+      "destination": "/realtors/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/century-21-advantage/",
+      "destination": "/realtors/",
+      "permanent": true
+    },
+    {
+      "source": "/realtors/century-21-advantage",
+      "destination": "/realtors/",
+      "permanent": true
     }
   ],
   "headers": [

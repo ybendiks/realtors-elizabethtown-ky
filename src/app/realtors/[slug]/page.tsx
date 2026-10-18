@@ -50,35 +50,62 @@ export default async function RealtorProfilePage({ params }: Props) {
         ],
       }}
     >
+      {/* Only assert a business address and phone when they were confirmed
+          against a named source. An unverified entry emits neither. */}
       <JsonLd
         data={{
           "@context": "https://schema.org",
           "@type": "RealEstateAgent",
           name: realtor.name,
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Elizabethtown",
-            addressRegion: "KY",
-          },
-          telephone: realtor.phone,
+          url: `${SITE_URL}/realtors/${realtor.slug}/`,
           areaServed: realtor.areas,
+          ...(realtor.verification.status === "verified" && realtor.address
+            ? {
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: realtor.address.split(",")[0].trim(),
+                  addressLocality: realtor.address.includes("London")
+                    ? "London"
+                    : "Elizabethtown",
+                  addressRegion: "KY",
+                },
+              }
+            : {}),
+          ...(realtor.verification.status === "verified" && realtor.phone
+            ? { telephone: realtor.phone }
+            : {}),
         }}
       />
 
       <h1 className="text-3xl font-bold text-navy mb-4">{realtor.name}</h1>
 
-      <div className="bg-gray-light rounded-lg p-5 mb-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-          <div>
-            <span className="font-semibold text-navy">Address:</span>{" "}
-            <span className="text-gray-body">{realtor.address}</span>
+      {realtor.verification.status === "verified" ? (
+        <>
+          <div className="bg-gray-light rounded-lg p-5 mb-6">
+            <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+              {Object.entries(realtor.quickFacts ?? {}).map(([k, v]) => (
+                <div key={k}>
+                  <dt className="font-semibold text-navy inline">{k}:</dt>{" "}
+                  <dd className="text-gray-body inline">{v}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
-          <div>
-            <span className="font-semibold text-navy">Phone:</span>{" "}
-            <span className="text-gray-body">{realtor.phone}</span>
-          </div>
+          <p className="text-xs text-gray-medium mb-6">
+            Office details verified {realtor.verification.checkedOn} against the{" "}
+            {realtor.verification.source}.
+          </p>
+        </>
+      ) : (
+        <div className="border-l-4 border-gold bg-gold/5 p-4 mb-6">
+          <p className="text-gray-body text-sm">
+            <strong>Listing under review.</strong> We could not confirm contact details for
+            this brokerage against the {realtor.verification.source} when we last checked on{" "}
+            {realtor.verification.checkedOn}, so we have removed them rather than publish
+            information we cannot stand behind.
+          </p>
         </div>
-      </div>
+      )}
 
       <div className="text-gray-body mb-6">
         <p>{realtor.description}</p>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
-import JsonLd from "@/components/JsonLd";
+import Faq from "@/components/Faq";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "What is the BAH rate for Fort Knox in 2026?",
     answer:
-      "2026 BAH rates for Fort Knox increased 7.2% over 2025. For example, an E-5 with dependents receives $1,647 per month, an O-3 with dependents receives $2,421 per month, and an O-5 with dependents receives $2,943 per month. These rates cover the ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. In most cases, BAH fully covers a mortgage payment in the area.",
+      "2026 BAH rates for Fort Knox rose over 2025. An E-5 with dependents receives $1,647 per month and an O-3 with dependents receives $2,421 per month. These rates cover ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. Note that with the median sale price at $304,005 and 30-year rates at 7.40% as of October 2026, BAH no longer covers the full principal and interest payment on a median-priced home at the E-5 level.",
   },
   {
     question: "What should I do the first week after arriving at Fort Knox?",
@@ -71,21 +71,6 @@ export default function PCSGuide() {
         relatedTitle: "Fort Knox Resources",
       }}
     >
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqData.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }}
-      />
-
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         PCS to Fort Knox — Complete Guide for 2026
       </h1>
@@ -166,8 +151,7 @@ export default function PCSGuide() {
           <Link href="/fort-knox/bah-rates/" className="text-navy font-semibold hover:text-gold-dark">
             BAH rate for Fort Knox
           </Link>.</strong>{" "}
-          Know your monthly housing budget before you start looking. The 2026 rates increased 5-7%
-          over 2025.
+          Know your monthly housing budget before you start looking. The 2026 rates rose over 2025.
         </li>
       </ul>
 
@@ -375,16 +359,7 @@ export default function PCSGuide() {
         </li>
       </ul>
 
-      {/* FAQ Section */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Frequently Asked Questions</h2>
-      <div className="space-y-6 mb-8">
-        {faqData.map((faq, index) => (
-          <div key={index} className="border-b border-gray-border pb-4">
-            <h3 className="font-bold text-navy mb-2">{faq.question}</h3>
-            <p className="text-gray-body text-sm">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
+      <Faq items={faqData} />
 
       {/* CKG CTA */}
       <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
