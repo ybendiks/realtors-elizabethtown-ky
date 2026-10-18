@@ -144,7 +144,7 @@ export const realtors: Realtor[] = [
     verification: { status: "verified", ...HKAR },
   },
   {
-    slug: "coldwell-banker-legacy",
+    slug: "coldwell-banker-mcmahan",
     name: "Coldwell Banker McMahan",
     address: "1690 Ring Road, Suite 230, Elizabethtown, KY 42701",
     phone: "(270) 234-8600",
@@ -170,63 +170,7 @@ export const realtors: Realtor[] = [
         "Previously published here as 'Coldwell Banker Legacy Group' with phone (270) 765-0001. "
         + "Neither matched any HKAR member office. Coldwell Banker Legacy Group is a Bowling "
         + "Green firm; the Coldwell Banker office actually serving Elizabethtown is McMahan. "
-        + "The URL slug still reads 'coldwell-banker-legacy' and should be migrated.",
-    },
-  },
-  {
-    slug: "greystone-realtors",
-    name: "Greystone Realtors",
-    address: null,
-    phone: null,
-    description:
-      "We previously listed Greystone Realtors as an independent Elizabethtown brokerage. On review we could not confirm that listing against the Heart of Kentucky Association of REALTORS office roster, the Kentucky Secretary of State business registry, or any current web presence, and the phone number we had published did not resolve. Rather than keep contact details we cannot stand behind, we have removed them. If you represent this brokerage and it is still trading, we would be glad to correct and restore the entry.",
-    areas: ["Elizabethtown", "Hardin County"],
-    services: [],
-    verification: {
-      status: "unverified",
-      ...HKAR,
-      note:
-        "Not present in the 160-office HKAR roster. Previously published address "
-        + "'Elizabethtown, KY 42701' (locality only) and phone (270) 763-0025, neither "
-        + "confirmable. Candidate for removal — needs an owner decision on the URL.",
-    },
-  },
-  {
-    slug: "network-realty",
-    name: "Network Realty",
-    address: null,
-    phone: null,
-    description:
-      "We previously listed Network Realty with an office on North Mulberry Street in Elizabethtown. That listing could not be confirmed against the Heart of Kentucky Association of REALTORS office roster on review, so we have removed the contact details rather than publish information we cannot verify. If you represent this brokerage, we would be glad to correct and restore the entry.",
-    areas: ["Elizabethtown", "Hardin County"],
-    services: [],
-    verification: {
-      status: "unverified",
-      ...HKAR,
-      note:
-        "Not present in the 160-office HKAR roster. Previously published "
-        + "'307 N Mulberry St' and (270) 769-6315, neither confirmable. "
-        + "Candidate for removal — needs an owner decision on the URL.",
-    },
-  },
-  {
-    slug: "century-21-advantage",
-    name: "Century 21 Advantage Realty",
-    address: null,
-    phone: null,
-    description:
-      "Century 21 Advantage Realty is a Heart of Kentucky Association of REALTORS member, but its office is in London, Kentucky — roughly 150 miles southeast of Elizabethtown — not in Hardin County. We previously listed it with an Elizabethtown address, which was incorrect. For a Century 21 office actually serving this market, Century 21 Bluegrass Realty Pros operates in Elizabethtown.",
-    areas: ["London, KY"],
-    services: [],
-    verification: {
-      status: "unverified",
-      ...HKAR,
-      note:
-        "HKAR roster gives 911 N. Main St, London, KY 40741, phone (606) 878-0021. The "
-        + "previously published '5375 N Dixie Hwy, Elizabethtown' was wrong, and the "
-        + "published phone (270) 765-4846 is HKAR's own association number. This brokerage "
-        + "does not serve Elizabethtown and arguably should not hold a page in this "
-        + "directory — needs an owner decision.",
+        + "The old /realtors/coldwell-banker-legacy/ URL 301s here (see vercel.json).",
     },
   },
 ];
