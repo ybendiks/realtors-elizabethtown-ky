@@ -3,6 +3,18 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
+import {
+  MEDIAN_SALE_PRICE,
+  MORTGAGE_RATE_30YR,
+  BAH_RATES,
+  LAST_DATA_REVIEW,
+  usd,
+  monthlyPI,
+} from "@/data/market-facts";
+
+const E5 = BAH_RATES.value.find((r) => r.rank === "E-5")!;
+const O3 = BAH_RATES.value.find((r) => r.rank === "O-3")!;
+const MEDIAN_PI = Math.round(monthlyPI(MEDIAN_SALE_PRICE.value));
 
 export const metadata: Metadata = {
   title: "2026 Fort Knox BAH Rates by Rank | Housing Guide",
@@ -11,32 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/fort-knox/bah-rates/" },
 };
 
-const bahRates = [
-  { rank: "E-1", withDep: "$1,575", withoutDep: "$1,350" },
-  { rank: "E-2", withDep: "$1,575", withoutDep: "$1,350" },
-  { rank: "E-3", withDep: "$1,575", withoutDep: "$1,350" },
-  { rank: "E-4", withDep: "$1,575", withoutDep: "$1,350" },
-  { rank: "E-5", withDep: "$1,647", withoutDep: "$1,443" },
-  { rank: "E-6", withDep: "$2,136", withoutDep: "$1,602" },
-  { rank: "E-7", withDep: "$2,241", withoutDep: "$1,680" },
-  { rank: "E-8", withDep: "$2,352", withoutDep: "$1,764" },
-  { rank: "E-9", withDep: "$2,505", withoutDep: "$1,893" },
-  { rank: "W-1", withDep: "$2,157", withoutDep: "$1,617" },
-  { rank: "W-2", withDep: "$2,286", withoutDep: "$1,746" },
-  { rank: "W-3", withDep: "$2,424", withoutDep: "$1,911" },
-  { rank: "W-4", withDep: "$2,538", withoutDep: "$2,157" },
-  { rank: "W-5", withDep: "$2,679", withoutDep: "$2,265" },
-  { rank: "O-1", withDep: "$1,710", withoutDep: "$1,503" },
-  { rank: "O-1E", withDep: "$2,259", withoutDep: "$1,695" },
-  { rank: "O-2", withDep: "$2,133", withoutDep: "$1,683" },
-  { rank: "O-2E", withDep: "$2,403", withoutDep: "$1,860" },
-  { rank: "O-3", withDep: "$2,421", withoutDep: "$1,956" },
-  { rank: "O-3E", withDep: "$2,559", withoutDep: "$2,130" },
-  { rank: "O-4", withDep: "$2,724", withoutDep: "$2,241" },
-  { rank: "O-5", withDep: "$2,943", withoutDep: "$2,301" },
-  { rank: "O-6", withDep: "$2,964", withoutDep: "$2,403" },
-  { rank: "O-7", withDep: "$2,985", withoutDep: "$2,442" },
-];
+const bahRates = BAH_RATES.value;
 
 export default function BAHRates() {
   return (
@@ -72,12 +59,15 @@ export default function BAHRates() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         2026 BAH Rates for Fort Knox, KY
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Rates effective 1 January 2026. Market figures from Redfin, {MEDIAN_SALE_PRICE.asOf}; mortgage
+        rate from Freddie Mac, {MORTGAGE_RATE_30YR.asOf}. Page last reviewed {LAST_DATA_REVIEW}.
+      </p>
 
       <p className="text-lg text-gray-body mb-6">
         Basic Allowance for Housing (BAH) is the monthly stipend the military pays service members
         to cover housing costs when government quarters are not provided. For Fort Knox, the 2026
-        BAH rates increased approximately <strong>7.2% over 2025 rates</strong>, reflecting rising
+        BAH rates rose over 2025, reflecting rising
         housing costs in the region. The rates below apply to ZIP codes <strong>40121</strong> (Fort
         Knox), <strong>40160</strong> (Radcliff), and <strong>42701</strong> (Elizabethtown).
       </p>
@@ -91,7 +81,7 @@ export default function BAHRates() {
           </div>
           <div className="flex flex-col">
             <dt className="text-xs font-semibold text-gray-medium uppercase tracking-wide">YOY Change</dt>
-            <dd className="text-sm text-gray-body font-medium">7.2% increase over 2025</dd>
+            <dd className="text-sm text-gray-body font-medium">Increased over 2025</dd>
           </div>
           <div className="flex flex-col">
             <dt className="text-xs font-semibold text-gray-medium uppercase tracking-wide">ZIP Codes</dt>
@@ -132,8 +122,8 @@ export default function BAHRates() {
                 }`}
               >
                 <td className="p-3 text-navy">{rate.rank}</td>
-                <td className="p-3 text-right text-gray-body">{rate.withDep}</td>
-                <td className="p-3 text-right text-gray-body">{rate.withoutDep}</td>
+                <td className="p-3 text-right text-gray-body">{usd(rate.withDep)}</td>
+                <td className="p-3 text-right text-gray-body">{usd(rate.withoutDep)}</td>
               </tr>
             ))}
           </tbody>
@@ -155,21 +145,28 @@ export default function BAHRates() {
         rent, let alone a mortgage.
       </p>
       <p className="text-gray-body mb-4">
-        Consider a typical scenario. An <strong>E-5 with dependents</strong> receives approximately{" "}
-        <strong>$1,647/month</strong> in BAH. The median home price in Elizabethtown is roughly
-        $250,000. With a{" "}
+        Consider a typical scenario. An <strong>E-5 with dependents</strong> receives{" "}
+        <strong>{usd(E5.withDep)}/month</strong> in BAH. The median sale price in Elizabethtown is{" "}
+        {usd(MEDIAN_SALE_PRICE.value)} as of {MEDIAN_SALE_PRICE.asOf}. With a{" "}
         <Link href="/fort-knox/va-loans-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
           VA loan
         </Link>{" "}
-        at zero down and a 6.5% interest rate, the estimated monthly PITI on a $250,000 home is
-        approximately <strong>$1,500-$1,600</strong>. That E-5&apos;s BAH covers the payment
-        with room to spare — and they are building equity instead of paying rent.
+        at zero down and the current {MORTGAGE_RATE_30YR.value}% 30-year rate, principal and interest
+        alone come to about <strong>{usd(MEDIAN_PI)}/month</strong> before taxes and insurance.
       </p>
       <p className="text-gray-body mb-4">
-        At the <strong>O-3 level with dependents ($2,421/month)</strong>, the picture is even more
-        comfortable. You can afford homes in the $325,000-$380,000 range while still having BAH
-        cover the full PITI. At the <strong>O-5 level ($2,943/month)</strong>, you&apos;re looking
-        at homes up to $450,000+ with BAH fully covering the mortgage.
+        Be clear about what that means: at today&apos;s prices and rates,{" "}
+        <strong>BAH no longer covers the full payment on a median-priced home for an E-5</strong> —
+        there is a gap of roughly {usd(MEDIAN_PI - E5.withDep)} a month on principal and interest
+        before escrow. This is a real change from recent years, when it comfortably did. An E-5
+        buying today should either look below the median, bring a down payment, or plan for the
+        difference out of base pay.
+      </p>
+      <p className="text-gray-body mb-4">
+        At the <strong>O-3 level with dependents ({usd(O3.withDep)}/month)</strong>, BAH still
+        covers principal and interest on a median-priced home with roughly{" "}
+        {usd(O3.withDep - MEDIAN_PI)} a month to spare toward taxes and insurance. Officers at O-4
+        and above retain meaningfully more buying power.
       </p>
 
       <div className="bg-gray-light rounded-lg p-5 mb-8">

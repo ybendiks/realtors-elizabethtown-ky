@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import {
+  MEDIAN_SALE_PRICE,
+  MEDIAN_SALE_PRICE_YOY,
+  DAYS_ON_MARKET,
+  SALE_TO_LIST,
+  MORTGAGE_RATE_30YR,
+  LAST_DATA_REVIEW,
+  usd,
+  monthlyPI,
+} from "@/data/market-facts";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -33,7 +43,10 @@ export default function MarketTrends() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Elizabethtown, KY Real Estate Market Trends
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Market data from Redfin, {MEDIAN_SALE_PRICE.asOf}; mortgage rate from Freddie Mac,{" "}
+        {MORTGAGE_RATE_30YR.asOf}. Page last reviewed {LAST_DATA_REVIEW}.
+      </p>
 
       <p className="text-lg text-gray-body mb-6">
         Tracking market trends is essential whether you are buying, selling, or investing in
@@ -48,10 +61,11 @@ export default function MarketTrends() {
         Price Trends: 2021 to 2026
       </h2>
       <p className="text-gray-body mb-4">
-        The median home price in Elizabethtown has risen from approximately{" "}
-        <strong>$200,000 in 2021</strong> to around <strong>$250,000 in early 2026</strong>. That
-        represents roughly 25% cumulative appreciation over five years, or an average annual gain
-        of about 4-5%. Breaking it down year by year:
+        The median sale price in Elizabethtown has risen from approximately{" "}
+        <strong>$200,000 in 2021</strong> to <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> for the
+        three months ending {MEDIAN_SALE_PRICE.asOf} &mdash; roughly 50% cumulative appreciation over
+        five years. Growth has not cooled the way many expected: the most recent year alone added{" "}
+        {MEDIAN_SALE_PRICE_YOY.value}%. Breaking it down year by year:
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
@@ -74,9 +88,10 @@ export default function MarketTrends() {
           predicted, thanks to strong local demand drivers.
         </li>
         <li>
-          <strong>2025-2026:</strong> Median has reached the $250,000 mark. Appreciation has
-          settled into a sustainable 3-4% annual pace. Buyer activity remains solid, particularly
-          in the $200,000-$300,000 range that forms the core of the market.
+          <strong>2025-2026:</strong> The median reached {usd(MEDIAN_SALE_PRICE.value)} by{" "}
+          {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year, with price per
+          square foot climbing faster still at 12.6%. Homes now take about {DAYS_ON_MARKET.value}{" "}
+          days to sell and close at {SALE_TO_LIST.value}% of list.
         </li>
       </ul>
       <p className="text-gray-body mb-4">
@@ -140,9 +155,12 @@ export default function MarketTrends() {
       <p className="text-gray-body mb-4">
         When rates climbed from the historic lows of 2.5-3% to the 6.5-7% range, monthly payments
         on a median-priced home increased significantly. However, because E-town&apos;s median is
-        $250,000 rather than $400,000+, the absolute dollar impact was less severe than in higher-cost
-        markets. A $250,000 mortgage at 7% costs roughly $1,663 per month in principal and interest,
-        compared to $2,661 on a $400,000 loan at the same rate. The gap matters.
+        {usd(MEDIAN_SALE_PRICE.value)} rather than $400,000+, the absolute dollar impact was less
+        severe than in higher-cost markets. At the current {MORTGAGE_RATE_30YR.value}% 30-year rate
+        ({MORTGAGE_RATE_30YR.source}, {MORTGAGE_RATE_30YR.asOf}), a {usd(MEDIAN_SALE_PRICE.value)}{" "}
+        mortgage costs roughly {usd(Math.round(monthlyPI(MEDIAN_SALE_PRICE.value)))} per month in
+        principal and interest, against{" "}
+        {usd(Math.round(monthlyPI(400000)))} on a $400,000 loan at the same rate. The gap matters.
       </p>
       <p className="text-gray-body mb-4">
         For military buyers using{" "}

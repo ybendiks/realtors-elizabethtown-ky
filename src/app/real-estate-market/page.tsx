@@ -2,6 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { SITE_URL } from "@/lib/constants";
+import {
+  MEDIAN_SALE_PRICE,
+  MEDIAN_SALE_PRICE_YOY,
+  DAYS_ON_MARKET,
+  PRICE_PER_SQFT,
+  SALE_TO_LIST,
+  HOMES_SOLD_MONTHLY,
+  LAST_DATA_REVIEW,
+  usd,
+} from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "Elizabethtown KY Real Estate Market Overview",
@@ -32,7 +42,10 @@ export default function RealEstateMarket() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Elizabethtown, KY Real Estate Market Overview
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Market data from Redfin for the three months ending {MEDIAN_SALE_PRICE.asOf}. Page last
+        reviewed {LAST_DATA_REVIEW}.
+      </p>
 
       <p className="text-lg text-gray-body mb-6">
         Elizabethtown&apos;s real estate market continues to reward both buyers and sellers with strong
@@ -54,13 +67,17 @@ export default function RealEstateMarket() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Median home price:</strong> Approximately <strong>$250,000</strong>. This represents
-          steady year-over-year appreciation from the low-$200,000 range just a few years ago, while
-          still sitting well below the national median of roughly $390,000.
+          <strong>Median sale price:</strong> <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> over the
+          three months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year.
+          The median sale price per square foot is {usd(PRICE_PER_SQFT.value)}, up 12.6% over the same
+          period &mdash; square-foot pricing is climbing faster than headline prices, which means buyers
+          are paying more for less space than they were a year ago.
         </li>
         <li>
-          <strong>Days on market (DOM):</strong> Homes in Elizabethtown spend an average of{" "}
-          <strong>40 days on market</strong> before going under contract. Well-priced homes in desirable{" "}
+          <strong>Days on market (DOM):</strong> Homes in Elizabethtown sell after an average of{" "}
+          <strong>{DAYS_ON_MARKET.value} days</strong>, against 62 days a year ago. Sellers are getting{" "}
+          {SALE_TO_LIST.value}% of list price, and {HOMES_SOLD_MONTHLY.value} homes changed hands in the
+          most recent month reported. Well-priced homes in desirable{" "}
           <Link
             href="/elizabethtown/neighborhoods/"
             className="text-navy font-semibold hover:text-gold-dark"
@@ -185,28 +202,30 @@ export default function RealEstateMarket() {
       {/* Market Segments */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Market Segments at a Glance</h2>
       <p className="text-gray-body mb-4">
-        Different price ranges and property types behave differently in this market:
+        Different price ranges behave differently. The {DAYS_ON_MARKET.value}-day citywide average
+        is the benchmark each segment moves around &mdash; the figures below describe relative pace,
+        not separately measured averages.
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Under $200,000:</strong> The most competitive segment. Starter homes and smaller
-          properties in this range sell quickly, often within 10-14 days. Inventory is extremely
-          limited, and multiple-offer situations are common.
+          <strong>Under $200,000:</strong> The most competitive segment. Starter homes here move
+          considerably faster than the citywide average, inventory is tight, and multiple-offer
+          situations are common.
         </li>
         <li>
-          <strong>$200,000 - $300,000:</strong> The core of the E-town market. This range includes
-          most three- and four-bedroom family homes and is where military buyers concentrate. Homes
-          sell within 30-40 days on average.
+          <strong>$200,000 - $300,000:</strong> Now below the {usd(MEDIAN_SALE_PRICE.value)} median,
+          this band has shifted from the middle of the market toward its affordable end. It still
+          holds most three- and four-bedroom family homes and is where military buyers concentrate.
         </li>
         <li>
-          <strong>$300,000 - $450,000:</strong> Move-up and new construction buyers. Demand is
-          healthy but the buyer pool is smaller. Homes may take 45-60 days, and sellers should
-          expect negotiation on price and terms.
+          <strong>$300,000 - $450,000:</strong> The band containing the current median, covering
+          move-up and new-construction buyers. Expect pace near the citywide average and negotiation
+          on price and terms.
         </li>
         <li>
           <strong>Above $450,000:</strong> The luxury tier for Elizabethtown, often involving
-          acreage, custom builds, or premium locations near Freeman Lake. Marketing and patience are
-          essential, with DOM averaging 60-90 days.
+          acreage, custom builds, or premium locations near Freeman Lake. This is where inventory
+          accumulates &mdash; marketing and patience are essential.
         </li>
       </ul>
 

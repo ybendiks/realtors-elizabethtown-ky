@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import { POPULATION } from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "History of Elizabethtown, KY",
@@ -169,7 +170,8 @@ export default function History() {
         outward.
       </p>
       <p className="text-gray-body mb-4">
-        Today, Elizabethtown is a city of approximately 33,000 residents — large enough to have
+        Today, Elizabethtown is a city of approximately {POPULATION.value.toLocaleString("en-US")} residents, up nearly 13%
+        since the 2020 census — large enough to have
         quality schools, healthcare, and retail, but small enough to preserve the neighborly,
         community-oriented character that has defined it since its founding. The blend of military
         heritage, small-town values, and modern accessibility makes it one of Kentucky&apos;s most

@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import {
+  AVG_RENT_ALL_BEDS,
+  AVG_RENT_YOY_CHANGE,
+  RENTALS_AVAILABLE,
+  LAST_DATA_REVIEW,
+  usd,
+} from "@/data/market-facts";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -33,7 +40,22 @@ export default function RentalMarket() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Rental Market in Elizabethtown, KY
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Rental figures from Zillow Rentals, {AVG_RENT_ALL_BEDS.asOf}. Page last reviewed{" "}
+        {LAST_DATA_REVIEW}.
+      </p>
+
+      <div className="border-l-4 border-gold bg-gold/5 p-4 mb-6">
+        <p className="text-gray-body">
+          <strong>Market direction, {AVG_RENT_ALL_BEDS.asOf}:</strong> the average asking rent across
+          all bedroom counts and property types is{" "}
+          <strong>{usd(AVG_RENT_ALL_BEDS.value)}</strong>, {usd(Math.abs(AVG_RENT_YOY_CHANGE.value))}{" "}
+          <strong>lower</strong> than a year ago, with {RENTALS_AVAILABLE.value} units available.
+          Zillow classes the local rental market as &ldquo;cool&rdquo;. Renters have more leverage
+          than they have had in several years, and landlords setting rents off last year&apos;s
+          numbers are likely to sit vacant.
+        </p>
+      </div>
 
       <p className="text-lg text-gray-body mb-6">
         Whether you are relocating to the area for a military assignment, starting a new job, or
@@ -55,8 +77,10 @@ export default function RentalMarket() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>1-bedroom apartment:</strong> approximately <strong>$850/month</strong>. Studios
-          are available in limited supply, typically in the $650-$750 range.
+          <strong>1-bedroom apartment:</strong> typically <strong>$850-$950/month</strong>. Studios
+          are available in limited supply, typically in the $650-$750 range. Per-bedroom figures are
+          indicative ranges drawn from local listings rather than a published median &mdash; the
+          sourced citywide figure is the {usd(AVG_RENT_ALL_BEDS.value)} all-bedroom average above.
         </li>
         <li>
           <strong>2-bedroom apartment:</strong> approximately <strong>$1,050/month</strong>. This

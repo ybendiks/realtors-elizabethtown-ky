@@ -1,137 +1,161 @@
 /**
- * Generates sitemap.xml during the build process.
- * Run after `next build` to produce a sitemap in the /out directory.
- * Usage: node scripts/generate-sitemap.mjs
+ * Sitemap generator.
+ *
+ * Runs after `next build`, against the exported `out/` directory.
+ *
+ * Two deliberate design choices, both fixing real defects in the previous version:
+ *
+ * 1. URLs are discovered by walking the actual build output instead of being
+ *    re-declared as hardcoded slug arrays. The old script duplicated every slug
+ *    from src/data/*.ts, so a new page was silently missing from the sitemap
+ *    until someone remembered to update two files.
+ *
+ * 2. `lastmod` is resolved per URL from git history of the file that actually
+ *    produces that page. The old script stamped today's date on all 111 URLs on
+ *    every build, which claimed the whole site changed each time it was deployed.
+ *    Where the backing file cannot be resolved, `lastmod` is OMITTED rather than
+ *    guessed — a wrong lastmod is worse than none, since Google discounts the
+ *    signal entirely once it proves unreliable.
  */
 
-import { writeFileSync } from "fs";
-import { resolve, dirname } from "path";
-import { fileURLToPath } from "url";
+import { readdirSync, statSync, writeFileSync, existsSync } from "node:fs";
+import { resolve, dirname, join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = resolve(__dirname, "..");
+const OUT = join(ROOT, "out");
+const APP = join(ROOT, "src", "app");
 const SITE_URL = "https://www.etownkyrealtors.com";
 
-// All static routes (trailing slashes enforced)
-const staticPages = [
-  "/",
-  "/about/",
-  "/contact/",
-  "/privacy/",
-  "/realtors/",
-  "/realtors/compass-and-key-group/",
-  "/elizabethtown/",
-  "/elizabethtown/neighborhoods/",
-  "/elizabethtown/schools/",
-  "/elizabethtown/parks-recreation/",
-  "/elizabethtown/things-to-do/",
-  "/elizabethtown/cost-of-living/",
-  "/elizabethtown/weather-climate/",
-  "/elizabethtown/commuting/",
-  "/elizabethtown/history/",
-  "/elizabethtown/nearby-communities/",
-  "/fort-knox/",
-  "/fort-knox/pcs-guide/",
-  "/fort-knox/bah-rates/",
-  "/fort-knox/va-loans-elizabethtown/",
-  "/fort-knox/off-post-housing/",
-  "/fort-knox/military-relocation-guide/",
-  "/fort-knox/on-post-vs-off-post/",
-  "/fort-knox/knox-hills-housing/",
-  "/real-estate-market/",
-  "/real-estate-market/trends/",
-  "/real-estate-market/investment-properties/",
-  "/real-estate-market/new-construction/",
-  "/real-estate-market/foreclosures/",
-  "/real-estate-market/rental-market/",
-  "/real-estate-market/property-taxes/",
-  "/guides/first-time-homebuyer-elizabethtown/",
-  "/guides/selling-home-elizabethtown/",
-  "/guides/buying-home-elizabethtown/",
-  "/guides/home-appraisal-guide/",
-  "/guides/best-time-to-buy-elizabethtown/",
-];
+/** Routes that exist as files but must never appear in the sitemap. */
+const EXCLUDE = new Set(["/404/", "/_not-found/"]);
 
-// Dynamic routes from data files
-const realtorSlugs = [
-  "schuler-bauer", "olive-oak-realty", "remax-executive-group",
-  "greystone-realtors", "network-realty", "keller-williams-elizabethtown",
-  "century-21-advantage", "coldwell-banker-legacy",
-];
+// --- discover routes from the build output -------------------------------
 
-const neighborhoodSlugs = [
-  "helmwood-heights", "woodland-heights", "pear-orchard", "ring-road",
-  "foxborough-estates", "the-cedars", "thousand-oaks", "nicholas-ridge",
-  "covington-ridge", "freeman-creek-estates", "winding-springs",
-  "triple-crown", "downtown", "foxwood",
-];
+function findRoutes(dir, base = "") {
+  const routes = [];
+  for (const entry of readdirSync(dir)) {
+    const full = join(dir, entry);
+    if (statSync(full).isDirectory()) {
+      if (entry === "_next") continue;
+      routes.push(...findRoutes(full, `${base}/${entry}`));
+    } else if (entry === "index.html") {
+      routes.push(base === "" ? "/" : `${base}/`);
+    }
+  }
+  return routes;
+}
 
-const schoolSlugs = [
-  "hardin-county-schools", "elizabethtown-independent", "central-hardin-high",
-  "john-hardin-high", "elizabethtown-high", "north-hardin-high",
-  "heartland-elementary", "helmwood-heights-elementary", "fort-knox-dodea",
-];
+// --- resolve lastmod from git --------------------------------------------
 
-const parkSlugs = [
-  "freeman-lake-park", "mike-carroll-park", "university-drive-park",
-  "haycraft-park", "pritchard-community-center", "nature-park",
-  "saunders-springs",
-];
+const gitDateCache = new Map();
 
-const thingsToDoSlugs = [
-  "restaurants", "shopping", "swopes-museum", "seasonal-events",
-  "golf-courses", "family-activities", "nightlife",
-];
+function gitLastModified(absPath) {
+  if (gitDateCache.has(absPath)) return gitDateCache.get(absPath);
+  let date = null;
+  try {
+    const rel = relative(ROOT, absPath).split("\\").join("/");
+    const out = execFileSync("git", ["log", "-1", "--format=%cs", "--", rel], {
+      cwd: ROOT,
+      encoding: "utf-8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(out)) date = out;
+  } catch {
+    // Not a git checkout, or the file is untracked. Leave null; lastmod is omitted.
+  }
+  gitDateCache.set(absPath, date);
+  return date;
+}
 
-const communitySlugs = [
-  "hodgenville", "glendale", "cecilia", "rineyville", "sonora",
-];
+/**
+ * Map a route back to the source file(s) that produce it.
+ * A static route maps to its own page.tsx. A templated route maps to the
+ * nearest [slug] template plus the data file it reads, and takes the later date.
+ */
+function sourcesForRoute(route) {
+  const segments = route.split("/").filter(Boolean);
+  const direct = join(APP, ...segments, "page.tsx");
+  if (existsSync(direct)) return [direct];
 
-const fortKnoxDynamicSlugs = [
-  "best-neighborhoods-military", "schools-military-families",
-  "commute-to-elizabethtown", "radcliff-ky", "vine-grove-ky",
-  "brandenburg-ky", "selling-home-pcs", "first-home-va-loan",
-  "amenities", "military-spouse-employment", "base-info",
-  "temporary-housing", "dislocation-allowance", "renting-vs-buying",
-  "military-lenders", "efmp-special-needs", "pet-friendly-housing",
-  "recreation", "military-discounts", "dual-military-housing",
-  "military-investment-properties", "pcs-checklist",
-];
+  // Walk up looking for a dynamic [slug] template.
+  for (let i = segments.length - 1; i >= 0; i--) {
+    const parent = segments.slice(0, i);
+    const tpl = join(APP, ...parent, "[slug]", "page.tsx");
+    if (existsSync(tpl)) {
+      const sources = [tpl];
+      // The matching data module, by convention src/data/<parent-leaf>.ts
+      const leaf = parent[parent.length - 1];
+      if (leaf) {
+        const data = join(ROOT, "src", "data", `${leaf}.ts`);
+        if (existsSync(data)) sources.push(data);
+      }
+      return sources;
+    }
+  }
+  return [];
+}
 
-// Build all URLs
-const allUrls = [
-  ...staticPages,
-  ...realtorSlugs.map((s) => `/realtors/${s}/`),
-  ...neighborhoodSlugs.map((s) => `/elizabethtown/neighborhoods/${s}/`),
-  ...schoolSlugs.map((s) => `/elizabethtown/schools/${s}/`),
-  ...parkSlugs.map((s) => `/elizabethtown/parks-recreation/${s}/`),
-  ...thingsToDoSlugs.map((s) => `/elizabethtown/things-to-do/${s}/`),
-  ...communitySlugs.map((s) => `/elizabethtown/nearby-communities/${s}/`),
-  ...fortKnoxDynamicSlugs.map((s) => `/fort-knox/${s}/`),
-];
+function lastmodFor(route) {
+  const dates = sourcesForRoute(route)
+    .map(gitLastModified)
+    .filter(Boolean)
+    .sort();
+  return dates.length ? dates[dates.length - 1] : null;
+}
 
-const today = new Date().toISOString().split("T")[0];
+// --- priority / changefreq ------------------------------------------------
+
+function depthOf(route) {
+  return route.split("/").filter(Boolean).length;
+}
+
+function priorityFor(route) {
+  if (route === "/") return "1.0";
+  return depthOf(route) <= 1 ? "0.9" : "0.8";
+}
+
+function changefreqFor(route) {
+  return route === "/" ? "weekly" : "monthly";
+}
+
+// --- build ----------------------------------------------------------------
+
+if (!existsSync(OUT)) {
+  console.error(`[sitemap] ${OUT} not found — run \`next build\` first.`);
+  process.exit(1);
+}
+
+const routes = findRoutes(OUT)
+  .filter((r) => !EXCLUDE.has(r))
+  .sort();
+
+let withLastmod = 0;
+const urls = routes.map((route) => {
+  const lastmod = lastmodFor(route);
+  if (lastmod) withLastmod++;
+  return [
+    "  <url>",
+    `    <loc>${SITE_URL}${route}</loc>`,
+    lastmod ? `    <lastmod>${lastmod}</lastmod>` : null,
+    `    <changefreq>${changefreqFor(route)}</changefreq>`,
+    `    <priority>${priorityFor(route)}</priority>`,
+    "  </url>",
+  ]
+    .filter(Boolean)
+    .join("\n");
+});
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls
-  .map(
-    (url) => `  <url>
-    <loc>${SITE_URL}${url}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${url === "/" ? "weekly" : "monthly"}</changefreq>
-    <priority>${url === "/" ? "1.0" : url.split("/").filter(Boolean).length <= 1 ? "0.9" : "0.8"}</priority>
-  </url>`
-  )
-  .join("\n")}
-</urlset>`;
+${urls.join("\n")}
+</urlset>
+`;
 
-const outPath = resolve(__dirname, "..", "out", "sitemap.xml");
-try {
-  writeFileSync(outPath, xml, "utf-8");
-  console.log(`Sitemap generated: ${outPath} (${allUrls.length} URLs)`);
-} catch {
-  // If /out doesn't exist yet, write to public
-  const publicPath = resolve(__dirname, "..", "public", "sitemap.xml");
-  writeFileSync(publicPath, xml, "utf-8");
-  console.log(`Sitemap generated: ${publicPath} (${allUrls.length} URLs)`);
-}
+writeFileSync(join(OUT, "sitemap.xml"), xml, "utf-8");
+console.log(
+  `[sitemap] ${routes.length} URLs written to out/sitemap.xml ` +
+    `(${withLastmod} with lastmod, ${routes.length - withLastmod} omitted)`,
+);

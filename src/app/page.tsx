@@ -3,6 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, CKG } from "@/lib/constants";
+import {
+  MEDIAN_SALE_PRICE,
+  MEDIAN_SALE_PRICE_YOY,
+  DAYS_ON_MARKET,
+  PRICE_PER_SQFT,
+  POPULATION,
+  BAH_RATES,
+  usd,
+} from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: { absolute: "Realtors in Elizabethtown, KY | Find Local Real Estate Agents" },
@@ -130,16 +139,19 @@ export default function HomePage() {
           <div className="prose max-w-none text-gray-body">
             <p>
               Elizabethtown — or &quot;E-town&quot; as locals call it — is the heart of Hardin County and one
-              of Kentucky&apos;s most livable small cities. With a population of roughly <strong>32,500
-              residents</strong>, it offers the perfect balance of small-town charm and modern convenience.
+              of Kentucky&apos;s most livable small cities. With a population of{" "}
+              <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> and growth of nearly 13%
+              since the 2020 census, it offers the perfect balance of small-town charm and modern convenience.
               Situated just <strong>35 miles south of Louisville via I-65</strong>, E-town gives you easy
               access to big-city amenities while keeping the cost of living well below national averages.
             </p>
             <p>
-              The housing market here is one of the most affordable in the region. The{" "}
-              <strong>median home price hovers around $250,000</strong> — well below the national median of
-              roughly $390,000. That affordability, paired with quality school districts and a strong sense
-              of community, makes Elizabethtown a magnet for families, military personnel from nearby{" "}
+              The housing market here remains affordable by regional standards, though it is no longer
+              standing still. The <strong>median sale price reached {usd(MEDIAN_SALE_PRICE.value)}</strong>{" "}
+              over the three months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year
+              over year, with homes selling in about {DAYS_ON_MARKET.value} days. That combination of
+              relative affordability and steady demand, paired with quality school districts and a strong
+              sense of community, makes Elizabethtown a magnet for families, military personnel from nearby{" "}
               <Link href="/fort-knox/" className="text-navy font-semibold hover:text-gold-dark">
                 Fort Knox
               </Link>
@@ -278,10 +290,26 @@ export default function HomePage() {
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "Median Home Price", value: "$249,900", note: "Hardin County" },
-              { label: "Avg. Days on Market", value: "49", note: "Faster than national avg." },
-              { label: "Price Per Sq Ft", value: "$145", note: "Below state average" },
-              { label: "BAH E-5 w/ Dep.", value: "$1,647/mo", note: "2026 Fort Knox rate" },
+              {
+                label: "Median Sale Price",
+                value: usd(MEDIAN_SALE_PRICE.value),
+                note: `Up ${MEDIAN_SALE_PRICE_YOY.value}% YoY · Redfin, ${MEDIAN_SALE_PRICE.asOf}`,
+              },
+              {
+                label: "Avg. Days on Market",
+                value: String(DAYS_ON_MARKET.value),
+                note: `Redfin, ${DAYS_ON_MARKET.asOf}`,
+              },
+              {
+                label: "Price Per Sq Ft",
+                value: usd(PRICE_PER_SQFT.value),
+                note: `Redfin, ${PRICE_PER_SQFT.asOf}`,
+              },
+              {
+                label: "BAH E-5 w/ Dep.",
+                value: `${usd(BAH_RATES.value.find((r) => r.rank === "E-5")!.withDep)}/mo`,
+                note: "2026 Fort Knox rate",
+              },
             ].map((stat) => (
               <div key={stat.label} className="bg-white rounded-lg p-6 text-center shadow-sm">
                 <p className="text-3xl font-bold text-navy">{stat.value}</p>

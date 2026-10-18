@@ -2,6 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { SITE_URL } from "@/lib/constants";
+import {
+  MEDIAN_SALE_PRICE,
+  PROPERTY_TAX_RATES,
+  HOMESTEAD_EXEMPTION,
+  LAST_DATA_REVIEW,
+  usd,
+} from "@/data/market-facts";
+
+/** Annual bill on an assessed value at a combined per-$100 rate. */
+function annualTax(assessed: number, ratePer100: number): string {
+  return usd(Math.round((assessed / 100) * ratePer100));
+}
 
 export const metadata: Metadata = {
   title: "Property Taxes Elizabethtown KY | Hardin Co",
@@ -32,7 +44,10 @@ export default function PropertyTaxes() {
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         Property Taxes in Elizabethtown and Hardin County, KY
       </h1>
-      <p className="text-sm text-gray-medium mb-6">Last updated: February 2026</p>
+      <p className="text-sm text-gray-medium mb-6">
+        Rates from the Hardin County PVA {PROPERTY_TAX_RATES.asOf}. Page last reviewed{" "}
+        {LAST_DATA_REVIEW}.
+      </p>
 
       <p className="text-lg text-gray-body mb-6">
         Property taxes are a key factor in your total homeownership cost, and Kentucky delivers
@@ -53,18 +68,36 @@ export default function PropertyTaxes() {
         Hardin County Property Tax Rates
       </h2>
       <p className="text-gray-body mb-4">
-        Property taxes in the Elizabethtown area are calculated using multiple overlapping rates.
-        The combined rate for a home within city limits is approximately{" "}
-        <strong>$1.07 per $100 of assessed value</strong>. This includes:
+        Property taxes in the Elizabethtown area are calculated from several overlapping rates, and
+        the total depends on <strong>which school district the home sits in</strong>. That single
+        factor moves the bill by about 20%, so it is worth checking before you make an offer:
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>State of Kentucky rate:</strong> $0.1220 per $100 (set by the state, applies to
-          all Kentucky property).
+          <strong>In the Hardin County Schools district (inside city limits):</strong>{" "}
+          <strong>${PROPERTY_TAX_RATES.hardinCountySchool.toFixed(4)} per $100</strong> of assessed
+          value.
         </li>
         <li>
-          <strong>Hardin County rate:</strong> Approximately $0.476 per $100 (covers county
-          government services).
+          <strong>In the Elizabethtown Independent Schools district (inside city limits):</strong>{" "}
+          <strong>${PROPERTY_TAX_RATES.etownIndependentSchool.toFixed(2)} per $100</strong> &mdash; the
+          school levy is the whole difference.
+        </li>
+        <li>
+          <strong>State of Kentucky rate:</strong> ${PROPERTY_TAX_RATES.components.state.toFixed(4)} per
+          $100 (set by the state, applies to all Kentucky property).
+        </li>
+        <li>
+          <strong>Hardin County rate:</strong> ${PROPERTY_TAX_RATES.components.county.toFixed(4)} per
+          $100 (covers county government services).
+        </li>
+        <li>
+          <strong>City of Elizabethtown rate:</strong>{" "}
+          ${PROPERTY_TAX_RATES.components.cityElizabethtown.toFixed(4)} per $100. Other cities in the
+          county differ sharply &mdash; Radcliff{" "}
+          ${PROPERTY_TAX_RATES.otherCityRates.radcliff.toFixed(3)}, Vine Grove{" "}
+          ${PROPERTY_TAX_RATES.otherCityRates.vineGrove.toFixed(3)}, West Point{" "}
+          ${PROPERTY_TAX_RATES.otherCityRates.westPoint.toFixed(3)}.
         </li>
         <li>
           <strong>Hardin County Schools or Elizabethtown Independent Schools rate:</strong> The
@@ -78,11 +111,24 @@ export default function PropertyTaxes() {
         </li>
       </ul>
       <p className="text-gray-body mb-4">
-        For a home assessed at <strong>$250,000</strong> (the current median), the annual property
-        tax bill within Elizabethtown city limits works out to approximately{" "}
-        <strong>$2,675</strong>. Homes outside city limits but within Hardin County pay
-        somewhat less, typically in the $2,000-$2,400 range depending on the specific taxing
-        district.
+        For a home assessed at the current median sale price of{" "}
+        <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong>, the annual bill inside Elizabethtown city
+        limits works out to roughly{" "}
+        <strong>
+          {annualTax(MEDIAN_SALE_PRICE.value, PROPERTY_TAX_RATES.hardinCountySchool)}
+        </strong>{" "}
+        in the Hardin County Schools district, or{" "}
+        <strong>
+          {annualTax(MEDIAN_SALE_PRICE.value, PROPERTY_TAX_RATES.etownIndependentSchool)}
+        </strong>{" "}
+        in the Elizabethtown Independent district &mdash; a difference of about{" "}
+        {usd(
+          Math.round(
+            (MEDIAN_SALE_PRICE.value / 100) *
+              (PROPERTY_TAX_RATES.etownIndependentSchool - PROPERTY_TAX_RATES.hardinCountySchool),
+          ),
+        )}{" "}
+        a year on the same house. Homes outside city limits drop the city levy entirely.
       </p>
 
       {/* How Assessments Work */}
@@ -130,14 +176,17 @@ export default function PropertyTaxes() {
           as totally disabled, qualify for the exemption.
         </li>
         <li>
-          <strong>Exemption amount:</strong> The current exemption is{" "}
-          <strong>$46,350</strong> of assessed value. This amount is adjusted periodically by the
-          Kentucky General Assembly.
+          <strong>Exemption amount:</strong> <strong>{usd(HOMESTEAD_EXEMPTION.value)}</strong> of
+          assessed value for the {HOMESTEAD_EXEMPTION.asOf}. Kentucky re-indexes this every two
+          years; the next change is due for the 2027-2028 cycle.
         </li>
         <li>
-          <strong>Impact:</strong> For a qualifying homeowner with a $250,000 home, the exemption
-          reduces the taxable value to $203,650, saving approximately $495 per year at current
-          rates. The exemption applies to all property tax levies (state, county, school, and city).
+          <strong>Impact:</strong> On a home at the {usd(MEDIAN_SALE_PRICE.value)} median, the
+          exemption cuts taxable value to{" "}
+          {usd(MEDIAN_SALE_PRICE.value - HOMESTEAD_EXEMPTION.value)}, saving roughly{" "}
+          {annualTax(HOMESTEAD_EXEMPTION.value, PROPERTY_TAX_RATES.hardinCountySchool)} to{" "}
+          {annualTax(HOMESTEAD_EXEMPTION.value, PROPERTY_TAX_RATES.etownIndependentSchool)} a year
+          depending on district. It applies to all levies (state, county, school and city).
         </li>
         <li>
           <strong>How to apply:</strong> File with the Hardin County PVA office. You will need
