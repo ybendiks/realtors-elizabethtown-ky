@@ -88,3 +88,36 @@ backed by credible individual profiles.
    the one with a hard expiry when 2027 rates publish in December.
 4. **Add visible freshness** — the #5 result literally dates its title.
 5. **Do not** chase listings intents with static pages.
+
+---
+
+## Update 2026-10-18 (after verification)
+
+The "fix the thin brokerage profiles" priority above turned out to understate the
+problem. Checking all eight against the Heart of Kentucky Association of REALTORS
+office roster (160 member offices) found four were materially wrong and two of
+those described businesses that could not be confirmed to exist at all.
+
+The directory now carries **five verified competitors** plus the client, rather
+than eight entries of which half were inaccurate:
+
+| Kept (verified against HKAR) | Removed |
+|---|---|
+| Schuler Bauer ERA Powered | Greystone Realtors — no roster, registry or web presence |
+| Olive + Oak Realty | Network Realty — not in roster, details unconfirmable |
+| RE/MAX Executive Group | Century 21 Advantage — real, but located in London KY |
+| Keller Williams Heartland | |
+| Coldwell Banker McMahan *(was listed as "Legacy Group")* | |
+
+All removals 301 to `/realtors/`; the Coldwell Banker slug 301s to its new path.
+
+**This strengthens rather than weakens the Phase 3 case.** The competing pages
+that rank for the directory intent — homelight.com at #5, olive-oak.com at #7 —
+win on credibility and freshness, not on entry count. A directory of five
+verifiable brokerages with confirmed addresses is a better foundation for a
+"Best Realtors in Elizabethtown KY" comparison page than eight entries where
+half the contact details were wrong.
+
+Worth noting for Phase 3: **Olive + Oak is both a directory entry here and the
+strongest organic competitor**, ranking above this site for its core commercial
+term with a single blog post. The comparison page has to treat that honestly.
