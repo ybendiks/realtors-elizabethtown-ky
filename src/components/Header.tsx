@@ -74,8 +74,20 @@ export default function Header() {
                     </svg>
                   )}
                 </NavLink>
-                {item.children && openDropdown === item.label && (
-                  <div style={{ backgroundColor: "#ffffff", borderColor: "#E5E7EB" }} className="absolute top-full left-0 shadow-xl rounded-md py-2 min-w-[220px] border">
+                {/* Rendered unconditionally and hidden with CSS rather than
+                    mounted on open. Conditional mounting kept every child link
+                    out of the static HTML entirely, so none of them were
+                    crawlable on any page. visibility/opacity keeps the links in
+                    the markup while preserving the hover behaviour. */}
+                {item.children && (
+                  <div
+                    style={{ backgroundColor: "#ffffff", borderColor: "#E5E7EB" }}
+                    className={`absolute top-full left-0 shadow-xl rounded-md py-2 min-w-[220px] border transition-opacity duration-150 ${
+                      openDropdown === item.label
+                        ? "visible opacity-100"
+                        : "invisible opacity-0 pointer-events-none"
+                    }`}
+                  >
                     {item.children.map((child) => (
                       <NavLink
                         key={child.href}
@@ -124,8 +136,13 @@ export default function Header() {
       </div>
 
       {/* Mobile Nav */}
-      {mobileOpen && (
-        <div style={{ backgroundColor: "#0F1F3D", borderTopColor: "#2A4A7F" }} className="lg:hidden border-t">
+      {/* Same reasoning as the desktop dropdown: always in the markup, hidden
+          with a class, so the nav links exist for crawlers on every page. */}
+      {(
+        <div
+          style={{ backgroundColor: "#0F1F3D", borderTopColor: "#2A4A7F" }}
+          className={`lg:hidden border-t ${mobileOpen ? "block" : "hidden"}`}
+        >
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
             {NAV_ITEMS.map((item) => (
               <div key={item.label}>

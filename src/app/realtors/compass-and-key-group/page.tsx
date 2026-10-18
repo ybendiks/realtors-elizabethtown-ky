@@ -49,10 +49,11 @@ export default function CKGProfilePage() {
             "Fort Knox, KY",
             "Hardin County, KY",
           ],
+          sameAs: [CKG.website, CKG.googleProfile],
           aggregateRating: {
             "@type": "AggregateRating",
-            ratingValue: "5.0",
-            reviewCount: "25",
+            ratingValue: CKG.rating.toFixed(1),
+            reviewCount: String(CKG.reviewCount),
           },
         }}
       />
@@ -108,7 +109,15 @@ export default function CKGProfilePage() {
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
-                <span className="text-white ml-2" style={{ color: "#ffffff" }}>5.0 ({CKG.reviewCount}+ reviews)</span>
+                <a
+                  href={CKG.googleProfile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white ml-2 underline"
+                  style={{ color: "#ffffff" }}
+                >
+                  {CKG.rating.toFixed(1)} ({CKG.reviewCount} {CKG.reviewSource} reviews)
+                </a>
               </div>
               <div className="space-y-1 text-gray-300 text-sm mb-6" style={{ color: "#d1d5db" }}>
                 <p style={{ color: "#d1d5db" }}>{CKG.address}</p>
@@ -249,7 +258,7 @@ export default function CKGProfilePage() {
               <div className="border-l-4 border-gold pl-5">
                 <h3 className="text-lg font-bold text-navy mb-2">Proven Results, Real Reviews</h3>
                 <p className="text-gray-body">
-                  With a perfect 5.0-star rating across {CKG.reviewCount}+ client reviews, Compass and Key
+                  With a {CKG.rating.toFixed(1)}-star rating across {CKG.reviewCount} {CKG.reviewSource} client reviews, Compass and Key
                   Group&apos;s track record speaks for itself. Clients consistently highlight Austin&apos;s
                   professionalism, responsiveness, and genuine care. Much of CKG&apos;s business comes from
                   repeat clients and referrals — the strongest endorsement an agent can receive.

@@ -12,7 +12,24 @@ export const CKG = {
   brokerage: "Real Broker, LLC",
   license: "Kentucky Real Estate #277797",
   rating: 5.0,
-  reviewCount: 25,
+  /**
+   * Google Business Profile rating and review count.
+   * Source: Compass and Key Group - Real Broker GBP, confirmed by the owner.
+   * Counts only grow, so a stale value understates rather than overstates --
+   * but it is published as aggregateRating structured data, so re-check it
+   * when convenient and update reviewsAsOf with it.
+   */
+  reviewCount: 94,
+  reviewsAsOf: "October 2026",
+  reviewSource: "Google",
+  /**
+   * Canonical Google Business Profile link, in Google's documented stable
+   * place-id form. Used as sameAs so the aggregateRating on this site can be
+   * reconciled against the profile the reviews actually live on, and linked
+   * visibly next to the rating so a reader can check it.
+   */
+  googleProfile:
+    "https://www.google.com/maps/place/?q=place_id:ChIJYTRbPA9CHykRtua2fYwbMUA",
   profileUrl: "/realtors/compass-and-key-group/",
   directoryUrl: "/realtors/",
   tagline: "Veteran-Owned Real Estate Experts in Elizabethtown, KY",
