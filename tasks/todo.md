@@ -60,4 +60,26 @@ Two things deliberately **not** done:
 - **Homestead exemption** re-indexes for the 2027-2028 cycle.
 - **Mortgage rate** moves weekly; worked examples compute from it via
   `monthlyPI()`, so only the constant needs changing.
-- `aggregateRating` still publishes a hardcoded review count of 25. Unverified.
+- `aggregateRating` now publishes 5.0 from 94, verified against the Google
+  Business Profile and linked from the page via `sameAs`. Review counts only
+  grow, so re-check it periodically and update `CKG.reviewsAsOf` with it.
+- **NAP mismatch, owner action:** the site and compassandkeygroup.com use
+  (270) 735-3897; the Google Business Profile lists (270) 817-3311. Site and
+  profile disagreeing is a local-ranking signal, and `sameAs` now makes it
+  machine-checkable. Resolve by updating the profile, not the site.
+- Ryan Wheeler's `reviewCount: 311` in `constants.ts` is still unverified,
+  the same pattern as CKG's old 25. Deliberately left for now.
+
+## Phase 3 — done
+
+- [x] Rank the keyword opportunity list (`opportunity-list.md`)
+- [x] Build `/realtors/best-realtors-elizabethtown-ky/`
+- [x] Make nav dropdown links crawlable (they were in no page's static HTML)
+- [x] Correct the review count and link the Google profile
+- [x] Correct the address to 617 N Mulberry St #105B and centralise NAP on `CKG`
+
+Still open from the opportunity list: **agent-level coverage**. Every page
+outranking this site for the directory intent lists named individual agents
+with experience, licence number or listing count. This directory is organised
+by brokerage. HKAR publishes an agent roster per office, which is the
+authoritative source for doing it properly.
