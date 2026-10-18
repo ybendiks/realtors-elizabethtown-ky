@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
 import QuickFacts from "@/components/QuickFacts";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CKG } from "@/lib/constants";
 import { parks } from "@/data/parks";
 
 interface Props {
@@ -172,10 +172,10 @@ export default async function ParkPage({ params }: Props) {
         <p className="text-gray-body font-medium">{p.ctaText}</p>
         <div className="mt-4 flex flex-wrap gap-3">
           <a
-            href="tel:2707353897"
+            href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
             className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
           >
-            Call (270) 735-3897
+            Call {CKG.phone}
           </a>
           <Link
             href="/realtors/compass-and-key-group/"

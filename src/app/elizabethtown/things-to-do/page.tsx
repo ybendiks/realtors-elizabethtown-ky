@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import CKGWidget from "@/components/CKGWidget";
 import RyanWheelerWidget from "@/components/RyanWheelerWidget";
 import { thingsToDo } from "@/data/things-to-do";
+import { CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Things to Do in Elizabethtown, KY",
@@ -62,7 +63,7 @@ export default function ThingsToDoHub() {
               <Link href="/realtors/compass-and-key-group/" className="text-navy font-semibold hover:text-gold-dark">
                 Compass and Key Group
               </Link>{" "}
-              help you find a home in the right neighborhood. Call Austin Kutz at (270) 735-3897.
+              help you find a home in the right neighborhood. Call Austin Kutz at {CKG.phone}.
             </p>
           </div>
         </main>

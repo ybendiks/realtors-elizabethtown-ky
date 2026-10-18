@@ -6,8 +6,13 @@ export const SITE_DESCRIPTION =
 export const CKG = {
   name: "Compass and Key Group",
   owner: "Austin Kutz",
+  /**
+   * The number used on compassandkeygroup.com. Note the Google Business
+   * Profile currently lists (270) 817-3311 instead -- a NAP mismatch that is
+   * better resolved by updating the profile than by changing this.
+   */
   phone: "(270) 735-3897",
-  address: "639 N Mulberry St, Elizabethtown, KY 42701",
+  address: "617 N Mulberry St #105B, Elizabethtown, KY 42701",
   website: "https://compassandkeygroup.com",
   brokerage: "Real Broker, LLC",
   license: "Kentucky Real Estate #277797",

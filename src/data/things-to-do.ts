@@ -1,3 +1,5 @@
+import { CKG } from "@/lib/constants";
+
 export interface ThingToDo {
   slug: string;
   name: string;
@@ -27,7 +29,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Downtown E-town restaurants", desc: "The downtown area has seen a revival of locally owned eateries and coffee shops. Check out the growing scene around Main Street for brunch spots, craft coffee, and unique dining experiences you won't find in chain-heavy commercial corridors." },
     ],
     tips: "Most restaurants in E-town are casual and family-friendly — you won't need a reservation at most places. The Ring Road corridor gets busy on Friday and Saturday evenings, so plan accordingly. For the best local experience, ask a neighbor or coworker for their favorite spot. Locals are proud of their food and happy to share recommendations. If you're PCSing from a larger city, give E-town's dining scene a chance — you might be pleasantly surprised by the quality and value.",
-    ctaText: "Love great food? Find a home near E-town's best dining with Compass and Key Group. Call (270) 735-3897.",
+    ctaText: `Love great food? Find a home near E-town's best dining with Compass and Key Group. Call ${CKG.phone}.`,
   },
   {
     slug: "shopping",
@@ -44,7 +46,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Louisville Shopping (45 min)", desc: "For specialty items, luxury brands, or the widest selection, Louisville's retail scene is just 45 minutes north via I-65. Oxmoor Center, Mall St. Matthews, and the Outlets of Bluegrass are popular day-trip destinations for E-town residents." },
     ],
     tips: "Most major retailers are concentrated along Ring Road, making it efficient to handle multiple errands in one trip. If you're moving from a larger city, you'll find that E-town covers about 90% of your everyday shopping needs locally. The remaining 10% is an easy Louisville day trip. Downtown shopping is best on Saturday mornings when the area is most vibrant. Military families should take advantage of the Fort Knox Commissary and PX for significant savings on groceries and household goods.",
-    ctaText: "Want to live near E-town's best shopping? Contact a local Elizabethtown realtor at Compass and Key Group — (270) 735-3897.",
+    ctaText: `Want to live near E-town's best shopping? Contact a local Elizabethtown realtor at Compass and Key Group — ${CKG.phone}.`,
   },
   {
     slug: "swopes-museum",
@@ -59,7 +61,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Local Character", desc: "Swope's represents the kind of locally owned, passion-driven attraction that gives Elizabethtown its character. The owners are knowledgeable and enthusiastic, happy to share stories about the vehicles and the history behind them." },
     ],
     tips: "Check hours before visiting, as smaller museums sometimes have limited or seasonal schedules. The museum makes a great activity to combine with lunch at a nearby downtown restaurant. If you're new to E-town and looking for things to do on a weekend, Swope's paired with a walk around downtown and a stop at Freeman Lake Park makes for a full and enjoyable day. Car club members and enthusiasts should ask about any special events or car shows the museum participates in.",
-    ctaText: "Discovering E-town's hidden gems? Find your perfect home in this charming city with Compass and Key Group. Call (270) 735-3897.",
+    ctaText: `Discovering E-town's hidden gems? Find your perfect home in this charming city with Compass and Key Group. Call ${CKG.phone}.`,
   },
   {
     slug: "seasonal-events",
@@ -77,7 +79,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Fort Knox Events", desc: "Fort Knox hosts various events open to the public throughout the year, including the Otter Creek outdoor activities, holiday events, and community programs. Military families have access to additional on-post events and MWR-sponsored activities." },
     ],
     tips: "Follow the Elizabethtown Tourism & Convention Bureau and the City of Elizabethtown on social media for the most current event calendar. Many events are free and family-friendly. The PCS season (May-August) coincides with some of E-town's best outdoor events, giving newly arriving military families immediate opportunities to explore their new community. Bring lawn chairs and blankets to outdoor events — Kentuckians know how to settle in and enjoy.",
-    ctaText: "Ready to join the E-town community? Find your perfect home with Elizabethtown's top-rated real estate agency — Compass and Key Group. Call (270) 735-3897.",
+    ctaText: `Ready to join the E-town community? Find your perfect home with Elizabethtown's top-rated real estate agency — Compass and Key Group. Call ${CKG.phone}.`,
   },
   {
     slug: "golf-courses",
@@ -93,7 +95,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Louisville-area courses (45 min)", desc: "For the widest selection, Louisville's golf scene is about 45 minutes north and includes numerous public, semi-private, and private courses. Valhalla Golf Club (host of multiple PGA Championships) is the most famous course in the region, though public options like Charlie Vettiner and Nevel Meade offer quality rounds at reasonable prices." },
     ],
     tips: "Golf season in E-town typically runs from March through November, with the best conditions in spring and fall when temperatures are mild and the humidity drops. Summer rounds are playable but warm — tee times before 9 AM or after 4 PM beat the heat. Military golfers should check Fort Knox MWR for league play, tournaments, and special rates. If you're house-hunting near the Elizabethtown Country Club, the Thousand Oaks neighborhood puts you minutes from the first tee.",
-    ctaText: "Want to live near the links? Austin Kutz at Compass and Key Group can find you a home near E-town's best golf. Call (270) 735-3897.",
+    ctaText: `Want to live near the links? Austin Kutz at Compass and Key Group can find you a home near E-town's best golf. Call ${CKG.phone}.`,
   },
   {
     slug: "family-activities",
@@ -112,7 +114,7 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Fort Knox MWR Activities", desc: "Military families have access to Fort Knox's extensive MWR (Morale, Welfare, and Recreation) programs including youth sports leagues, arts and crafts, outdoor adventure programs, child care, and family events. The Otter Creek Outdoor Recreation Area is a particular highlight for outdoor families." },
     ],
     tips: "E-town's family activities are spread throughout the year, so there's always something to do regardless of season. For the best experience, connect with other families in your neighborhood or through school parent groups — word of mouth is how locals discover the best family activities. Military families should sign up for Fort Knox MWR newsletters as soon as they arrive for access to programs and events. Many family activities in E-town are free or very affordable, which is a real quality-of-life bonus.",
-    ctaText: "Looking for a family-friendly neighborhood in E-town? Compass and Key Group specializes in helping families find the perfect home. Call (270) 735-3897.",
+    ctaText: `Looking for a family-friendly neighborhood in E-town? Compass and Key Group specializes in helping families find the perfect home. Call ${CKG.phone}.`,
   },
   {
     slug: "nightlife",
@@ -129,6 +131,6 @@ export const thingsToDo: ThingToDo[] = [
       { name: "Fort Knox Entertainment", desc: "Fort Knox offers on-post entertainment options including a bowling center, movie theater, and occasional MWR-sponsored events. These are convenient options for military families looking for an evening out without leaving the post area." },
     ],
     tips: "Elizabethtown's nightlife is best described as 'chill and accessible.' If you're coming from a major metro, adjust your expectations and embrace the slower pace — you might find you prefer it. The upside is that everything is close, parking is easy and free, and you won't spend half your evening stuck in traffic or waiting for a table. For bigger nights out, Louisville is close enough for an occasional trip, and Uber/Lyft service is available in the area. E-town's bar scene is friendly and safe, which military families and newcomers especially appreciate.",
-    ctaText: "Looking for a home in E-town with everything nearby? Contact Compass and Key Group — your local Elizabethtown real estate experts. Call (270) 735-3897.",
+    ctaText: `Looking for a home in E-town with everything nearby? Contact Compass and Key Group — your local Elizabethtown real estate experts. Call ${CKG.phone}.`,
   },
 ];

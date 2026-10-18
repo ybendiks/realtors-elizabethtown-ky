@@ -176,7 +176,7 @@ export default function BestRealtorsPage() {
                 </Link>
                 <span className="block text-xs text-gray-medium">Featured &middot; veteran-owned</span>
               </td>
-              <td className="p-3 text-gray-body">639 N Mulberry St</td>
+              <td className="p-3 text-gray-body">{CKG.address.split(",")[0]}</td>
               <td className="p-3 text-gray-body">{BEST_FOR["compass-and-key-group"]}</td>
             </tr>
             {verified.map((r) => (

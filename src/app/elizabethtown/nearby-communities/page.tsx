@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { communities } from "@/data/nearby-communities";
+import { CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Nearby Communities | Elizabethtown KY Area",
@@ -118,11 +119,11 @@ export default function NearbyCommunities() {
           convenience, their team can help you find the right property.
         </p>
         <a
-          href="tel:2707353897"
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
           style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
-          Call (270) 735-3897
+          Call {CKG.phone}
         </a>
       </div>
     </ContentLayout>

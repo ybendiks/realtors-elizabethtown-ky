@@ -27,10 +27,10 @@ export default function CKGProfilePage() {
           "@type": "RealEstateAgent",
           name: "Compass and Key Group",
           url: "https://compassandkeygroup.com",
-          telephone: "(270) 735-3897",
+          telephone: CKG.phone,
           address: {
             "@type": "PostalAddress",
-            streetAddress: "639 N Mulberry St",
+            streetAddress: CKG.address.split(",")[0],
             addressLocality: "Elizabethtown",
             addressRegion: "KY",
             postalCode: "42701",

@@ -1,3 +1,5 @@
+import { CKG } from "@/lib/constants";
+
 export interface Park {
   slug: string;
   name: string;
@@ -24,7 +26,7 @@ export const parks: Park[] = [
       { name: "Freeman Creek Estates", href: "/elizabethtown/neighborhoods/freeman-creek-estates/" },
       { name: "Downtown Elizabethtown", href: "/elizabethtown/neighborhoods/downtown/" },
     ],
-    ctaText: `Looking for a home near Freeman Lake Park? Austin Kutz at Compass and Key Group knows every neighborhood within walking distance of the lake. As a veteran-owned agency with deep roots in Elizabethtown, CKG can help you find the perfect home where a lakeside walk is part of your daily routine. Call (270) 735-3897 to start your search.`,
+    ctaText: `Looking for a home near Freeman Lake Park? Austin Kutz at Compass and Key Group knows every neighborhood within walking distance of the lake. As a veteran-owned agency with deep roots in Elizabethtown, CKG can help you find the perfect home where a lakeside walk is part of your daily routine. Call ${CKG.phone} to start your search.`,
   },
   {
     slug: "mike-carroll-park",
@@ -37,7 +39,7 @@ export const parks: Park[] = [
       { name: "Pear Orchard", href: "/elizabethtown/neighborhoods/pear-orchard/" },
       { name: "Covington Ridge", href: "/elizabethtown/neighborhoods/covington-ridge/" },
     ],
-    ctaText: `Interested in homes near Mike Carroll Park on Elizabethtown's east side? Compass and Key Group specializes in matching families with the right neighborhood. Austin Kutz and his veteran-owned team know every street in Pear Orchard, Covington Ridge, and surrounding communities. Call (270) 735-3897 to schedule a showing.`,
+    ctaText: `Interested in homes near Mike Carroll Park on Elizabethtown's east side? Compass and Key Group specializes in matching families with the right neighborhood. Austin Kutz and his veteran-owned team know every street in Pear Orchard, Covington Ridge, and surrounding communities. Call ${CKG.phone} to schedule a showing.`,
   },
   {
     slug: "university-drive-park",
@@ -50,7 +52,7 @@ export const parks: Park[] = [
       { name: "Foxborough Estates", href: "/elizabethtown/neighborhoods/foxborough-estates/" },
       { name: "Nicholas Ridge", href: "/elizabethtown/neighborhoods/nicholas-ridge/" },
     ],
-    ctaText: `Want to live near University Drive Park? Compass and Key Group helps families find the right home in Foxborough Estates, Nicholas Ridge, and other south-side neighborhoods. Austin Kutz and his veteran-owned team offer local expertise that national brokerages simply cannot match. Call (270) 735-3897 today.`,
+    ctaText: `Want to live near University Drive Park? Compass and Key Group helps families find the right home in Foxborough Estates, Nicholas Ridge, and other south-side neighborhoods. Austin Kutz and his veteran-owned team offer local expertise that national brokerages simply cannot match. Call ${CKG.phone} today.`,
   },
   {
     slug: "haycraft-park",
@@ -63,7 +65,7 @@ export const parks: Park[] = [
       { name: "Ring Road Area", href: "/elizabethtown/neighborhoods/ring-road/" },
       { name: "Downtown Elizabethtown", href: "/elizabethtown/neighborhoods/downtown/" },
     ],
-    ctaText: `Looking for a home in central Elizabethtown near parks and downtown amenities? Compass and Key Group is a veteran-owned real estate team that knows every block in E-town. Austin Kutz can help you find a home where neighborhood parks, shops, and restaurants are all within walking distance. Call (270) 735-3897 to get started.`,
+    ctaText: `Looking for a home in central Elizabethtown near parks and downtown amenities? Compass and Key Group is a veteran-owned real estate team that knows every block in E-town. Austin Kutz can help you find a home where neighborhood parks, shops, and restaurants are all within walking distance. Call ${CKG.phone} to get started.`,
   },
   {
     slug: "pritchard-community-center",
@@ -77,7 +79,7 @@ export const parks: Park[] = [
       { name: "Ring Road Area", href: "/elizabethtown/neighborhoods/ring-road/" },
       { name: "Downtown Elizabethtown", href: "/elizabethtown/neighborhoods/downtown/" },
     ],
-    ctaText: `Want to live near the Pritchard Community Center and everything downtown Elizabethtown has to offer? Compass and Key Group is your veteran-owned real estate team with unmatched local knowledge. Austin Kutz has helped dozens of families find the right home in E-town's most connected neighborhoods. Call (270) 735-3897 to learn more.`,
+    ctaText: `Want to live near the Pritchard Community Center and everything downtown Elizabethtown has to offer? Compass and Key Group is your veteran-owned real estate team with unmatched local knowledge. Austin Kutz has helped dozens of families find the right home in E-town's most connected neighborhoods. Call ${CKG.phone} to learn more.`,
   },
   {
     slug: "nature-park",
@@ -89,7 +91,7 @@ export const parks: Park[] = [
     nearbyNeighborhoods: [
       { name: "Thousand Oaks", href: "/elizabethtown/neighborhoods/thousand-oaks/" },
     ],
-    ctaText: `Searching for a home near natural green space in Elizabethtown? Compass and Key Group understands that access to nature is a lifestyle priority for many homebuyers. Austin Kutz and his veteran-owned team can show you properties near the Nature Park and other E-town outdoor amenities. Call (270) 735-3897 to explore your options.`,
+    ctaText: `Searching for a home near natural green space in Elizabethtown? Compass and Key Group understands that access to nature is a lifestyle priority for many homebuyers. Austin Kutz and his veteran-owned team can show you properties near the Nature Park and other E-town outdoor amenities. Call ${CKG.phone} to explore your options.`,
   },
   {
     slug: "saunders-springs",
@@ -101,6 +103,6 @@ export const parks: Park[] = [
     nearbyNeighborhoods: [
       { name: "Foxwood Subdivision", href: "/elizabethtown/neighborhoods/foxwood/" },
     ],
-    ctaText: `Love the outdoors and want to live near Saunders Springs? Compass and Key Group is the veteran-owned real estate team that helps nature-loving families find homes in Elizabethtown's most scenic neighborhoods. Austin Kutz can connect you with properties near hiking, springs, and green space. Call (270) 735-3897 to start your home search.`,
+    ctaText: `Love the outdoors and want to live near Saunders Springs? Compass and Key Group is the veteran-owned real estate team that helps nature-loving families find homes in Elizabethtown's most scenic neighborhoods. Austin Kutz can connect you with properties near hiking, springs, and green space. Call ${CKG.phone} to start your home search.`,
   },
 ];

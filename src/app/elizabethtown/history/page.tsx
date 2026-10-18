@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { POPULATION } from "@/data/market-facts";
+import { CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "History of Elizabethtown, KY",
@@ -196,11 +197,11 @@ export default function History() {
           life, they can help you find a home in the neighborhood that fits your family.
         </p>
         <a
-          href="tel:2707353897"
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
           style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
-          Call (270) 735-3897
+          Call {CKG.phone}
         </a>
       </div>
     </ContentLayout>

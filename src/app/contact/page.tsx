@@ -6,7 +6,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us | Elizabethtown KY Realtor Directory",
   description:
-    "Get in touch with questions about Elizabethtown real estate, our directory, or to connect with a local agent. Contact Compass and Key Group at (270) 735-3897.",
+    "Get in touch with questions about Elizabethtown real estate, our directory, or to connect with a local agent. Contact Compass and Key Group at {CKG.phone}.",
   alternates: { canonical: "/contact/" },
 };
 

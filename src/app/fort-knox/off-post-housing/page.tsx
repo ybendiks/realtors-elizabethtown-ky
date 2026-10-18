@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { POPULATION, MEDIAN_SALE_PRICE, usd } from "@/data/market-facts";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Off-Post Housing Fort Knox | Community Guide",
@@ -350,11 +350,11 @@ export default function OffPostHousing() {
           to a home your family will love.
         </p>
         <a
-          href="tel:2707353897"
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
           className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
           style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
         >
-          Call (270) 735-3897
+          Call {CKG.phone}
         </a>
       </div>
     </ContentLayout>

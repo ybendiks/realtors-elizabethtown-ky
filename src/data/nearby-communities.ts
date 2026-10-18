@@ -1,3 +1,5 @@
+import { CKG } from "@/lib/constants";
+
 export interface Community {
   slug: string;
   name: string;
@@ -34,7 +36,7 @@ export const communities: Community[] = [
 <h2>Why Choose Hodgenville</h2>
 <p>Hodgenville is ideal for buyers who want <strong>maximum affordability, rural character, and a genuine small-town experience</strong>. It's a strong option for retirees, remote workers, and anyone who prioritizes space and quiet over proximity to commercial amenities. For <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> with more urban convenience, explore our neighborhood guides.</p>
 
-<div class="cta-box"><p>Exploring affordable options south of E-town? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves the greater Hardin County region including Hodgenville. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Exploring affordable options south of E-town? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves the greater Hardin County region including Hodgenville. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "glendale",
@@ -63,7 +65,7 @@ export const communities: Community[] = [
 <h2>Why Choose Glendale</h2>
 <p>Glendale appeals to buyers seeking <strong>historic charm, a shorter Fort Knox commute than some E-town neighborhoods, and proximity to I-65</strong>. With the area's economic growth, property values may see appreciation as the community expands. It's worth watching for anyone interested in getting in early on a growing area.</p>
 
-<div class="cta-box"><p>Interested in properties near Glendale? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> tracks opportunities throughout Hardin County. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Interested in properties near Glendale? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> tracks opportunities throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "cecilia",
@@ -88,7 +90,7 @@ export const communities: Community[] = [
 <h2>Why Choose Cecilia</h2>
 <p>Cecilia is best for families who want <strong>a rural setting in the Central Hardin High School zone with easy access to E-town</strong>. The slightly longer commute to Fort Knox and Louisville is offset by more space, lower density, and a peaceful country feel. It's a practical choice for families who want room to breathe without being truly remote. For more urban <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a>, explore our guides.</p>
 
-<div class="cta-box"><p>Looking for property in the Cecilia area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> knows Hardin County inside and out. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Looking for property in the Cecilia area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> knows Hardin County inside and out. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "rineyville",
@@ -117,7 +119,7 @@ export const communities: Community[] = [
 <h2>Why Choose Rineyville</h2>
 <p>Rineyville is ideal for families who want <strong>affordable, spacious living with a manageable commute to both E-town and Fort Knox</strong>. It's a hidden gem for military families who don't need to be right in town but want to stay close to everything. The combination of low prices, generous lots, and commute convenience makes it worth exploring.</p>
 
-<div class="cta-box"><p>Interested in Rineyville properties? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> covers all of Hardin County. Call veteran agent Austin Kutz at <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Interested in Rineyville properties? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> covers all of Hardin County. Call veteran agent Austin Kutz at <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "sonora",
@@ -146,6 +148,6 @@ export const communities: Community[] = [
 <h2>Why Choose Sonora</h2>
 <p>Sonora is best for buyers who prioritize <strong>the lowest possible cost of living, rural acreage, and don't mind a longer commute</strong>. It's a strong choice for retirees on fixed incomes, remote workers, and budget-conscious families. For Fort Knox families, the commute is longer than ideal — but for those who value land and savings over convenience, it works. Explore closer <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> if commute time is a priority.</p>
 
-<div class="cta-box"><p>Looking for the best value in the E-town area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps buyers find affordable properties throughout Hardin County. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Looking for the best value in the E-town area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps buyers find affordable properties throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
 ];

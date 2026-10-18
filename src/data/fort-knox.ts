@@ -1,3 +1,5 @@
+import { CKG } from "@/lib/constants";
+
 import type { FaqItem } from "@/components/Faq";
 
 export interface FortKnoxPage {
@@ -55,7 +57,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Lifestyle:</strong> Want walkability and restaurants? E-town. Want shortest commute? Radcliff. Want acres? Brandenburg.</li>
 </ul>
 
-<div class="cta-box"><p>Need help finding the right neighborhood for your military family? As a veteran himself, Austin Kutz at <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> understands exactly what military families need. Call <strong>(270) 735-3897</strong> for a personalized home search matched to your BAH, commute, and family needs.</p></div>`,
+<div class="cta-box"><p>Need help finding the right neighborhood for your military family? As a veteran himself, Austin Kutz at <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> understands exactly what military families need. Call <strong>${CKG.phone}</strong> for a personalized home search matched to your BAH, commute, and family needs.</p></div>`,
   },
   {
     slug: "schools-military-families",
@@ -91,7 +93,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Downtown E-town:</strong> Elizabethtown Independent — smaller classes, focused district</li>
 </ul>
 
-<div class="cta-box"><p>Want to buy a home in the right school district? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes in their preferred attendance zones. As a veteran, Austin Kutz understands that school quality is a top priority. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Want to buy a home in the right school district? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes in their preferred attendance zones. As a veteran, Austin Kutz understands that school quality is a top priority. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "commute-to-elizabethtown",
@@ -127,7 +129,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Why E-town Over Radcliff?</h2>
 <p>Many military families accept the slightly longer commute from E-town (vs. 5 minutes from <a href="/fort-knox/radcliff-ky/">Radcliff</a>) in exchange for E-town's wider selection of <a href="/elizabethtown/neighborhoods/">neighborhoods</a>, better shopping, more dining options, and broader school choices. The extra 10-15 minutes each way translates to a significantly different lifestyle and community experience.</p>
 
-<div class="cta-box"><p>Trying to balance commute time with quality of life? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps Fort Knox families find the right neighborhood for their commute and lifestyle priorities. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Trying to balance commute time with quality of life? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps Fort Knox families find the right neighborhood for their commute and lifestyle priorities. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "radcliff-ky",
@@ -157,7 +159,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>The Trade-Off</h2>
 <p>Radcliff's proximity to post is its greatest asset, but it comes with trade-offs. The city has fewer dining options, less shopping variety, and a more transient community feel compared to <a href="/elizabethtown/neighborhoods/">Elizabethtown's established neighborhoods</a>. Many families who start in Radcliff end up moving to E-town once they decide to stay in the area longer term.</p>
 
-<div class="cta-box"><p>Whether you're looking in Radcliff or exploring other communities near Fort Knox, <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find the right fit. Austin Kutz, a Marine veteran, understands what military families need. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Whether you're looking in Radcliff or exploring other communities near Fort Knox, <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find the right fit. Austin Kutz, a Marine veteran, understands what military families need. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "vine-grove-ky",
@@ -187,7 +189,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Investors</strong> looking for affordable rental properties near Fort Knox</li>
 </ul>
 
-<div class="cta-box"><p>Exploring affordable options near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves Vine Grove and all communities around Fort Knox. Call veteran agent Austin Kutz at <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Exploring affordable options near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves Vine Grove and all communities around Fort Knox. Call veteran agent Austin Kutz at <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "brandenburg-ky",
@@ -216,7 +218,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Anyone willing to trade commute time</strong> for space and quiet</li>
 </ul>
 
-<div class="cta-box"><p>Interested in rural properties near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves Brandenburg and all of Meade County. As a veteran-owned team, they understand what military families are looking for. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Interested in rural properties near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves Brandenburg and all of Meade County. As a veteran-owned team, they understand what military families are looking for. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "selling-home-pcs",
@@ -254,7 +256,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Remote Selling</h2>
 <p>If you need to leave before the sale closes, your agent can manage the process remotely — handling showings, negotiations, inspections, and closing coordination. Power of attorney arrangements can be set up for closing if needed. This is where having an experienced military relocation agent makes all the difference.</p>
 
-<div class="cta-box"><p>PCSing and need to sell? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> specializes in military home sales on tight timelines. Call Austin Kutz at <strong>(270) 735-3897</strong> as soon as you receive orders.</p></div>`,
+<div class="cta-box"><p>PCSing and need to sell? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> specializes in military home sales on tight timelines. Call Austin Kutz at <strong>${CKG.phone}</strong> as soon as you receive orders.</p></div>`,
   },
   {
     slug: "first-home-va-loan",
@@ -302,7 +304,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Buying too much house:</strong> Just because you're approved for $300K doesn't mean you should spend $300K. Leave room in your budget.</li>
 </ul>
 
-<div class="cta-box"><p>Ready to buy your first home near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> specializes in VA loan purchases and can connect you with experienced VA lenders. As a veteran himself, Austin Kutz guides first-time military buyers through every step. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Ready to buy your first home near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> specializes in VA loan purchases and can connect you with experienced VA lenders. As a veteran himself, Austin Kutz guides first-time military buyers through every step. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "amenities",
@@ -343,7 +345,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Legal assistance office</li>
 </ul>
 
-<div class="cta-box"><p>Moving to the Fort Knox area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes with the best access to both on-post amenities and off-post convenience. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Moving to the Fort Knox area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes with the best access to both on-post amenities and off-post convenience. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "military-spouse-employment",
@@ -376,7 +378,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Licensing &amp; Credential Transfer</h2>
 <p>Kentucky participates in several interstate compacts for professional licensing, making it easier for military spouses to transfer nursing, teaching, and other professional credentials. Check with the relevant Kentucky licensing board for your profession's specific requirements.</p>
 
-<div class="cta-box"><p>Relocating to the Fort Knox area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes close to employment centers and with the right commute. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Relocating to the Fort Knox area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes close to employment centers and with the right commute. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "base-info",
@@ -419,7 +421,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Living Near Fort Knox</h2>
 <p>Fort Knox's presence has shaped the communities around it for over a century. <a href="/elizabethtown/">Elizabethtown</a>, <a href="/fort-knox/radcliff-ky/">Radcliff</a>, <a href="/fort-knox/vine-grove-ky/">Vine Grove</a>, and <a href="/fort-knox/brandenburg-ky/">Brandenburg</a> all serve the Fort Knox community with housing, schools, and services. The steady military population provides economic stability and a diverse, welcoming community character.</p>
 
-<div class="cta-box"><p>PCSing to Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a>, led by USMC veteran Austin Kutz, is your local guide to homes near Fort Knox. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>PCSing to Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a>, led by USMC veteran Austin Kutz, is your local guide to homes near Fort Knox. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "temporary-housing",
@@ -455,7 +457,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Start house hunting immediately:</strong> Use your temporary housing period to tour <a href="/elizabethtown/neighborhoods/">neighborhoods</a>, meet with your agent, and make housing decisions while you're boots-on-ground.</li>
 </ul>
 
-<div class="cta-box"><p>Arriving at Fort Knox and need to find a home fast? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can have options ready for you to tour from day one. Austin Kutz, a Marine veteran who's been through PCS moves, understands the urgency. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Arriving at Fort Knox and need to find a home fast? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can have options ready for you to tour from day one. Austin Kutz, a Marine veteran who's been through PCS moves, understands the urgency. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "dislocation-allowance",
@@ -494,7 +496,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ol>
 <p>The good news about PCSing to Fort Knox: the low <a href="/elizabethtown/cost-of-living/">cost of living in Elizabethtown</a> means your DLA and other allowances stretch further here than at many other installations.</p>
 
-<div class="cta-box"><p>PCSing to Fort Knox and ready to buy? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find a home that fits your BAH budget and get you settled quickly. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>PCSing to Fort Knox and ready to buy? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find a home that fits your BAH budget and get you settled quickly. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "renting-vs-buying",
@@ -539,7 +541,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Most landlords in the area are familiar with military leases and SCRA provisions</li>
 </ul>
 
-<div class="cta-box"><p>Whether you decide to rent or buy, <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you navigate the Fort Knox housing market. As a veteran-owned team, they understand the military housing decision. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Whether you decide to rent or buy, <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you navigate the Fort Knox housing market. As a veteran-owned team, they understand the military housing decision. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "military-lenders",
@@ -585,7 +587,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Be wary of lenders who pressure you into unnecessary products or services</li>
 </ul>
 
-<div class="cta-box"><p>Need a VA lender recommendation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can connect you with trusted, VA-experienced lenders who know the Fort Knox market. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Need a VA lender recommendation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can connect you with trusted, VA-experienced lenders who know the Fort Knox market. Call <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Do I have to use a lender on post, or one that advertises to military buyers?",
@@ -649,7 +651,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>School liaison officer for education coordination</li>
 </ul>
 
-<div class="cta-box"><p>Have specific housing needs for your EFMP family? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find a home that meets your family's unique requirements. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Have specific housing needs for your EFMP family? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find a home that meets your family's unique requirements. Call <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Is EFMP enrollment optional?",
@@ -713,7 +715,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Emergency vet:</strong> Emergency veterinary services available in the area and in Louisville</li>
 </ul>
 
-<div class="cta-box"><p>Looking for a pet-friendly home near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can prioritize fenced yards, large lots, and pet-friendly neighborhoods in your home search. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Looking for a pet-friendly home near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can prioritize fenced yards, large lots, and pet-friendly neighborhoods in your home search. Call <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Is on-post housing at Fort Knox pet friendly?",
@@ -773,7 +775,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Nolin Lake and Rough River Lake — larger lakes within 30-45 minutes for boating and fishing</li>
 </ul>
 
-<div class="cta-box"><p>Want to live near the best outdoor recreation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can find homes near Fort Knox's best recreational amenities. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Want to live near the best outdoor recreation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can find homes near Fort Knox's best recreational amenities. Call <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Do you need a military ID to use Fort Knox recreation facilities?",
@@ -834,7 +836,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Veterans Day in E-town</h2>
 <p>Elizabethtown goes all-out for Veterans Day, with community events, special deals, and a genuine outpouring of appreciation. Many restaurants offer free meals for veterans and active duty, and local businesses run special promotions. It's one of the days that makes living in a military-supportive community like E-town feel especially rewarding.</p>
 
-<div class="cta-box"><p>Looking for a military-friendly community? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> is veteran-owned and deeply connected to the military community. Call Austin Kutz at <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Looking for a military-friendly community? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> is veteran-owned and deeply connected to the military community. Call Austin Kutz at <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Do real estate agents offer military discounts?",
@@ -886,7 +888,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Plan for separation:</strong> If a future PCS sends one spouse elsewhere, have a plan for the home (rent it, sell it, or one spouse stays)</li>
 </ul>
 
-<div class="cta-box"><p>Dual military at Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military couples maximize their combined BAH in the E-town housing market. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Dual military at Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military couples maximize their combined BAH in the E-town housing market. Call <strong>${CKG.phone}</strong>.</p></div>`,
     faqs: [
       {
         question: "Do both service members receive BAH in a dual-military marriage?",
@@ -951,7 +953,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Property Management</h2>
 <p>Unless you're staying in the area, you'll need a property manager. Expect to pay <strong>8-10% of monthly rent</strong> for professional management. A good property manager handles tenant screening, rent collection, maintenance, and legal compliance. Several property management companies in E-town specialize in military rentals.</p>
 
-<div class="cta-box"><p>Interested in building wealth through real estate near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military investors identify and purchase the right properties. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Interested in building wealth through real estate near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military investors identify and purchase the right properties. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
   {
     slug: "pcs-checklist",
@@ -965,7 +967,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Review your orders carefully — confirm report date, authorized dependents, special instructions</li>
 <li>Contact Fort Knox Housing Services Office: <strong>(502) 624-3669</strong></li>
 <li>Begin researching housing: on-post (<a href="/fort-knox/knox-hills-housing/">Knox Hills</a>) vs. <a href="/fort-knox/off-post-housing/">off-post</a></li>
-<li>Contact <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> at (270) 735-3897 to begin home search</li>
+<li>Contact <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> at ${CKG.phone} to begin home search</li>
 <li>Start school research: <a href="/fort-knox/schools-military-families/">schools for military families</a></li>
 <li>Request <a href="/fort-knox/va-loans-elizabethtown/">VA loan</a> pre-approval if buying</li>
 <li>Review <a href="/fort-knox/dislocation-allowance/">DLA and moving allowances</a></li>
@@ -1021,6 +1023,6 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Explore <a href="/elizabethtown/things-to-do/">E-town's dining and activities</a></li>
 </ul>
 
-<div class="cta-box"><p>Starting your PCS to Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> should be one of your first calls. As a Marine veteran, Austin Kutz knows the PCS process and can have homes ready for you to tour from day one. Call <strong>(270) 735-3897</strong>.</p></div>`,
+<div class="cta-box"><p>Starting your PCS to Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> should be one of your first calls. As a Marine veteran, Austin Kutz knows the PCS process and can have homes ready for you to tour from day one. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
 ];
