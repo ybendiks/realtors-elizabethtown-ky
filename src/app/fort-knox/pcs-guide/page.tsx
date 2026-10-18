@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
+import Faq from "@/components/Faq";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
@@ -71,21 +72,6 @@ export default function PCSGuide() {
         relatedTitle: "Fort Knox Resources",
       }}
     >
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqData.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        }}
-      />
-
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
         PCS to Fort Knox — Complete Guide for 2026
       </h1>
@@ -374,16 +360,7 @@ export default function PCSGuide() {
         </li>
       </ul>
 
-      {/* FAQ Section */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Frequently Asked Questions</h2>
-      <div className="space-y-6 mb-8">
-        {faqData.map((faq, index) => (
-          <div key={index} className="border-b border-gray-border pb-4">
-            <h3 className="font-bold text-navy mb-2">{faq.question}</h3>
-            <p className="text-gray-body text-sm">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
+      <Faq items={faqData} />
 
       {/* CKG CTA */}
       <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>

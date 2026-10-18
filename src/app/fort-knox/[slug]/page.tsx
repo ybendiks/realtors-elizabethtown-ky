@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, SITE_NAME } from "@/lib/constants";
+import JsonLd from "@/components/JsonLd";
+import Faq from "@/components/Faq";
 import { fortKnoxPages } from "@/data/fort-knox";
+import { LAST_DATA_REVIEW } from "@/data/market-facts";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -56,11 +59,26 @@ export default async function FortKnoxDynamicPage({ params }: Props) {
         relatedTitle: "Fort Knox Guides",
       }}
     >
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          name: page.title,
+          description: page.metaDesc,
+          url: `${SITE_URL}/fort-knox/${page.slug}/`,
+          dateModified: LAST_DATA_REVIEW,
+          isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+          about: { "@type": "Place", name: "Fort Knox, Kentucky" },
+        }}
+      />
+
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">{page.title}</h1>
       <div
         className="prose-etown"
         dangerouslySetInnerHTML={{ __html: page.content }}
       />
+
+      {page.faqs && <Faq items={page.faqs} />}
     </ContentLayout>
   );
 }

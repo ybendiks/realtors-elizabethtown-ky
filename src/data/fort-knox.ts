@@ -1,9 +1,18 @@
+import type { FaqItem } from "@/components/Faq";
+
 export interface FortKnoxPage {
   slug: string;
   title: string;
   metaTitle: string;
   metaDesc: string;
   content: string;
+  /**
+   * Optional FAQ block, rendered below the body and emitted as FAQPage
+   * structured data. Question-and-answer pairs are the format most often
+   * surfaced in AI answers and People Also Ask, so the thinner pages carry
+   * these to earn their place rather than to pad word count.
+   */
+  faqs?: FaqItem[];
 }
 
 export const fortKnoxPages: FortKnoxPage[] = [
@@ -577,6 +586,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <div class="cta-box"><p>Need a VA lender recommendation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can connect you with trusted, VA-experienced lenders who know the Fort Knox market. Call <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Do I have to use a lender on post, or one that advertises to military buyers?",
+        answer:
+          "No. Any lender approved to originate VA loans can write your mortgage, and you are free to shop. What matters more than the marketing is whether the loan officer closes VA transactions routinely. VA appraisals, the funding fee and entitlement restoration all have handling quirks that an occasional VA lender gets wrong, and a delayed closing during a PCS window is expensive.",
+      },
+      {
+        question: "How many lenders should I get quotes from?",
+        answer:
+          "At least three, requested inside a short window. Rate shopping within a focused period is treated as a single inquiry event by the main credit scoring models, so comparing several lenders does not meaningfully damage your score. Compare lender credits and origination fees alongside the rate, not just the headline number.",
+      },
+      {
+        question: "What rate should I expect right now?",
+        answer:
+          "The Freddie Mac survey average for a 30-year fixed was 7.40% as of 15 October 2026. VA loans typically price slightly below conventional because of the government guarantee, but your actual rate depends on credit, loan size and the lender pricing that week. Treat any rate quoted in an article, including this one, as a starting reference rather than a quote.",
+      },
+    ],
   },
   {
     slug: "efmp-special-needs",
@@ -624,6 +650,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <div class="cta-box"><p>Have specific housing needs for your EFMP family? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can help you find a home that meets your family's unique requirements. Call <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Is EFMP enrollment optional?",
+        answer:
+          "No. Enrollment is mandatory for active-duty service members with a family member who has a qualifying medical, developmental or educational need. The program exists so that assignment decisions account for whether the required care is available at the gaining location. It is a planning tool, and enrolling does not by itself restrict your career.",
+      },
+      {
+        question: "How does EFMP affect where I can live near Fort Knox?",
+        answer:
+          "EFMP shapes the assignment itself rather than your choice of neighborhood, but the practical effect is that access to specific providers and school services becomes a filter on where you look. Families often prioritize proximity to the Elizabethtown medical corridor and verify school district service provision before committing to a neighborhood.",
+      },
+      {
+        question: "Should I verify school services before choosing a home?",
+        answer:
+          "Yes, and before making an offer rather than after. Service provision varies between the Hardin County and Elizabethtown Independent districts, and the district a home sits in is fixed by its address. That same district boundary also changes your property tax bill by roughly 20%, so it is worth confirming for two reasons at once.",
+      },
+    ],
   },
   {
     slug: "pet-friendly-housing",
@@ -671,6 +714,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <div class="cta-box"><p>Looking for a pet-friendly home near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can prioritize fenced yards, large lots, and pet-friendly neighborhoods in your home search. Call <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Is on-post housing at Fort Knox pet friendly?",
+        answer:
+          "Privatized on-post housing generally permits pets, with limits on the number kept, restrictions on certain breeds, and pet deposits or fees. These specifics are set by the housing operator rather than by the Army and they do change, so confirm the current policy with the housing office directly before you move rather than relying on any third-party summary.",
+      },
+      {
+        question: "Is it easier to rent or to buy with pets in the Elizabethtown area?",
+        answer:
+          "Buying removes the problem entirely, which is a real consideration for families with large or restricted-breed dogs. On the rental side the market has loosened: average asking rent was $1,380 in October 2026, down $95 year over year with 126 units available. A cooling market usually means landlords negotiate more readily on pet terms.",
+      },
+      {
+        question: "What should I budget for pet costs when renting here?",
+        answer:
+          "Expect a refundable pet deposit, a non-refundable pet fee, or monthly pet rent, and sometimes more than one of the three. Get which applies in writing before signing, because the combined first-month cost can differ by several hundred dollars between otherwise similar properties.",
+      },
+    ],
   },
   {
     slug: "recreation",
@@ -714,6 +774,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <div class="cta-box"><p>Want to live near the best outdoor recreation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can find homes near Fort Knox's best recreational amenities. Call <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Do you need a military ID to use Fort Knox recreation facilities?",
+        answer:
+          "Most on-post MWR facilities (fitness centers, pools, bowling, the golf course) require a valid DoD ID for access, and sponsored guests are generally admitted when accompanied. Access rules vary by facility and can change with force protection posture, so confirm with the specific facility before planning a visit with civilian guests.",
+      },
+      {
+        question: "What outdoor recreation is available off post near Elizabethtown?",
+        answer:
+          "Freeman Lake Park, Saunders Springs Nature Preserve and the Elizabethtown parks system provide trails, fishing and open space within about fifteen minutes of the installation, and none require installation access. Otter Creek Outdoor Recreation Area to the north offers larger-scale hiking and mountain biking.",
+      },
+      {
+        question: "Does proximity to recreation affect home values in the area?",
+        answer:
+          "Freeman Lake and the parks corridor are consistently cited by local buyers as desirable, and homes backing onto green space tend to sit at the upper end of their neighborhood range. Against a citywide median sale price of $304,005 as of September 2026, that premium is real but modest. Location relative to schools and the Fort Knox commute moves price considerably more.",
+      },
+    ],
   },
   {
     slug: "military-discounts",
@@ -758,6 +835,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Elizabethtown goes all-out for Veterans Day, with community events, special deals, and a genuine outpouring of appreciation. Many restaurants offer free meals for veterans and active duty, and local businesses run special promotions. It's one of the days that makes living in a military-supportive community like E-town feel especially rewarding.</p>
 
 <div class="cta-box"><p>Looking for a military-friendly community? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> is veteran-owned and deeply connected to the military community. Call Austin Kutz at <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Do real estate agents offer military discounts?",
+        answer:
+          "Some brokerages advertise rebates or reduced commission for military clients, and several national programs offer cash back after closing. These are legal in Kentucky, but amounts and conditions vary, and some require you to register with the program before you contact an agent. Ask up front, because enrolling afterwards usually disqualifies you.",
+      },
+      {
+        question: "Does a VA loan save money beyond the down payment?",
+        answer:
+          "Yes, in two ways that compound. There is no private mortgage insurance on a VA loan regardless of down payment, which on a median-priced home is a meaningful monthly saving against a low-down-payment conventional loan. VA rates also tend to run slightly below conventional. The offsetting cost is the VA funding fee, which can be financed into the loan.",
+      },
+      {
+        question: "Are there property tax breaks for veterans in Kentucky?",
+        answer:
+          "Kentucky homestead exemption, $49,100 of assessed value for the 2025-2026 tax period, is available to homeowners who are at least 65 or who are classified as totally disabled, which includes qualifying disabled veterans. It is not automatic. You apply through the Hardin County PVA, and it applies to all levies.",
+      },
+    ],
   },
   {
     slug: "dual-military-housing",
@@ -793,6 +887,23 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <div class="cta-box"><p>Dual military at Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military couples maximize their combined BAH in the E-town housing market. Call <strong>(270) 735-3897</strong>.</p></div>`,
+    faqs: [
+      {
+        question: "Do both service members receive BAH in a dual-military marriage?",
+        answer:
+          "Generally yes, though the rates differ by circumstance. Typically one member draws the with-dependents rate and the other the without-dependents rate when they have children, and both draw the without-dependents rate when they do not. Confirm your specific entitlement with finance, since the rules turn on details such as geographic separation.",
+      },
+      {
+        question: "Does combined BAH go further toward buying here?",
+        answer:
+          "Substantially. A single E-5 with dependents draws $1,647 a month, which no longer covers principal and interest on a median-priced home at current rates. That runs about $2,105 a month at 7.40% on $304,005. Two allowances change the arithmetic entirely and put most of the Elizabethtown market comfortably in range.",
+      },
+      {
+        question: "What happens to the house if one of us PCSs separately?",
+        answer:
+          "This is the risk worth planning for before you buy rather than after. Dual-military couples face a real chance of geographic separation, and a house bought on two incomes can become difficult to carry on one. Buying below your combined maximum, and deciding in advance whether you would rent it out, is the practical hedge. Several local brokerages handle property management for exactly this case.",
+      },
+    ],
   },
   {
     slug: "military-investment-properties",

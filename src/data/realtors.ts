@@ -1,92 +1,232 @@
+/**
+ * Competitor brokerage directory.
+ *
+ * Contact details were verified on 2026-10-18 against the Heart of Kentucky
+ * Association of REALTORS office roster (hkar.com), the authoritative local
+ * membership list, covering all 160 member offices.
+ *
+ * RULE: `address` and `phone` may only hold values confirmed against a named
+ * source. Where a listing could not be confirmed, both are null and
+ * `verification.status` is "unverified" — the page then omits the PostalAddress
+ * from its structured data rather than publishing an unverified business
+ * address. Do not fill these in from memory or from the previous values; four
+ * of the original eight entries were wrong, including one brokerage that is
+ * located 150 miles away in London, Kentucky.
+ */
+
+export interface RealtorVerification {
+  status: "verified" | "unverified";
+  checkedOn: string;
+  source?: string;
+  sourceUrl?: string;
+  /** Rendered to the user when status is "unverified". */
+  note?: string;
+}
+
 export interface Realtor {
   slug: string;
   name: string;
-  address: string;
-  phone: string;
+  /** Null when no address could be confirmed against a named source. */
+  address: string | null;
+  /** Null when no phone could be confirmed against a named source. */
+  phone: string | null;
   description: string;
   areas: string[];
   services: string[];
+  /** Verified facts rendered as a definition list above the prose. */
+  quickFacts?: Record<string, string>;
+  verification: RealtorVerification;
 }
+
+const HKAR = {
+  source: "Heart of Kentucky Association of REALTORS office roster",
+  sourceUrl: "https://www.hkar.com/",
+  checkedOn: "2026-10-18",
+};
 
 export const realtors: Realtor[] = [
   {
     slug: "schuler-bauer",
-    name: "Schuler Bauer Real Estate",
-    address: "1609 N Dixie Hwy, Elizabethtown, KY 42701",
+    name: "Schuler Bauer Real Estate Services ERA Powered",
+    address: "100 Drexler Circle, Elizabethtown, KY 42701",
     phone: "(270) 740-2100",
     description:
-      "Schuler Bauer Real Estate Services, now ERA Powered, is a large regional brokerage with roots in Southern Indiana and Louisville that expanded into the Elizabethtown market. Their E-town office on North Dixie Highway provides residential and commercial real estate services across Hardin County, with agents experienced in the local market. The firm offers buyer and seller representation along with relocation services for clients moving to the area.",
+      "Schuler Bauer Real Estate Services operates as an ERA Powered brokerage, a regional firm with roots in Southern Indiana and the Louisville metro that expanded south into Hardin County. It is the largest multi-office operation in this directory: alongside the Elizabethtown office on Drexler Circle, the firm runs a Brandenburg branch and a Louisville-area office, which matters if you are buying in one market and selling in another — the same brokerage can hold both sides of the move. The Elizabethtown office handles residential and commercial work across Hardin County and is a member of the Heart of Kentucky Association of REALTORS.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Brandenburg", "Louisville Metro"],
-    services: ["Residential Sales", "Commercial Real Estate", "Buyer Representation", "Relocation Services"],
+    services: [
+      "Residential Sales",
+      "Commercial Real Estate",
+      "Buyer Representation",
+      "Relocation Services",
+    ],
+    quickFacts: {
+      "Office": "100 Drexler Circle, Elizabethtown",
+      "Phone": "(270) 740-2100",
+      "Brand": "ERA Powered",
+      "Other area offices": "Brandenburg (270) 422-4687; Louisville (502) 339-1740",
+      "HKAR member": "Yes",
+    },
+    verification: { status: "verified", ...HKAR },
   },
   {
     slug: "olive-oak-realty",
     name: "Olive + Oak Realty",
-    address: "112 N Main St, Elizabethtown, KY 42701",
-    phone: "(270) 319-1416",
+    address: "310 College St, Elizabethtown, KY 42701",
+    phone: "(270) 751-7339",
     description:
-      "Olive + Oak Realty is a boutique real estate agency located in downtown Elizabethtown on North Main Street. Known for their active presence in the Fort Knox military relocation market, they work with service members and families PCSing to and from the area. The agency provides a personalized approach to buying and selling in Hardin County, with agents familiar with VA transactions and the unique needs of military clients.",
+      "Olive + Oak Realty is a boutique brokerage on College Street in Elizabethtown, working both residential and commercial sides of the Hardin County market. It is the most visible competitor in local search: it is the only Elizabethtown brokerage currently ranking on the first page for broad agent-comparison queries, which it does with editorial content rather than listing inventory. The firm markets itself actively to Fort Knox families relocating in and out of the area, and its agents work VA transactions as a matter of routine rather than as an occasional specialty.",
     areas: ["Elizabethtown", "Fort Knox", "Radcliff", "Vine Grove", "Hardin County"],
-    services: ["Residential Sales", "Military Relocation", "Buyer Representation", "VA Transaction Support"],
+    services: [
+      "Residential Sales",
+      "Commercial Real Estate",
+      "Military Relocation",
+      "VA Transaction Support",
+    ],
+    quickFacts: {
+      "Office": "310 College St, Elizabethtown",
+      "Phone": "(270) 751-7339",
+      "Type": "Independent boutique brokerage",
+      "Focus": "Residential, commercial, Fort Knox relocation",
+      "HKAR member": "Yes",
+    },
+    verification: { status: "verified", ...HKAR },
   },
   {
     slug: "remax-executive-group",
     name: "RE/MAX Executive Group",
-    address: "100 Chase Way, Ste 1, Elizabethtown, KY 42701",
+    address: "100 Chase Way, Suite 1, Elizabethtown, KY 42701",
     phone: "(270) 769-1655",
     description:
-      "RE/MAX Executive Group is a locally owned franchise of the national RE/MAX brand, operating from their office on Chase Way in Elizabethtown. The brokerage has a team of experienced agents serving the greater Hardin County market, including property management services for rental investors. With the backing of the RE/MAX network, agents have access to national marketing tools and referral networks while maintaining strong local market knowledge.",
+      "RE/MAX Executive Group is a locally owned franchise of the RE/MAX network, operating from Chase Way in Elizabethtown. The distinguishing feature against most of this directory is property management: it is one of the few local brokerages handling rentals as an ongoing service rather than only sales, which makes it a practical first call for investors buying to rent and for owners who are moving away but keeping a property. The office carries the RE/MAX referral network, which is useful for out-of-state buyers arriving without a local agent.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Fort Knox Area", "Central Kentucky"],
-    services: ["Residential Sales", "Property Management", "Buyer Representation", "Investment Properties"],
-  },
-  {
-    slug: "greystone-realtors",
-    name: "Greystone Realtors",
-    address: "Elizabethtown, KY 42701",
-    phone: "(270) 763-0025",
-    description:
-      "Greystone Realtors is an independent real estate agency that has served the Elizabethtown and Hardin County market for years. As a locally owned brokerage, they focus on residential sales throughout the E-town area and surrounding communities. Their agents bring familiarity with Hardin County neighborhoods, pricing trends, and the local buying and selling process.",
-    areas: ["Elizabethtown", "Hardin County", "Radcliff", "Vine Grove"],
-    services: ["Residential Sales", "Buyer Representation", "Listing Services"],
-  },
-  {
-    slug: "network-realty",
-    name: "Network Realty",
-    address: "307 N Mulberry St, Elizabethtown, KY 42701",
-    phone: "(270) 769-6315",
-    description:
-      "Network Realty is a local real estate agency with an office on North Mulberry Street in Elizabethtown. They serve buyers and sellers throughout Hardin County and the surrounding region, with agents who know the local neighborhoods and market conditions. The brokerage also has a presence in Radcliff, providing coverage for clients looking near the Fort Knox area.",
-    areas: ["Elizabethtown", "Radcliff", "Hardin County", "Vine Grove"],
-    services: ["Residential Sales", "Buyer Representation", "Listing Services"],
+    services: [
+      "Residential Sales",
+      "Property Management",
+      "Buyer Representation",
+      "Investment Properties",
+    ],
+    quickFacts: {
+      "Office": "100 Chase Way, Suite 1, Elizabethtown",
+      "Phone": "(270) 769-1655",
+      "Fax": "(270) 765-2238",
+      "Brand": "RE/MAX franchise, locally owned",
+      "HKAR member": "Yes",
+    },
+    verification: { status: "verified", ...HKAR },
   },
   {
     slug: "keller-williams-elizabethtown",
     name: "Keller Williams Heartland Realty",
-    address: "950 N Mulberry St, Ste 290, Elizabethtown, KY 42701",
+    address: "950 N Mulberry Street, Suite 290, Elizabethtown, KY 42701",
     phone: "(270) 986-7296",
     description:
-      "Keller Williams Heartland Realty is the Elizabethtown-area franchise of the nationally recognized Keller Williams brand. Located on North Mulberry Street, the office supports a team of agents with the technology platforms, training, and marketing resources that Keller Williams is known for. Their agents serve the full Hardin County market with specialties ranging from first-time buyers to investment properties.",
-    areas: ["Elizabethtown", "Hardin County", "Radcliff", "Fort Knox Area", "Central Kentucky"],
-    services: ["Residential Sales", "Buyer Representation", "Investment Properties", "First-Time Buyers"],
+      "Keller Williams Heartland is the Elizabethtown-area Keller Williams market center, on North Mulberry Street. It operates a second office in Shepherdsville, which extends its reach up the I-65 corridor toward the Louisville suburbs — relevant if your search spans both Hardin and Bullitt counties rather than sitting inside E-town. Keller Williams market centers are agent-heavy by design, so the practical consideration here is choosing the individual agent rather than the office: the brand supplies the technology and training, but experience varies widely within a market center of this size.",
+    areas: [
+      "Elizabethtown",
+      "Hardin County",
+      "Radcliff",
+      "Fort Knox Area",
+      "Bullitt County",
+    ],
+    services: [
+      "Residential Sales",
+      "Buyer Representation",
+      "Investment Properties",
+      "First-Time Buyers",
+    ],
+    quickFacts: {
+      "Office": "950 N Mulberry St, Suite 290, Elizabethtown",
+      "Phone": "(270) 986-7296",
+      "Brand": "Keller Williams market center",
+      "Other area offices": "Shepherdsville (502) 252-1183",
+      "HKAR member": "Yes",
+    },
+    verification: { status: "verified", ...HKAR },
+  },
+  {
+    slug: "coldwell-banker-legacy",
+    name: "Coldwell Banker McMahan",
+    address: "1690 Ring Road, Suite 230, Elizabethtown, KY 42701",
+    phone: "(270) 234-8600",
+    description:
+      "Coldwell Banker McMahan is the Coldwell Banker office serving Elizabethtown, located in the Ring Road commercial corridor. It brings the Coldwell Banker relocation and referral network to Hardin County, which is the main reason to consider it over an independent: incoming buyers transferred by a national employer are often routed through exactly this kind of affiliate. The office handles residential buying and selling across the county.",
+    areas: ["Elizabethtown", "Hardin County", "Radcliff", "Central Kentucky"],
+    services: [
+      "Residential Sales",
+      "Buyer Representation",
+      "Relocation Services",
+      "Listing Services",
+    ],
+    quickFacts: {
+      "Office": "1690 Ring Road, Suite 230, Elizabethtown",
+      "Phone": "(270) 234-8600 / (270) 234-1341",
+      "Brand": "Coldwell Banker affiliate",
+      "HKAR member": "Yes",
+    },
+    verification: {
+      status: "verified",
+      ...HKAR,
+      note:
+        "Previously published here as 'Coldwell Banker Legacy Group' with phone (270) 765-0001. "
+        + "Neither matched any HKAR member office. Coldwell Banker Legacy Group is a Bowling "
+        + "Green firm; the Coldwell Banker office actually serving Elizabethtown is McMahan. "
+        + "The URL slug still reads 'coldwell-banker-legacy' and should be migrated.",
+    },
+  },
+  {
+    slug: "greystone-realtors",
+    name: "Greystone Realtors",
+    address: null,
+    phone: null,
+    description:
+      "We previously listed Greystone Realtors as an independent Elizabethtown brokerage. On review we could not confirm that listing against the Heart of Kentucky Association of REALTORS office roster, the Kentucky Secretary of State business registry, or any current web presence, and the phone number we had published did not resolve. Rather than keep contact details we cannot stand behind, we have removed them. If you represent this brokerage and it is still trading, we would be glad to correct and restore the entry.",
+    areas: ["Elizabethtown", "Hardin County"],
+    services: [],
+    verification: {
+      status: "unverified",
+      ...HKAR,
+      note:
+        "Not present in the 160-office HKAR roster. Previously published address "
+        + "'Elizabethtown, KY 42701' (locality only) and phone (270) 763-0025, neither "
+        + "confirmable. Candidate for removal — needs an owner decision on the URL.",
+    },
+  },
+  {
+    slug: "network-realty",
+    name: "Network Realty",
+    address: null,
+    phone: null,
+    description:
+      "We previously listed Network Realty with an office on North Mulberry Street in Elizabethtown. That listing could not be confirmed against the Heart of Kentucky Association of REALTORS office roster on review, so we have removed the contact details rather than publish information we cannot verify. If you represent this brokerage, we would be glad to correct and restore the entry.",
+    areas: ["Elizabethtown", "Hardin County"],
+    services: [],
+    verification: {
+      status: "unverified",
+      ...HKAR,
+      note:
+        "Not present in the 160-office HKAR roster. Previously published "
+        + "'307 N Mulberry St' and (270) 769-6315, neither confirmable. "
+        + "Candidate for removal — needs an owner decision on the URL.",
+    },
   },
   {
     slug: "century-21-advantage",
     name: "Century 21 Advantage Realty",
-    address: "5375 N Dixie Hwy, Elizabethtown, KY 42701",
-    phone: "(270) 765-4846",
+    address: null,
+    phone: null,
     description:
-      "Century 21 Advantage Realty brings the Century 21 national brand to the Elizabethtown market from their North Dixie Highway office. The brokerage offers residential real estate services with the marketing reach and referral network of one of the most recognized names in real estate. Their agents serve Hardin County and surrounding areas with both buyer and seller representation.",
-    areas: ["Elizabethtown", "Hardin County", "Central Kentucky"],
-    services: ["Residential Sales", "Buyer Representation", "Listing Services", "Relocation"],
-  },
-  {
-    slug: "coldwell-banker-legacy",
-    name: "Coldwell Banker Legacy Group",
-    address: "Elizabethtown, KY 42701",
-    phone: "(270) 765-0001",
-    description:
-      "Coldwell Banker Legacy Group brings the resources and national brand recognition of Coldwell Banker to the Elizabethtown and greater Central Kentucky market. The brokerage provides residential real estate services with agents experienced in the local market. Backed by Coldwell Banker's technology, marketing, and global referral network, the team serves buyers and sellers across Hardin County and surrounding communities.",
-    areas: ["Elizabethtown", "Hardin County", "Central Kentucky", "Southern Kentucky"],
-    services: ["Residential Sales", "Buyer Representation", "Relocation Services", "Listing Services"],
+      "Century 21 Advantage Realty is a Heart of Kentucky Association of REALTORS member, but its office is in London, Kentucky — roughly 150 miles southeast of Elizabethtown — not in Hardin County. We previously listed it with an Elizabethtown address, which was incorrect. For a Century 21 office actually serving this market, Century 21 Bluegrass Realty Pros operates in Elizabethtown.",
+    areas: ["London, KY"],
+    services: [],
+    verification: {
+      status: "unverified",
+      ...HKAR,
+      note:
+        "HKAR roster gives 911 N. Main St, London, KY 40741, phone (606) 878-0021. The "
+        + "previously published '5375 N Dixie Hwy, Elizabethtown' was wrong, and the "
+        + "published phone (270) 765-4846 is HKAR's own association number. This brokerage "
+        + "does not serve Elizabethtown and arguably should not hold a page in this "
+        + "directory — needs an owner decision.",
+    },
   },
 ];
