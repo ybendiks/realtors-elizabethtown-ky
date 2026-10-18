@@ -5,6 +5,8 @@ import ContentLayout from "@/components/ContentLayout";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { realtors } from "@/data/realtors";
+import { agentsFor } from "@/data/agents";
+import AgentList from "@/components/AgentList";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -74,6 +76,19 @@ export default async function RealtorProfilePage({ params }: Props) {
           ...(realtor.verification.status === "verified" && realtor.phone
             ? { telephone: realtor.phone }
             : {}),
+          // Named agents as Person, not a second RealEstateAgent: nesting one
+          // agency inside another would describe each person as their own
+          // brokerage.
+          ...(agentsFor(realtor.slug).length
+            ? {
+                employee: agentsFor(realtor.slug).map((a) => ({
+                  "@type": "Person",
+                  name: a.name,
+                  telephone: a.phone,
+                  worksFor: { "@type": "RealEstateAgent", name: realtor.name },
+                })),
+              }
+            : {}),
         }}
       />
 
@@ -117,6 +132,8 @@ export default async function RealtorProfilePage({ params }: Props) {
           <li key={area}>{area}</li>
         ))}
       </ul>
+
+      <AgentList brokerageSlug={realtor.slug} />
 
       <h2 className="text-xl font-bold text-navy mb-3">Services</h2>
       <ul className="list-disc pl-6 space-y-1 text-gray-body mb-8">

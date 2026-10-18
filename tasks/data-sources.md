@@ -85,3 +85,75 @@ presents E-town rents as low, while the sourced average is higher and the market
 - Compass & Key Group review count (hardcoded `"25"` in `aggregateRating` structured data).
 - Per-bedroom rent medians.
 - School enrollment figures in `src/data/schools.ts` (no source year on any of them).
+
+---
+
+## Agent roster (added 2026-10-18)
+
+**Source:** Heart of Kentucky Association of REALTORS public member directory,
+`hkar.com`, agent lister at `index.php?src=directory&view=rets_agent&...&pos=OFFSET,15,643`.
+Retrieved 2026-10-18. Stored in `src/data/agents.ts`.
+
+**Fields taken:** name, phone, HKAR membership class (REALTOR, Designated
+REALTOR, Managing agent), HKAR member id. Nothing else. The public listing
+carries no tenure, sales volume or licence number, so none is published.
+
+### The lister is non-deterministic, and one pass is not enough
+
+Repeated requests to the same `pos=` offset return different members, so a
+single sweep silently under-reports. Two independent single passes returned
+different Real Broker rosters, one of which omitted Austin Kutz entirely.
+
+The published set is the **union of eight passes**, continued until all 643
+association members had been seen at least once. Convergence was measured, not
+assumed: distinct members seen went 608 -> 637 -> 643 across the passes, and
+the per-brokerage counts stopped moving at 122.
+
+**If this is ever refreshed, run it to convergence the same way.** A single
+pass will produce a plausible but incomplete roster, which is the worst kind of
+wrong because nothing about it looks broken.
+
+### Counts
+
+| Brokerage | Agents published |
+|---|---|
+| RE/MAX Executive Group | 41 |
+| Schuler Bauer ERA Powered (Elizabethtown) | 32 |
+| Keller Williams Heartland | 19 |
+| Olive + Oak Realty | 11 |
+| Coldwell Banker McMahan | 9 |
+| Compass and Key Group | 2 |
+| **Total** | **114** |
+
+### Compass and Key Group: 2 of 10, deliberately
+
+CKG is not a separate HKAR office. It trades under **Real Broker, LLC**, which
+has 10 HKAR members spread across several independent teams in this area.
+Only two are confirmed to be Compass and Key Group:
+
+- **Austin Kutz** (HKAR 35704) - roster phone `270-735-3897` matches `CKG.phone` exactly.
+- **Steve Nikirk** (HKAR 33303) - his own Google Business Profile reads
+  "Steve Nikirk, Compass and Key Group - Real Broker, LLC" at 617 N Mulberry St #105B,
+  the same address as CKG.
+
+The other eight Real Broker members (Andrew Pruitt, Christopher Harris, Ciara
+Hardesty, Denise Wisdom, Kelly Crutcher, Melody Duvall, Terry Brown, Thue
+Ignacio) are **excluded**. They may or may not be part of the team; the roster
+does not say, and inflating the client's apparent headcount with unaffiliated
+agents would be exactly the kind of unverified claim this file exists to prevent.
+
+### Cross-validation
+
+Four of the published names independently appear on competing pages that rank
+for the target term, which is a useful sanity check on the roster:
+Jerry Dempsey and Jessica Parnell on fastexpert's top-agents list, Douglas
+Clinkenbeard and Stephanie Wade on Zillow's Elizabethtown agent list.
+
+### Deliberately not done: individual agent pages
+
+Name, phone and membership class is roughly 60 words of substance. Three
+brokerage pages were removed from this site days ago for exactly that thinness,
+and adding 114 pages of it would repeat the mistake at scale. Agents are listed
+on their brokerage's page and counted on the comparison page. Individual pages
+only become defensible if a source for per-agent detail (tenure, transaction
+history, specialisms) is found and logged here first.
