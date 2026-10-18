@@ -41,6 +41,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Find a Realtor", href: "/realtors/" },
+                {
+                  label: "Best Realtors Compared",
+                  href: "/realtors/best-realtors-elizabethtown-ky/",
+                },
                 { label: "Neighborhoods", href: "/elizabethtown/neighborhoods/" },
                 { label: "Schools", href: "/elizabethtown/schools/" },
                 { label: "Fort Knox Guide", href: "/fort-knox/" },

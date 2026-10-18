@@ -25,6 +25,7 @@ export const NAV_ITEMS = [
     href: "/realtors/",
     children: [
       { label: "Find a Realtor", href: "/realtors/" },
+      { label: "Best Realtors Compared", href: "/realtors/best-realtors-elizabethtown-ky/" },
       { label: "Compass and Key Group", href: "/realtors/compass-and-key-group/" },
     ],
   },

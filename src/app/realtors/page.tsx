@@ -64,6 +64,19 @@ export default function DirectoryPage() {
             County neighborhoods, pricing trends, and local market conditions — along with the negotiation
             skills and responsiveness that make the process smooth.
           </p>
+          <div className="border-l-4 border-gold bg-gold/5 p-4 mb-4">
+            <p className="text-gray-body">
+              Not sure where to start?{" "}
+              <Link
+                href="/realtors/best-realtors-elizabethtown-ky/"
+                className="text-navy font-semibold hover:text-gold-dark"
+              >
+                Compare the best realtors in Elizabethtown side by side
+              </Link>{" "}
+              &mdash; what each agency is, verified against the local REALTORS association roster,
+              and which situations each one suits.
+            </p>
+          </div>
           <p className="text-gray-body mb-4">
             For military families PCSing to{" "}
             <Link href="/fort-knox/" className="text-navy font-semibold hover:text-gold-dark">
