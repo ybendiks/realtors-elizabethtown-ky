@@ -80,7 +80,7 @@ export default function PropertyTaxes() {
         </li>
         <li>
           <strong>In the Elizabethtown Independent Schools district (inside city limits):</strong>{" "}
-          <strong>${PROPERTY_TAX_RATES.etownIndependentSchool.toFixed(2)} per $100</strong> &mdash; the
+          <strong>${PROPERTY_TAX_RATES.etownIndependentSchool.toFixed(2)} per $100</strong>: the
           school levy is the whole difference.
         </li>
         <li>
@@ -94,7 +94,7 @@ export default function PropertyTaxes() {
         <li>
           <strong>City of Elizabethtown rate:</strong>{" "}
           ${PROPERTY_TAX_RATES.components.cityElizabethtown.toFixed(4)} per $100. Other cities in the
-          county differ sharply &mdash; Radcliff{" "}
+          county differ sharply, Radcliff{" "}
           ${PROPERTY_TAX_RATES.otherCityRates.radcliff.toFixed(3)}, Vine Grove{" "}
           ${PROPERTY_TAX_RATES.otherCityRates.vineGrove.toFixed(3)}, West Point{" "}
           ${PROPERTY_TAX_RATES.otherCityRates.westPoint.toFixed(3)}.
@@ -121,7 +121,7 @@ export default function PropertyTaxes() {
         <strong>
           {annualTax(MEDIAN_SALE_PRICE.value, PROPERTY_TAX_RATES.etownIndependentSchool)}
         </strong>{" "}
-        in the Elizabethtown Independent district &mdash; a difference of about{" "}
+        in the Elizabethtown Independent district, a difference of about{" "}
         {usd(
           Math.round(
             (MEDIAN_SALE_PRICE.value / 100) *
@@ -257,8 +257,8 @@ export default function PropertyTaxes() {
           >
             Compass and Key Group
           </Link>{" "}
-          helps buyers understand the full picture — purchase price, taxes, insurance, and
-          maintenance — so you can budget with confidence. Whether you are buying with a VA loan
+          helps buyers understand the full picture: purchase price, taxes, insurance, and
+          maintenance, so you can budget with confidence. Whether you are buying with a VA loan
           or conventional financing, their veteran-owned team can walk you through the numbers
           specific to any property in Hardin County.
         </p>

@@ -27,25 +27,25 @@ export const fortKnoxPages: FortKnoxPage[] = [
 
 <p>Here are the top neighborhoods and communities near Fort Knox, ranked by the factors that matter most to military families.</p>
 
-<h2>Radcliff — Closest to Post (5 Minutes)</h2>
-<p>If minimizing your commute is the top priority, <a href="/fort-knox/radcliff-ky/">Radcliff</a> is your best bet. Located just outside the gates, Radcliff offers the shortest drive to post — about <strong>5 minutes</strong> from most neighborhoods. Home prices are among the most affordable in the area, typically ranging from <strong>$140,000 to $240,000</strong>, which means E-5 and E-6 BAH rates comfortably cover a mortgage. The trade-off is fewer amenities and shopping compared to Elizabethtown, but the convenience factor is hard to beat for active duty families.</p>
+<h2>Radcliff, Closest to Post (5 Minutes)</h2>
+<p>If minimizing your commute is the top priority, <a href="/fort-knox/radcliff-ky/">Radcliff</a> is your best bet. Located just outside the gates, Radcliff offers the shortest drive to post, about <strong>5 minutes</strong> from most neighborhoods. Home prices are among the most affordable in the area, typically ranging from <strong>$140,000 to $240,000</strong>, which means E-5 and E-6 BAH rates comfortably cover a mortgage. The trade-off is fewer amenities and shopping compared to Elizabethtown, but the convenience factor is hard to beat for active duty families.</p>
 <p>Schools in Radcliff are served by Hardin County Schools (Purple Star designated), with <a href="/elizabethtown/schools/north-hardin-high/">North Hardin High School</a> and <a href="/elizabethtown/schools/john-hardin-high/">John Hardin High School</a> serving the area.</p>
 
-<h2>Elizabethtown — Best Overall (15-20 Minutes)</h2>
+<h2>Elizabethtown, Best Overall (15-20 Minutes)</h2>
 <p>Elizabethtown is the most popular choice for military families who want a balance of convenience, amenities, and quality of life. The <strong>15-20 minute commute</strong> to Fort Knox via US-31W is manageable, and E-town offers the widest selection of <a href="/elizabethtown/neighborhoods/">neighborhoods</a>, schools, shopping, and dining in the area.</p>
 <p>Top E-town neighborhoods for military families include:</p>
 <ul>
-<li><a href="/elizabethtown/neighborhoods/helmwood-heights/"><strong>Helmwood Heights</strong></a> — Established, family-friendly, $180K-$280K, great schools</li>
-<li><a href="/elizabethtown/neighborhoods/pear-orchard/"><strong>Pear Orchard</strong></a> — Family-oriented, near shopping, $200K-$320K</li>
-<li><a href="/elizabethtown/neighborhoods/nicholas-ridge/"><strong>Nicholas Ridge</strong></a> — Newer construction, move-in ready, $260K-$380K</li>
-<li><a href="/elizabethtown/neighborhoods/foxborough-estates/"><strong>Foxborough Estates</strong></a> — Modern, upscale, $250K-$380K, ideal for O-3+</li>
-<li><a href="/elizabethtown/neighborhoods/freeman-creek-estates/"><strong>Freeman Creek Estates</strong></a> — Near Freeman Lake, 15-min commute, $230K-$380K</li>
+<li><a href="/elizabethtown/neighborhoods/helmwood-heights/"><strong>Helmwood Heights</strong></a>: Established, family-friendly, $180K-$280K, great schools</li>
+<li><a href="/elizabethtown/neighborhoods/pear-orchard/"><strong>Pear Orchard</strong></a>: Family-oriented, near shopping, $200K-$320K</li>
+<li><a href="/elizabethtown/neighborhoods/nicholas-ridge/"><strong>Nicholas Ridge</strong></a>: Newer construction, move-in ready, $260K-$380K</li>
+<li><a href="/elizabethtown/neighborhoods/foxborough-estates/"><strong>Foxborough Estates</strong></a>: Modern, upscale, $250K-$380K, ideal for O-3+</li>
+<li><a href="/elizabethtown/neighborhoods/freeman-creek-estates/"><strong>Freeman Creek Estates</strong></a>: Near Freeman Lake, 15-min commute, $230K-$380K</li>
 </ul>
 
-<h2>Vine Grove — Budget-Friendly (10 Minutes)</h2>
-<p><a href="/fort-knox/vine-grove-ky/">Vine Grove</a> splits the difference between Radcliff's proximity and E-town's amenities. About <strong>10 minutes</strong> from post, this small community offers affordable housing — typically <strong>$130,000 to $220,000</strong> — in a quiet setting. It's a strong option for junior enlisted families and anyone who wants maximum BAH pocket money. The trade-off is limited local commercial options, though E-town's shopping is just 10-15 minutes south.</p>
+<h2>Vine Grove, Budget-Friendly (10 Minutes)</h2>
+<p><a href="/fort-knox/vine-grove-ky/">Vine Grove</a> splits the difference between Radcliff's proximity and E-town's amenities. About <strong>10 minutes</strong> from post, this small community offers affordable housing, typically <strong>$130,000 to $220,000</strong>: in a quiet setting. It's a strong option for junior enlisted families and anyone who wants maximum BAH pocket money. The trade-off is limited local commercial options, though E-town's shopping is just 10-15 minutes south.</p>
 
-<h2>Brandenburg — Space and Privacy (20 Minutes)</h2>
+<h2>Brandenburg, Space and Privacy (20 Minutes)</h2>
 <p><a href="/fort-knox/brandenburg-ky/">Brandenburg</a> is the choice for families who want land, space, and a rural feel. Located about <strong>20 minutes</strong> west of Fort Knox along the Ohio River, Brandenburg offers larger lots and lower prices than anywhere else in the area. Meade County schools serve the area. It's best for families who prioritize outdoor living and don't mind a slightly longer commute.</p>
 
 <h2>How to Choose: Decision Framework</h2>
@@ -69,7 +69,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Three School Systems</h2>
 
 <h3>Hardin County Schools</h3>
-<p>The largest district in the area, <a href="/elizabethtown/schools/hardin-county-schools/">Hardin County Schools</a> serves <strong>14,714 students</strong> across <strong>28 schools</strong>. Every school in the district has earned the <strong>Purple Star Award</strong> — a military-friendly designation recognizing schools that provide support for military-connected students. This includes designated school liaison officers, transition programs for students arriving mid-year, and staff trained in the unique social-emotional needs of military children.</p>
+<p>The largest district in the area, <a href="/elizabethtown/schools/hardin-county-schools/">Hardin County Schools</a> serves <strong>14,714 students</strong> across <strong>28 schools</strong>. Every school in the district has earned the <strong>Purple Star Award</strong>: a military-friendly designation recognizing schools that provide support for military-connected students. This includes designated school liaison officers, transition programs for students arriving mid-year, and staff trained in the unique social-emotional needs of military children.</p>
 <p>Key high schools: <a href="/elizabethtown/schools/central-hardin-high/">Central Hardin High School</a>, <a href="/elizabethtown/schools/john-hardin-high/">John Hardin High School</a>, <a href="/elizabethtown/schools/north-hardin-high/">North Hardin High School</a></p>
 
 <h3>Elizabethtown Independent Schools</h3>
@@ -79,7 +79,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p><a href="/elizabethtown/schools/fort-knox-dodea/">DoDEA (Department of Defense Education Activity) schools</a> are located on Fort Knox and serve military children living on-post. These schools are specifically designed for the military community, with staff who understand frequent moves and deployments. DoDEA schools follow their own curriculum and standards.</p>
 
 <h2>Interstate Compact on Educational Opportunity</h2>
-<p>Kentucky participates in the Interstate Compact on Educational Opportunity for Military Children, which helps smooth the transition between schools during PCS moves. This compact addresses issues like enrollment, records transfer, graduation requirements, and course placement — reducing the administrative headaches that military families often face.</p>
+<p>Kentucky participates in the Interstate Compact on Educational Opportunity for Military Children, which helps smooth the transition between schools during PCS moves. This compact addresses issues like enrollment, records transfer, graduation requirements, and course placement, reducing the administrative headaches that military families often face.</p>
 
 <h2>School Liaison Officers</h2>
 <p>Fort Knox has a School Liaison Officer (SLO) who serves as the connection between military families and local school districts. The SLO can help with school selection, enrollment questions, special education needs, and transition support. Contact the SLO through Army Community Service at Fort Knox.</p>
@@ -88,9 +88,9 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Your school choice depends largely on where you live:</p>
 <ul>
 <li><strong>On-post:</strong> DoDEA schools (automatic enrollment for on-post residents)</li>
-<li><strong>Radcliff:</strong> Hardin County Schools — North Hardin or John Hardin zones</li>
-<li><strong>Elizabethtown (most areas):</strong> Hardin County Schools — Central Hardin zone</li>
-<li><strong>Downtown E-town:</strong> Elizabethtown Independent — smaller classes, focused district</li>
+<li><strong>Radcliff:</strong> Hardin County Schools, North Hardin or John Hardin zones</li>
+<li><strong>Elizabethtown (most areas):</strong> Hardin County Schools, Central Hardin zone</li>
+<li><strong>Downtown E-town:</strong> Elizabethtown Independent, smaller classes, focused district</li>
 </ul>
 
 <div class="cta-box"><p>Want to buy a home in the right school district? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military families find homes in their preferred attendance zones. As a veteran, Austin Kutz understands that school quality is a top priority. Call <strong>${CKG.phone}</strong>.</p></div>`,
@@ -100,7 +100,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Fort Knox to Elizabethtown Commute Guide",
     metaTitle: "Fort Knox to Elizabethtown Commute",
     metaDesc: "Fort Knox to Elizabethtown commute guide. Route options, drive times, gate traffic tips, and what to expect commuting between E-town and post.",
-    content: `<p>The commute from Elizabethtown to Fort Knox is one of the most common daily drives in the area — and one of the most manageable. At <strong>15-20 minutes</strong> under normal conditions, it's short enough to be a non-issue for most families but long enough to feel like you're leaving post behind at the end of the day.</p>
+    content: `<p>The commute from Elizabethtown to Fort Knox is one of the most common daily drives in the area, and one of the most manageable. At <strong>15-20 minutes</strong> under normal conditions, it's short enough to be a non-issue for most families but long enough to feel like you're leaving post behind at the end of the day.</p>
 
 <h2>Primary Route: US-31W</h2>
 <p>The main route from Elizabethtown to Fort Knox is <strong>US-31W (North Dixie Highway)</strong>, which runs directly between the two cities. It's a straightforward, mostly four-lane drive through Radcliff before reaching the Fort Knox gates. From central E-town, the drive takes <strong>15-20 minutes</strong> depending on your exact starting point and which gate you use.</p>
@@ -109,9 +109,9 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Fort Knox has multiple gates, and your commute time can vary based on which one you use and when. During morning rush (0600-0730), expect some backup at the main gates. Tips for minimizing gate wait times:</p>
 <ul>
 <li>Have your CAC/ID ready before you reach the gate</li>
-<li>Some gates have shorter lines than others — ask colleagues which gate they prefer</li>
+<li>Some gates have shorter lines than others, so ask colleagues which gate they prefer</li>
 <li>Arriving before 0630 or after 0730 typically avoids the worst backup</li>
-<li>Random vehicle inspections can add time — budget a 5-minute buffer</li>
+<li>Random vehicle inspections can add time, so budget a 5-minute buffer</li>
 </ul>
 
 <h2>Drive Times from E-town Neighborhoods</h2>
@@ -133,20 +133,20 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "radcliff-ky",
-    title: "Living in Radcliff, KY — Fort Knox's Closest Community",
+    title: "Living in Radcliff, KY, Fort Knox's Closest Community",
     metaTitle: "Radcliff KY Guide | Living Near Fort Knox",
-    metaDesc: "Guide to living in Radcliff, KY — the closest community to Fort Knox. Housing, schools, shopping, and what military families need to know.",
+    metaDesc: "Guide to living in Radcliff, KY, the closest community to Fort Knox. Housing, schools, shopping, and what military families need to know.",
     content: `<p>Radcliff is Fort Knox's next-door neighbor and the default choice for military families who want the shortest possible commute to post. With a population of roughly <strong>23,000</strong>, this Hardin County city sits directly adjacent to Fort Knox's main gates, making the commute to post as short as <strong>5 minutes</strong> from most neighborhoods.</p>
 
 <h2>Housing in Radcliff</h2>
 <p>Radcliff offers some of the most affordable housing in the Fort Knox area. The median home price typically falls between <strong>$140,000 and $240,000</strong>, which means junior enlisted BAH rates can comfortably cover a mortgage. Rental options are also abundant, with apartments and single-family rentals available starting around <strong>$800-$1,100/month</strong> for two to three bedrooms.</p>
-<p>The housing stock is a mix of established homes from the 1970s-1990s and some newer construction. Many homes show the character you'd expect in a military-adjacent community — practical, affordable, and functional.</p>
+<p>The housing stock is a mix of established homes from the 1970s-1990s and some newer construction. Many homes show the character you'd expect in a military-adjacent community: practical, affordable, and functional.</p>
 
 <h2>Schools</h2>
 <p>Radcliff is served by the Hardin County Schools district. <a href="/elizabethtown/schools/north-hardin-high/">North Hardin High School</a> and <a href="/elizabethtown/schools/john-hardin-high/">John Hardin High School</a> are the primary high schools serving the Radcliff area. All Hardin County schools carry the Purple Star designation, reflecting their commitment to supporting military families through transitions.</p>
 
 <h2>Shopping &amp; Dining</h2>
-<p>Radcliff has basic commercial services — grocery stores, fast food, some restaurants, and a Walmart. For a wider selection of shopping, dining, and entertainment, most residents drive the 10-15 minutes south to <a href="/elizabethtown/">Elizabethtown</a> and its Ring Road corridor. The Fort Knox Commissary and PX are also accessible for on-post shopping.</p>
+<p>Radcliff has basic commercial services: grocery stores, fast food, some restaurants, and a Walmart. For a wider selection of shopping, dining, and entertainment, most residents drive the 10-15 minutes south to <a href="/elizabethtown/">Elizabethtown</a> and its Ring Road corridor. The Fort Knox Commissary and PX are also accessible for on-post shopping.</p>
 
 <h2>Who Radcliff Is Best For</h2>
 <ul>
@@ -163,14 +163,14 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "vine-grove-ky",
-    title: "Living in Vine Grove, KY — Affordable Living Near Fort Knox",
+    title: "Living in Vine Grove, KY, Affordable Living Near Fort Knox",
     metaTitle: "Vine Grove KY Guide | Near Fort Knox",
-    metaDesc: "Guide to living in Vine Grove, KY — an affordable small town about 10 minutes from Fort Knox with a quiet, community feel.",
+    metaDesc: "Guide to living in Vine Grove, KY: an affordable small town about 10 minutes from Fort Knox with a quiet, community feel.",
     content: `<p>Vine Grove is a small community of about <strong>6,500 residents</strong> located roughly <strong>10 minutes</strong> from Fort Knox. It offers a quieter, more affordable alternative to both Radcliff and Elizabethtown, appealing to military families and civilians who want a small-town atmosphere without straying far from post.</p>
 
 <h2>Housing</h2>
 <p>Vine Grove is one of the most affordable communities in the Fort Knox area. Home prices typically range from <strong>$130,000 to $220,000</strong>, making it possible for even E-4 and E-5 families to buy a home with significant BAH left over each month. Rental rates are also very competitive, generally <strong>$700-$1,000/month</strong> for a two to three bedroom.</p>
-<p>The housing stock consists primarily of established homes — ranch and two-story designs from the 1970s through 2000s. Lot sizes tend to be generous by suburban standards, and the small-town setting means less traffic and more breathing room.</p>
+<p>The housing stock consists primarily of established homes, ranch and two-story designs from the 1970s through 2000s. Lot sizes tend to be generous by suburban standards, and the small-town setting means less traffic and more breathing room.</p>
 
 <h2>Community Character</h2>
 <p>Vine Grove has a genuinely small-town feel. It's the kind of place where the local coffee shop knows your order and the neighbors keep an eye on things. The pace is slower, the streets are quiet, and the community is tight-knit. For families coming from larger installations, the small-town atmosphere can be a welcome change.</p>
@@ -179,7 +179,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Vine Grove is served by the <a href="/elizabethtown/schools/hardin-county-schools/">Hardin County Schools</a> district. Students attend local elementary schools before progressing to area middle and high schools. The Purple Star designation ensures military families receive transition support.</p>
 
 <h2>Amenities</h2>
-<p>Vine Grove has basic commercial services — a grocery store, gas stations, some restaurants, and local shops. For a full range of shopping, dining, and entertainment, residents typically drive to <a href="/elizabethtown/">Elizabethtown</a> (10-15 minutes south) or access the Fort Knox Commissary and PX on post. The limited local commercial options are a trade-off for the affordability and quiet character.</p>
+<p>Vine Grove has basic commercial services: a grocery store, gas stations, some restaurants, and local shops. For a full range of shopping, dining, and entertainment, residents typically drive to <a href="/elizabethtown/">Elizabethtown</a> (10-15 minutes south) or access the Fort Knox Commissary and PX on post. The limited local commercial options are a trade-off for the affordability and quiet character.</p>
 
 <h2>Who Vine Grove Is Best For</h2>
 <ul>
@@ -193,13 +193,13 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "brandenburg-ky",
-    title: "Living in Brandenburg, KY — Rural Living Near Fort Knox",
+    title: "Living in Brandenburg, KY, Rural Living Near Fort Knox",
     metaTitle: "Brandenburg KY Guide | Near Fort Knox",
     metaDesc: "Guide to living in Brandenburg, KY. Rural Ohio River town about 20 minutes from Fort Knox with affordable homes and outdoor recreation.",
     content: `<p>Brandenburg is the Meade County seat, a small Ohio River town of about <strong>2,800 residents</strong> located roughly <strong>20 minutes</strong> west of Fort Knox. It's the most rural of the Fort Knox-adjacent communities, offering a distinctly different lifestyle for military families who want space, privacy, and a connection to the outdoors.</p>
 
 <h2>Housing</h2>
-<p>Brandenburg offers some of the most affordable real estate in the region, with home prices typically ranging from <strong>$120,000 to $250,000</strong>. What sets Brandenburg apart is the lot sizes — you can find multi-acre properties here at prices that would barely buy a quarter-acre lot in more suburban communities. For families who want land, a garden, space for animals, or simply room to spread out, Brandenburg delivers.</p>
+<p>Brandenburg offers some of the most affordable real estate in the region, with home prices typically ranging from <strong>$120,000 to $250,000</strong>. What sets Brandenburg apart is the lot sizes. You can find multi-acre properties here at prices that would barely buy a quarter-acre lot in more suburban communities. For families who want land, a garden, space for animals, or simply room to spread out, Brandenburg delivers.</p>
 
 <h2>Outdoor Recreation</h2>
 <p>The Ohio River provides the backdrop for Brandenburg's outdoor lifestyle. Fishing, boating, and river recreation are popular pastimes. Otter Creek Outdoor Recreation Area (technically on the Fort Knox reservation) offers additional outdoor activities including hiking, camping, fishing, and mountain biking. If your idea of a perfect weekend involves being outdoors rather than at a shopping mall, Brandenburg might be your community.</p>
@@ -225,7 +225,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Selling Your Home During a PCS From Fort Knox",
     metaTitle: "Selling Your Home at PCS | Fort Knox",
     metaDesc: "Guide to selling your home when PCSing from Fort Knox. Timeline, pricing strategy, SCRA protections, and tips for military sellers.",
-    content: `<p>Getting PCS orders is exciting — but if you own a home near Fort Knox, it adds a layer of complexity to your move. Selling on a military timeline requires strategic pricing, efficient preparation, and an agent who understands the urgency. As a Marine Corps veteran, <a href="/realtors/compass-and-key-group/">Austin Kutz at Compass and Key Group</a> has helped numerous military families sell quickly and confidently when orders come down.</p>
+    content: `<p>Getting PCS orders is exciting, but if you own a home near Fort Knox, it adds a layer of complexity to your move. Selling on a military timeline requires strategic pricing, efficient preparation, and an agent who understands the urgency. As a Marine Corps veteran, <a href="/realtors/compass-and-key-group/">Austin Kutz at Compass and Key Group</a> has helped numerous military families sell quickly and confidently when orders come down.</p>
 
 <h2>Timeline: From Orders to Sale</h2>
 <p>The typical military sale timeline near Fort Knox looks like this:</p>
@@ -254,7 +254,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Military members may qualify for capital gains tax exclusions even if they haven't lived in the home for the typical 2-of-5-year requirement. The Military Families Tax Relief Act allows service members to suspend the 5-year period during certain qualifying service periods. Consult a tax professional familiar with military benefits.</p>
 
 <h2>Remote Selling</h2>
-<p>If you need to leave before the sale closes, your agent can manage the process remotely — handling showings, negotiations, inspections, and closing coordination. Power of attorney arrangements can be set up for closing if needed. This is where having an experienced military relocation agent makes all the difference.</p>
+<p>If you need to leave before the sale closes, your agent can manage the process remotely: handling showings, negotiations, inspections, and closing coordination. Power of attorney arrangements can be set up for closing if needed. This is where having an experienced military relocation agent makes all the difference.</p>
 
 <div class="cta-box"><p>PCSing and need to sell? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> specializes in military home sales on tight timelines. Call Austin Kutz at <strong>${CKG.phone}</strong> as soon as you receive orders.</p></div>`,
   },
@@ -263,15 +263,15 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Buying Your First Home with a VA Loan Near Fort Knox",
     metaTitle: "First Home VA Loan | Fort Knox Guide",
     metaDesc: "Guide to buying your first home with a VA loan near Fort Knox. Step-by-step process, BAH budgets by rank, and what your money buys in E-town.",
-    content: `<p>Buying your first home is a major milestone, and if you're active duty at Fort Knox, you have a significant advantage: the VA home loan. Combined with your BAH, buying a home in the Elizabethtown area is not only possible — it often makes more financial sense than renting. Here's how to make it happen.</p>
+    content: `<p>Buying your first home is a major milestone, and if you're active duty at Fort Knox, you have a significant advantage: the VA home loan. Combined with your BAH, buying a home in the Elizabethtown area is not only possible. It often makes more financial sense than renting. Here's how to make it happen.</p>
 
 <h2>VA Loan Basics for First-Time Buyers</h2>
 <ul>
-<li><strong>Zero down payment</strong> — You can buy a home with $0 down</li>
-<li><strong>No PMI</strong> — No private mortgage insurance, saving $100-$300/month</li>
-<li><strong>Competitive interest rates</strong> — VA rates are typically lower than conventional</li>
-<li><strong>Relaxed credit requirements</strong> — More flexible than conventional loans</li>
-<li><strong>No prepayment penalty</strong> — Pay off your loan early without fees</li>
+<li><strong>Zero down payment</strong>: You can buy a home with $0 down</li>
+<li><strong>No PMI</strong>: No private mortgage insurance, saving $100-$300/month</li>
+<li><strong>Competitive interest rates</strong>: VA rates are typically lower than conventional</li>
+<li><strong>Relaxed credit requirements</strong>: More flexible than conventional loans</li>
+<li><strong>No prepayment penalty</strong>: Pay off your loan early without fees</li>
 </ul>
 
 <h2>What Your BAH Can Buy in Elizabethtown</h2>
@@ -281,19 +281,19 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>With a VA loan at current rates, an E-5's BAH can support a purchase price of roughly <strong>$200,000-$230,000</strong>. In Elizabethtown, that opens up established neighborhoods like <a href="/elizabethtown/neighborhoods/helmwood-heights/">Helmwood Heights</a>, <a href="/elizabethtown/neighborhoods/the-cedars/">The Cedars</a>, and <a href="/elizabethtown/neighborhoods/ring-road/">Ring Road area</a> homes. In <a href="/fort-knox/radcliff-ky/">Radcliff</a> or <a href="/fort-knox/vine-grove-ky/">Vine Grove</a>, you'll find even more options with BAH to spare.</p>
 
 <h3>O-3 with Dependents (~$2,421/mo BAH)</h3>
-<p>An O-3's BAH supports roughly <strong>$270,000-$310,000</strong> in purchasing power. This opens up newer neighborhoods like <a href="/elizabethtown/neighborhoods/nicholas-ridge/">Nicholas Ridge</a>, <a href="/elizabethtown/neighborhoods/covington-ridge/">Covington Ridge</a>, and <a href="/elizabethtown/neighborhoods/foxborough-estates/">Foxborough Estates</a> — move-in-ready homes with modern finishes.</p>
+<p>An O-3's BAH supports roughly <strong>$270,000-$310,000</strong> in purchasing power. This opens up newer neighborhoods like <a href="/elizabethtown/neighborhoods/nicholas-ridge/">Nicholas Ridge</a>, <a href="/elizabethtown/neighborhoods/covington-ridge/">Covington Ridge</a>, and <a href="/elizabethtown/neighborhoods/foxborough-estates/">Foxborough Estates</a>, move-in-ready homes with modern finishes.</p>
 
 <h3>O-5 with Dependents (~$2,943/mo BAH)</h3>
 <p>Senior officers can look at premium properties in <a href="/elizabethtown/neighborhoods/thousand-oaks/">Thousand Oaks</a> or new construction in <a href="/elizabethtown/neighborhoods/foxwood/">Foxwood</a>, with purchasing power in the <strong>$320,000-$380,000+</strong> range.</p>
 
 <h2>The VA Loan Process: Step by Step</h2>
 <ol>
-<li><strong>Get your Certificate of Eligibility (COE)</strong> — Available through eBenefits or your lender can pull it</li>
-<li><strong>Get pre-approved</strong> — Find a VA-experienced lender (CKG can provide referrals)</li>
-<li><strong>Find your home</strong> — Work with an agent who knows the VA process</li>
-<li><strong>Make an offer</strong> — Your agent negotiates on your behalf</li>
-<li><strong>VA appraisal</strong> — Required by the VA to ensure the home meets minimum property requirements</li>
-<li><strong>Close on your home</strong> — Sign the paperwork, get the keys</li>
+<li><strong>Get your Certificate of Eligibility (COE)</strong>: Available through eBenefits or your lender can pull it</li>
+<li><strong>Get pre-approved</strong>: Find a VA-experienced lender (CKG can provide referrals)</li>
+<li><strong>Find your home</strong>: Work with an agent who knows the VA process</li>
+<li><strong>Make an offer</strong>: Your agent negotiates on your behalf</li>
+<li><strong>VA appraisal</strong>: Required by the VA to ensure the home meets minimum property requirements</li>
+<li><strong>Close on your home</strong>: Sign the paperwork and get the keys</li>
 </ol>
 
 <h2>Common First-Timer Mistakes</h2>
@@ -310,7 +310,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
     slug: "amenities",
     title: "Fort Knox Commissary, PX & On-Post Amenities",
     metaTitle: "Fort Knox Amenities & Services Guide",
-    metaDesc: "Guide to Fort Knox on-post amenities — commissary, PX, MWR facilities, gyms, Ireland Army Health Clinic, child care, and recreation.",
+    metaDesc: "Guide to Fort Knox on-post amenities: commissary, PX, MWR facilities, gyms, Ireland Army Health Clinic, child care, and recreation.",
     content: `<p>Fort Knox offers a comprehensive range of on-post amenities that serve active duty, retirees, DoD civilians, and their families. Whether you live on-post at <a href="/fort-knox/knox-hills-housing/">Knox Hills</a> or off-post in <a href="/elizabethtown/">Elizabethtown</a>, these facilities are available to you and can significantly reduce your cost of living.</p>
 
 <h2>Commissary</h2>
@@ -329,7 +329,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Swimming Pools:</strong> Indoor and outdoor pools for lap swimming and family recreation</li>
 <li><strong>Otter Creek Outdoor Recreation:</strong> Camping, hiking, fishing, mountain biking, and outdoor adventure programs</li>
 <li><strong>Bowling Center:</strong> Lanes, arcade, and food service</li>
-<li><strong>Golf:</strong> Lindsey Golf Course — 18 holes at affordable military rates</li>
+<li><strong>Golf:</strong> Lindsey Golf Course, 18 holes at affordable military rates</li>
 <li><strong>Libraries:</strong> On-post library with programs for all ages</li>
 </ul>
 
@@ -428,10 +428,10 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Temporary Housing During PCS to Fort Knox",
     metaTitle: "Temporary Housing at Fort Knox | PCS",
     metaDesc: "Temporary housing options during a PCS to Fort Knox. TLE, on-post lodging, extended stay hotels, and tips for making it work with family.",
-    content: `<p>Most PCS moves to Fort Knox involve a period of temporary housing — the gap between arriving at your new duty station and moving into permanent housing. Understanding your options and planning ahead can make this transition period much smoother for your family.</p>
+    content: `<p>Most PCS moves to Fort Knox involve a period of temporary housing, the gap between arriving at your new duty station and moving into permanent housing. Understanding your options and planning ahead can make this transition period much smoother for your family.</p>
 
 <h2>Temporary Lodging Expense (TLE)</h2>
-<p><strong>TLE</strong> reimburses lodging and meal expenses for up to <strong>10 days</strong> (combined at origin and destination) during a PCS move. The daily rates are set by the Joint Travel Regulation and vary by location. At Fort Knox, the TLE rate covers most on-post and nearby hotel options. Keep all receipts — you'll need them for reimbursement.</p>
+<p><strong>TLE</strong> reimburses lodging and meal expenses for up to <strong>10 days</strong> (combined at origin and destination) during a PCS move. The daily rates are set by the Joint Travel Regulation and vary by location. At Fort Knox, the TLE rate covers most on-post and nearby hotel options. Keep all receipts. You'll need them for reimbursement.</p>
 
 <h2>On-Post Lodging</h2>
 <p>Fort Knox has on-post lodging managed through IHG Army Hotels. Rooms are available for PCSing families at government rates. Availability can be tight during peak PCS season (May-August), so <strong>book as early as possible</strong> once you have orders. The on-post location eliminates the commute hassle during in-processing.</p>
@@ -444,14 +444,14 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <ul>
 <li>Hotels along the I-65 corridor in E-town offer weekly rates</li>
 <li>Extended-stay properties near Fort Knox gates provide kitchenette units</li>
-<li>Some hotels offer military/government rates — always ask</li>
+<li>Some hotels offer military/government rates, so always ask</li>
 </ul>
 
 <h2>Tips for Temporary Housing with Family</h2>
 <ul>
 <li><strong>Book early:</strong> PCS season (May-August) fills up fast. Reserve as soon as you have orders.</li>
 <li><strong>Choose wisely:</strong> A kitchenette saves significant money on meals for families.</li>
-<li><strong>Bring essentials:</strong> Pack a "first night" bag with sheets, towels, basic cookware, and kids' comfort items in your POV — don't put everything in HHG.</li>
+<li><strong>Bring essentials:</strong> Pack a "first night" bag with sheets, towels, basic cookware, and kids' comfort items in your POV, don't put everything in HHG.</li>
 <li><strong>Location matters:</strong> Staying near Fort Knox or in E-town gives you the best access to in-processing, house hunting, and daily needs.</li>
 <li><strong>Pets:</strong> Confirm pet policies before booking. Pet-friendly options exist but may be limited.</li>
 <li><strong>Start house hunting immediately:</strong> Use your temporary housing period to tour <a href="/elizabethtown/neighborhoods/">neighborhoods</a>, meet with your agent, and make housing decisions while you're boots-on-ground.</li>
@@ -464,10 +464,10 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "DLA & Military Moving Allowances for Fort Knox PCS",
     metaTitle: "DLA & Moving Allowances | Fort Knox PCS",
     metaDesc: "Guide to DLA, TLE, MALT, and PPM reimbursement for PCS moves to Fort Knox. Understand your military moving allowances and budget your move.",
-    content: `<p>A PCS move comes with significant expenses, but the military provides several allowances to offset costs. Understanding these allowances helps you budget effectively and potentially pocket some savings — especially if you're strategic about your move to Fort Knox.</p>
+    content: `<p>A PCS move comes with significant expenses, but the military provides several allowances to offset costs. Understanding these allowances helps you budget effectively and potentially pocket some savings, especially if you're strategic about your move to Fort Knox.</p>
 
 <h2>Dislocation Allowance (DLA)</h2>
-<p><strong>DLA</strong> is a lump-sum payment designed to help offset the miscellaneous expenses of a PCS move — things like security deposits, utility hook-up fees, and other costs associated with establishing a new household. The amount varies by pay grade and dependency status, generally ranging from <strong>$2,000 to $5,000+</strong>. DLA is paid automatically with your PCS orders and doesn't require receipts.</p>
+<p><strong>DLA</strong> is a lump-sum payment designed to help offset the miscellaneous expenses of a PCS move: things like security deposits, utility hook-up fees, and other costs associated with establishing a new household. The amount varies by pay grade and dependency status, generally ranging from <strong>$2,000 to $5,000+</strong>. DLA is paid automatically with your PCS orders and doesn't require receipts.</p>
 
 <h2>Temporary Lodging Expense (TLE)</h2>
 <p><strong>TLE</strong> reimburses temporary lodging and meal expenses for up to <strong>10 days</strong> during your PCS. This covers the gap between vacating old housing and occupying new housing. The reimbursement covers actual expenses up to the published per diem rates. See our <a href="/fort-knox/temporary-housing/">temporary housing guide</a> for lodging options at Fort Knox.</p>
@@ -500,10 +500,10 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "renting-vs-buying",
-    title: "Renting vs. Buying Near Fort Knox — A Military Decision Guide",
+    title: "Renting vs. Buying Near Fort Knox: A Military Decision Guide",
     metaTitle: "Renting vs Buying Near Fort Knox",
     metaDesc: "Should military families rent or buy near Fort Knox? Decision framework based on tour length, BAH, and the Elizabethtown housing market.",
-    content: `<p>Rent or buy? It's one of the first questions every military family faces during a PCS. The answer depends on your tour length, financial situation, and personal preferences — but the Elizabethtown market's affordability makes buying more viable here than at many installations.</p>
+    content: `<p>Rent or buy? It's one of the first questions every military family faces during a PCS. The answer depends on your tour length, financial situation, and personal preferences, but the Elizabethtown market's affordability makes buying more viable here than at many installations.</p>
 
 <h2>The General Rule</h2>
 <ul>
@@ -511,7 +511,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>2-3 years:</strong> Buying can work, depending on the market and your financial situation</li>
 <li><strong>Under 2 years:</strong> Renting is usually the safer choice</li>
 </ul>
-<p>These are guidelines, not rules. Your personal situation — savings, credit, family needs, and career plans — should drive the decision.</p>
+<p>These are guidelines, not rules. Your personal situation (savings, credit, family needs, and career plans) should drive the decision.</p>
 
 <h2>The Case for Buying</h2>
 <ul>
@@ -519,7 +519,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>BAH coverage:</strong> In E-town, <a href="/fort-knox/bah-rates/">BAH</a> for E-5 and above typically covers a full mortgage payment with taxes and insurance. You're essentially getting free housing AND building equity.</li>
 <li><strong>Appreciation:</strong> Hardin County home values have appreciated <strong>3-5% annually</strong> in recent years. On a $250K home, that's $7,500-$12,500 in equity growth per year.</li>
 <li><strong>VA loan advantage:</strong> <a href="/fort-knox/va-loans-elizabethtown/">VA loans</a> offer 0% down and no PMI, reducing the upfront cost of buying significantly.</li>
-<li><strong>Investment potential:</strong> When you PCS, you can rent the home to the next military family — Fort Knox ensures steady rental demand.</li>
+<li><strong>Investment potential:</strong> When you PCS, you can rent the home to the next military family, Fort Knox ensures steady rental demand.</li>
 </ul>
 
 <h2>The Case for Renting</h2>
@@ -640,7 +640,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li><strong>Accessibility:</strong> Look for single-story homes or those with first-floor master bedrooms if mobility is a concern</li>
 <li><strong>Proximity to medical care:</strong> <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> near Ring Road provide the closest access to Baptist Health Hardin and medical offices</li>
 <li><strong>School district:</strong> Verify that the school serving your chosen neighborhood has the specific programs your child needs</li>
-<li><strong><a href="/fort-knox/knox-hills-housing/">Knox Hills</a> on-post:</strong> May be able to accommodate specific housing needs — contact the housing office to discuss requirements</li>
+<li><strong><a href="/fort-knox/knox-hills-housing/">Knox Hills</a> on-post:</strong> May be able to accommodate specific housing needs, so contact the housing office to discuss requirements</li>
 </ul>
 
 <h2>EFMP Resources at Fort Knox</h2>
@@ -675,7 +675,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Pet-Friendly Housing Near Fort Knox",
     metaTitle: "Pet-Friendly Housing Near Fort Knox",
     metaDesc: "Guide to pet-friendly housing near Fort Knox. Knox Hills pet policy, off-post rentals, breed restrictions, dog parks, and vet services.",
-    content: `<p>If you're PCSing to Fort Knox with pets — and let's be honest, most military families have at least one furry family member — finding pet-friendly housing is a top priority. The good news is that the Elizabethtown area is generally pet-friendly, with options for both renters and buyers.</p>
+    content: `<p>If you're PCSing to Fort Knox with pets (and let's be honest, most military families have at least one furry family member) finding pet-friendly housing is a top priority. The good news is that the Elizabethtown area is generally pet-friendly, with options for both renters and buyers.</p>
 
 <h2>Knox Hills On-Post Pet Policy</h2>
 <p><a href="/fort-knox/knox-hills-housing/">Knox Hills</a> allows pets with some restrictions:</p>
@@ -694,8 +694,8 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <ul>
 <li>Many landlords in the E-town area accept pets with a pet deposit ($200-$500 typical)</li>
 <li>Monthly pet rent of $25-$50 per pet is common</li>
-<li><strong>Breed restrictions</strong> are common — certain breeds (pit bulls, rottweilers, etc.) may be excluded from some properties and HOAs</li>
-<li>Always disclose your pets upfront — hiding them risks eviction</li>
+<li><strong>Breed restrictions</strong> are common: certain breeds (pit bulls, rottweilers, etc.) may be excluded from some properties and HOAs</li>
+<li>Always disclose your pets upfront, hiding them risks eviction</li>
 <li>Get pet policies in writing before signing a lease</li>
 </ul>
 
@@ -703,7 +703,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <p>Homeownership gives you the most freedom with pets. When buying near Fort Knox, consider:</p>
 <ul>
 <li><strong>Yard size:</strong> <a href="/elizabethtown/neighborhoods/foxwood/">Foxwood</a> (1+ acre lots) and <a href="/fort-knox/brandenburg-ky/">Brandenburg</a> (rural acreage) offer the most space</li>
-<li><strong>Fenced yards:</strong> Many E-town homes have fenced backyards — prioritize this in your search</li>
+<li><strong>Fenced yards:</strong> Many E-town homes have fenced backyards, prioritize this in your search</li>
 <li><strong>HOA pet restrictions:</strong> Some subdivisions have breed or size restrictions in their HOA covenants</li>
 <li><strong>Proximity to parks:</strong> <a href="/elizabethtown/parks-recreation/freeman-lake-park/">Freeman Lake Park</a> offers excellent walking trails for dogs</li>
 </ul>
@@ -738,7 +738,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
     slug: "recreation",
     title: "Fort Knox Recreation & Outdoor Activities",
     metaTitle: "Fort Knox Recreation & Outdoors",
-    metaDesc: "Guide to recreation at Fort Knox — Otter Creek, MWR programs, fitness centers, sports leagues, fishing, hunting, and family activities.",
+    metaDesc: "Guide to recreation at Fort Knox: Otter Creek, MWR programs, fitness centers, sports leagues, fishing, hunting, and family activities.",
     content: `<p>Fort Knox and the surrounding area offer abundant outdoor recreation and fitness opportunities. Whether you're into hiking, fishing, team sports, or just staying fit, the MWR (Morale, Welfare, and Recreation) program and the natural beauty of central Kentucky have you covered.</p>
 
 <h2>Otter Creek Outdoor Recreation Area</h2>
@@ -769,10 +769,10 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <h2>Off-Post Recreation</h2>
 <p>Beyond Fort Knox, the area offers excellent outdoor recreation:</p>
 <ul>
-<li><a href="/elizabethtown/parks-recreation/freeman-lake-park/">Freeman Lake Park</a> — E-town's flagship park with trails, fishing, and playgrounds</li>
-<li><a href="/elizabethtown/parks-recreation/saunders-springs/">Saunders Springs Nature Preserve</a> — Hiking through unique geological features</li>
+<li><a href="/elizabethtown/parks-recreation/freeman-lake-park/">Freeman Lake Park</a>: E-town's flagship park with trails, fishing, and playgrounds</li>
+<li><a href="/elizabethtown/parks-recreation/saunders-springs/">Saunders Springs Nature Preserve</a>, Hiking through unique geological features</li>
 <li>Ohio River access through <a href="/fort-knox/brandenburg-ky/">Brandenburg</a></li>
-<li>Nolin Lake and Rough River Lake — larger lakes within 30-45 minutes for boating and fishing</li>
+<li>Nolin Lake and Rough River Lake, larger lakes within 30-45 minutes for boating and fishing</li>
 </ul>
 
 <div class="cta-box"><p>Want to live near the best outdoor recreation? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> can find homes near Fort Knox's best recreational amenities. Call <strong>${CKG.phone}</strong>.</p></div>`,
@@ -810,7 +810,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Retail boutiques downtown</li>
 <li>Service providers (hair salons, dry cleaners, etc.)</li>
 </ul>
-<p>Always carry your military ID and ask — most businesses are happy to offer a discount even if it's not posted.</p>
+<p>Always carry your military ID and ask, most businesses are happy to offer a discount even if it's not posted.</p>
 
 <h2>National Chain Discounts</h2>
 <p>Major retailers and restaurants with E-town locations that offer military discounts:</p>
@@ -860,26 +860,26 @@ export const fortKnoxPages: FortKnoxPage[] = [
     title: "Dual Military Housing Guide for Fort Knox",
     metaTitle: "Dual Military Housing | Fort Knox",
     metaDesc: "Housing guide for dual military couples at Fort Knox. BAH rules, housing options, and financial strategies for two-income military families.",
-    content: `<p>Dual military couples face unique housing challenges and opportunities. If both spouses are stationed at Fort Knox — or if one is at Knox while the other is at a different installation — understanding your BAH situation and housing options is essential for making smart financial decisions.</p>
+    content: `<p>Dual military couples face unique housing challenges and opportunities. If both spouses are stationed at Fort Knox, or if one is at Knox while the other is at a different installation, understanding your BAH situation and housing options is essential for making smart financial decisions.</p>
 
 <h2>BAH for Dual Military Couples</h2>
 <p>When both spouses are active duty:</p>
 <ul>
 <li><strong>With dependents (children):</strong> One spouse receives BAH with dependents rate; the other receives BAH without dependents rate</li>
 <li><strong>Without dependents:</strong> Both receive BAH at the without dependents rate for their respective pay grades</li>
-<li><strong>Combined BAH:</strong> The total housing budget for a dual military couple is often substantial — potentially <strong>$2,500-$4,000+/month</strong> depending on ranks</li>
+<li><strong>Combined BAH:</strong> The total housing budget for a dual military couple is often substantial: potentially <strong>$2,500-$4,000+/month</strong> depending on ranks</li>
 </ul>
 <p>Check current <a href="/fort-knox/bah-rates/">Fort Knox BAH rates</a> for specific figures by rank.</p>
 
 <h2>Housing Options</h2>
 <h3>On-Post (Knox Hills)</h3>
-<p><a href="/fort-knox/knox-hills-housing/">Knox Hills housing</a> is based on rank and family size. One spouse's BAH is forfeited for on-post housing; the other spouse keeps their BAH as pocket income. This can be a strategic financial play — especially if the higher-ranking spouse's BAH covers on-post housing while the lower-ranking spouse's BAH goes straight to savings or investments.</p>
+<p><a href="/fort-knox/knox-hills-housing/">Knox Hills housing</a> is based on rank and family size. One spouse's BAH is forfeited for on-post housing; the other spouse keeps their BAH as pocket income. This can be a strategic financial play, especially if the higher-ranking spouse's BAH covers on-post housing while the lower-ranking spouse's BAH goes straight to savings or investments.</p>
 
 <h3>Off-Post Buying</h3>
 <p>With combined BAH, dual military couples have significant purchasing power in the <a href="/elizabethtown/">Elizabethtown market</a>. A combined budget of $3,000+/month can support a home in any E-town neighborhood, including premium options like <a href="/elizabethtown/neighborhoods/thousand-oaks/">Thousand Oaks</a> or <a href="/elizabethtown/neighborhoods/foxwood/">Foxwood</a>. This is an excellent opportunity to build equity in a quality property.</p>
 
 <h3>Off-Post Renting</h3>
-<p>Some dual military couples choose to rent, keeping maximum flexibility for potential separate assignments. In E-town, renting on combined BAH leaves substantial pocket money — $1,000+/month in many cases — that can go toward savings, investments, or debt payoff.</p>
+<p>Some dual military couples choose to rent, keeping maximum flexibility for potential separate assignments. In E-town, renting on combined BAH leaves substantial pocket money ($1,000+/month in many cases) that can go toward savings, investments, or debt payoff.</p>
 
 <h2>Financial Strategy</h2>
 <ul>
@@ -944,10 +944,10 @@ export const fortKnoxPages: FortKnoxPage[] = [
 
 <h2>Best Investment Neighborhoods</h2>
 <ul>
-<li><a href="/elizabethtown/neighborhoods/helmwood-heights/"><strong>Helmwood Heights</strong></a> — Affordable, family-friendly, high rental demand</li>
-<li><a href="/elizabethtown/neighborhoods/ring-road/"><strong>Ring Road area</strong></a> — Central, convenient, appeals to a wide range of renters</li>
-<li><a href="/fort-knox/radcliff-ky/"><strong>Radcliff</strong></a> — Closest to post, highest military tenant concentration</li>
-<li><a href="/elizabethtown/neighborhoods/pear-orchard/"><strong>Pear Orchard</strong></a> — Family-friendly, near schools and shopping</li>
+<li><a href="/elizabethtown/neighborhoods/helmwood-heights/"><strong>Helmwood Heights</strong></a>: Affordable, family-friendly, high rental demand</li>
+<li><a href="/elizabethtown/neighborhoods/ring-road/"><strong>Ring Road area</strong></a>: Central, convenient, appeals to a wide range of renters</li>
+<li><a href="/fort-knox/radcliff-ky/"><strong>Radcliff</strong></a>, Closest to post, highest military tenant concentration</li>
+<li><a href="/elizabethtown/neighborhoods/pear-orchard/"><strong>Pear Orchard</strong></a>: Family-friendly, near schools and shopping</li>
 </ul>
 
 <h2>Property Management</h2>
@@ -962,9 +962,9 @@ export const fortKnoxPages: FortKnoxPage[] = [
     metaDesc: "Complete PCS checklist and timeline for moving to Fort Knox. 90-day countdown from receiving orders through settling in at your new duty station.",
     content: `<p>A PCS move has a lot of moving parts (pun intended). This checklist breaks down everything you need to do from the moment you receive orders to Fort Knox through your first week at your new duty station. Print it out, tape it to the fridge, and check things off as you go.</p>
 
-<h2>90 Days Out — Receive Orders</h2>
+<h2>90 Days Out, Receive Orders</h2>
 <ul>
-<li>Review your orders carefully — confirm report date, authorized dependents, special instructions</li>
+<li>Review your orders carefully: confirm report date, authorized dependents, special instructions</li>
 <li>Contact Fort Knox Housing Services Office: <strong>(502) 624-3669</strong></li>
 <li>Begin researching housing: on-post (<a href="/fort-knox/knox-hills-housing/">Knox Hills</a>) vs. <a href="/fort-knox/off-post-housing/">off-post</a></li>
 <li>Contact <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> at ${CKG.phone} to begin home search</li>
@@ -974,7 +974,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Schedule household goods (HHG) pickup or begin planning PPM/DITY move</li>
 </ul>
 
-<h2>60 Days Out — Plan &amp; Prepare</h2>
+<h2>60 Days Out, Plan &amp; Prepare</h2>
 <ul>
 <li>Finalize housing decision (buy, rent, or on-post)</li>
 <li>If buying: make offer, begin closing process</li>
@@ -990,7 +990,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 <li>Research <a href="/fort-knox/military-spouse-employment/">spouse employment</a> options</li>
 </ul>
 
-<h2>30 Days Out — Final Prep</h2>
+<h2>30 Days Out, Final Prep</h2>
 <ul>
 <li>Confirm all moving arrangements</li>
 <li>Set up utilities at new home (if off-post): electric, water, internet, gas</li>

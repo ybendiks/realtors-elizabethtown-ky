@@ -7,7 +7,7 @@
  *
  * RULE: `address` and `phone` may only hold values confirmed against a named
  * source. Where a listing could not be confirmed, both are null and
- * `verification.status` is "unverified" — the page then omits the PostalAddress
+ * `verification.status` is "unverified", the page then omits the PostalAddress
  * from its structured data rather than publishing an unverified business
  * address. Do not fill these in from memory or from the previous values; four
  * of the original eight entries were wrong, including one brokerage that is
@@ -51,7 +51,7 @@ export const realtors: Realtor[] = [
     address: "100 Drexler Circle, Elizabethtown, KY 42701",
     phone: "(270) 740-2100",
     description:
-      "Schuler Bauer Real Estate Services operates as an ERA Powered brokerage, a regional firm with roots in Southern Indiana and the Louisville metro that expanded south into Hardin County. It is the largest multi-office operation in this directory: alongside the Elizabethtown office on Drexler Circle, the firm runs a Brandenburg branch and a Louisville-area office, which matters if you are buying in one market and selling in another — the same brokerage can hold both sides of the move. The Elizabethtown office handles residential and commercial work across Hardin County and is a member of the Heart of Kentucky Association of REALTORS.",
+      "Schuler Bauer Real Estate Services operates as an ERA Powered brokerage, a regional firm with roots in Southern Indiana and the Louisville metro that expanded south into Hardin County. It is the largest multi-office operation in this directory: alongside the Elizabethtown office on Drexler Circle, the firm runs a Brandenburg branch and a Louisville-area office, which matters if you are buying in one market and selling in another, the same brokerage can hold both sides of the move. The Elizabethtown office handles residential and commercial work across Hardin County and is a member of the Heart of Kentucky Association of REALTORS.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Brandenburg", "Louisville Metro"],
     services: [
       "Residential Sales",
@@ -120,7 +120,7 @@ export const realtors: Realtor[] = [
     address: "950 N Mulberry Street, Suite 290, Elizabethtown, KY 42701",
     phone: "(270) 986-7296",
     description:
-      "Keller Williams Heartland is the Elizabethtown-area Keller Williams market center, on North Mulberry Street. It operates a second office in Shepherdsville, which extends its reach up the I-65 corridor toward the Louisville suburbs — relevant if your search spans both Hardin and Bullitt counties rather than sitting inside E-town. Keller Williams market centers are agent-heavy by design, so the practical consideration here is choosing the individual agent rather than the office: the brand supplies the technology and training, but experience varies widely within a market center of this size.",
+      "Keller Williams Heartland is the Elizabethtown-area Keller Williams market center, on North Mulberry Street. It operates a second office in Shepherdsville, which extends its reach up the I-65 corridor toward the Louisville suburbs, relevant if your search spans both Hardin and Bullitt counties rather than sitting inside E-town. Keller Williams market centers are agent-heavy by design, so the practical consideration here is choosing the individual agent rather than the office: the brand supplies the technology and training, but experience varies widely within a market center of this size.",
     areas: [
       "Elizabethtown",
       "Hardin County",

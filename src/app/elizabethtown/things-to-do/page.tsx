@@ -9,7 +9,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Things to Do in Elizabethtown, KY",
   description:
-    "Discover things to do in Elizabethtown, KY — restaurants, shopping, family activities, events, golf, and nightlife in E-town and the Fort Knox area.",
+    "Discover things to do in Elizabethtown, KY: restaurants, shopping, family activities, events, golf, and nightlife in E-town and the Fort Knox area.",
   alternates: { canonical: "/elizabethtown/things-to-do/" },
 };
 
@@ -31,7 +31,7 @@ export default function ThingsToDoHub() {
             Elizabethtown may be a small city, but it&apos;s far from boring. E-town offers a solid range
             of dining, shopping, family activities, seasonal events, and entertainment options that keep
             residents engaged year-round. Add in Louisville&apos;s world-class attractions just 45 minutes
-            up I-65, and you&apos;ve got the best of both worlds — small-town living with big-city access.
+            up I-65, and you&apos;ve got the best of both worlds, small-town living with big-city access.
           </p>
           <p className="text-gray-body mb-8">
             Whether you&apos;re a longtime resident looking for something new or a newcomer getting oriented,

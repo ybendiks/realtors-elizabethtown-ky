@@ -79,7 +79,7 @@ export default function RentalMarket() {
         <li>
           <strong>1-bedroom apartment:</strong> typically <strong>$850-$950/month</strong>. Studios
           are available in limited supply, typically in the $650-$750 range. Per-bedroom figures are
-          indicative ranges drawn from local listings rather than a published median &mdash; the
+          indicative ranges drawn from local listings rather than a published median, the
           sourced citywide figure is the {usd(AVG_RENT_ALL_BEDS.value)} all-bedroom average above.
         </li>
         <li>

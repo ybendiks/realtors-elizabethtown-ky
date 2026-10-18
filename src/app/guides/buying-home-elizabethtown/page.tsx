@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import { SITE_URL, CKG } from "@/lib/constants";
+import { MEDIAN_SALE_PRICE, usd } from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "Buying a Home in Elizabethtown KY | Guide",
@@ -31,13 +32,13 @@ export default function BuyingHomeGuide() {
       }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Buying a Home in Elizabethtown, KY — From Search to Close
+        Buying a Home in Elizabethtown, KY, From Search to Close
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
         Buying a home is a multi-step process, and understanding each phase before you begin
         prevents surprises and puts you in a stronger negotiating position. Elizabethtown&apos;s
-        market has its own rhythm — influenced by military PCS cycles, local inventory patterns,
+        market has its own rhythm: influenced by military PCS cycles, local inventory patterns,
         and Kentucky-specific closing practices. This guide covers the full journey from initial
         search to getting the keys.
       </p>
@@ -50,9 +51,9 @@ export default function BuyingHomeGuide() {
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Get Your Finances in Order</h3>
       <p className="text-gray-body mb-4">
         Before you browse a single listing, take care of the financial groundwork. Check your
-        credit score and address any issues. Calculate your comfortable monthly payment — not just
+        credit score and address any issues. Calculate your comfortable monthly payment, not just
         what a lender says you can afford, but what fits your lifestyle. In Elizabethtown, where
-        the median home price is approximately $250,000, monthly mortgage payments (including taxes
+        the median sale price is {usd(MEDIAN_SALE_PRICE.value)}, monthly mortgage payments (including taxes
         and insurance) typically fall in the $1,500-$1,900 range depending on your down payment and
         interest rate.
       </p>
@@ -102,7 +103,7 @@ export default function BuyingHomeGuide() {
       <p className="text-gray-body mb-4">
         Contact a lender, provide your financial documentation (W-2s, pay stubs, bank statements,
         LES for military), and get a pre-approval letter. This process takes 1-2 weeks and costs
-        nothing. In E-town&apos;s competitive market, a pre-approval letter is essential — sellers
+        nothing. In E-town&apos;s competitive market, a pre-approval letter is essential, sellers
         take pre-approved buyers seriously, and some listing agents will not schedule showings for
         buyers without one.
       </p>
@@ -258,7 +259,7 @@ export default function BuyingHomeGuide() {
         <li>Title search and title insurance ($800-$1,200).</li>
         <li>Prepaid property taxes and homeowners insurance (escrowed into closing).</li>
         <li>Recording fees and state transfer taxes.</li>
-        <li>VA funding fee (for VA loans — can be rolled into the loan amount).</li>
+        <li>VA funding fee (for VA loans, can be rolled into the loan amount).</li>
       </ul>
 
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Closing Day</h3>
@@ -274,7 +275,7 @@ export default function BuyingHomeGuide() {
       <p className="text-gray-body mb-4">
         Transfer utilities into your name, update your address with the post office and military
         records (if applicable), and file your homestead exemption if you qualify. Set up a
-        maintenance schedule for your new home and keep records of any improvements — they may
+        maintenance schedule for your new home and keep records of any improvements. They may
         reduce your tax liability when you sell.
       </p>
 

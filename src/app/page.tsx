@@ -140,7 +140,7 @@ export default function HomePage() {
           </h2>
           <div className="prose max-w-none text-gray-body">
             <p>
-              Elizabethtown — or &quot;E-town&quot; as locals call it — is the heart of Hardin County and one
+              Elizabethtown, or &quot;E-town&quot; as locals call it, is the heart of Hardin County and one
               of Kentucky&apos;s most livable small cities. With a population of{" "}
               <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> and growth of nearly 13%
               since the 2020 census, it offers the perfect balance of small-town charm and modern convenience.
@@ -169,11 +169,11 @@ export default function HomePage() {
             <p>
               Whether you&apos;re relocating for the military, looking for your first home, or investing in
               rental property, Elizabethtown&apos;s real estate market offers real value. And with a roster
-              of experienced local agents — led by{" "}
+              of experienced local agents, led by{" "}
               <Link href={CKG.profileUrl} className="text-navy font-semibold hover:text-gold-dark">
                 veteran-owned Compass and Key Group
               </Link>
-              {" "}— you&apos;ll have expert guidance every step of the way.
+              , you&apos;ll have expert guidance every step of the way.
             </p>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function HomePage() {
               },
               {
                 title: "Schools",
-                desc: "Hardin County Schools, E-town Independent, and Fort Knox DoDEA — all Purple Star designated.",
+                desc: "Hardin County Schools, E-town Independent, and Fort Knox DoDEA, all Purple Star designated.",
                 href: "/elizabethtown/schools/",
                 icon: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z",
               },
@@ -263,7 +263,7 @@ export default function HomePage() {
                 Moving to Fort Knox is a big transition. Our comprehensive military relocation guides cover
                 everything from BAH rates and VA loans to the best off-post neighborhoods and schools for
                 military families. As a site founded with military families in mind, we understand the unique
-                challenges of a PCS move — tight timelines, remote house hunting, and navigating a new community.
+                challenges of a PCS move: tight timelines, remote house hunting, and navigating a new community.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link

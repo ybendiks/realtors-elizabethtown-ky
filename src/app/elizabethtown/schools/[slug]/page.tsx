@@ -68,7 +68,7 @@ export default async function SchoolPage({ params }: Props) {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        {s.name} — Elizabethtown, KY School Guide
+        {s.name}, Elizabethtown, KY School Guide
       </h1>
 
       <QuickFacts facts={s.quickFacts} />

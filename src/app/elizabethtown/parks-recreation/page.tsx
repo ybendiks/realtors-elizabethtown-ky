@@ -9,7 +9,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Elizabethtown KY Parks & Recreation Guide",
   description:
-    "Explore 7 parks in Elizabethtown, KY. Freeman Lake, nature preserves, playgrounds, sports fields, and community recreation — your complete guide to E-town outdoor life.",
+    "Explore 7 parks in Elizabethtown, KY: Freeman Lake, nature preserves, playgrounds, sports fields, and community recreation. Your complete guide to E-town outdoor life.",
   alternates: { canonical: "/elizabethtown/parks-recreation/" },
 };
 
@@ -55,7 +55,7 @@ export default function ParksRecreationHub() {
             Parks &amp; Recreation in Elizabethtown, KY
           </h1>
           <p className="text-lg text-gray-body mb-4">
-            Elizabethtown&apos;s parks system offers something for everyone — from the 164-acre
+            Elizabethtown&apos;s parks system offers something for everyone, from the 164-acre
             lakeside expanse of{" "}
             <Link
               href="/elizabethtown/parks-recreation/freeman-lake-park/"
@@ -75,14 +75,14 @@ export default function ParksRecreationHub() {
             programs, and nature experiences throughout the year.
           </p>
           <p className="text-gray-body mb-8">
-            For families relocating to E-town — especially those{" "}
+            For families relocating to E-town, especially those{" "}
             <Link
               href="/fort-knox/"
               className="text-navy font-semibold hover:text-gold-dark"
             >
               PCSing to Fort Knox
             </Link>{" "}
-            — access to quality parks and recreation is a major factor in choosing a neighborhood.
+access to quality parks and recreation is a major factor in choosing a neighborhood.
             Below you&apos;ll find detailed guides for each park, including amenities, activities,
             nearby neighborhoods, and practical visiting information to help you evaluate the
             outdoor lifestyle in different parts of the city.

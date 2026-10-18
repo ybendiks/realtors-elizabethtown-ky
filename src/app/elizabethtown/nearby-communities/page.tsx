@@ -7,7 +7,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Nearby Communities | Elizabethtown KY Area",
   description:
-    "Explore communities near Elizabethtown, KY — Hodgenville, Glendale, Cecilia, Rineyville, and Sonora. Compare housing costs, commute times, and lifestyle options.",
+    "Explore communities near Elizabethtown, KY: Hodgenville, Glendale, Cecilia, Rineyville, and Sonora. Compare housing costs, commute times, and lifestyle options.",
   alternates: { canonical: "/elizabethtown/nearby-communities/" },
 };
 
@@ -30,7 +30,7 @@ export default function NearbyCommunities() {
       }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Nearby Communities — Towns Around Elizabethtown, KY
+        Nearby Communities, Towns Around Elizabethtown, KY
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
@@ -57,7 +57,7 @@ export default function NearbyCommunities() {
             className="bg-gray-light rounded-lg p-5 hover:bg-gold/10 transition-colors group"
           >
             <h2 className="font-bold text-navy group-hover:text-gold-dark">{c.name}</h2>
-            <p className="text-sm text-gray-medium mt-1">{c.metaDesc.split("—")[1]?.trim() || c.metaDesc}</p>
+            <p className="text-sm text-gray-medium mt-1">{c.shortDesc}</p>
           </Link>
         ))}
       </div>
@@ -77,31 +77,31 @@ export default function NearbyCommunities() {
             <tr className="border-t border-gray-border">
               <td className="p-3 font-semibold">Hodgenville</td>
               <td className="p-3">~20 min</td>
-              <td className="p-3">$100K–$200K</td>
+              <td className="p-3">$100K-$200K</td>
               <td className="p-3">Maximum affordability, rural character</td>
             </tr>
             <tr className="border-t border-gray-border bg-gray-light">
               <td className="p-3 font-semibold">Glendale</td>
               <td className="p-3">~10 min</td>
-              <td className="p-3">$120K–$250K</td>
+              <td className="p-3">$120K-$250K</td>
               <td className="p-3">Historic charm, I-65 access</td>
             </tr>
             <tr className="border-t border-gray-border">
               <td className="p-3 font-semibold">Cecilia</td>
               <td className="p-3">~10 min</td>
-              <td className="p-3">$150K–$280K</td>
+              <td className="p-3">$150K-$280K</td>
               <td className="p-3">Central Hardin HS zone, families</td>
             </tr>
             <tr className="border-t border-gray-border bg-gray-light">
               <td className="p-3 font-semibold">Rineyville</td>
               <td className="p-3">~10 min</td>
-              <td className="p-3">$130K–$250K</td>
+              <td className="p-3">$130K-$250K</td>
               <td className="p-3">Fort Knox commuters, quiet living</td>
             </tr>
             <tr className="border-t border-gray-border">
               <td className="p-3 font-semibold">Sonora</td>
               <td className="p-3">~15 min</td>
-              <td className="p-3">$100K–$200K</td>
+              <td className="p-3">$100K-$200K</td>
               <td className="p-3">Lowest cost, rural acreage</td>
             </tr>
           </tbody>

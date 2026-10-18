@@ -41,7 +41,7 @@ export default function Commuting() {
           Fort Knox
         </Link>{" "}
         that the daily commute is measured in minutes rather than hours. There is no public
-        transit system in E-town — this is car-dependent country — but the trade-off is
+        transit system in E-town, this is car-dependent country, but the trade-off is
         uncongested roads, free parking everywhere, and straightforward routes to the places most
         residents need to go.
       </p>
@@ -52,7 +52,7 @@ export default function Commuting() {
       <p className="text-gray-body mb-4">
         The drive from central Elizabethtown to the main gates at Fort Knox takes approximately{" "}
         <strong>15-20 minutes</strong> via US-31W (Dixie Highway) heading north. The route is
-        straightforward — 31W runs directly from E-town through Radcliff and into the post. During
+        straightforward, 31W runs directly from E-town through Radcliff and into the post. During
         normal hours, there is little congestion and the drive is predictable.
       </p>
       <p className="text-gray-body mb-4">
@@ -71,7 +71,7 @@ export default function Commuting() {
         >
           neighborhoods
         </Link>{" "}
-        of E-town — such as Helmwood, Colvin Park, or the North Miles Street area — have an even
+        of E-town (such as Helmwood, Colvin Park, or the North Miles Street area) have an even
         shorter commute, sometimes as little as 10 minutes to the gate.
       </p>
 
@@ -97,7 +97,7 @@ export default function Commuting() {
         more than offset the fuel and time costs. A family saving $50,000-$100,000 on their home
         purchase and $200-$400 per month on housing costs has a strong financial incentive to accept
         the commute. Remote and hybrid work arrangements have made this calculus even more
-        favorable — if you only drive to Louisville two or three days a week, living in E-town
+        favorable, if you only drive to Louisville two or three days a week, living in E-town
         becomes an easy decision.
       </p>
 
@@ -150,12 +150,12 @@ export default function Commuting() {
       </ul>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
-        No Public Transit — What That Means
+        No Public Transit, What That Means
       </h2>
       <p className="text-gray-body mb-4">
         Elizabethtown does not have a public bus system, rail service, or ride-share-friendly
         density. This is a <strong>car-dependent community</strong>, and virtually every household
-        needs at least one vehicle. The upside is that parking is free nearly everywhere — at
+        needs at least one vehicle. The upside is that parking is free nearly everywhere, at
         stores, restaurants, medical offices, and most employers. There is no metered parking in
         the city. Traffic congestion is limited to a few intersections during peak hours, mainly
         along the 31W commercial strip near Walmart and Towne Mall.

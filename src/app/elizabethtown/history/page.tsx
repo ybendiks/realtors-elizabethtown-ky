@@ -38,7 +38,7 @@ export default function History() {
         Elizabethtown&apos;s story stretches back more than two centuries, from a frontier
         settlement on the edge of the Kentucky wilderness to a modern city shaped by railroads,
         war, military installations, and interstate highways. Understanding that history helps
-        explain why E-town looks and feels the way it does today — and why it continues to draw new
+        explain why E-town looks and feels the way it does today, and why it continues to draw new
         residents who recognize the same qualities that attracted settlers more than 200 years ago.
       </p>
 
@@ -55,7 +55,7 @@ export default function History() {
       <p className="text-gray-body mb-4">
         In its earliest decades, Elizabethtown was a small but strategically placed frontier town.
         The county courthouse, a handful of taverns, a general store, and a few churches made up
-        the core. Farming — particularly tobacco, corn, and livestock — drove the local economy,
+        the core. Farming (particularly tobacco, corn, and livestock) drove the local economy,
         and the surrounding Hardin County landscape was a patchwork of family farms carved from the
         hardwood forests that once blanketed the region.
       </p>
@@ -104,7 +104,7 @@ export default function History() {
       <p className="text-gray-body mb-4">
         The arrival of the <strong>Louisville and Nashville Railroad</strong> in the 1850s
         transformed Elizabethtown from a rural county seat into a regionally significant town. The
-        railroad made it possible to ship agricultural products — especially tobacco and grain — to
+        railroad made it possible to ship agricultural products, especially tobacco and grain, to
         markets in Louisville and beyond, and it brought new businesses, residents, and commerce.
         E-town became a railroad hub, with the depot serving as the economic center of the
         community.
@@ -112,7 +112,7 @@ export default function History() {
       <p className="text-gray-body mb-4">
         Throughout the late 1800s and into the early 1900s, Elizabethtown grew steadily. The
         downtown business district expanded, churches and schools multiplied, and the town took on
-        the character of a prosperous small Kentucky city — brick-fronted commercial buildings,
+        the character of a prosperous small Kentucky city, brick-fronted commercial buildings,
         tree-lined residential streets, and a courthouse square that served as the civic heart of
         Hardin County.
       </p>
@@ -128,13 +128,13 @@ export default function History() {
           Fort Knox
         </Link>
         , grew through World War II into one of the Army&apos;s premier armored training centers.
-        The U.S. Bullion Depository — the famous Gold Vault — was built on the post in 1936,
+        The U.S. Bullion Depository, the famous Gold Vault, was built on the post in 1936,
         giving Fort Knox a national profile that far exceeded its military role.
       </p>
       <p className="text-gray-body mb-4">
         The base brought thousands of soldiers and their families to the region, and Elizabethtown
         and neighboring Radcliff grew dramatically to serve them. The military presence introduced
-        a level of diversity and transience unusual for a small Kentucky city — families from every
+        a level of diversity and transience unusual for a small Kentucky city, families from every
         state and many countries cycled through, and a significant number chose to retire in the
         area. Today, Fort Knox is home to the U.S. Army Human Resources Command and the U.S. Army
         Cadet Command, and it remains the largest employer in the region.
@@ -172,7 +172,7 @@ export default function History() {
       </p>
       <p className="text-gray-body mb-4">
         Today, Elizabethtown is a city of approximately {POPULATION.value.toLocaleString("en-US")} residents, up nearly 13%
-        since the 2020 census — large enough to have
+        since the 2020 census, large enough to have
         quality schools, healthcare, and retail, but small enough to preserve the neighborly,
         community-oriented character that has defined it since its founding. The blend of military
         heritage, small-town values, and modern accessibility makes it one of Kentucky&apos;s most

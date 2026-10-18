@@ -69,7 +69,7 @@ export default function OnPostVsOffPost() {
             <tr className="bg-white border-b border-gray-border">
               <td className="p-3 font-semibold text-navy">Monthly Cost</td>
               <td className="p-3 text-gray-body">100% of BAH (auto-deducted)</td>
-              <td className="p-3 text-gray-body">Varies — often less than BAH</td>
+              <td className="p-3 text-gray-body">Varies, often less than BAH</td>
             </tr>
             <tr className="bg-gray-light border-b border-gray-border">
               <td className="p-3 font-semibold text-navy">Equity Building</td>
@@ -83,7 +83,7 @@ export default function OnPostVsOffPost() {
             </tr>
             <tr className="bg-gray-light border-b border-gray-border">
               <td className="p-3 font-semibold text-navy">Maintenance</td>
-              <td className="p-3 text-gray-body">Included — Knox Hills handles it</td>
+              <td className="p-3 text-gray-body">Included, Knox Hills handles it</td>
               <td className="p-3 text-gray-body">Your responsibility (own) or landlord (rent)</td>
             </tr>
             <tr className="bg-white border-b border-gray-border">
@@ -124,7 +124,7 @@ export default function OnPostVsOffPost() {
         is the privatized housing community on Fort Knox, managed by Lendlease (operating as
         Centinel). It includes <strong>20 neighborhoods</strong> across the installation, offering
         two-, three-, and four-bedroom homes for military families. When you live in Knox Hills,
-        your entire BAH is allotted directly to the housing office — you do not receive a separate
+        your entire BAH is allotted directly to the housing office. You do not receive a separate
         housing check.
       </p>
 
@@ -138,11 +138,11 @@ export default function OnPostVsOffPost() {
         <li>
           <strong>Community and security.</strong> Knox Hills neighborhoods are gated within the
           installation. Your neighbors are fellow military families who understand the lifestyle.
-          Kids play together, spouses connect naturally, and there is a built-in support network —
+          Kids play together, spouses connect naturally, and there is a built-in support network, 
           especially valuable for families on their first PCS.
         </li>
         <li>
-          <strong>Maintenance included.</strong> Knox Hills handles all maintenance — HVAC, plumbing,
+          <strong>Maintenance included.</strong> Knox Hills handles all maintenance: HVAC, plumbing,
           appliances, lawn care for common areas, and snow removal. You submit a work order and
           they fix it. No landlord negotiations, no out-of-pocket repair costs.
         </li>
@@ -176,12 +176,12 @@ export default function OnPostVsOffPost() {
           at the end.
         </li>
         <li>
-          <strong>Limited choice.</strong> You do not choose your home — you are assigned a unit
+          <strong>Limited choice.</strong> You do not choose your home. You are assigned a unit
           based on availability, rank, and family size. The homes are functional but may not match
           your preferences in terms of neighborhood feel, layout, or condition.
         </li>
         <li>
-          <strong>Inspection and rules.</strong> Living on-post comes with more oversight — yard
+          <strong>Inspection and rules.</strong> Living on-post comes with more oversight, yard
           standards, noise policies, guest policies, and periodic inspections. Some families find
           this constraining.
         </li>
@@ -199,7 +199,7 @@ export default function OnPostVsOffPost() {
         <Link href="/fort-knox/off-post-housing/" className="text-navy font-semibold hover:text-gold-dark">
           surrounding communities
         </Link>{" "}
-        — Elizabethtown (15 min), Radcliff (5 min), Vine Grove (10 min), or Brandenburg (20 min).
+Elizabethtown (15 min), Radcliff (5 min), Vine Grove (10 min), or Brandenburg (20 min).
         You receive your full BAH and use it to pay rent or a mortgage. Any BAH left over is yours
         to keep.
       </p>
@@ -217,7 +217,7 @@ export default function OnPostVsOffPost() {
           with you.
         </li>
         <li>
-          <strong>More space and choice.</strong> Off-post, you choose your home — the neighborhood,
+          <strong>More space and choice.</strong> Off-post, you choose your home, the neighborhood,
           the lot size, the layout, the school district. Elizabethtown alone has{" "}
           <Link href="/elizabethtown/neighborhoods/" className="text-navy font-semibold hover:text-gold-dark">
             14 distinct neighborhoods
@@ -251,12 +251,12 @@ export default function OnPostVsOffPost() {
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Cons of Living Off-Post</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Commute.</strong> Even a 15-minute commute adds up — especially for 0500 PT
+          <strong>Commute.</strong> Even a 15-minute commute adds up, especially for 0500 PT
           formations in January. Radcliff minimizes this, but it is still more than walking across
           post.
         </li>
         <li>
-          <strong>Maintenance responsibility.</strong> If you own, you handle repairs —
+          <strong>Maintenance responsibility.</strong> If you own, you handle repairs, 
           or pay for them. A new HVAC system or roof is on you, not a work order.
         </li>
         <li>
@@ -271,15 +271,15 @@ export default function OnPostVsOffPost() {
         </li>
         <li>
           <strong>Selling pressure at PCS.</strong> If you buy and then receive short-notice orders,
-          you will need to sell or find a tenant quickly. The Fort Knox market is forgiving here —
-          homes sell in 15-30 days typically — but it adds stress.
+          you will need to sell or find a tenant quickly. The Fort Knox market is forgiving here, 
+          homes sell in 15-30 days typically, but it adds stress.
         </li>
       </ul>
 
       {/* Decision Framework */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Decision Framework: Which Is Right for You?</h2>
       <p className="text-gray-body mb-4">
-        Use these questions to guide your decision. There are no wrong answers — only what works
+        Use these questions to guide your decision. There are no wrong answers, only what works
         best for your family right now.
       </p>
 
@@ -351,7 +351,7 @@ export default function OnPostVsOffPost() {
             Compass and Key Group
           </Link>{" "}
           is a Marine Corps veteran who understands exactly what you are weighing. He has helped
-          military families at every rank find the right off-post home — from E-5s buying their
+          military families at every rank find the right off-post home, from E-5s buying their
           first home in Radcliff to O-5s settling into E-town&apos;s best neighborhoods. Austin
           can walk you through the{" "}
           <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>

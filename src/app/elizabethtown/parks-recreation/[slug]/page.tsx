@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? "Saunders Springs Preserve | E-town KY"
         : `${p.name} | Elizabethtown KY Parks`;
 
-  const description = `${p.name} in Elizabethtown, KY — trails, amenities, activities, and nearby neighborhoods. Plan your visit to one of E-town's favorite parks.`;
+  const description = `${p.name} in Elizabethtown, KY: trails, amenities, activities, and nearby neighborhoods. Plan your visit to one of E-town's favorite parks.`;
 
   return {
     title,
@@ -71,7 +71,7 @@ export default async function ParkPage({ params }: Props) {
     "Managed By": "E-town Parks & Recreation",
     "Admission": "Free",
     "Hours": slug === "pritchard-community-center"
-      ? "Varies by program — call (270) 765-6121"
+      ? "Varies by program, call (270) 765-6121"
       : "Dawn to dusk, daily",
   };
 
@@ -108,7 +108,7 @@ export default async function ParkPage({ params }: Props) {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        {p.name} — Elizabethtown, KY
+        {p.name}, Elizabethtown, KY
       </h1>
 
       <QuickFacts facts={quickFacts} />

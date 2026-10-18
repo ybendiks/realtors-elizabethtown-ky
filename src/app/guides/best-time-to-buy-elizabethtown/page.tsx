@@ -150,7 +150,7 @@ export default function BestTimeToBuy() {
         PCS Season: Strategy for Military Buyers
       </h2>
       <p className="text-gray-body mb-4">
-        Military families often do not get to choose their buying timeline — PCS orders dictate
+        Military families often do not get to choose their buying timeline, PCS orders dictate
         when you arrive. If you are{" "}
         <Link href="/fort-knox/pcs-guide/" className="text-navy font-semibold hover:text-gold-dark">
           PCSing to Fort Knox
@@ -159,7 +159,7 @@ export default function BestTimeToBuy() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          Start your pre-approval process as soon as you receive orders — ideally 60-90 days
+          Start your pre-approval process as soon as you receive orders, ideally 60-90 days
           before your report date.
         </li>
         <li>
@@ -206,7 +206,7 @@ export default function BestTimeToBuy() {
       </ul>
       <p className="text-gray-body mb-4">
         If all four boxes are checked, the specific month you buy is secondary. In a market like
-        Elizabethtown — with steady 3-5% annual appreciation and strong fundamentals — buying
+        Elizabethtown, with steady 3-5% annual appreciation and strong fundamentals, buying
         sooner generally beats waiting for the &quot;perfect&quot; month. For more on current
         conditions, see our{" "}
         <Link

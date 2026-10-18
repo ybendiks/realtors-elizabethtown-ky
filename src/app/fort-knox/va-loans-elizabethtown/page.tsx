@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, CKG } from "@/lib/constants";
+import { MEDIAN_SALE_PRICE, usd } from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "VA Loans Elizabethtown KY | Fort Knox Guide",
@@ -43,13 +44,13 @@ export default function VALoans() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        VA Loans in Elizabethtown, KY — A Fort Knox Buyer&apos;s Guide
+        VA Loans in Elizabethtown, KY, A Fort Knox Buyer&apos;s Guide
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
         If you&apos;re stationed at Fort Knox and thinking about buying a home, a VA loan is almost
         certainly your best option. The VA loan benefit is one of the most powerful financial tools
-        available to service members — and in a market like Elizabethtown, where home prices are
+        available to service members, and in a market like Elizabethtown, where home prices are
         well below the national average, it can put you in a home with zero out-of-pocket cost on
         day one. Here is everything you need to know about using a VA loan to buy in Hardin County.
       </p>
@@ -58,7 +59,7 @@ export default function VALoans() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">VA Loan Basics</h2>
       <p className="text-gray-body mb-4">
         A VA loan is a mortgage guaranteed by the U.S. Department of Veterans Affairs. The VA
-        doesn&apos;t lend the money directly — private lenders (banks, credit unions, mortgage
+        doesn&apos;t lend the money directly: private lenders (banks, credit unions, mortgage
         companies) issue the loan, and the VA guarantees a portion of it. This guarantee reduces
         the lender&apos;s risk, which is why VA loans come with benefits that no conventional or
         FHA loan can match:
@@ -71,7 +72,7 @@ export default function VALoans() {
         <li>
           <strong>No private mortgage insurance (PMI).</strong> Conventional loans require PMI when
           you put less than 20% down, typically adding $100-$300/month. VA loans never require PMI
-          — at any loan-to-value ratio.
+at any loan-to-value ratio.
         </li>
         <li>
           <strong>Competitive interest rates.</strong> VA loan rates are typically 0.25-0.50% lower
@@ -79,7 +80,7 @@ export default function VALoans() {
           difference saves thousands over the life of the mortgage.
         </li>
         <li>
-          <strong>No prepayment penalty.</strong> Pay off your loan early without fees — useful if
+          <strong>No prepayment penalty.</strong> Pay off your loan early without fees, useful if
           you sell when you PCS.
         </li>
         <li>
@@ -131,8 +132,8 @@ export default function VALoans() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Affordable home prices.</strong> The median home price in Elizabethtown is
-          approximately <strong>$250,000</strong> — well below the VA loan limit threshold (which
+          <strong>Affordable home prices.</strong> The median sale price in Elizabethtown is
+          <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong>, well below the VA loan limit threshold (which
           has been effectively eliminated for first-time VA loan users with full entitlement). You
           do not need to worry about loan limit caps here.
         </li>
@@ -161,7 +162,7 @@ export default function VALoans() {
       {/* VA Appraisal Process */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">The VA Appraisal Process</h2>
       <p className="text-gray-body mb-4">
-        Every VA loan requires a VA appraisal — an independent assessment of the home&apos;s value
+        Every VA loan requires a VA appraisal, an independent assessment of the home&apos;s value
         and condition ordered through the VA&apos;s system (not chosen by the buyer or lender). The
         VA appraisal serves two purposes:
       </p>
@@ -173,7 +174,7 @@ export default function VALoans() {
         </li>
         <li>
           <strong>Minimum Property Requirements (MPRs):</strong> The appraiser checks that the home
-          meets the VA&apos;s basic safety and livability standards — functional heating, safe
+          meets the VA&apos;s basic safety and livability standards, functional heating, safe
           roofing, adequate water supply, no lead paint hazards, etc. These are not as strict as a
           full inspection, but they do occasionally flag issues that need to be addressed before
           closing.
@@ -189,13 +190,13 @@ export default function VALoans() {
       {/* VA Loan Myths */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">VA Loan Myths Debunked</h2>
       <p className="text-gray-body mb-4">
-        There is a surprising amount of misinformation about VA loans — even within the military
+        There is a surprising amount of misinformation about VA loans, even within the military
         community. Here are the facts:
       </p>
 
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Myth: VA loans take forever to close.</h3>
       <p className="text-gray-body mb-4">
-        <strong>Reality:</strong> A VA loan with an experienced lender closes in 30-45 days — the
+        <strong>Reality:</strong> A VA loan with an experienced lender closes in 30-45 days, the
         same timeline as a conventional loan. The key is using a lender who processes VA loans
         regularly and knows the system. In the Fort Knox area, this is standard practice.
       </p>
@@ -204,7 +205,7 @@ export default function VALoans() {
       <p className="text-gray-body mb-4">
         <strong>Reality:</strong> In highly competitive markets (think Northern Virginia or San
         Diego), some sellers prefer conventional offers. In Elizabethtown, VA offers are extremely
-        common — sellers and their agents deal with them regularly and have no reason to avoid them.
+        common, sellers and their agents deal with them regularly and have no reason to avoid them.
         A clean VA offer with a pre-approval letter is as strong as any other offer here.
       </p>
 
@@ -219,7 +220,7 @@ export default function VALoans() {
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Myth: VA loans require perfect credit.</h3>
       <p className="text-gray-body mb-4">
         <strong>Reality:</strong> The VA does not set a minimum credit score. Individual lenders set
-        their own requirements, but most VA lenders approve borrowers with scores of 620 or above —
+        their own requirements, but most VA lenders approve borrowers with scores of 620 or above, 
         and some go lower. VA loans are more forgiving than conventional loans on credit history.
       </p>
 
@@ -227,7 +228,7 @@ export default function VALoans() {
       <p className="text-gray-body mb-4">
         <strong>Reality:</strong> The VA funding fee (typically 2.15% for first-time use with zero
         down) can be rolled into the loan amount. On a $250,000 home, that adds about $5,375 to
-        your mortgage — which translates to roughly $35/month at current rates. Compare that to the
+        your mortgage, which translates to roughly $35/month at current rates. Compare that to the
         $150-$300/month PMI you would pay on a conventional loan with less than 20% down. The math
         strongly favors the VA loan. Note: veterans with service-connected disabilities are exempt
         from the funding fee entirely.
@@ -237,7 +238,7 @@ export default function VALoans() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Using BAH as Qualifying Income</h2>
       <p className="text-gray-body mb-4">
         When applying for a VA loan, lenders count your full military compensation as qualifying
-        income — including base pay, BAH, BAS, and any special pays or allowances. Since BAH is
+        income, including base pay, BAH, BAS, and any special pays or allowances. Since BAH is
         tax-free, lenders often &quot;gross it up&quot; by 25% when calculating your debt-to-income
         ratio, effectively increasing your buying power.
       </p>
@@ -249,7 +250,7 @@ export default function VALoans() {
         <Link href="/elizabethtown/neighborhoods/" className="text-navy font-semibold hover:text-gold-dark">
           Elizabethtown neighborhoods
         </Link>{" "}
-        — which is right in the sweet spot for the local market.
+which is right in the sweet spot for the local market.
       </p>
 
       {/* VA Loan Steps */}
@@ -294,7 +295,7 @@ export default function VALoans() {
           </Link>{" "}
           is a U.S. Marine Corps veteran who has guided dozens of military families through the VA
           home buying process in Elizabethtown. He works closely with VA-experienced lenders in the
-          area and can connect you with professionals who close VA loans every week — not once a
+          area and can connect you with professionals who close VA loans every week, not once a
           year. From pre-approval to closing day, Austin understands the process and the urgency of
           a{" "}
           <Link href="/fort-knox/pcs-guide/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>

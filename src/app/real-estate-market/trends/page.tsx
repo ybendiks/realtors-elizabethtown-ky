@@ -63,7 +63,7 @@ export default function MarketTrends() {
       <p className="text-gray-body mb-4">
         The median sale price in Elizabethtown has risen from approximately{" "}
         <strong>$200,000 in 2021</strong> to <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> for the
-        three months ending {MEDIAN_SALE_PRICE.asOf} &mdash; roughly 50% cumulative appreciation over
+        three months ending {MEDIAN_SALE_PRICE.asOf}, roughly 50% cumulative appreciation over
         five years. Growth has not cooled the way many expected: the most recent year alone added{" "}
         {MEDIAN_SALE_PRICE_YOY.value}%. Breaking it down year by year:
       </p>

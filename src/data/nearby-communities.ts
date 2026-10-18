@@ -5,6 +5,8 @@ export interface Community {
   name: string;
   metaTitle: string;
   metaDesc: string;
+  /** One-line card text for the hub page. */
+  shortDesc: string;
   content: string;
 }
 
@@ -13,17 +15,18 @@ export const communities: Community[] = [
     slug: "hodgenville",
     name: "Hodgenville, KY",
     metaTitle: "Hodgenville KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Hodgenville, KY — Abraham Lincoln's birthplace, 20 minutes from E-town. Affordable housing and rural Kentucky charm.",
-    content: `<p>Hodgenville is a small LaRue County town of about <strong>3,200 residents</strong> located roughly <strong>20 minutes south</strong> of Elizabethtown via US-31E. It's best known as the birthplace of Abraham Lincoln — the Abraham Lincoln Birthplace National Historical Park draws visitors from around the world to the site of Lincoln's humble log cabin origins.</p>
+    metaDesc: "Guide to living in Hodgenville, KY, Abraham Lincoln's birthplace, 20 minutes from E-town. Affordable housing and rural Kentucky charm.",
+    shortDesc: "Abraham Lincoln's birthplace, 20 minutes from E-town. Affordable housing and rural Kentucky charm.",
+    content: `<p>Hodgenville is a small LaRue County town of about <strong>3,200 residents</strong> located roughly <strong>20 minutes south</strong> of Elizabethtown via US-31E. It's best known as the birthplace of Abraham Lincoln, the Abraham Lincoln Birthplace National Historical Park draws visitors from around the world to the site of Lincoln's humble log cabin origins.</p>
 
 <h2>Housing &amp; Real Estate</h2>
 <p>Hodgenville offers some of the most affordable real estate in the region. Home prices typically range from <strong>$100,000 to $200,000</strong>, making homeownership accessible on almost any budget. The housing stock is primarily established homes with larger lots than you'd find in Elizabethtown proper. For buyers seeking acreage and rural character at rock-bottom prices, Hodgenville delivers.</p>
 
 <h2>Community Character</h2>
-<p>This is quintessential small-town Kentucky — a walkable town square, locally owned businesses, community events centered around the Lincoln heritage, and the kind of neighborly atmosphere that defines rural American life. The pace is deliberately slow, and residents prefer it that way.</p>
+<p>This is quintessential small-town Kentucky: a walkable town square, locally owned businesses, community events centered around the Lincoln heritage, and the kind of neighborly atmosphere that defines rural American life. The pace is deliberately slow, and residents prefer it that way.</p>
 
 <h2>Schools</h2>
-<p>Hodgenville is served by LaRue County Schools, a smaller district with a community-focused approach. The schools reflect the town's character — personal attention, strong community involvement, and a tight-knit school culture.</p>
+<p>Hodgenville is served by LaRue County Schools, a smaller district with a community-focused approach. The schools reflect the town's character: personal attention, strong community involvement, and a tight-knit school culture.</p>
 
 <h2>Distance &amp; Commute</h2>
 <ul>
@@ -42,7 +45,8 @@ export const communities: Community[] = [
     slug: "glendale",
     name: "Glendale, KY",
     metaTitle: "Glendale KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Glendale, KY — a small historic town 10 minutes north of Elizabethtown with convenient I-65 access and growing economic activity.",
+    metaDesc: "Guide to living in Glendale, KY: a small historic town 10 minutes north of Elizabethtown with convenient I-65 access and growing economic activity.",
+    shortDesc: "A small historic town 10 minutes north of Elizabethtown with convenient I-65 access and growing economic activity.",
     content: `<p>Glendale is a small Hardin County community of about <strong>1,000 residents</strong> located roughly <strong>10 minutes north</strong> of Elizabethtown along I-65 and US-31W. Despite its small size, Glendale has drawn significant attention in recent years due to major economic development in the area, including large-scale manufacturing and industrial projects along the I-65 corridor that are bringing jobs and investment to the region.</p>
 
 <h2>Housing &amp; Real Estate</h2>
@@ -71,8 +75,9 @@ export const communities: Community[] = [
     slug: "cecilia",
     name: "Cecilia, KY",
     metaTitle: "Cecilia KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Cecilia, KY — a rural community 10 minutes west of E-town, home to Central Hardin High School with affordable housing options.",
-    content: `<p>Cecilia is a small unincorporated community in Hardin County located about <strong>10 minutes west</strong> of Elizabethtown. While it doesn't have a formal town center or municipal government, Cecilia is well-known locally as the home of <a href="/elizabethtown/schools/central-hardin-high/">Central Hardin High School</a> — the largest high school in the county. The area offers a rural residential character with easy access to E-town amenities.</p>
+    metaDesc: "Guide to living in Cecilia, KY: a rural community 10 minutes west of E-town, home to Central Hardin High School with affordable housing options.",
+    shortDesc: "A rural community 10 minutes west of E-town, home to Central Hardin High School with affordable housing options.",
+    content: `<p>Cecilia is a small unincorporated community in Hardin County located about <strong>10 minutes west</strong> of Elizabethtown. While it doesn't have a formal town center or municipal government, Cecilia is well-known locally as the home of <a href="/elizabethtown/schools/central-hardin-high/">Central Hardin High School</a>, the largest high school in the county. The area offers a rural residential character with easy access to E-town amenities.</p>
 
 <h2>Housing &amp; Real Estate</h2>
 <p>The Cecilia area features a mix of residential properties ranging from modest ranch homes to larger properties on multi-acre lots. Prices generally fall between <strong>$150,000 and $280,000</strong>, with the potential for more land than comparable homes within Elizabethtown city limits. For families who want a bit more space while staying in the Central Hardin school zone, Cecilia offers excellent value.</p>
@@ -96,14 +101,15 @@ export const communities: Community[] = [
     slug: "rineyville",
     name: "Rineyville, KY",
     metaTitle: "Rineyville KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Rineyville, KY — a small rural community northwest of Elizabethtown with affordable homes and proximity to Fort Knox.",
+    metaDesc: "Guide to living in Rineyville, KY: a small rural community northwest of Elizabethtown with affordable homes and proximity to Fort Knox.",
+    shortDesc: "A small rural community northwest of Elizabethtown with affordable homes and proximity to Fort Knox.",
     content: `<p>Rineyville is a small, quiet community located about <strong>10 minutes northwest</strong> of Elizabethtown in Hardin County. This unincorporated area sits along the route between E-town and Fort Knox, giving residents relatively easy access to both while maintaining a distinctly rural character. It's the kind of community where you know your neighbors and the pace of life matches the rolling Kentucky countryside.</p>
 
 <h2>Housing &amp; Real Estate</h2>
 <p>Rineyville offers affordable housing options, typically ranging from <strong>$130,000 to $250,000</strong>. Properties tend to sit on larger lots than in-town neighborhoods, with many homes offering a half-acre or more. The housing stock is a mix of established homes from various decades and some newer construction. For buyers seeking affordability and space, Rineyville provides solid value.</p>
 
 <h2>Community Character</h2>
-<p>Rineyville is rural and residential, without a significant commercial center. Residents handle most shopping, dining, and errands in Elizabethtown or on Fort Knox. The appeal is in the quiet — no traffic noise, no commercial hustle, just peaceful residential living with farmland views and ample breathing room.</p>
+<p>Rineyville is rural and residential, without a significant commercial center. Residents handle most shopping, dining, and errands in Elizabethtown or on Fort Knox. The appeal is in the quiet: no traffic noise, no commercial hustle, just peaceful residential living with farmland views and ample breathing room.</p>
 
 <h2>Schools</h2>
 <p>Rineyville is served by <a href="/elizabethtown/schools/hardin-county-schools/">Hardin County Schools</a>. Local elementary schools feed into the county system, with students progressing to Central Hardin or other area high schools depending on attendance zones. The Purple Star designation applies district-wide.</p>
@@ -125,14 +131,15 @@ export const communities: Community[] = [
     slug: "sonora",
     name: "Sonora, KY",
     metaTitle: "Sonora KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Sonora, KY — a small rural community 15 minutes south of Elizabethtown with very affordable housing on the LaRue County border.",
+    metaDesc: "Guide to living in Sonora, KY, a small rural community 15 minutes south of Elizabethtown with very affordable housing on the LaRue County border.",
+    shortDesc: "A small rural community 15 minutes south of Elizabethtown with very affordable housing on the LaRue County border.",
     content: `<p>Sonora is a tiny community on the southern edge of Hardin County, about <strong>15 minutes south</strong> of Elizabethtown. Straddling the Hardin-LaRue county line, this rural area offers the most affordable housing options in the greater E-town orbit. If your priorities are maximum square footage per dollar and a country setting, Sonora is worth a look.</p>
 
 <h2>Housing &amp; Real Estate</h2>
 <p>Sonora and the surrounding area feature some of the lowest home prices in the region, typically ranging from <strong>$100,000 to $200,000</strong>. You'll find established homes on generous lots, some properties with acreage, and the occasional new build. For investors, the low acquisition costs paired with steady regional demand make Sonora properties worth considering for rental income.</p>
 
 <h2>Community Character</h2>
-<p>This is deeply rural Kentucky. Sonora is a place where front porches are for sitting, fields outnumber storefronts, and the community is small enough that everyone looks out for each other. There are minimal commercial amenities locally — E-town provides everything you need, and it's just a short drive north.</p>
+<p>This is deeply rural Kentucky. Sonora is a place where front porches are for sitting, fields outnumber storefronts, and the community is small enough that everyone looks out for each other. There are minimal commercial amenities locally: E-town provides everything you need, and it's just a short drive north.</p>
 
 <h2>Schools</h2>
 <p>Depending on exact location, students may attend either Hardin County Schools or LaRue County Schools. Verify the specific school district before purchasing, as the county line runs through the area. <a href="/elizabethtown/schools/hardin-county-schools/">Hardin County Schools</a> carry the Purple Star designation for military families.</p>
@@ -146,7 +153,7 @@ export const communities: Community[] = [
 <p>The I-65 access near Sonora provides a direct route north to <a href="/elizabethtown/">Elizabethtown</a> and Louisville, making the commute more manageable than the rural setting might suggest.</p>
 
 <h2>Why Choose Sonora</h2>
-<p>Sonora is best for buyers who prioritize <strong>the lowest possible cost of living, rural acreage, and don't mind a longer commute</strong>. It's a strong choice for retirees on fixed incomes, remote workers, and budget-conscious families. For Fort Knox families, the commute is longer than ideal — but for those who value land and savings over convenience, it works. Explore closer <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> if commute time is a priority.</p>
+<p>Sonora is best for buyers who prioritize <strong>the lowest possible cost of living, rural acreage, and don't mind a longer commute</strong>. It's a strong choice for retirees on fixed incomes, remote workers, and budget-conscious families. For Fort Knox families, the commute is longer than ideal, but for those who value land and savings over convenience, it works. Explore closer <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> if commute time is a priority.</p>
 
 <div class="cta-box"><p>Looking for the best value in the E-town area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps buyers find affordable properties throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },

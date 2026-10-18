@@ -38,7 +38,7 @@ export default function WeatherClimate() {
         <strong>humid subtropical climate zone</strong>, which means you get four distinct seasons
         without the extremes of the Deep South or the upper Midwest. If you&apos;re relocating
         from a coastal, desert, or northern climate, you&apos;ll notice real seasonal variety
-        here — spring blossoms, humid summers, colorful falls, and mild-to-moderate winters. It is
+        here: spring blossoms, humid summers, colorful falls, and mild-to-moderate winters. It is
         one of the things that makes the area attractive for people who want seasonal change
         without punishing weather.
       </p>
@@ -47,14 +47,14 @@ export default function WeatherClimate() {
       <p className="text-gray-body mb-4">
         Summers in E-town are warm and humid. Daytime highs regularly reach{" "}
         <strong>85-90&deg;F</strong>, and it&apos;s not unusual for July and August to push into the
-        low 90s for stretches at a time. Humidity is the real factor — those 88&deg;F days can feel
+        low 90s for stretches at a time. Humidity is the real factor, those 88&deg;F days can feel
         like 95&deg;F or higher with the moisture in the air. Mornings are often muggy, and
         afternoon thunderstorms pop up several times a month, typically rolling through quickly and
         leaving behind cooler air.
       </p>
       <p className="text-gray-body mb-4">
         If you&apos;re coming from the desert Southwest or Pacific Northwest, the humidity will be
-        an adjustment. Central air conditioning is a necessity, not a luxury — virtually every home
+        an adjustment. Central air conditioning is a necessity, not a luxury, virtually every home
         in the area has it. On the positive side, summers mean long daylight hours, and the{" "}
         <Link
           href="/elizabethtown/parks-recreation/"
@@ -88,7 +88,7 @@ export default function WeatherClimate() {
         Winters in Elizabethtown are <strong>moderate by Midwestern and Northern standards</strong>.
         Daytime highs typically range from the upper 30s to mid-40s, with overnight lows settling
         between <strong>25-35&deg;F</strong>. Stretches of below-freezing weather do occur, but
-        sustained bitter cold — the kind you get in Michigan, Minnesota, or upstate New York — is
+        sustained bitter cold (the kind you get in Michigan, Minnesota, or upstate New York) is
         uncommon. Most winters see a handful of days that dip into the teens, but they rarely last
         more than a few days.
       </p>
@@ -96,7 +96,7 @@ export default function WeatherClimate() {
         Snowfall averages about <strong>8 inches per year</strong>, spread across several small
         events rather than one or two major storms. An inch or two at a time is typical, and it
         usually melts within a day or two. Ice storms are actually a bigger concern than
-        heavy snow — freezing rain can make roads treacherous and knock out power. The city and
+        heavy snow, freezing rain can make roads treacherous and knock out power. The city and
         county do a reasonable job of treating major roads, but side streets and rural roads can
         remain slick for a day after an ice event.
       </p>
@@ -105,8 +105,8 @@ export default function WeatherClimate() {
         Spring (March through May)
       </h2>
       <p className="text-gray-body mb-4">
-        Spring arrives gradually. March can be unpredictable — you might get a 70&deg;F day
-        followed by a 35&deg;F morning with sleet — but by April the warming trend takes hold.
+        Spring arrives gradually. March can be unpredictable. You might get a 70&deg;F day
+        followed by a 35&deg;F morning with sleet, but by April the warming trend takes hold.
         April and May bring pleasant temperatures in the <strong>55-75&deg;F range</strong>, along
         with blooming dogwoods, redbuds, and wildflowers. It is a beautiful time of year in
         central Kentucky, and one of the most popular seasons for{" "}
@@ -132,7 +132,7 @@ export default function WeatherClimate() {
         Elizabethtown receives approximately <strong>48 inches of rainfall</strong> per year,
         distributed fairly evenly across all twelve months with a slight peak in spring. Combined
         with the roughly 8 inches of annual snowfall, precipitation is consistent but rarely
-        extreme. The area averages around 200 sunny or partly sunny days per year — not as bright
+        extreme. The area averages around 200 sunny or partly sunny days per year, not as bright
         as the Sun Belt, but more sunshine than cities like Seattle, Cleveland, or Pittsburgh.
       </p>
 

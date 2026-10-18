@@ -6,7 +6,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "About Our Elizabethtown Realtor Directory",
   description:
-    "Learn about the Elizabethtown, KY realtor directory — a free local resource for finding real estate agents, neighborhoods, schools, and military relocation guides.",
+    "Learn about the Elizabethtown, KY realtor directory: a free local resource for finding real estate agents, neighborhoods, schools, and military relocation guides.",
   alternates: { canonical: "/about/" },
 };
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
       </h1>
 
       <p className="text-lg text-gray-body mb-6 leading-relaxed">
-        Welcome to Realtors in Elizabethtown, KY — your free, comprehensive resource for finding real
+        Welcome to Realtors in Elizabethtown, KY. This is your free, comprehensive resource for finding real
         estate agents and exploring everything the Elizabethtown and Fort Knox area has to offer. Whether
         you&apos;re buying, selling, relocating with the military, or simply researching the area, this site
         was built with you in mind.
@@ -51,7 +51,7 @@ export default function AboutPage() {
         </li>
         <li>
           <strong>School Information:</strong> Guides to Hardin County Schools, Elizabethtown Independent,
-          and Fort Knox DoDEA schools — with attendance zones and programs that matter to families.
+          and Fort Knox DoDEA schools, with attendance zones and programs that matter to families.
         </li>
         <li>
           <strong>Fort Knox &amp; Military Resources:</strong> Over 30 pages dedicated to military
@@ -69,14 +69,14 @@ export default function AboutPage() {
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Why This Directory Exists</h2>
       <p className="text-gray-body mb-4">
-        Finding the right real estate agent in a new city can be overwhelming — especially if you&apos;re
+        Finding the right real estate agent in a new city can be overwhelming, especially if you&apos;re
         making a military PCS move with limited time to research. We created this directory to be the single
         resource that answers the questions people actually ask when considering Elizabethtown: What are the
         neighborhoods like? Which schools should I look at? Can my BAH cover a mortgage? What&apos;s the
         commute to Fort Knox?
       </p>
       <p className="text-gray-body mb-6">
-        Every piece of content is written with local knowledge — referencing specific streets, landmarks,
+        Every piece of content is written with local knowledge: referencing specific streets, landmarks,
         and real data. We aim to be the most helpful Elizabethtown real estate resource on the internet.
       </p>
 

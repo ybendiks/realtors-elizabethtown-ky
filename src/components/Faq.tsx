@@ -11,7 +11,7 @@ interface Props {
   /**
    * Emit FAQPage structured data. Default true.
    *
-   * Set false when the page already emits FAQPage schema from another block —
+   * Set false when the page already emits FAQPage schema from another block, 
    * two FAQPage objects on one page is a structured-data error, and Google
    * will usually drop both rather than pick one.
    */
@@ -24,7 +24,7 @@ interface Props {
  * This exists because the question/answer text was previously duplicated on
  * each page that had an FAQ: once inside a local `faqData` array for the
  * schema, and again in the markup. The two copies could drift, which means
- * publishing structured data that does not match the visible page — something
+ * publishing structured data that does not match the visible page, something
  * Google treats as a quality problem rather than a harmless mismatch.
  */
 export default function Faq({ items, heading = "Frequently Asked Questions", schema = true }: Props) {

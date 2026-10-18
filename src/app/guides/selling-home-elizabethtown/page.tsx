@@ -75,7 +75,7 @@ export default function SellingHomeGuide() {
         Fix the things buyers will notice: dripping faucets, cracked grout, scuffed paint, worn
         weather stripping, and landscaping that needs attention. These are small investments that
         prevent buyers from mentally discounting your home. In central Kentucky, pay particular
-        attention to the exterior — curb appeal matters in a market where many buyers drive by
+        attention to the exterior, curb appeal matters in a market where many buyers drive by
         before scheduling a showing.
       </p>
 
@@ -108,7 +108,7 @@ export default function SellingHomeGuide() {
           seller&apos;s market
         </Link>
         , homes sell at approximately 97-99% of their asking price. This means the right price
-        from day one is critical — overpricing leads to extended days on market, price reductions,
+        from day one is critical: overpricing leads to extended days on market, price reductions,
         and ultimately a lower net sale price than if you had priced correctly at the start.
       </p>
       <p className="text-gray-body mb-4">
@@ -186,7 +186,7 @@ export default function SellingHomeGuide() {
         </li>
         <li>
           <strong>Feedback.</strong> Your agent will collect showing feedback from buyer agents.
-          This information is valuable — if multiple buyers mention the same concern, address it.
+          This information is valuable, if multiple buyers mention the same concern, address it.
         </li>
       </ul>
 
@@ -201,7 +201,7 @@ export default function SellingHomeGuide() {
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>Financing type.</strong> Cash and conventional offers may close faster, but VA
-          and FHA offers are equally reliable in this market. Do not dismiss a VA buyer — they are
+          and FHA offers are equally reliable in this market. Do not dismiss a VA buyer. They are
           a large segment of E-town purchasers and their financing is dependable.
         </li>
         <li>

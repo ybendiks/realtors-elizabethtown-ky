@@ -37,7 +37,7 @@ export default function HomeAppraisalGuide() {
         A home appraisal is a critical step in nearly every real estate transaction. Whether you
         are buying, selling, or refinancing in Elizabethtown, the appraisal determines the
         property&apos;s market value and directly affects financing. Understanding how appraisals
-        work — and what to do when one does not go as expected — gives you a significant advantage.
+        work, and what to do when one does not go as expected, gives you a significant advantage.
       </p>
 
       {/* How the Appraisal Process Works */}
@@ -51,7 +51,7 @@ export default function HomeAppraisalGuide() {
       <ol className="list-decimal pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>Assignment.</strong> A licensed appraiser is assigned to the property. Neither
-          the buyer, seller, nor agents choose the appraiser — this independence is required by
+          the buyer, seller, nor agents choose the appraiser. This independence is required by
           federal regulations.
         </li>
         <li>
@@ -185,7 +185,7 @@ export default function HomeAppraisalGuide() {
         What to Do If the Appraisal Comes in Low
       </h2>
       <p className="text-gray-body mb-4">
-        A low appraisal — where the appraised value is below the contract price — creates a gap
+        A low appraisal, where the appraised value is below the contract price, creates a gap
         that must be addressed. While this is uncommon in Elizabethtown due to consistent
         appreciation and good comparable data, it does happen. Here are your options:
       </p>

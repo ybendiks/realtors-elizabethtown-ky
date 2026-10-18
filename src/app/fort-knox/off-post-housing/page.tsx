@@ -45,15 +45,15 @@ export default function OffPostHousing() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Off-Post Housing Near Fort Knox — Community Comparison
+        Off-Post Housing Near Fort Knox, Community Comparison
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
-        If you&apos;ve decided to live off-post at Fort Knox — or you&apos;re weighing it against{" "}
+        If you&apos;ve decided to live off-post at Fort Knox, or you&apos;re weighing it against{" "}
         <Link href="/fort-knox/knox-hills-housing/" className="text-navy font-semibold hover:text-gold-dark">
           Knox Hills on-post housing
         </Link>{" "}
-        — the next question is <em>where</em>. Four communities surround Fort Knox, each with a
+the next question is <em>where</em>. Four communities surround Fort Knox, each with a
         different character, price point, and commute. This guide breaks them down side by side so
         you can make an informed decision before your boots hit Kentucky soil.
       </p>
@@ -64,7 +64,7 @@ export default function OffPostHousing() {
         <Link href="/fort-knox/bah-rates/" className="text-navy font-semibold hover:text-gold-dark">
           BAH at most ranks
         </Link>{" "}
-        covers the full cost of housing in all four areas — whether you&apos;re renting or buying
+        covers the full cost of housing in all four areas, whether you&apos;re renting or buying
         with a{" "}
         <Link href="/fort-knox/va-loans-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
           VA loan
@@ -119,9 +119,9 @@ export default function OffPostHousing() {
       </div>
 
       {/* Elizabethtown */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Elizabethtown — 15 Minutes South</h2>
+      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Elizabethtown, 15 Minutes South</h2>
       <p className="text-gray-body mb-4">
-        Elizabethtown — &quot;E-town&quot; — is the largest community near Fort Knox and where most
+        Elizabethtown, &quot;E-town&quot;, is the largest community near Fort Knox and where most
         military families choose to live. The city of roughly{" "}
         <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> sits
         about 15 minutes south of Fort Knox&apos;s main gate via US-31W. It is the Hardin County
@@ -164,12 +164,12 @@ export default function OffPostHousing() {
       </ul>
       <div className="bg-gray-light rounded-lg p-4 mb-6">
         <p className="text-sm text-gray-body">
-          <strong>Median home price:</strong> ~$250,000 | <strong>Average 3BR rent:</strong> $1,100-$1,300/mo | <strong>Commute:</strong> ~15 min via US-31W
+          <strong>Median sale price:</strong> {usd(MEDIAN_SALE_PRICE.value)} | <strong>Average 3BR rent:</strong> $1,100-$1,300/mo | <strong>Commute:</strong> ~15 min via US-31W
         </p>
       </div>
 
       {/* Radcliff */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Radcliff — 5 Minutes from the Gate</h2>
+      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Radcliff, 5 Minutes from the Gate</h2>
       <p className="text-gray-body mb-4">
         Radcliff is the closest community to Fort Knox and the most military-concentrated town in
         the area. With a population of about <strong>23,000</strong>, it sits immediately south of
@@ -200,7 +200,7 @@ export default function OffPostHousing() {
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Considerations</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>Fewer restaurants, shopping, and entertainment options compared to Elizabethtown.</li>
-        <li>The town has a more utilitarian feel — strip malls and chain restaurants dominate the commercial corridor.</li>
+        <li>The town has a more utilitarian feel, strip malls and chain restaurants dominate the commercial corridor.</li>
         <li>Some neighborhoods show their age and lack the curb appeal of E-town&apos;s newer developments.</li>
         <li>Property values have historically appreciated more slowly than Elizabethtown.</li>
       </ul>
@@ -211,11 +211,11 @@ export default function OffPostHousing() {
       </div>
 
       {/* Vine Grove */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Vine Grove — 10 Minutes, Small-Town Feel</h2>
+      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Vine Grove, 10 Minutes, Small-Town Feel</h2>
       <p className="text-gray-body mb-4">
         Vine Grove is a small town of about <strong>7,000 residents</strong> located roughly 10
         minutes west of Fort Knox along KY-313. It offers a quieter, more rural alternative to
-        Radcliff and Elizabethtown — the kind of place where you know your neighbors and kids ride
+        Radcliff and Elizabethtown, the kind of place where you know your neighbors and kids ride
         bikes in the street.
       </p>
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Why Families Choose Vine Grove</h3>
@@ -240,7 +240,7 @@ export default function OffPostHousing() {
       </ul>
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Considerations</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
-        <li>Very limited commercial amenities — you will drive to Radcliff or E-town for most shopping and dining.</li>
+        <li>Very limited commercial amenities. You will drive to Radcliff or E-town for most shopping and dining.</li>
         <li>Fewer neighborhood options and less housing inventory when searching.</li>
         <li>Slower appreciation rates compared to E-town, though the lower entry price offsets this.</li>
       </ul>
@@ -251,7 +251,7 @@ export default function OffPostHousing() {
       </div>
 
       {/* Brandenburg */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Brandenburg — 20 Minutes, Room to Breathe</h2>
+      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Brandenburg, 20 Minutes, Room to Breathe</h2>
       <p className="text-gray-body mb-4">
         Brandenburg is the Meade County seat, a small Ohio River town of about <strong>3,000
         residents</strong> located roughly 20 minutes northeast of Fort Knox. It is the most rural
@@ -281,9 +281,9 @@ export default function OffPostHousing() {
       </ul>
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Considerations</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
-        <li>Longest commute of the four communities — 20-25 minutes to Fort Knox in good conditions.</li>
+        <li>Longest commute of the four communities, 20-25 minutes to Fort Knox in good conditions.</li>
         <li>Meade County Schools (not Hardin County), which may have different programs and ratings.</li>
-        <li>Very limited local shopping and dining — you will rely on E-town or Radcliff for most errands.</li>
+        <li>Very limited local shopping and dining. You will rely on E-town or Radcliff for most errands.</li>
         <li>More isolated feel that some families find too quiet, especially those accustomed to on-post life.</li>
       </ul>
       <div className="bg-gray-light rounded-lg p-4 mb-6">
@@ -297,25 +297,25 @@ export default function OffPostHousing() {
       <div className="space-y-3 mb-8">
         <div className="bg-gray-light rounded-lg p-4">
           <p className="text-sm text-gray-body">
-            <strong className="text-navy">Best overall for families:</strong> Elizabethtown — the
+            <strong className="text-navy">Best overall for families:</strong> Elizabethtown, the
             most schools, neighborhoods, amenities, and long-term home value appreciation.
           </p>
         </div>
         <div className="bg-gray-light rounded-lg p-4">
           <p className="text-sm text-gray-body">
-            <strong className="text-navy">Shortest commute:</strong> Radcliff — 5 minutes to the
+            <strong className="text-navy">Shortest commute:</strong> Radcliff, 5 minutes to the
             gate, military-friendly community, most affordable rentals.
           </p>
         </div>
         <div className="bg-gray-light rounded-lg p-4">
           <p className="text-sm text-gray-body">
-            <strong className="text-navy">Most affordable to buy:</strong> Vine Grove — lowest
+            <strong className="text-navy">Most affordable to buy:</strong> Vine Grove, lowest
             median home prices, small-town charm, reasonable 10-minute commute.
           </p>
         </div>
         <div className="bg-gray-light rounded-lg p-4">
           <p className="text-sm text-gray-body">
-            <strong className="text-navy">Most space and privacy:</strong> Brandenburg — acreage,
+            <strong className="text-navy">Most space and privacy:</strong> Brandenburg, acreage,
             river access, rural character, but the longest commute.
           </p>
         </div>

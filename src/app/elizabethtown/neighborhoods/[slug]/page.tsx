@@ -69,7 +69,7 @@ export default async function NeighborhoodPage({ params }: Props) {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        {n.name} — Elizabethtown, KY Neighborhood Guide
+        {n.name}, Elizabethtown, KY Neighborhood Guide
       </h1>
 
       <QuickFacts facts={n.quickFacts} />

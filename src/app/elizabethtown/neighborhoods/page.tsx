@@ -28,7 +28,7 @@ export default function NeighborhoodsHub() {
             Best Neighborhoods in Elizabethtown, KY
           </h1>
           <p className="text-lg text-gray-body mb-4">
-            Elizabethtown offers a wide range of neighborhoods — from historic downtown bungalows to luxury
+            Elizabethtown offers a wide range of neighborhoods, from historic downtown bungalows to luxury
             new construction on acre-plus lots. Whether you&apos;re a military family PCSing to{" "}
             <Link href="/fort-knox/" className="text-navy font-semibold hover:text-gold-dark">Fort Knox</Link>,
             a first-time buyer on a budget, or looking for an upscale family home, there&apos;s a community
@@ -64,7 +64,7 @@ export default function NeighborhoodsHub() {
           <div className="mt-10 bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
             <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Need Help Choosing a Neighborhood?</h2>
             <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
-              Every family has different priorities — school districts, commute times, lot sizes, and budget.
+              Every family has different priorities: school districts, commute times, lot sizes, and budget.
               Austin Kutz at{" "}
               <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
                 Compass and Key Group

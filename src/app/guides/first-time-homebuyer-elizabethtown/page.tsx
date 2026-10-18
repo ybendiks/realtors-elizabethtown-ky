@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import Faq from "@/components/Faq";
 import { SITE_URL, CKG } from "@/lib/constants";
+import { MEDIAN_SALE_PRICE, usd } from "@/data/market-facts";
 
 export const metadata: Metadata = {
   title: "First-Time Homebuyer Guide Elizabethtown KY",
@@ -20,7 +21,7 @@ const faqData = [
   {
     question: "What credit score do I need to buy a home in Elizabethtown?",
     answer:
-      "Most lenders require a minimum credit score of 620 for conventional loans and 580 for FHA loans (with 3.5% down). VA loans have no VA-mandated minimum score, though most lenders set a floor around 620. If your score is below these thresholds, some lenders offer manual underwriting or credit repair programs. A higher score — 700 or above — will qualify you for the best interest rates.",
+      "Most lenders require a minimum credit score of 620 for conventional loans and 580 for FHA loans (with 3.5% down). VA loans have no VA-mandated minimum score, though most lenders set a floor around 620. If your score is below these thresholds, some lenders offer manual underwriting or credit repair programs. A higher score, 700 or above, will qualify you for the best interest rates.",
   },
   {
     question: "How long does it take to buy a house in Elizabethtown?",
@@ -70,9 +71,9 @@ export default function FirstTimeHomebuyerGuide() {
 
       <p className="text-lg text-gray-body mb-6">
         Buying your first home is one of the biggest financial decisions you will make, and
-        Elizabethtown is one of the best markets in Kentucky to do it. With a median home price
-        around $250,000, low property taxes, and multiple down payment assistance programs
-        available, homeownership is genuinely achievable here — even if you think you are not
+        Elizabethtown is one of the best markets in Kentucky to do it. With a median sale price
+        of {usd(MEDIAN_SALE_PRICE.value)}, low property taxes, and multiple down payment assistance programs
+        available, homeownership is genuinely achievable here, even if you think you are not
         ready. This guide walks you through every step, from getting pre-approved to picking up
         the keys.
       </p>
@@ -112,7 +113,7 @@ export default function FirstTimeHomebuyerGuide() {
         Step 2: Get Pre-Approved for a Mortgage
       </h2>
       <p className="text-gray-body mb-4">
-        Pre-approval is not optional in today&apos;s market — it is essential. A pre-approval
+        Pre-approval is not optional in today&apos;s market. It is essential. A pre-approval
         letter tells sellers you are a serious, qualified buyer. Here is how the process works:
       </p>
       <ol className="list-decimal pl-6 text-gray-body mb-4 space-y-2">

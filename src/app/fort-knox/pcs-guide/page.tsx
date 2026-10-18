@@ -15,7 +15,7 @@ const faqData = [
   {
     question: "How far in advance should I start house hunting for a PCS to Fort Knox?",
     answer:
-      "Ideally, start researching housing 60-90 days before your report date. If you plan to buy off-post, contact a realtor as soon as you receive orders. VA loan pre-approval takes 1-2 weeks, and homes in the Elizabethtown area typically go under contract within 15-30 days of listing. For Knox Hills on-post housing, apply as early as possible — waitlists can run 30-90 days depending on the unit size.",
+      "Ideally, start researching housing 60-90 days before your report date. If you plan to buy off-post, contact a realtor as soon as you receive orders. VA loan pre-approval takes 1-2 weeks, and homes in the Elizabethtown area typically go under contract within 15-30 days of listing. For Knox Hills on-post housing, apply as early as possible, waitlists can run 30-90 days depending on the unit size.",
   },
   {
     question: "Can I buy a house near Fort Knox using a VA loan?",
@@ -45,7 +45,7 @@ const faqData = [
   {
     question: "What should I do the first week after arriving at Fort Knox?",
     answer:
-      "During your first week, report to your unit and complete in-processing. Visit the Housing Services Office if you need housing assistance. If you have children, enroll them in school — bring immunization records, previous school records, and a copy of your orders. Set up your DEERS enrollment and get your ID cards updated. Register vehicles on post. Open a local bank account if needed, and set up utilities for off-post housing. The on-post Welcome Center can help coordinate all first-week tasks.",
+      "During your first week, report to your unit and complete in-processing. Visit the Housing Services Office if you need housing assistance. If you have children, enroll them in school: bring immunization records, previous school records, and a copy of your orders. Set up your DEERS enrollment and get your ID cards updated. Register vehicles on post. Open a local bank account if needed, and set up utilities for off-post housing. The on-post Welcome Center can help coordinate all first-week tasks.",
   },
 ];
 
@@ -72,13 +72,13 @@ export default function PCSGuide() {
       }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        PCS to Fort Knox — Complete Guide for 2026
+        PCS to Fort Knox, Complete Guide for 2026
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
         You got your orders. Fort Knox, Kentucky. Whether this is your first PCS or your fifth,
         every move comes with a mountain of logistics, decisions, and deadlines. This guide walks
-        you through everything — from the day you receive orders to the day you settle into your
+        you through everything, from the day you receive orders to the day you settle into your
         new home near Fort Knox. It was written with the same straightforward approach you&apos;d
         want from a battle buddy who&apos;s been through it.
       </p>
@@ -109,7 +109,7 @@ export default function PCSGuide() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Your PCS Timeline: Orders to Moving Day</h2>
       <p className="text-gray-body mb-6">
         The following timeline assumes a typical PCS with 60-90 days of lead time. Adjust as
-        needed — some of you will get 30 days of notice and have to compress everything. That&apos;s
+        needed, some of you will get 30 days of notice and have to compress everything. That&apos;s
         the military for you.
       </p>
 
@@ -135,7 +135,7 @@ export default function PCSGuide() {
           <Link href="/fort-knox/va-loans-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
             VA loan
           </Link>{" "}
-          now — it takes 1-2 weeks and costs nothing.
+          now. It takes 1-2 weeks and costs nothing.
         </li>
         <li>
           <strong>If buying off-post, contact a realtor.</strong> Start your home search early,
@@ -162,7 +162,7 @@ export default function PCSGuide() {
           <strong>Schedule your household goods (HHG) move.</strong> Log into DPS (Defense Personal
           Property System) at{" "}
           <span className="font-medium">move.mil</span> to schedule your government-funded move.
-          Summer dates fill up fast — book as early as possible. See our{" "}
+          Summer dates fill up fast, book as early as possible. See our{" "}
           <Link href="/fort-knox/military-relocation-guide/" className="text-navy font-semibold hover:text-gold-dark">
             military relocation guide
           </Link>{" "}
@@ -205,7 +205,7 @@ export default function PCSGuide() {
         </li>
         <li>
           <strong>Prepare your vehicle registration.</strong> Kentucky requires vehicle registration
-          within 30 days of establishing residency. Active duty military have some exemptions — check
+          within 30 days of establishing residency. Active duty military have some exemptions, check
           with your legal office.
         </li>
         <li>
@@ -227,7 +227,7 @@ export default function PCSGuide() {
           or your lease walkthrough if renting.
         </li>
         <li>
-          <strong>Travel to Fort Knox.</strong> Keep all travel receipts — fuel, lodging, meals.
+          <strong>Travel to Fort Knox.</strong> Keep all travel receipts: fuel, lodging, meals.
           You&apos;re entitled to MALT (mileage allowance) and per diem for the travel days
           authorized on your orders.
         </li>
@@ -309,7 +309,7 @@ export default function PCSGuide() {
       {/* School Enrollment */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">School Enrollment Timeline</h2>
       <p className="text-gray-body mb-4">
-        If you have school-age children, plan for enrollment as part of your PCS — not an afterthought.
+        If you have school-age children, plan for enrollment as part of your PCS, not an afterthought.
         Here&apos;s how it works:
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
@@ -370,7 +370,7 @@ export default function PCSGuide() {
             Compass and Key Group
           </Link>{" "}
           is a U.S. Marine Corps veteran who has been through military relocations himself. He
-          specializes in helping PCSing families find homes in the Fort Knox area — whether
+          specializes in helping PCSing families find homes in the Fort Knox area, whether
           you&apos;re buying your first home with a VA loan, searching remotely from your current
           duty station, or need to close on a tight timeline. Austin knows the neighborhoods, the
           schools, and the BAH math inside and out.

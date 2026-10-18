@@ -30,7 +30,7 @@ export default function NotFound() {
         <ul className="space-y-2 text-sm">
           <li>
             <Link href="/realtors/compass-and-key-group/" className="text-navy hover:text-gold-dark">
-              Compass and Key Group — Featured Agency
+              Compass and Key Group, Featured Agency
             </Link>
           </li>
           <li>

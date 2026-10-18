@@ -138,7 +138,7 @@ export default function BestRealtorsPage() {
       <div className="border-l-4 border-gold bg-gold/5 p-4 mb-6">
         <p className="text-gray-body">
           <strong>How this list was built.</strong> Every office below was checked against the
-          Heart of Kentucky Association of REALTORS member roster in {REVIEW_MONTH} &mdash; the
+          Heart of Kentucky Association of REALTORS member roster in {REVIEW_MONTH}, the
           authoritative local list, covering all 160 member offices. Addresses and phone numbers
           come from that roster, not from our own records. Three agencies that previously appeared
           in this directory were <strong>removed</strong> during that review because we could not
@@ -151,7 +151,7 @@ export default function BestRealtorsPage() {
         There is no single best agency in Elizabethtown, and any page that tells you otherwise is
         selling something. What there is: a handful of established offices, each genuinely better
         suited to some situations than others. Below is what each one is, verified, and who it
-        tends to suit &mdash; so you can shorten your list before you start making calls.
+        tends to suit, so you can shorten your list before you start making calls.
       </p>
 
       {/* Comparison table */}
@@ -190,7 +190,7 @@ export default function BestRealtorsPage() {
                   </Link>
                 </td>
                 <td className="p-3 text-gray-body">
-                  {r.address ? r.address.split(",")[0] : "—"}
+                  {r.address ? r.address.split(",")[0]: ", "}
                 </td>
                 <td className="p-3 text-gray-body">{BEST_FOR[r.slug] ?? "General residential sales"}</td>
               </tr>
@@ -201,7 +201,7 @@ export default function BestRealtorsPage() {
 
       {/* Featured */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
-        {CKG.name} &mdash; our recommendation for military moves
+        {CKG.name}: our recommendation for military moves
       </h2>
       <p className="text-gray-body mb-4">
         We run this directory, so treat this section as what it is: our own pick, with the reasoning
@@ -258,7 +258,7 @@ export default function BestRealtorsPage() {
         </li>
         <li>
           <strong>Which school district is this house in?</strong> A local agent answers instantly,
-          because it changes both the schools and the property tax bill &mdash; roughly 20% on the
+          because it changes both the schools and the property tax bill, roughly 20% on the
           same house, depending on whether it sits in the Hardin County or Elizabethtown Independent
           district. Hesitation here tells you how local they really are.
         </li>

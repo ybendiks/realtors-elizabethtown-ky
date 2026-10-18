@@ -44,12 +44,12 @@ export default function MilitaryRelocationGuide() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Military Relocation Guide — Moving to Fort Knox, KY
+        Military Relocation Guide, Moving to Fort Knox, KY
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
         Moving your family across the country (or across the world) is one of the most stressful
-        parts of military life. This guide covers the logistics side of relocating to Fort Knox —
+        parts of military life. This guide covers the logistics side of relocating to Fort Knox, 
         how to move your household goods, which resources are available to you, and what to do
         during your first days on the ground. For the housing-specific side of the move, see our{" "}
         <Link href="/fort-knox/pcs-guide/" className="text-navy font-semibold hover:text-gold-dark">
@@ -100,7 +100,7 @@ export default function MilitaryRelocationGuide() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Your Relocation Resources</h2>
       <p className="text-gray-body mb-4">
         The military provides a suite of resources to help with every PCS move. Knowing what is
-        available — and using it early — makes the difference between a chaotic move and a smooth
+        available, and using it early, makes the difference between a chaotic move and a smooth
         one.
       </p>
 
@@ -110,7 +110,7 @@ export default function MilitaryRelocationGuide() {
         They offer free relocation planning tools, counseling, financial guidance, and can connect
         you with local services at your gaining installation. Their website includes a &quot;Plan My
         Move&quot; tool that generates a personalized PCS checklist based on your specific situation
-        — family size, pets, overseas vs CONUS, etc. Use it. It saves time and prevents you from
+family size, pets, overseas vs CONUS, etc. Use it. It saves time and prevents you from
         missing critical steps.
       </p>
 
@@ -149,7 +149,7 @@ export default function MilitaryRelocationGuide() {
         the tradeoffs helps you decide which works best for your situation.
       </p>
 
-      <h3 className="text-lg font-bold text-navy mt-6 mb-2">Household Goods (HHG) Move — Government-Arranged</h3>
+      <h3 className="text-lg font-bold text-navy mt-6 mb-2">Household Goods (HHG) Move, Government-Arranged</h3>
       <p className="text-gray-body mb-4">
         In an HHG move, the government arranges and pays for a commercial moving company to pack,
         transport, and deliver your belongings. This is the most common option and the easiest in
@@ -158,7 +158,7 @@ export default function MilitaryRelocationGuide() {
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>Scheduling:</strong> Book through the Defense Personal Property System (DPS) at
-          move.mil. Do this as early as possible — summer dates fill up fast, and a delayed HHG
+          move.mil. Do this as early as possible: summer dates fill up fast, and a delayed HHG
           pickup can cascade into problems at the other end.
         </li>
         <li>
@@ -172,21 +172,21 @@ export default function MilitaryRelocationGuide() {
           overage.
         </li>
         <li>
-          <strong>Delivery:</strong> Transit time to Fort Knox varies by origin — typically 1-3
+          <strong>Delivery:</strong> Transit time to Fort Knox varies by origin, typically 1-3
           weeks from CONUS locations. The movers deliver to your new home and unpack if requested.
         </li>
         <li>
           <strong>Claims:</strong> If anything is damaged or missing, file a claim through DPS
-          within 75 days of delivery. Document everything on delivery day — photograph damaged
+          within 75 days of delivery. Document everything on delivery day, photograph damaged
           items before the movers leave.
         </li>
       </ul>
 
       <h3 className="text-lg font-bold text-navy mt-6 mb-2">Personally Procured Move (PPM / DITY Move)</h3>
       <p className="text-gray-body mb-4">
-        In a PPM (formerly called DITY — Do It Yourself), you move your own household goods and the
+        In a PPM (formerly called DITY: Do It Yourself), you move your own household goods and the
         government reimburses you based on what an HHG move would have cost. You keep the difference
-        between the reimbursement and your actual expenses, which can be significant — often
+        between the reimbursement and your actual expenses, which can be significant, often
         $2,000-$5,000+ depending on the distance and weight.
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
@@ -197,8 +197,8 @@ export default function MilitaryRelocationGuide() {
         </li>
         <li>
           <strong>Financial upside:</strong> The government pays you 100% of what the HHG move
-          would have cost. If you can move for less — renting a truck, enlisting friends, being
-          efficient — you pocket the savings. This income is taxable, so set aside about 25% for
+          would have cost. If you can move for less: renting a truck, enlisting friends, being
+          efficient. You pocket the savings. This income is taxable, so set aside about 25% for
           taxes.
         </li>
         <li>
@@ -206,7 +206,7 @@ export default function MilitaryRelocationGuide() {
           control over their belongings, or service members looking to earn extra PCS income.
         </li>
         <li>
-          <strong>Partial PPM:</strong> You can also do a partial PPM — let the government move
+          <strong>Partial PPM:</strong> You can also do a partial PPM, let the government move
           most of your HHG while you personally transport a trailer or vehicle load of items you
           want to keep with you.
         </li>
@@ -248,7 +248,7 @@ export default function MilitaryRelocationGuide() {
           insurance to the visitor center for a post access pass.
         </li>
         <li>
-          <strong>Set up utilities</strong> for off-post housing — electricity (Nolin RECC or
+          <strong>Set up utilities</strong> for off-post housing, electricity (Nolin RECC or
           LG&E), water (varies by municipality), internet (Spectrum or AT&T).
         </li>
         <li>
@@ -279,7 +279,7 @@ export default function MilitaryRelocationGuide() {
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>DLA (Dislocation Allowance):</strong> A flat-rate payment to offset the
-          miscellaneous costs of relocating. Rates vary by rank and dependency status — check the
+          miscellaneous costs of relocating. Rates vary by rank and dependency status, so check the
           current year&apos;s JTR for exact amounts.
         </li>
         <li>
@@ -313,12 +313,12 @@ export default function MilitaryRelocationGuide() {
           <Link href="/fort-knox/off-post-housing/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             off-post housing
           </Link>{" "}
-          in Elizabethtown, Radcliff, and surrounding communities — whether you&apos;re buying with
+          in Elizabethtown, Radcliff, and surrounding communities, whether you&apos;re buying with
           a{" "}
           <Link href="/fort-knox/va-loans-elizabethtown/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             VA loan
           </Link>{" "}
-          or looking for a rental that fits your BAH. Reach out before you arrive — Austin can
+          or looking for a rental that fits your BAH. Reach out before you arrive, Austin can
           start the search remotely so you hit the ground running.
         </p>
         <a

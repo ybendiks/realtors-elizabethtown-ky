@@ -162,8 +162,8 @@ export default function CostOfLiving() {
         For military families stationed at Fort Knox, the Basic Allowance for Housing (BAH) rates
         make Elizabethtown exceptionally affordable. Fort Knox BAH is calculated based on the
         local housing market, and for most ranks with dependents, the monthly allowance{" "}
-        <strong>often covers a full mortgage payment</strong> — including principal, interest,
-        taxes, and insurance — on a median-priced home. In many cases, service members can purchase
+        <strong>often covers a full mortgage payment</strong>, including principal, interest,
+        taxes, and insurance, on a median-priced home. In many cases, service members can purchase
         a home using a{" "}
         <Link
           href="/fort-knox/bah-rates/"
@@ -209,7 +209,7 @@ export default function CostOfLiving() {
           Stretch Your Budget Further
         </h2>
         <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
-          Understanding the numbers is one thing — finding the right home at the right price is
+          Understanding the numbers is one thing, finding the right home at the right price is
           another.{" "}
           <Link
             href="/realtors/compass-and-key-group/"

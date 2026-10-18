@@ -9,7 +9,7 @@ import { CKG } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Elizabethtown KY Schools | School District Guide for Families",
   description:
-    "Complete guide to schools in Elizabethtown, KY. Hardin County Schools, Elizabethtown Independent, and Fort Knox DoDEA schools — enrollment, academics, and military family support.",
+    "Complete guide to schools in Elizabethtown, KY. Hardin County Schools, Elizabethtown Independent, and Fort Knox DoDEA schools: enrollment, academics, and military family support.",
   alternates: { canonical: "/elizabethtown/schools/" },
 };
 
@@ -56,14 +56,14 @@ export default function SchoolsHub() {
       <div className="flex flex-col lg:flex-row gap-10">
         <main className="flex-1 min-w-0">
           <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-            Schools in Elizabethtown, KY — Complete Guide for Families
+            Schools in Elizabethtown, KY, Complete Guide for Families
           </h1>
           <p className="text-lg text-gray-body mb-4">
             Families moving to Elizabethtown have access to three distinct school systems:
             the large <strong>Hardin County Schools</strong> district, the smaller
             and community-focused <strong>Elizabethtown Independent Schools</strong>,
             and on-post <strong>DoDEA schools at Fort Knox</strong>. Which system
-            your child attends depends primarily on where you live — making school
+            your child attends depends primarily on where you live, making school
             choice and home location decisions closely connected.
           </p>
           <p className="text-gray-body mb-4">

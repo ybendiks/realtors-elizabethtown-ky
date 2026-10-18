@@ -167,7 +167,7 @@ export default function CKGProfilePage() {
               Compass and Key Group was founded by Austin Kutz, a proud United States Marine Corps veteran
               who served five years on active duty, including two overseas tours. After transitioning from
               active duty to the Army Reserves, Austin pursued a Bachelor&apos;s degree in Business and
-              discovered a passion for real estate that aligned naturally with his military background —
+              discovered a passion for real estate that aligned naturally with his military background, 
               discipline, integrity, attention to detail, and a commitment to serving others.
             </p>
             <p className="text-gray-body mb-4">
@@ -184,7 +184,7 @@ export default function CKGProfilePage() {
               Compass and Key Group tailors their approach to fit your specific needs and timeline.
             </p>
             <p className="text-gray-body">
-              Austin&apos;s military experience isn&apos;t just a talking point — it&apos;s the foundation
+              Austin&apos;s military experience isn&apos;t just a talking point. It&apos;s the foundation
               of how CKG operates. He understands the urgency of a PCS move, the complexities of BAH budgets
               and VA loans, and the stress of relocating a family across the country. That first-hand
               understanding makes all the difference when time is short and the stakes are high.
@@ -199,7 +199,7 @@ export default function CKGProfilePage() {
               <div className="border-l-4 border-gold pl-5">
                 <h3 className="text-lg font-bold text-navy mb-2">Veteran-Owned, Veteran-Focused</h3>
                 <p className="text-gray-body">
-                  Austin Kutz isn&apos;t just veteran-friendly — he&apos;s a veteran himself. He&apos;s
+                  Austin Kutz isn&apos;t just veteran-friendly. He&apos;s a veteran himself. He&apos;s
                   navigated PCS moves, lived on BAH, and understands the VA loan process from a personal
                   level. When military families work with CKG, they&apos;re working with someone who truly
                   gets it. From understanding PCS timelines to knowing exactly what an E-5&apos;s BAH can
@@ -210,7 +210,7 @@ export default function CKGProfilePage() {
               <div className="border-l-4 border-gold pl-5">
                 <h3 className="text-lg font-bold text-navy mb-2">Deep Local Market Knowledge</h3>
                 <p className="text-gray-body">
-                  Austin knows Elizabethtown inside and out — from the established, tree-lined streets of{" "}
+                  Austin knows Elizabethtown inside and out, from the established, tree-lined streets of{" "}
                   <Link href="/elizabethtown/neighborhoods/helmwood-heights/" className="text-navy font-semibold hover:text-gold-dark">
                     Helmwood Heights
                   </Link>{" "}
@@ -234,7 +234,7 @@ export default function CKGProfilePage() {
               <div className="border-l-4 border-gold pl-5">
                 <h3 className="text-lg font-bold text-navy mb-2">Full-Service From Listing to Closing</h3>
                 <p className="text-gray-body">
-                  Compass and Key Group isn&apos;t a referral service or lead generator — Austin is hands-on
+                  Compass and Key Group isn&apos;t a referral service or lead generator, Austin is hands-on
                   from your first phone call through closing day and beyond. Buyers get full representation
                   including home tours, offer strategy, inspection guidance, and closing coordination.
                   Sellers receive professional market analysis, pricing strategy, marketing exposure, and
@@ -261,7 +261,7 @@ export default function CKGProfilePage() {
                   With a {CKG.rating.toFixed(1)}-star rating across {CKG.reviewCount} {CKG.reviewSource} client reviews, Compass and Key
                   Group&apos;s track record speaks for itself. Clients consistently highlight Austin&apos;s
                   professionalism, responsiveness, and genuine care. Much of CKG&apos;s business comes from
-                  repeat clients and referrals — the strongest endorsement an agent can receive.
+                  repeat clients and referrals, the strongest endorsement an agent can receive.
                 </p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function CKGProfilePage() {
               {[
                 {
                   title: "Home Buying Assistance",
-                  desc: "Whether it's your first home, a move-up property, or an investment purchase, we guide you through every step — from pre-approval to closing day. We'll help you find the right home at the right price in the right neighborhood.",
+                  desc: "Whether it's your first home, a move-up property, or an investment purchase, we guide you through every step, from pre-approval to closing day. We'll help you find the right home at the right price in the right neighborhood.",
                 },
                 {
                   title: "Home Selling & Listing",
@@ -282,7 +282,7 @@ export default function CKGProfilePage() {
                 },
                 {
                   title: "Military Relocation (PCS)",
-                  desc: "PCSing to or from Fort Knox? We specialize in military moves — remote buying, tight timelines, coordinating with your relocation office, and making sure you're settled before your report date.",
+                  desc: "PCSing to or from Fort Knox? We specialize in military moves: remote buying, tight timelines, coordinating with your relocation office, and making sure you're settled before your report date.",
                 },
                 {
                   title: "VA Loan Guidance",
@@ -354,11 +354,11 @@ export default function CKGProfilePage() {
                 },
                 {
                   name: "Verified Buyer, Hardin County",
-                  text: "Austin did an amazing job helping us find the perfect home — not just for us, but for our three dogs too. He listened to exactly what we needed, including a big yard and a neighborhood where we could walk our dogs safely. His patience and dedication made all the difference.",
+                  text: "Austin did an amazing job helping us find the perfect home, not just for us, but for our three dogs too. He listened to exactly what we needed, including a big yard and a neighborhood where we could walk our dogs safely. His patience and dedication made all the difference.",
                 },
                 {
                   name: "James",
-                  text: "Working with Austin from 700 miles away could have been a nightmare, but he made the entire process smooth and easy. His communication was outstanding — video walkthroughs, detailed photos, and honest assessments of every property. It felt like we were right there with him. Highly recommend for anyone buying remotely.",
+                  text: "Working with Austin from 700 miles away could have been a nightmare, but he made the entire process smooth and easy. His communication was outstanding: video walkthroughs, detailed photos, and honest assessments of every property. It felt like we were right there with him. Highly recommend for anyone buying remotely.",
                 },
                 {
                   name: "Military Family, Fort Knox Relocation",
@@ -374,7 +374,7 @@ export default function CKGProfilePage() {
                     ))}
                   </div>
                   <p className="text-gray-body italic mb-3">&quot;{review.text}&quot;</p>
-                  <p className="text-sm font-semibold text-navy">— {review.name}</p>
+                  <p className="text-sm font-semibold text-navy">, {review.name}</p>
                 </div>
               ))}
             </div>

@@ -49,11 +49,11 @@ export default function ElizabethtownHub() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Living in Elizabethtown, KY — Your Complete Area Guide
+        Living in Elizabethtown, KY: Your Complete Area Guide
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
-        Elizabethtown — &quot;E-town&quot; to the locals — is a city of roughly <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> nestled
+        Elizabethtown, &quot;E-town&quot; to the locals, is a city of roughly <strong>{POPULATION.value.toLocaleString("en-US")} residents</strong> nestled
         in Hardin County, Kentucky, about <strong>35 miles south of Louisville</strong> along the I-65 corridor. It&apos;s
         the kind of place that surprises people: affordable enough to buy a home on a modest income, close enough
         to Louisville for big-city access, and community-oriented in a way that larger cities can&apos;t replicate.
@@ -64,7 +64,7 @@ export default function ElizabethtownHub() {
         The reasons people land in E-town vary, but a few themes come up again and again. <strong>Military families</strong> arrive
         because of{" "}
         <Link href="/fort-knox/" className="text-navy font-semibold hover:text-gold-dark">Fort Knox</Link>,
-        located about 15 miles north. <strong>Louisville commuters</strong> come for the dramatically lower housing costs — you
+        located about 15 miles north. <strong>Louisville commuters</strong> come for the dramatically lower housing costs. You
         can buy a spacious family home here for what a cramped condo costs in the Highlands. <strong>Retirees</strong> appreciate
         the slow pace, low cost of living, and access to quality healthcare. And <strong>first-time homebuyers</strong> discover
         that E-town is one of the rare places where homeownership is genuinely attainable on a single income.
@@ -73,7 +73,7 @@ export default function ElizabethtownHub() {
         The median sale price in Elizabethtown reached <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> over the three
         months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year. Property taxes remain
         among the lowest in the state, but buyers should know that rising prices and {MORTGAGE_RATE_30YR.value}% mortgage
-        rates mean Fort Knox BAH no longer stretches as far as it did — at the E-5 level it no longer covers a full
+        rates mean Fort Knox BAH no longer stretches as far as it did, at the E-5 level it no longer covers a full
         payment on a median-priced home.
       </p>
 
@@ -86,7 +86,7 @@ export default function ElizabethtownHub() {
       </p>
       <p className="text-gray-body mb-4">
         The military presence from Fort Knox gives E-town a uniquely diverse and transient population. On any given day,
-        you&apos;ll meet families from every corner of the country — and many of them choose to stay after their service,
+        you&apos;ll meet families from every corner of the country, and many of them choose to stay after their service,
         which says something about the quality of life here.
       </p>
 
@@ -99,8 +99,8 @@ export default function ElizabethtownHub() {
         degree programs.
       </p>
       <p className="text-gray-body mb-4">
-        For those willing to commute, Louisville&apos;s diverse economy — healthcare, logistics (UPS Worldport),
-        manufacturing, bourbon industry, and corporate headquarters — is accessible within 45-60 minutes.
+        For those willing to commute, Louisville&apos;s diverse economy: healthcare, logistics (UPS Worldport),
+        manufacturing, bourbon industry, and corporate headquarters, is accessible within 45-60 minutes.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Explore Elizabethtown</h2>

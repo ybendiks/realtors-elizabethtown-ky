@@ -89,13 +89,13 @@ export default function BAHRates() {
           </div>
           <div className="flex flex-col">
             <dt className="text-xs font-semibold text-gray-medium uppercase tracking-wide">Median Home Price (E-town)</dt>
-            <dd className="text-sm text-gray-body font-medium">~$250,000</dd>
+            <dd className="text-sm text-gray-body font-medium">{usd(MEDIAN_SALE_PRICE.value)}</dd>
           </div>
         </dl>
       </div>
 
       {/* BAH Rate Table */}
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">2026 BAH Rate Table — Fort Knox</h2>
+      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">2026 BAH Rate Table, Fort Knox</h2>
       <p className="text-gray-body mb-4">
         The following table shows estimated 2026 monthly BAH rates for Fort Knox by pay grade, with
         and without dependents. Rates are based on DOD calculations for the Fort Knox MHA (Military
@@ -141,7 +141,7 @@ export default function BAHRates() {
         Here is the math that makes the Fort Knox area one of the best duty stations for
         homeownership: <strong>your BAH often covers your entire mortgage payment</strong>,
         including principal, interest, taxes, and insurance (PITI). In many other duty station
-        markets — think Fort Liberty, JBLM, or any base near a major metro — BAH barely covers
+        markets (think Fort Liberty, JBLM, or any base near a major metro) BAH barely covers
         rent, let alone a mortgage.
       </p>
       <p className="text-gray-body mb-4">
@@ -156,7 +156,7 @@ export default function BAHRates() {
       </p>
       <p className="text-gray-body mb-4">
         Be clear about what that means: at today&apos;s prices and rates,{" "}
-        <strong>BAH no longer covers the full payment on a median-priced home for an E-5</strong> —
+        <strong>BAH no longer covers the full payment on a median-priced home for an E-5</strong>, 
         there is a gap of roughly {usd(MEDIAN_PI - E5.withDep)} a month on principal and interest
         before escrow. This is a real change from recent years, when it comfortably did. An E-5
         buying today should either look below the median, bring a down payment, or plan for the
@@ -174,7 +174,7 @@ export default function BAHRates() {
         <div className="space-y-3 text-sm text-gray-body">
           <div className="flex justify-between border-b border-gray-border pb-2">
             <span className="font-semibold text-navy">Elizabethtown</span>
-            <span>Median home ~$250K | Avg rent ~$1,100-$1,300/mo</span>
+            <span>Median sale {usd(MEDIAN_SALE_PRICE.value)} | Avg rent ~$1,100-$1,300/mo</span>
           </div>
           <div className="flex justify-between border-b border-gray-border pb-2">
             <span className="font-semibold text-navy">Radcliff</span>
@@ -196,7 +196,7 @@ export default function BAHRates() {
       <p className="text-gray-body mb-4">
         This is one of the most important financial decisions you&apos;ll make at each duty station.
         When you rent, your entire BAH goes to a landlord and you build zero equity. When you buy
-        with a VA loan, your BAH goes toward your own mortgage — and a portion of every payment
+        with a VA loan, your BAH goes toward your own mortgage, and a portion of every payment
         builds equity in an asset you own.
       </p>
       <p className="text-gray-body mb-4">
@@ -212,7 +212,7 @@ export default function BAHRates() {
           neighborhoods at most ranks.
         </li>
         <li>
-          <strong>Hardin County home values have appreciated steadily</strong> — roughly 4-6%
+          <strong>Hardin County home values have appreciated steadily</strong>, roughly 4-6%
           annually in recent years. A $250,000 home could be worth $280,000-$290,000 in three years.
         </li>
         <li>
@@ -221,7 +221,7 @@ export default function BAHRates() {
           investment property.
         </li>
         <li>
-          <strong>Tax benefits</strong> — mortgage interest is deductible, and military personnel
+          <strong>Tax benefits</strong>: mortgage interest is deductible, and military personnel
           have favorable capital gains treatment on primary residences even with PCS-related
           absences.
         </li>
@@ -244,9 +244,9 @@ export default function BAHRates() {
         Area (MHA) calculation:
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
-        <li><strong>40121</strong> — Fort Knox proper</li>
-        <li><strong>40160</strong> — Radcliff</li>
-        <li><strong>42701</strong> — Elizabethtown</li>
+        <li><strong>40121</strong>: Fort Knox proper</li>
+        <li><strong>40160</strong>: Radcliff</li>
+        <li><strong>42701</strong>: Elizabethtown</li>
       </ul>
       <p className="text-gray-body mb-4">
         Regardless of whether you choose to live in Elizabethtown, Radcliff, Vine Grove,
@@ -263,7 +263,7 @@ export default function BAHRates() {
             Compass and Key Group
           </Link>{" "}
           understands BAH budgeting from personal experience. He helps military families find homes
-          where BAH covers the full mortgage — turning a housing allowance into real equity. Whether
+          where BAH covers the full mortgage, turning a housing allowance into real equity. Whether
           you&apos;re an E-5 looking at your first home or an O-5 ready to invest, Austin can match
           your BAH to the right{" "}
           <Link href="/elizabethtown/neighborhoods/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>

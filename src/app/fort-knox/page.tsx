@@ -47,7 +47,7 @@ export default function FortKnoxHub() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Fort Knox, KY — Complete Guide for Military Families
+        Fort Knox, KY, Complete Guide for Military Families
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
@@ -67,21 +67,21 @@ export default function FortKnoxHub() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>U.S. Army Human Resources Command (HRC)</strong> — The Army&apos;s personnel
+          <strong>U.S. Army Human Resources Command (HRC)</strong>: The Army&apos;s personnel
           headquarters, responsible for assignments, promotions, retirements, and career management
           for every soldier. HRC is the single largest employer on post, with thousands of military
           and civilian workers.
         </li>
         <li>
-          <strong>U.S. Army Cadet Command</strong> — Oversees all ROTC programs nationwide, managing
+          <strong>U.S. Army Cadet Command</strong>: Oversees all ROTC programs nationwide, managing
           the training and commissioning pipeline for future Army officers.
         </li>
         <li>
-          <strong>U.S. Army Recruiting Command (USAREC)</strong> — Manages the Army&apos;s nationwide
+          <strong>U.S. Army Recruiting Command (USAREC)</strong>: Manages the Army&apos;s nationwide
           recruiting operations from Fort Knox.
         </li>
         <li>
-          <strong>United States Bullion Depository</strong> — The famous gold vault. While not an Army
+          <strong>United States Bullion Depository</strong>: The famous gold vault. While not an Army
           operation, the Depository is located on Fort Knox grounds and stores a significant portion
           of the nation&apos;s gold reserves. It is not open to the public, but it remains one of the
           most recognizable landmarks in Kentucky.
@@ -121,7 +121,7 @@ export default function FortKnoxHub() {
         <strong>Radcliff</strong> (5 minutes from the main gate, the closest option),{" "}
         <strong>Vine Grove</strong> (10 minutes, small-town feel), and{" "}
         <strong>Brandenburg</strong> (20 minutes, rural and spacious). Each has a different character,
-        price point, and lifestyle — and the right choice depends on your rank, family size, and
+        price point, and lifestyle, and the right choice depends on your rank, family size, and
         what matters most to you. Our{" "}
         <Link href="/fort-knox/on-post-vs-off-post/" className="text-navy font-semibold hover:text-gold-dark">
           on-post vs off-post comparison
@@ -189,7 +189,7 @@ export default function FortKnoxHub() {
         their service ends. The cost of living is well below the national average, the community is
         welcoming and accustomed to newcomers, and the access to Louisville (45 minutes north on I-65)
         provides big-city amenities without big-city prices. It&apos;s a place where your BAH
-        actually builds equity instead of vanishing into rent — and where your kids can play in the
+        actually builds equity instead of vanishing into rent, and where your kids can play in the
         front yard without worry.
       </p>
 
@@ -200,7 +200,7 @@ export default function FortKnoxHub() {
           <Link href="/realtors/compass-and-key-group/" className="text-gold hover:text-gold-light" style={{ color: "#D4A843" }}>
             Compass and Key Group
           </Link>{" "}
-          understands military relocation firsthand — the tight timelines, the long-distance house
+          understands military relocation firsthand, the tight timelines, the long-distance house
           hunting, the BAH math, and the stress of moving your family to a new duty station. He&apos;s
           built his real estate practice around helping military families find the right home in the
           Fort Knox area. Whether you&apos;re buying your first home with a VA loan or looking for

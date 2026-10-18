@@ -49,13 +49,13 @@ export default function KnoxHillsHousing() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Knox Hills Housing at Fort Knox — On-Post Living Guide
+        Knox Hills Housing at Fort Knox, On-Post Living Guide
       </h1>
 
       <p className="text-lg text-gray-body mb-6">
         Knox Hills is the privatized military housing community on Fort Knox, managed by Lendlease
         under the Centinel brand. If you are considering on-post housing at Fort Knox, Knox Hills
-        is your only option — and for many families, it is a good one. This guide covers everything
+        is your only option, and for many families, it is a good one. This guide covers everything
         you need to know: the application process, what to expect, the neighborhoods, and how to
         decide if on-post is the right call for your family.
       </p>
@@ -103,9 +103,9 @@ export default function KnoxHillsHousing() {
         <Link href="/fort-knox/bah-rates/" className="text-navy font-semibold hover:text-gold-dark">
           Basic Allowance for Housing (BAH)
         </Link>{" "}
-        is allotted directly to the housing office — you do not receive a BAH check and then pay
+        is allotted directly to the housing office. You do not receive a BAH check and then pay
         rent. The allotment covers your home, basic utilities (electric, water, gas, trash), and
-        maintenance. There is no security deposit and no lease in the traditional sense — you sign
+        maintenance. There is no security deposit and no lease in the traditional sense. You sign
         a housing agreement that lasts as long as you are assigned to Fort Knox.
       </p>
 
@@ -119,20 +119,20 @@ export default function KnoxHillsHousing() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Anderson, Gruber, and Hammond</strong> — Larger homes typically assigned to
+          <strong>Anderson, Gruber, and Hammond</strong>: Larger homes typically assigned to
           senior NCOs and officers. Many have been recently renovated with updated kitchens,
           flooring, and HVAC systems.
         </li>
         <li>
-          <strong>Prichard Place, Walker, and Wilson</strong> — Mid-range neighborhoods serving
+          <strong>Prichard Place, Walker, and Wilson</strong>: Mid-range neighborhoods serving
           NCOs and junior officers. A mix of renovated and original condition homes.
         </li>
         <li>
-          <strong>Craig, Gruber, and Brandenburg Station</strong> — Communities serving a range
+          <strong>Craig, Gruber, and Brandenburg Station</strong>: Communities serving a range
           of ranks with two- to four-bedroom options.
         </li>
         <li>
-          <strong>Gold Vault and other junior-grade areas</strong> — Smaller two- and
+          <strong>Gold Vault and other junior-grade areas</strong>: Smaller two- and
           three-bedroom homes for junior enlisted families.
         </li>
       </ul>
@@ -146,14 +146,14 @@ export default function KnoxHillsHousing() {
       {/* Application Process */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Application Process</h2>
       <p className="text-gray-body mb-4">
-        Applying for Knox Hills housing is straightforward, but timing matters — especially during
+        Applying for Knox Hills housing is straightforward, but timing matters, especially during
         peak PCS season. Here is the step-by-step process:
       </p>
       <ol className="list-decimal pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>Contact Knox Hills as early as possible.</strong> Call (502) 378-3708 or visit
           their office on post. You can begin the application process as soon as you receive your
-          PCS orders to Fort Knox — you do not need to be on the ground.
+          PCS orders to Fort Knox. You do not need to be on the ground.
         </li>
         <li>
           <strong>Submit your application.</strong> You will need a copy of your PCS orders, your
@@ -173,7 +173,7 @@ export default function KnoxHillsHousing() {
         <li>
           <strong>Accept your assigned home.</strong> When a unit becomes available, Knox Hills
           will contact you with the address and schedule a walkthrough. You can accept or decline
-          — but declining may move you to the back of the waitlist.
+but declining may move you to the back of the waitlist.
         </li>
         <li>
           <strong>Move in.</strong> Sign the housing agreement, set up your BAH allotment through
@@ -191,7 +191,7 @@ export default function KnoxHillsHousing() {
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>Two to four bedrooms with one to two and a half bathrooms</li>
         <li>Attached or detached garage or carport (varies by neighborhood)</li>
-        <li>Fenced or unfenced yard (varies — some neighborhoods have standard fencing)</li>
+        <li>Fenced or unfenced yard (varies, some neighborhoods have standard fencing)</li>
         <li>Washer and dryer hookups (some units include the appliances)</li>
         <li>Kitchen appliances: refrigerator, stove/oven, dishwasher, microwave</li>
         <li>Central heating and air conditioning</li>
@@ -211,7 +211,7 @@ export default function KnoxHillsHousing() {
       </ul>
       <p className="text-gray-body mb-4">
         Beyond the Knox Hills community itself, on-post living gives you easy access to Fort
-        Knox&apos;s full range of MWR facilities — fitness centers, pools, bowling alley, Otter
+        Knox&apos;s full range of MWR facilities: fitness centers, pools, bowling alley, Otter
         Creek Outdoor Recreation Area, the commissary, PX, and Ireland Army Health Clinic.
       </p>
 
@@ -225,7 +225,7 @@ export default function KnoxHillsHousing() {
         <li>
           <strong>Maintenance response times vary.</strong> Routine work orders (leaky faucet,
           broken blinds) may take days to weeks. Emergency maintenance (burst pipe, no heat) is
-          typically same-day. Experiences vary by neighborhood and season — winter heating season
+          typically same-day. Experiences vary by neighborhood and season, winter heating season
           can strain response times.
         </li>
         <li>
@@ -236,7 +236,7 @@ export default function KnoxHillsHousing() {
         <li>
           <strong>Your neighbors are all military.</strong> This is either a pro or a con depending
           on your perspective. The shared experience creates natural bonds, but it also means the
-          military is omnipresent — there is no separation between work and home life.
+          military is omnipresent. There is no separation between work and home life.
         </li>
         <li>
           <strong>Move-out can be stressful.</strong> When you PCS out, Knox Hills conducts a

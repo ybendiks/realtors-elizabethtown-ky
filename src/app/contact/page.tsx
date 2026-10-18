@@ -95,19 +95,19 @@ export default function ContactPage() {
           <Link href="/fort-knox/pcs-guide/" className="text-navy font-semibold hover:text-gold-dark">
             PCS to Fort Knox guide
           </Link>{" "}
-          — comprehensive military relocation information for service members.
+comprehensive military relocation information for service members.
         </li>
         <li>
           <Link href="/elizabethtown/neighborhoods/" className="text-navy font-semibold hover:text-gold-dark">
             Neighborhood guides
           </Link>{" "}
-          — explore 14 Elizabethtown communities with detailed profiles.
+explore 14 Elizabethtown communities with detailed profiles.
         </li>
         <li>
           <Link href="/guides/first-time-homebuyer-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
             First-time homebuyer guide
           </Link>{" "}
-          — step-by-step help for buying your first home in E-town.
+step-by-step help for buying your first home in E-town.
         </li>
       </ul>
 

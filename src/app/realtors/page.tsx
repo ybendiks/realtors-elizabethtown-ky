@@ -61,7 +61,7 @@ export default function DirectoryPage() {
           <p className="text-gray-body mb-4">
             Choosing the right real estate agent is one of the most important decisions you&apos;ll make
             when buying or selling a home in Elizabethtown. The best agents bring deep knowledge of Hardin
-            County neighborhoods, pricing trends, and local market conditions — along with the negotiation
+            County neighborhoods, pricing trends, and local market conditions, along with the negotiation
             skills and responsiveness that make the process smooth.
           </p>
           <div className="border-l-4 border-gold bg-gold/5 p-4 mb-4">
@@ -73,7 +73,7 @@ export default function DirectoryPage() {
               >
                 Compare the best realtors in Elizabethtown side by side
               </Link>{" "}
-              &mdash; what each agency is, verified against the local REALTORS association roster,
+what each agency is, verified against the local REALTORS association roster,
               and which situations each one suits.
             </p>
           </div>

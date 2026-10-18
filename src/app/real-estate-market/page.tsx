@@ -70,7 +70,7 @@ export default function RealEstateMarket() {
           <strong>Median sale price:</strong> <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> over the
           three months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year.
           The median sale price per square foot is {usd(PRICE_PER_SQFT.value)}, up 12.6% over the same
-          period &mdash; square-foot pricing is climbing faster than headline prices, which means buyers
+          period, square-foot pricing is climbing faster than headline prices, which means buyers
           are paying more for less space than they were a year ago.
         </li>
         <li>
@@ -143,7 +143,8 @@ export default function RealEstateMarket() {
       </p>
       <p className="text-gray-body mb-4">
         The trajectory tells the story: median prices have climbed from roughly $200,000 in 2021 to
-        approximately $250,000 in 2026. That represents a cumulative gain of about 25% over five
+        {usd(MEDIAN_SALE_PRICE.value)} by {MEDIAN_SALE_PRICE.asOf}. That is a cumulative gain of
+        roughly {Math.round((MEDIAN_SALE_PRICE.value / 200000 - 1) * 100)}% over five
         years, tracking closely with national appreciation trends while maintaining the area&apos;s
         affordability advantage. For a deeper look at these numbers,{" "}
         <Link
@@ -203,7 +204,7 @@ export default function RealEstateMarket() {
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Market Segments at a Glance</h2>
       <p className="text-gray-body mb-4">
         Different price ranges behave differently. The {DAYS_ON_MARKET.value}-day citywide average
-        is the benchmark each segment moves around &mdash; the figures below describe relative pace,
+        is the benchmark each segment moves around, the figures below describe relative pace,
         not separately measured averages.
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
@@ -225,7 +226,7 @@ export default function RealEstateMarket() {
         <li>
           <strong>Above $450,000:</strong> The luxury tier for Elizabethtown, often involving
           acreage, custom builds, or premium locations near Freeman Lake. This is where inventory
-          accumulates &mdash; marketing and patience are essential.
+          accumulates, marketing and patience are essential.
         </li>
       </ul>
 

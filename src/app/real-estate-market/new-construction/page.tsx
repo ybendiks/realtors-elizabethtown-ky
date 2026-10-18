@@ -124,7 +124,7 @@ export default function NewConstruction() {
 
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Advantages of New Construction</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
-        <li>Everything is new — no deferred maintenance, no aging roof or HVAC to worry about.</li>
+        <li>Everything is new, no deferred maintenance, no aging roof or HVAC to worry about.</li>
         <li>Modern energy efficiency (better insulation, newer windows, high-efficiency systems) lowers utility costs.</li>
         <li>Open floor plans and current design trends that match how families live today.</li>
         <li>Builder warranties (typically 1-year workmanship, 2-year mechanical, 10-year structural).</li>
@@ -136,14 +136,14 @@ export default function NewConstruction() {
         <li>Established neighborhoods with mature trees, known character, and proven home values.</li>
         <li>Often more square footage per dollar than new construction at the same price point.</li>
         <li>Larger lots in many older subdivisions compared to newer developments.</li>
-        <li>Move-in ready — no waiting 4-8 months for construction to complete.</li>
+        <li>Move-in ready, no waiting 4-8 months for construction to complete.</li>
         <li>Known quantities: you can inspect the home, check for issues, and see exactly what you are getting.</li>
       </ul>
 
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Potential Drawbacks of New Builds</h3>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>Construction timelines (4-8 months) can conflict with PCS deadlines or lease expirations.</li>
-        <li>Base prices can be misleading — upgrades on cabinets, countertops, and flooring add up quickly.</li>
+        <li>Base prices can be misleading: upgrades on cabinets, countertops, and flooring add up quickly.</li>
         <li>New subdivisions may lack mature landscaping and established community feel for several years.</li>
         <li>The builder&apos;s sales agent represents the builder, not you. Having your own agent is important.</li>
       </ul>
@@ -173,7 +173,7 @@ export default function NewConstruction() {
           registration.
         </li>
         <li>
-          <strong>Sign the builder contract.</strong> Review the contract carefully — builder
+          <strong>Sign the builder contract.</strong> Review the contract carefully, builder
           contracts are written to protect the builder. Have your agent and ideally an attorney
           review the terms, including completion timelines, delay penalties, and warranty coverage.
         </li>
@@ -204,7 +204,7 @@ export default function NewConstruction() {
         </h2>
         <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
           Builders welcome buyers who bring their own representation, and it costs you nothing
-          extra — the builder pays the buyer&apos;s agent commission.{" "}
+          extra, the builder pays the buyer&apos;s agent commission.{" "}
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"
