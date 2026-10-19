@@ -101,3 +101,50 @@ specialisms) is found and logged in `data-sources.md` first.
 returns different members on repeated requests to the same offset, so a single
 pass produces a plausible but incomplete roster. The published set is the union
 of eight passes, continued until all 643 association members had been seen.
+
+## Phase 5 - full copy review ✅
+
+A three-part review of all 108 pages found 66 items. Fixed in four commits.
+
+**Regressions I had introduced** (all passed typecheck, lint and build):
+- 14 H1 headings read as lists where a title separator became a comma
+- six sentences lost their connector where an em-dash sat after a `</Link>`
+- testimonials rendered as ", James"
+- the contact page shipped a literal `{CKG.phone}` in its meta description
+
+**Copy that sold for the competition** (mine): Olive + Oak's profile published
+our own SEO analysis and certified them on CKG's ground; RE/MAX was "a
+practical first call"; a Fort Knox FAQ told readers to join a referral
+programme "before you contact an agent"; the agent rosters gave ~110
+competitor agents one-tap dial buttons.
+
+**Pre-existing credibility problems:** seven neighbourhood entries claimed BAH
+grades could afford homes they cannot (an E-5 was $62k short of the Nicholas
+Ridge floor); the PCS guide quoted two different medians on one page;
+appreciation appeared as both 4-6% and 3-5% with a projected future value;
+three pages carried the pre-2024 "representation costs you nothing" line;
+four subdivision names appeared in prose with no page behind them; Freeman
+Lake Park was 164 acres containing a 170-acre lake; Hodgenville was placed in
+three directions.
+
+**Conversion:** the 14 neighbourhood and 7 things-to-do pages had no tappable
+call button; the contact page closed by recruiting competitor agents; the
+directory hub had no CTA at all.
+
+**Template tells:** all 14 neighbourhood openings shared one sentence shape;
+the five nearby-community entries shared a heading and closing sentence;
+Haycraft Park opened three paragraphs with what it lacks; five passages cited
+survey-grade social proof with no survey behind it.
+
+### Standing rules this established
+
+- **BAH budgets are quoted as PITI, not principal and interest.** The
+  allowance has to cover tax and insurance too. At 7.40%: E-5 $198k, E-6
+  $261k, O-3 $297k, O-4 $336k, O-5 $365k. `loanFromPayment()` computes it.
+- **CKG is not a military-only agency.** Non-military buyers are most of the
+  business. Military and VA depth is a differentiator, not the boundary.
+- **Describe competitors, never recommend them.** Five accurate competitor
+  profiles are why the directory is credible. "First call", "just as well"
+  and anything resembling a referral are not.
+- **A passing build proves nothing about copy.** Every regression in this
+  phase compiled cleanly. Grep the rendered output, not the source.
