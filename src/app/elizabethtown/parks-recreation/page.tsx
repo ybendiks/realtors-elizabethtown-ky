@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const parkSummaries: Record<string, string> = {
   "freeman-lake-park":
-    "Elizabethtown's flagship park with 164 acres of lakeside trails, fishing, playgrounds, pavilions, and scenic walking paths along Freeman Lake.",
+    "Elizabethtown's flagship park, built around a 170-acre lake with trails, fishing, playgrounds, pavilions, and scenic walking paths along Freeman Lake.",
   "mike-carroll-park":
     "Family-friendly east-side park at 301 Peterson Drive featuring playgrounds, sports fields, basketball courts, and covered pavilions.",
   "university-drive-park":
@@ -55,7 +55,7 @@ export default function ParksRecreationHub() {
             Parks &amp; Recreation in Elizabethtown, KY
           </h1>
           <p className="text-lg text-gray-body mb-4">
-            Elizabethtown&apos;s parks system offers something for everyone, from the 164-acre
+            Elizabethtown&apos;s parks system offers something for everyone, from the lakeside
             lakeside expanse of{" "}
             <Link
               href="/elizabethtown/parks-recreation/freeman-lake-park/"

@@ -139,13 +139,13 @@ export default function Commuting() {
           across town during busy hours.
         </li>
         <li>
-          <strong>Lincoln Parkway:</strong> Runs east from central E-town toward Hodgenville and
+          <strong>Lincoln Parkway (KY 61):</strong> Runs southeast from central E-town toward Hodgenville, about 12 miles, and
           the Abraham Lincoln Birthplace National Historical Park. It also provides access to
           several newer residential developments on the east side of the city.
         </li>
         <li>
           <strong>US-62 (Mulberry Street downtown):</strong> Runs east-west through the heart of
-          E-town, connecting to Hodgenville to the east and Leitchfield to the west.
+          E-town, with Leitchfield to the west. Hodgenville sits about 12 miles southeast via KY 61.
         </li>
       </ul>
 

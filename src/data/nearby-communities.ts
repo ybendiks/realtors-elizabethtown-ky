@@ -15,9 +15,9 @@ export const communities: Community[] = [
     slug: "hodgenville",
     name: "Hodgenville, KY",
     metaTitle: "Hodgenville KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Hodgenville, KY, Abraham Lincoln's birthplace, 20 minutes from E-town. Affordable housing and rural Kentucky charm.",
+    metaDesc: "Guide to living in Hodgenville, KY, Abraham Lincoln's birthplace, about 12 miles southeast of E-town. Affordable housing and rural Kentucky charm.",
     shortDesc: "Abraham Lincoln's birthplace, 20 minutes from E-town. Affordable housing and rural Kentucky charm.",
-    content: `<p>Hodgenville is a small LaRue County town of about <strong>3,200 residents</strong> located roughly <strong>20 minutes south</strong> of Elizabethtown via US-31E. It's best known as the birthplace of Abraham Lincoln, the Abraham Lincoln Birthplace National Historical Park draws visitors from around the world to the site of Lincoln's humble log cabin origins.</p>
+    content: `<p>Hodgenville is a small LaRue County town of about <strong>3,200 residents</strong> located about <strong>12 miles southeast</strong> of Elizabethtown, roughly 20 minutes via KY 61 (Lincoln Parkway). It's best known as the birthplace of Abraham Lincoln, the Abraham Lincoln Birthplace National Historical Park draws visitors from around the world to the site of Lincoln's humble log cabin origins.</p>
 
 <h2>Housing &amp; Real Estate</h2>
 <p>Hodgenville offers some of the most affordable real estate in the region. Home prices typically range from <strong>$100,000 to $200,000</strong>, making homeownership accessible on almost any budget. The housing stock is primarily established homes with larger lots than you'd find in Elizabethtown proper. For buyers seeking acreage and rural character at rock-bottom prices, Hodgenville delivers.</p>
@@ -30,14 +30,14 @@ export const communities: Community[] = [
 
 <h2>Distance &amp; Commute</h2>
 <ul>
-<li><strong>To Elizabethtown:</strong> ~20 minutes via US-31E</li>
+<li><strong>To Elizabethtown:</strong> about 12 miles southeast, roughly 20 minutes via KY 61 (Lincoln Parkway)</li>
 <li><strong>To Fort Knox:</strong> ~35 minutes</li>
 <li><strong>To Louisville:</strong> ~55-60 minutes via I-65</li>
 </ul>
 <p>The commute to E-town and Fort Knox is manageable but notably longer than from closer communities like <a href="/fort-knox/radcliff-ky/">Radcliff</a> or <a href="/fort-knox/vine-grove-ky/">Vine Grove</a>. Most residents accept the drive for the dramatically lower cost of living and rural lifestyle.</p>
 
-<h2>Why Choose Hodgenville</h2>
-<p>Hodgenville is ideal for buyers who want <strong>maximum affordability, rural character, and a genuine small-town experience</strong>. It's a strong option for retirees, remote workers, and anyone who prioritizes space and quiet over proximity to commercial amenities. For <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> with more urban convenience, explore our neighborhood guides.</p>
+<h2>Who buys in Hodgenville</h2>
+<p>Buyers come to Hodgenville for the price per square foot, and stay for a town square that still functions as one. <strong>Affordability and genuine rural character</strong>, twelve miles from E-town. It's a strong option for retirees, remote workers, and anyone who prioritizes space and quiet over proximity to commercial amenities. For <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> with more urban convenience, explore our neighborhood guides.</p>
 
 <div class="cta-box"><p>Exploring affordable options south of E-town? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> serves the greater Hardin County region including Hodgenville. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
@@ -66,8 +66,8 @@ export const communities: Community[] = [
 </ul>
 <p>Glendale's position between <a href="/elizabethtown/">Elizabethtown</a> and <a href="/fort-knox/">Fort Knox</a> gives it strategic commuting advantages in both directions. The I-65 access is excellent for Louisville commuters.</p>
 
-<h2>Why Choose Glendale</h2>
-<p>Glendale appeals to buyers seeking <strong>historic charm, a shorter Fort Knox commute than some E-town neighborhoods, and proximity to I-65</strong>. With the area's economic growth, property values may see appreciation as the community expands. It's worth watching for anyone interested in getting in early on a growing area.</p>
+<h2>The Glendale case</h2>
+<p>A village of a thousand people with an I-65 interchange and a shorter Fort Knox run than parts of E-town itself. <strong>Historic character with genuine access</strong> is an unusual combination at this price. With the area's economic growth, property values may see appreciation as the community expands. It's worth watching for anyone interested in getting in early on a growing area.</p>
 
 <div class="cta-box"><p>Interested in properties near Glendale? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> tracks opportunities throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
@@ -92,8 +92,8 @@ export const communities: Community[] = [
 <li><strong>To Louisville:</strong> ~50 minutes via I-65</li>
 </ul>
 
-<h2>Why Choose Cecilia</h2>
-<p>Cecilia is best for families who want <strong>a rural setting in the Central Hardin High School zone with easy access to E-town</strong>. The slightly longer commute to Fort Knox and Louisville is offset by more space, lower density, and a peaceful country feel. It's a practical choice for families who want room to breathe without being truly remote. For more urban <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a>, explore our guides.</p>
+<h2>Who Cecilia suits</h2>
+<p>The draw is the school zone. Families who want <strong>Central Hardin without a subdivision</strong> buy in Cecilia and accept a few extra minutes on the road. The slightly longer commute to Fort Knox and Louisville is offset by more space, lower density, and a peaceful country feel. It's a practical choice for families who want room to breathe without being truly remote. For more urban <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a>, explore our guides.</p>
 
 <div class="cta-box"><p>Looking for property in the Cecilia area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> knows Hardin County inside and out. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
@@ -122,8 +122,8 @@ export const communities: Community[] = [
 </ul>
 <p>Rineyville's position between E-town and Fort Knox makes it a particularly practical choice for <a href="/fort-knox/">military families</a> who want a short commute in a quiet setting.</p>
 
-<h2>Why Choose Rineyville</h2>
-<p>Rineyville is ideal for families who want <strong>affordable, spacious living with a manageable commute to both E-town and Fort Knox</strong>. It's a hidden gem for military families who don't need to be right in town but want to stay close to everything. The combination of low prices, generous lots, and commute convenience makes it worth exploring.</p>
+<h2>The Rineyville trade</h2>
+<p>Land and square footage are what Rineyville sells, at prices neither E-town nor Radcliff can match. The commute to <strong>both E-town and Fort Knox</strong> stays manageable, which is the part buyers do not expect. It's a hidden gem for military families who don't need to be right in town but want to stay close to everything. The combination of low prices, generous lots, and commute convenience makes it worth exploring.</p>
 
 <div class="cta-box"><p>Interested in Rineyville properties? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> covers all of Hardin County. Call veteran agent Austin Kutz at <strong>${CKG.phone}</strong>.</p></div>`,
   },
@@ -152,8 +152,8 @@ export const communities: Community[] = [
 </ul>
 <p>The I-65 access near Sonora provides a direct route north to <a href="/elizabethtown/">Elizabethtown</a> and Louisville, making the commute more manageable than the rural setting might suggest.</p>
 
-<h2>Why Choose Sonora</h2>
-<p>Sonora is best for buyers who prioritize <strong>the lowest possible cost of living, rural acreage, and don't mind a longer commute</strong>. It's a strong choice for retirees on fixed incomes, remote workers, and budget-conscious families. For Fort Knox families, the commute is longer than ideal, but for those who value land and savings over convenience, it works. Explore closer <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> if commute time is a priority.</p>
+<h2>Who buys in Sonora</h2>
+<p>Sonora is the cheapest land in this guide. You trade minutes on the road for <strong>acreage and the lowest cost of living in the county</strong>, and for some buyers that is not a trade at all. It's a strong choice for retirees on fixed incomes, remote workers, and budget-conscious families. For Fort Knox families, the commute is longer than ideal, but for those who value land and savings over convenience, it works. Explore closer <a href="/elizabethtown/neighborhoods/">E-town neighborhoods</a> if commute time is a priority.</p>
 
 <div class="cta-box"><p>Looking for the best value in the E-town area? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps buyers find affordable properties throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },

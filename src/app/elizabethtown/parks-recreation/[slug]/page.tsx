@@ -66,7 +66,7 @@ export default async function ParkPage({ params }: Props) {
       : slug === "nature-park" || slug === "saunders-springs"
         ? "Nature Preserve & Trails"
         : slug === "freeman-lake-park"
-          ? "Lakeside Park (~164 acres)"
+          ? "Lakeside park, 170-acre lake"
           : "Neighborhood Park",
     "Managed By": "E-town Parks & Recreation",
     "Admission": "Free",
