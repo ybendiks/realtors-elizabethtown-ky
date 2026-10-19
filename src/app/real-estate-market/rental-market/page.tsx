@@ -51,9 +51,11 @@ export default function RentalMarket() {
           all bedroom counts and property types is{" "}
           <strong>{usd(AVG_RENT_ALL_BEDS.value)}</strong>, {usd(Math.abs(AVG_RENT_YOY_CHANGE.value))}{" "}
           <strong>lower</strong> than a year ago, with {RENTALS_AVAILABLE.value} units available.
-          Zillow classes the local rental market as &ldquo;cool&rdquo;. Renters have more leverage
-          than they have had in several years, and landlords setting rents off last year&apos;s
-          numbers are likely to sit vacant.
+          Zillow classes the local rental market as &ldquo;cool&rdquo;. For renters that means
+          more room to negotiate than there has been in several years. For anyone weighing renting
+          against buying, it is worth running the numbers properly: rents here have stopped
+          climbing, but a rent payment still builds no equity, and Fort Knox BAH goes further
+          against a mortgage than most people assume.
         </p>
       </div>
 
@@ -78,9 +80,7 @@ export default function RentalMarket() {
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
           <strong>1-bedroom apartment:</strong> typically <strong>$850-$950/month</strong>. Studios
-          are available in limited supply, typically in the $650-$750 range. Per-bedroom figures are
-          indicative ranges drawn from local listings rather than a published median, the
-          sourced citywide figure is the {usd(AVG_RENT_ALL_BEDS.value)} all-bedroom average above.
+          are available in limited supply, typically in the $650-$750 range.
         </li>
         <li>
           <strong>2-bedroom apartment:</strong> approximately <strong>$1,050/month</strong>. This

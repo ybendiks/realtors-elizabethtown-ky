@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "What is the BAH rate for Fort Knox in 2026?",
     answer:
-      "2026 BAH rates for Fort Knox rose over 2025. An E-5 with dependents receives $1,647 per month and an O-3 with dependents receives $2,421 per month. These rates cover ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. Note that with the median sale price at $304,005 and 30-year rates at 7.40% as of October 2026, BAH no longer covers the full principal and interest payment on a median-priced home at the E-5 level.",
+      "2026 BAH rates for Fort Knox rose over 2025. An E-5 with dependents receives $1,647 per month and an O-3 with dependents receives $2,421 per month. These rates cover ZIP codes 40121, 40160, and 42701, which include Fort Knox, Radcliff, and Elizabethtown. At the October 2026 rate of 7.40%, an E-5 allowance covers principal and interest on a loan of roughly $238,000, an O-3 allowance roughly $350,000. The median sale price is $304,005, so buyers at junior enlisted grades typically either shop below the median or bring a down payment.",
   },
   {
     question: "What should I do the first week after arriving at Fort Knox?",

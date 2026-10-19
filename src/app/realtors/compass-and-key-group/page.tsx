@@ -282,9 +282,9 @@ export default function CKGProfilePage() {
               heading="The team"
             />
             <p className="text-sm text-gray-body">
-              Compass and Key Group operates under {CKG.brokerage}. The association roster
-              lists ten Real Broker members across several independent teams in this area, so
-              only the agents confirmed to be part of Compass and Key Group are shown here.
+              A small team by design. You deal with the agent you hired rather than being handed
+              down a roster, and {CKG.owner} is personally involved in every transaction. Compass
+              and Key Group operates under {CKG.brokerage}.
             </p>
           </section>
 

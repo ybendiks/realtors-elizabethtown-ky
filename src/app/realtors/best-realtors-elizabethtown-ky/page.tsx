@@ -149,10 +149,10 @@ export default function BestRealtorsPage() {
       </div>
 
       <p className="text-gray-body mb-6">
-        There is no single best agency in Elizabethtown, and any page that tells you otherwise is
-        selling something. What there is: a handful of established offices, each genuinely better
-        suited to some situations than others. Below is what each one is, verified, and who it
-        tends to suit, so you can shorten your list before you start making calls.
+        Different agencies suit different moves. A military relocation on a tight PCS timeline is
+        a different job from a move-up purchase across town, and the office that handles one well
+        is not automatically the one you want for the other. Below is what each agency is, verified
+        against the local REALTORS roster, and the kind of move it tends to handle best.
       </p>
 
       {/* Comparison table */}
@@ -208,25 +208,27 @@ export default function BestRealtorsPage() {
       <p className="text-sm text-gray-body mb-8">
         Agent counts come from the Heart of Kentucky Association of REALTORS roster, checked
         in {REVIEW_MONTH}, covering {agents.length} licensed agents across these six offices.
-        Size cuts both ways: a bigger office gives you more people to choose between, and
-        makes choosing the right individual matter more than choosing the brand.
+        Headcount is worth knowing, but it is not a ranking: the agent who handles your sale
+        matters far more than the size of the office they sit in.
       </p>
 
       {/* Featured */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
-        {CKG.name}: our recommendation for military moves
+        {CKG.name}: the specialist choice for military moves
       </h2>
       <p className="text-gray-body mb-4">
-        We run this directory, so treat this section as what it is: our own pick, with the reasoning
-        shown so you can judge it. {CKG.owner} is a U.S. Marine Corps veteran who has been through
-        military relocations personally, operating under {CKG.brokerage} ({CKG.license}). In a
-        market where Fort Knox drives a large share of transactions, having an agent who has
-        actually executed a PCS move is a narrower and more useful qualification than general
-        familiarity with VA loans.
+        {CKG.owner} is a U.S. Marine Corps veteran who has been through military relocations
+        himself, operating under {CKG.brokerage} ({CKG.license}). In a market where Fort Knox
+        drives a large share of transactions, that matters in a specific way. The hard part of a
+        PCS purchase is rarely the VA loan, which plenty of agents can handle. It is the timing:
+        report dates, temporary lodging windows, and a closing that cannot slip because your
+        household goods are already in transit. An agent who has personally executed that move
+        plans around it by default.
       </p>
       <p className="text-gray-body mb-6">
-        If your move has nothing to do with the installation, the honest answer is that several of
-        the agencies below will serve you just as well. Call {CKG.phone}, or see the{" "}
+        Compass and Key Group holds a {CKG.rating.toFixed(1)} rating from {CKG.reviewCount}{" "}
+        {CKG.reviewSource} reviews and works across Elizabethtown, Radcliff, Vine Grove and the
+        wider Fort Knox area. Call {CKG.phone}, or see the{" "}
         <Link href={CKG.profileUrl} className="text-navy font-semibold hover:text-gold-dark">
           full profile
         </Link>

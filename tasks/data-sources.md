@@ -161,3 +161,19 @@ and adding 114 pages of it would repeat the mistake at scale. Agents are listed
 on their brokerage's page and counted on the comparison page. Individual pages
 only become defensible if a source for per-agent detail (tenure, transaction
 history, specialisms) is found and logged here first.
+
+### Inventory below the E-5 BAH threshold
+
+| Fact | Value | Source | As of |
+|---|---|---|---|
+| Active residential listings, Elizabethtown | 164 | Zillow via Apify | 2026-10-18 |
+| ...at or below $238,000 | 23 (14%, about one in seven) | same scrape | 2026-10-18 |
+
+$238,000 is the loan an E-5-with-dependents allowance of $1,647 supports at the
+Freddie Mac 30-year rate of 7.40%, computed by `loanFromPayment()` in
+`market-facts.ts` rather than written as a literal.
+
+An earlier draft said there was "steady inventory at that level across
+Elizabethtown, Radcliff and Vine Grove". The scrape supports neither the other
+two cities nor the word "steady": all 23 qualifying listings were in
+Elizabethtown. Corrected to the measured one-in-seven figure.

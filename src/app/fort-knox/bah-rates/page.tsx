@@ -10,9 +10,11 @@ import {
   LAST_DATA_REVIEW,
   usd,
   monthlyPI,
+  loanFromPayment,
 } from "@/data/market-facts";
 
 const E5 = BAH_RATES.value.find((r) => r.rank === "E-5")!;
+const E6 = BAH_RATES.value.find((r) => r.rank === "E-6")!;
 const O3 = BAH_RATES.value.find((r) => r.rank === "O-3")!;
 const MEDIAN_PI = Math.round(monthlyPI(MEDIAN_SALE_PRICE.value));
 
@@ -155,12 +157,22 @@ export default function BAHRates() {
         alone come to about <strong>{usd(MEDIAN_PI)}/month</strong> before taxes and insurance.
       </p>
       <p className="text-gray-body mb-4">
-        Be clear about what that means: at today&apos;s prices and rates,{" "}
-        <strong>BAH no longer covers the full payment on a median-priced home for an E-5</strong>, 
-        there is a gap of roughly {usd(MEDIAN_PI - E5.withDep)} a month on principal and interest
-        before escrow. This is a real change from recent years, when it comfortably did. An E-5
-        buying today should either look below the median, bring a down payment, or plan for the
-        difference out of base pay.
+        Put the other way round, that allowance is real buying power. At the current{" "}
+        {MORTGAGE_RATE_30YR.value}% rate, an E-5&apos;s {usd(E5.withDep)} covers principal and
+        interest on a loan of roughly{" "}
+        <strong>{usd(Math.round(loanFromPayment(E5.withDep) / 1000) * 1000)}</strong>. About one in
+        seven active Elizabethtown listings sits at or below that level, so it is a real search
+        rather than a theoretical one. An E-6 at{" "}
+        {usd(E6.withDep)} reaches about{" "}
+        {usd(Math.round(loanFromPayment(E6.withDep) / 1000) * 1000)}, and an O-3 at{" "}
+        {usd(O3.withDep)} reaches roughly{" "}
+        {usd(Math.round(loanFromPayment(O3.withDep) / 1000) * 1000)}.
+      </p>
+      <p className="text-gray-body mb-4">
+        Buying at the {usd(MEDIAN_SALE_PRICE.value)} median means covering the difference between
+        your allowance and the payment, which plenty of families here do with a modest down
+        payment or a second income. Which route fits is the conversation worth having before you
+        start looking, not after you have found the house.
       </p>
       <p className="text-gray-body mb-4">
         At the <strong>O-3 level with dependents ({usd(O3.withDep)}/month)</strong>, BAH still

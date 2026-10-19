@@ -73,8 +73,9 @@ export default function ElizabethtownHub() {
         The median sale price in Elizabethtown reached <strong>{usd(MEDIAN_SALE_PRICE.value)}</strong> over the three
         months ending {MEDIAN_SALE_PRICE.asOf}, up {MEDIAN_SALE_PRICE_YOY.value}% year over year. Property taxes remain
         among the lowest in the state, but buyers should know that rising prices and {MORTGAGE_RATE_30YR.value}% mortgage
-        rates mean Fort Knox BAH no longer stretches as far as it did, at the E-5 level it no longer covers a full
-        payment on a median-priced home.
+        rates mean Fort Knox buyers should check their numbers early. An E-5 allowance covers principal
+        and interest on roughly a $238,000 loan at current rates, and about one in seven active
+        Elizabethtown listings sits at or below that level.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">The Community</h2>

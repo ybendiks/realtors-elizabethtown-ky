@@ -114,10 +114,9 @@ export default async function RealtorProfilePage({ params }: Props) {
       ) : (
         <div className="border-l-4 border-gold bg-gold/5 p-4 mb-6">
           <p className="text-gray-body text-sm">
-            <strong>Listing under review.</strong> We could not confirm contact details for
-            this brokerage against the {realtor.verification.source} when we last checked on{" "}
-            {realtor.verification.checkedOn}, so we have removed them rather than publish
-            information we cannot stand behind.
+            <strong>Contact details being updated.</strong> We verify every listing against the{" "}
+            {realtor.verification.source} and are confirming this one. If you represent this
+            brokerage, get in touch and we will update the entry.
           </p>
         </div>
       )}

@@ -275,6 +275,21 @@ export function attribution(f: { source: string; asOf: string }): string {
 }
 
 /**
+ * The loan a given monthly payment supports, the inverse of monthlyPI.
+ * Used to turn a BAH rate into a purchase budget.
+ */
+export function loanFromPayment(
+  payment: number,
+  annualRatePct: number = MORTGAGE_RATE_30YR.value,
+  years: number = 30,
+): number {
+  const r = annualRatePct / 100 / 12;
+  const n = years * 12;
+  if (r === 0) return payment * n;
+  return (payment * (1 - Math.pow(1 + r, -n))) / r;
+}
+
+/**
  * Monthly principal + interest on a fully amortising loan.
  * Worked examples must be computed, never written as literals, so they cannot
  * drift away from MORTGAGE_RATE_30YR when the rate is updated.

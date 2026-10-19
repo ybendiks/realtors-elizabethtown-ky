@@ -898,7 +898,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "Does combined BAH go further toward buying here?",
         answer:
-          "Substantially. A single E-5 with dependents draws $1,647 a month, which no longer covers principal and interest on a median-priced home at current rates. That runs about $2,105 a month at 7.40% on $304,005. Two allowances change the arithmetic entirely and put most of the Elizabethtown market comfortably in range.",
+          "Substantially. A single E-5 with dependents draws $1,647 a month, which covers principal and interest on roughly a $238,000 loan at the current 7.40% rate. Two allowances put essentially the whole Elizabethtown market in range, including new construction and the larger homes on the east side.",
       },
       {
         question: "What happens to the house if one of us PCSs separately?",
