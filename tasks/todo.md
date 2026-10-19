@@ -148,3 +148,51 @@ survey-grade social proof with no survey behind it.
   and anything resembling a referral are not.
 - **A passing build proves nothing about copy.** Every regression in this
   phase compiled cleanly. Grep the rendered output, not the source.
+
+## Phase 6 - conversion work ✅
+
+- [x] Removed the "Our Featured Agency" section from About, at the owner's
+      direction. A directory that announces who it favours invites the reader
+      to discount everything else on it. The About body now carries no CKG
+      mention; the sidebar widget stays, since a listing is not an endorsement.
+- [x] Built the missing `/guides/` hub. All five guides had breadcrumbed to
+      `/guides/buying-home-elizabethtown/`, so "Guides" pointed at a guide.
+- [x] Home hero: the primary gold button sent ready buyers into `/realtors/`,
+      which lists five competitors, and there was no phone CTA above the fold.
+      Primary action is now the phone; the directory is a secondary link.
+- [x] Selling guide now leads with the free, no-obligation CMA, which the CKG
+      profile advertises and the page sellers land on never mentioned.
+
+Left deliberately: the Ryan Wheeler widget. A lender is a non-competing
+business line, so its "Get a Quote" button stays where it is.
+
+### Still open
+
+**Time-sensitive**
+- 2027 BAH rates publish around December. `BAH_NEXT_UPDATE_DUE` flags it.
+
+**Factual, unresolved**
+- Cost-of-living rents still read $850 / $1,050 / $1,250 against the sourced
+  $1,380 average. Understates by 10-40% on a page crediting Redfin.
+- Vine Grove and Brandenburg populations differ between hub and `[slug]` pages.
+- T.K. Stone appears as an E-town Independent elementary on one page and a
+  Hardin County middle school on another.
+- The weather page asserts "most homes in the area have basements or interior
+  safe rooms". That is a safety claim about housing stock, unverified, in a
+  slab-and-crawlspace market. Highest-risk item remaining.
+- "15-20% below the national average" on cost-of-living is unsourced.
+- Eight school enrolment figures carry no source or year.
+
+**Owner actions**
+- Google Business Profile still lists (270) 817-3311; the site and his own
+  website use (270) 735-3897. Fix the profile, not the site.
+- Rotate the Apify token and DataForSEO password.
+- Ryan Wheeler's review count of 311 is unverified.
+
+**Content opportunities not taken**
+- Glendale's page describes BlueOval SK as "large-scale manufacturing
+  projects" rather than naming the largest economic event in the county in a
+  generation.
+- `/contact/` ranks for Middlesboro, Morehead and Leitchfield, towns the
+  business does not serve.
+- Neighbourhood hub cards truncate mid-word via `slice(0, 150)`.
