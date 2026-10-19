@@ -179,8 +179,6 @@ business line, so its "Get a Quote" button stays where it is.
 - Eight school enrolment figures carry no source or year.
 
 **Owner actions**
-- Google Business Profile still lists (270) 817-3311; the site and his own
-  website use (270) 735-3897. Fix the profile, not the site.
 - Rotate the Apify token and DataForSEO password.
 - Ryan Wheeler's review count of 311 is unverified.
 

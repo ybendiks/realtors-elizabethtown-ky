@@ -125,6 +125,12 @@ wrong because nothing about it looks broken.
 | Compass and Key Group | 3 |
 | **Total** | **115** |
 
+### Phone: the profile mismatch is call tracking, not an error
+
+The site uses (270) 735-3897; the Google Business Profile shows
+(270) 817-3311. The owner confirms the profile number is call tracking.
+Neither should be "corrected" to match the other.
+
 ### Compass and Key Group: 3 of 10, confirmed by the owner
 
 CKG is not a separate HKAR office. It trades under **Real Broker, LLC**, which
