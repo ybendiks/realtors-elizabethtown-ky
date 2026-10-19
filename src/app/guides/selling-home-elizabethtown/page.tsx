@@ -14,7 +14,7 @@ export default function SellingHomeGuide() {
   return (
     <ContentLayout
       breadcrumbs={[
-        { label: "Guides", href: "/guides/buying-home-elizabethtown/" },
+        { label: "Guides", href: "/guides/" },
         { label: "Selling Your Home" },
       ]}
       sidebar={{
@@ -284,11 +284,10 @@ export default function SellingHomeGuide() {
       {/* CKG CTA */}
       <div className="bg-navy rounded-lg p-6 text-white mt-10" style={{ backgroundColor: "#1B365D" }}>
         <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
-          Sell Your Home with Confidence
+          What&apos;s Your Elizabethtown Home Worth? Find Out Free
         </h2>
         <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
-          The right pricing, preparation, and marketing strategy can mean tens of thousands of
-          dollars in your pocket.{" "}
+          Before you decide anything else, get the number. A comparative market analysis from{" "}
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"
@@ -296,8 +295,9 @@ export default function SellingHomeGuide() {
           >
             Compass and Key Group
           </Link>{" "}
-          is a veteran-owned real estate team that knows the Elizabethtown market inside and out.
-          Austin Kutz and his team will price your home based on current data, market it to the
+          is free and carries no obligation: what your house would realistically sell for now,
+          based on what has actually closed nearby rather than an online estimate. If the number
+          works, Austin Kutz and his team will price your home on current data, market it to the
           right buyers, and manage the entire process from listing to closing.
         </p>
         <a

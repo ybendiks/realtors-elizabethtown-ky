@@ -14,7 +14,7 @@ export default function HomeAppraisalGuide() {
   return (
     <ContentLayout
       breadcrumbs={[
-        { label: "Guides", href: "/guides/buying-home-elizabethtown/" },
+        { label: "Guides", href: "/guides/" },
         { label: "Home Appraisal Guide" },
       ]}
       sidebar={{

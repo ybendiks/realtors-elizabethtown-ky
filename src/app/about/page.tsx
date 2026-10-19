@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
-import { CKG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Our Elizabethtown Realtor Directory",
@@ -17,7 +16,6 @@ export default function AboutPage() {
       sidebar={{
         relatedPages: [
           { label: "Find a Realtor", href: "/realtors/" },
-          { label: "Compass and Key Group", href: CKG.profileUrl },
           { label: "Contact Us", href: "/contact/" },
           { label: "Elizabethtown Overview", href: "/elizabethtown/" },
         ],
@@ -78,24 +76,6 @@ export default function AboutPage() {
       <p className="text-gray-body mb-6">
         Every piece of content is written with local knowledge: referencing specific streets, landmarks,
         and real data. We aim to be the most helpful Elizabethtown real estate resource on the internet.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Our Featured Agency</h2>
-      <p className="text-gray-body mb-4">
-        <Link href={CKG.profileUrl} className="text-navy font-semibold hover:text-gold-dark">
-          Compass and Key Group
-        </Link>
-        , led by USMC veteran Austin Kutz, is our featured real estate agency. As a veteran-owned team with
-        deep roots in the Elizabethtown and Fort Knox community, CKG exemplifies the kind of local expertise
-        and client-first approach that defines great real estate service in this market. Their specialties
-        include military relocation, VA loans, first-time homebuyers, and investment properties.
-      </p>
-      <p className="text-gray-body mb-8">
-        You can reach Compass and Key Group at{" "}
-        <a href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`} className="text-navy font-semibold">
-          {CKG.phone}
-        </a>{" "}
-        or visit their office at {CKG.address}.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Accuracy &amp; Updates</h2>

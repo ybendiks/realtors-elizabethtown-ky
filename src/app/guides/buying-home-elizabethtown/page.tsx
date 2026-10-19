@@ -15,7 +15,7 @@ export default function BuyingHomeGuide() {
   return (
     <ContentLayout
       breadcrumbs={[
-        { label: "Guides", href: "/guides/buying-home-elizabethtown/" },
+        { label: "Guides", href: "/guides/" },
         { label: "Buying a Home" },
       ]}
       sidebar={{

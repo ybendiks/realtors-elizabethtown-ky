@@ -49,7 +49,7 @@ export default function FirstTimeHomebuyerGuide() {
   return (
     <ContentLayout
       breadcrumbs={[
-        { label: "Guides", href: "/guides/buying-home-elizabethtown/" },
+        { label: "Guides", href: "/guides/" },
         { label: "First-Time Homebuyer" },
       ]}
       sidebar={{

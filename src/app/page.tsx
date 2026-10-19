@@ -49,21 +49,27 @@ export default function HomePage() {
             </h1>
             <p style={{ color: "#d1d5db", fontSize: "1.125rem", lineHeight: 1.7, marginBottom: "2rem" }}>
               Your complete guide to real estate agents, neighborhoods, schools, and living in the
-              Elizabethtown and Fort Knox area. Whether you&apos;re buying your first home, PCSing to
-              Fort Knox, or selling in Hardin County, we&apos;ll help you find the right agent.
+              Elizabethtown and Fort Knox area. Buying your first home, selling in Hardin County or
+              arriving on orders, {CKG.owner} will tell you what your money actually buys here.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link
-                href="/realtors/"
-                style={{ backgroundColor: "#D4A843", color: "#1B365D", fontWeight: 700, padding: "0.875rem 2rem", borderRadius: "0.5rem", fontSize: "1.125rem" }}
+              <a
+                href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+                style={{ backgroundColor: "#D4A843", color: "#1B365D", fontWeight: 700, padding: "0.875rem 2rem", borderRadius: "0.5rem", fontSize: "1.125rem", display: "inline-block", textDecoration: "none" }}
               >
-                Browse Realtors
-              </Link>
+                Call {CKG.phone}
+              </a>
               <Link
                 href="/fort-knox/pcs-guide/"
                 style={{ color: "#ffffff", border: "2px solid rgba(255,255,255,0.3)", fontWeight: 600, padding: "0.875rem 2rem", borderRadius: "0.5rem", fontSize: "1.125rem" }}
               >
                 PCS to Fort Knox?
+              </Link>
+              <Link
+                href="/realtors/"
+                style={{ color: "#ffffff", fontWeight: 600, padding: "0.875rem 0", textDecoration: "underline" }}
+              >
+                Browse the directory
               </Link>
             </div>
           </div>

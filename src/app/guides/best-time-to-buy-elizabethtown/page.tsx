@@ -14,7 +14,7 @@ export default function BestTimeToBuy() {
   return (
     <ContentLayout
       breadcrumbs={[
-        { label: "Guides", href: "/guides/buying-home-elizabethtown/" },
+        { label: "Guides", href: "/guides/" },
         { label: "Best Time to Buy" },
       ]}
       sidebar={{
