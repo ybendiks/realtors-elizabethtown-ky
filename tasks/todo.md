@@ -78,8 +78,26 @@ Two things deliberately **not** done:
 - [x] Correct the review count and link the Google profile
 - [x] Correct the address to 617 N Mulberry St #105B and centralise NAP on `CKG`
 
-Still open from the opportunity list: **agent-level coverage**. Every page
-outranking this site for the directory intent lists named individual agents
-with experience, licence number or listing count. This directory is organised
-by brokerage. HKAR publishes an agent roster per office, which is the
-authoritative source for doing it properly.
+## Phase 4 - agent-level coverage ✅
+
+- [x] Scrape the HKAR roster to convergence (the lister is non-deterministic)
+- [x] Add `src/data/agents.ts` with 115 verified agents across six brokerages
+- [x] Surface them via `AgentList` on every brokerage page
+- [x] Add agent counts to the comparison table
+- [x] Emit agents as `Person` under the brokerage's `employee` property
+
+Compass and Key Group is listed with its three agents (Austin Kutz, Ciara
+Hardesty, Steve Nikirk), confirmed by the owner. CKG trades under Real Broker,
+LLC, which has ten HKAR members across several independent teams; the other
+seven are not CKG.
+
+**No individual agent pages.** The roster publishes only name, phone and
+membership class, which is roughly 60 words. Three brokerage pages were removed
+from this site for exactly that thinness. Individual pages become defensible
+only if a source for per-agent detail (tenure, transaction history,
+specialisms) is found and logged in `data-sources.md` first.
+
+**If the roster is ever refreshed:** run it to convergence. The HKAR lister
+returns different members on repeated requests to the same offset, so a single
+pass produces a plausible but incomplete roster. The published set is the union
+of eight passes, continued until all 643 association members had been seen.
