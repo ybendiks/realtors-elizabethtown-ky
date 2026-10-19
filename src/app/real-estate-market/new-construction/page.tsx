@@ -203,8 +203,7 @@ export default function NewConstruction() {
           Bring Your Own Agent to the Builder
         </h2>
         <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
-          Builders welcome buyers who bring their own representation, and it costs you nothing
-          extra, the builder pays the buyer&apos;s agent commission.{" "}
+          Builders welcome buyers who bring their own representation. Since 2024 you agree your agent's fee in writing up front, and on new construction it is commonly covered from the builder's budget.{" "}
           <Link
             href="/realtors/compass-and-key-group/"
             className="text-gold hover:text-gold-light"

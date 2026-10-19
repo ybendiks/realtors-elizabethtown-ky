@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CKG } from "@/lib/constants";
 import { realtors } from "@/data/realtors";
 import { agentsFor } from "@/data/agents";
 import AgentList from "@/components/AgentList";
@@ -141,18 +141,23 @@ export default async function RealtorProfilePage({ params }: Props) {
         ))}
       </ul>
 
-      <div className="bg-gray-light rounded-lg p-5 text-sm text-gray-body">
-        <p>
-          Looking for a realtor in Elizabethtown?{" "}
-          <Link href="/realtors/" className="text-navy font-semibold hover:text-gold-dark">
-            Browse our full directory
-          </Link>{" "}
-          to compare local agencies, or check out our{" "}
-          <Link href="/realtors/compass-and-key-group/" className="text-navy font-semibold hover:text-gold-dark">
-            featured agency, Compass and Key Group
-          </Link>
-          , for veteran-owned expertise in the E-town and Fort Knox market.
+      <div className="bg-navy rounded-lg p-6 mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
+          Want a small team that answers its own phone?
+        </h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
+          {CKG.owner} runs {CKG.name} and is personally involved in every transaction, from
+          first-time buyers and move-up families to sellers, investors and PCS moves.{" "}
+          {CKG.rating.toFixed(1)} from {CKG.reviewCount} {CKG.reviewSource} reviews, across
+          Elizabethtown, Radcliff, Vine Grove and Hardin County.
         </p>
+        <a
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+          className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
+        >
+          Call {CKG.phone}
+        </a>
       </div>
     </ContentLayout>
   );

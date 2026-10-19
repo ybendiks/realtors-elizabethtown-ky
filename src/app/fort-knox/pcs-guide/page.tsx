@@ -20,7 +20,7 @@ const faqData = [
   {
     question: "Can I buy a house near Fort Knox using a VA loan?",
     answer:
-      "Yes. VA loans are the most common mortgage for military homebuyers in the Fort Knox area. They require zero down payment, have no private mortgage insurance (PMI), and offer competitive interest rates. The median home price in Elizabethtown is around $250,000, and BAH for most ranks with dependents will cover a full mortgage payment including taxes and insurance. You will need a Certificate of Eligibility (COE) from the VA to begin the process.",
+      "Yes. VA loans are the most common mortgage for military homebuyers in the Fort Knox area. They require zero down payment, have no private mortgage insurance (PMI), and offer competitive interest rates. The median sale price in Elizabethtown is $304,005 (Redfin, September 2026). BAH covers a full payment including taxes and insurance up to roughly $198,000 at E-5, $261,000 at E-6 and $297,000 at O-3, so most buyers either shop below the median or bring a down payment. You will need a Certificate of Eligibility (COE) from the VA to begin the process.",
   },
   {
     question: "Is it better to live on-post or off-post at Fort Knox?",

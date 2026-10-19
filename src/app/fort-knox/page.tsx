@@ -113,7 +113,9 @@ export default function FortKnoxHub() {
         <Link href="/fort-knox/bah-rates/" className="text-navy font-semibold hover:text-gold-dark">
           BAH rates
         </Link>{" "}
-        typically cover a full mortgage payment in Elizabethtown and surrounding communities.
+        cover a full payment, taxes and insurance included, up to roughly $198,000 at E-5 and
+        $297,000 at O-3. Plenty of Elizabethtown, Radcliff and Vine Grove inventory sits in that
+        band.
       </p>
       <p className="text-gray-body mb-4">
         The most popular off-post communities include{" "}

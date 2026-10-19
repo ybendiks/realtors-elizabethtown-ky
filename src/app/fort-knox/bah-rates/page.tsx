@@ -224,8 +224,9 @@ export default function BAHRates() {
           neighborhoods at most ranks.
         </li>
         <li>
-          <strong>Hardin County home values have appreciated steadily</strong>, roughly 4-6%
-          annually in recent years. A $250,000 home could be worth $280,000-$290,000 in three years.
+          <strong>Elizabethtown prices rose 6.5% in the year to September 2026</strong> (Redfin).
+          Past movement is not a forecast, but it is equity that accrues to you rather than to a
+          housing company.
         </li>
         <li>
           <strong>If you PCS before selling</strong>, you can rent the property out. The Fort Knox

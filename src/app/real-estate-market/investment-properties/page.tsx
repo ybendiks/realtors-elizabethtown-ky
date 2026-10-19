@@ -129,7 +129,7 @@ export default function InvestmentProperties() {
       </p>
       <ul className="list-disc pl-6 text-gray-body mb-4 space-y-2">
         <li>
-          <strong>Helmwood and Valley Creek.</strong> Established subdivisions with affordable
+          <strong>Helmwood Heights and Woodland Heights.</strong> Established subdivisions with affordable
           single-family homes in the $180,000-$220,000 range. Strong rental demand from military
           families, low vacancy rates, and predictable tenant turnover aligned with PCS cycles.
         </li>
@@ -144,7 +144,7 @@ export default function InvestmentProperties() {
           Turnover is higher, but rents are steady.
         </li>
         <li>
-          <strong>Newer subdivisions (Windermere, The Reserve).</strong> Higher purchase prices
+          <strong>Newer subdivisions (Winding Springs, Nicholas Ridge).</strong> Higher purchase prices
           mean lower percentage yields, but these areas attract higher-quality tenants willing to
           pay premium rents. Maintenance costs are also lower on newer construction.
         </li>

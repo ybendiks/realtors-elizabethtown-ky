@@ -210,6 +210,24 @@ to see what each agency is, verified against the local REALTORS association rost
           ))}
         </div>
       </div>
+      <div className="bg-navy rounded-lg p-6 mt-10" style={{ backgroundColor: "#1B365D" }}>
+        <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
+          Want a small team that answers its own phone?
+        </h2>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
+          {CKG.owner} runs {CKG.name} and is personally involved in every transaction, from
+          first-time buyers and move-up families to sellers, investors and PCS moves.{" "}
+          {CKG.rating.toFixed(1)} from {CKG.reviewCount} {CKG.reviewSource} reviews, across
+          Elizabethtown, Radcliff, Vine Grove and Hardin County.
+        </p>
+        <a
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+          className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
+        >
+          Call {CKG.phone}
+        </a>
+      </div>
     </>
   );
 }

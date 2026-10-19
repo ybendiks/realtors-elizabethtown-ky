@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "Do I need a real estate agent to buy a home?",
     answer:
-      "You are not legally required to use an agent, but it is strongly recommended, especially for first-time buyers. A buyer's agent represents your interests, helps you navigate negotiations, coordinates inspections and appraisals, and guides you through closing. In most cases, the seller pays the buyer's agent commission, so buyer representation costs you nothing directly.",
+      "You are not legally required to use an agent, but it is strongly recommended, especially for first-time buyers. A buyer's agent represents your interests, helps you navigate negotiations, coordinates inspections and appraisals, and guides you through closing. Since 2024 you agree your agent's fee in writing before you start touring, and in most Elizabethtown transactions it is still paid from the seller's proceeds. Ask to see the agreement and the number before you sign.",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function FirstTimeHomebuyerGuide() {
           >
             neighborhoods
           </Link>{" "}
-          like Helmwood, Valley Creek, and Pear Orchard.
+          like Helmwood Heights, Woodland Heights, and Pear Orchard.
         </li>
         <li>
           Newer townhomes and starter homes in developments along Ring Road and south of town.

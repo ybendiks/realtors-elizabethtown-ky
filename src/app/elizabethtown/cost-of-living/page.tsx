@@ -74,8 +74,8 @@ export default function CostOfLiving() {
         >
           neighborhoods
         </Link>{" "}
-        like Helmwood or Valley Creek can be found in the $180,000-$220,000 range, while newer
-        construction in communities like Windermere or The Reserve at Freeman Lake typically falls
+        like Woodland Heights or The Cedars can be found in the $160,000-$275,000 range, while newer
+        construction in communities like Winding Springs or Nicholas Ridge typically falls
         between $280,000 and $380,000. Executive homes on acreage outside city limits can push
         above $450,000, but that kind of property would cost well over $700,000 in Louisville or
         Lexington.

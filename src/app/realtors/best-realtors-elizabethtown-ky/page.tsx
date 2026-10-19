@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 /** Short "best for" line per brokerage, drawn from the verified facts. */
 const BEST_FOR: Record<string, string> = {
   "compass-and-key-group":
-    "Military buyers and sellers, PCS timing, and VA purchases",
+    "Buyers and sellers across Hardin County, first-time purchases, investment property, and military moves",
   "olive-oak-realty":
     "Boutique service, and buyers who want commercial and residential under one roof",
   "schuler-bauer":
@@ -214,21 +214,26 @@ export default function BestRealtorsPage() {
 
       {/* Featured */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
-        {CKG.name}: the specialist choice for military moves
+        {CKG.name}: full-service and veteran-owned
       </h2>
       <p className="text-gray-body mb-4">
-        {CKG.owner} is a U.S. Marine Corps veteran who has been through military relocations
-        himself, operating under {CKG.brokerage} ({CKG.license}). In a market where Fort Knox
-        drives a large share of transactions, that matters in a specific way. The hard part of a
-        PCS purchase is rarely the VA loan, which plenty of agents can handle. It is the timing:
-        report dates, temporary lodging windows, and a closing that cannot slip because your
-        household goods are already in transit. An agent who has personally executed that move
-        plans around it by default.
+        Most of what {CKG.name} does is ordinary Hardin County residential work: first-time
+        buyers, families moving up, downsizers, sellers, and investors. {CKG.owner} runs the
+        team under {CKG.brokerage} ({CKG.license}) and is personally involved in every
+        transaction, which is the practical difference between a small team and a large market
+        centre where you are assigned whoever is free.
+      </p>
+      <p className="text-gray-body mb-4">
+        The military side is depth rather than a boundary. {CKG.owner} is a Marine Corps veteran
+        who has made PCS moves himself, so when a buyer does arrive on orders the hard part is
+        already understood. The difficulty is rarely the VA loan, which plenty of agents handle.
+        It is the timing: report dates, temporary lodging windows, and a closing that cannot
+        slip because household goods are already in transit.
       </p>
       <p className="text-gray-body mb-6">
         Compass and Key Group holds a {CKG.rating.toFixed(1)} rating from {CKG.reviewCount}{" "}
-        {CKG.reviewSource} reviews and works across Elizabethtown, Radcliff, Vine Grove and the
-        wider Fort Knox area. Call {CKG.phone}, or see the{" "}
+        {CKG.reviewSource} reviews and works across Elizabethtown, Radcliff, Vine Grove and
+        Hardin County generally, military and civilian alike. Call {CKG.phone}, or see the{" "}
         <Link href={CKG.profileUrl} className="text-navy font-semibold hover:text-gold-dark">
           full profile
         </Link>

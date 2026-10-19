@@ -71,7 +71,7 @@ export default function Commuting() {
         >
           neighborhoods
         </Link>{" "}
-        of E-town (such as Helmwood, Colvin Park, or the North Miles Street area) have an even
+        of E-town (such as Helmwood Heights, Freeman Creek Estates, or the North Miles Street area) have an even
         shorter commute, sometimes as little as 10 minutes to the gate.
       </p>
 

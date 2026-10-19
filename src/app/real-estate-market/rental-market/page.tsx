@@ -140,7 +140,7 @@ export default function RentalMarket() {
           >
             established neighborhoods
           </Link>{" "}
-          like Helmwood and Valley Creek are popular with both military families and civilian
+          like Helmwood Heights and Woodland Heights are popular with both military families and civilian
           renters. The commute to Fort Knox is 15-25 minutes depending on the gate used.
         </li>
         <li>

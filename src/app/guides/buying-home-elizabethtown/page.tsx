@@ -124,8 +124,7 @@ export default function BuyingHomeGuide() {
         </Link>
         , school districts, and market dynamics is invaluable. They can identify listings that
         match your criteria, schedule showings efficiently, and provide insight into pricing and
-        competition that online platforms cannot offer. In most cases, the seller pays the buyer
-        agent&apos;s commission, so professional representation costs you nothing directly.
+        competition that online platforms cannot offer. Since 2024 you agree your agent&apos;s fee in writing before you start touring, and in most Elizabethtown transactions it is still paid from the seller&apos;s proceeds. Austin will show you the agreement and the number before you sign anything.
       </p>
 
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Define Your Priorities</h3>

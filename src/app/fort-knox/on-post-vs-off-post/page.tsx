@@ -211,10 +211,7 @@ Elizabethtown (15 min), Radcliff (5 min), Vine Grove (10 min), or Brandenburg (2
           <Link href="/fort-knox/va-loans-elizabethtown/" className="text-navy font-semibold hover:text-gold-dark">
             VA loan
           </Link>{" "}
-          at zero down, your BAH goes toward your own mortgage instead of a housing company. In
-          Elizabethtown, home values have appreciated 4-6% annually, meaning a $250,000 home could
-          be worth $280,000-$290,000 by the end of a three-year tour. That is real wealth you take
-          with you.
+          at zero down, your BAH goes toward your own mortgage instead of a housing company. Elizabethtown prices rose 6.5% in the year to September 2026 (Redfin). Past movement is not a forecast, but any equity you build is yours to take with you.
         </li>
         <li>
           <strong>More space and choice.</strong> Off-post, you choose your home, the neighborhood,
@@ -271,8 +268,7 @@ Elizabethtown (15 min), Radcliff (5 min), Vine Grove (10 min), or Brandenburg (2
         </li>
         <li>
           <strong>Selling pressure at PCS.</strong> If you buy and then receive short-notice orders,
-          you will need to sell or find a tenant quickly. The Fort Knox market is forgiving here, 
-          homes sell in 15-30 days typically, but it adds stress.
+          you will need to sell or find a tenant quickly. Elizabethtown homes sold in a median 63 days over the three months to September 2026 (Redfin), so it is a workable market rather than a fast one, and a short-notice move still adds stress.
         </li>
       </ul>
 

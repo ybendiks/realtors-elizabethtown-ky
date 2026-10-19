@@ -142,8 +142,8 @@ at any loan-to-value ratio.
           <Link href="/fort-knox/bah-rates/" className="text-navy font-semibold hover:text-gold-dark">
             Fort Knox BAH
           </Link>{" "}
-          fully covers the PITI payment on a median-priced home. An E-5 with dependents
-          ($1,647/month) can comfortably finance a $250,000-$270,000 home. An O-3 with dependents
+          covers a full PITI payment up to roughly $198,000 at E-5 with dependents
+          ($1,647/month) and about $297,000 at O-3. An O-3 with dependents
           ($2,421/month) has room for homes in the $350,000-$400,000 range.
         </li>
         <li>
