@@ -75,7 +75,7 @@ export default async function CommunityPage({ params }: Props) {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        {community.name}, Community Guide
+        {community.name}: Community Guide
       </h1>
       <div
         className="prose-etown"

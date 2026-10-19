@@ -133,7 +133,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "radcliff-ky",
-    title: "Living in Radcliff, KY, Fort Knox's Closest Community",
+    title: "Living in Radcliff, KY: Fort Knox's Closest Community",
     metaTitle: "Radcliff KY Guide | Living Near Fort Knox",
     metaDesc: "Guide to living in Radcliff, KY, the closest community to Fort Knox. Housing, schools, shopping, and what military families need to know.",
     content: `<p>Radcliff is Fort Knox's next-door neighbor and the default choice for military families who want the shortest possible commute to post. With a population of roughly <strong>23,000</strong>, this Hardin County city sits directly adjacent to Fort Knox's main gates, making the commute to post as short as <strong>5 minutes</strong> from most neighborhoods.</p>
@@ -163,7 +163,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "vine-grove-ky",
-    title: "Living in Vine Grove, KY, Affordable Living Near Fort Knox",
+    title: "Living in Vine Grove, KY: Affordable Living Near Fort Knox",
     metaTitle: "Vine Grove KY Guide | Near Fort Knox",
     metaDesc: "Guide to living in Vine Grove, KY: an affordable small town about 10 minutes from Fort Knox with a quiet, community feel.",
     content: `<p>Vine Grove is a small community of about <strong>6,500 residents</strong> located roughly <strong>10 minutes</strong> from Fort Knox. It offers a quieter, more affordable alternative to both Radcliff and Elizabethtown, appealing to military families and civilians who want a small-town atmosphere without straying far from post.</p>
@@ -193,7 +193,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
   },
   {
     slug: "brandenburg-ky",
-    title: "Living in Brandenburg, KY, Rural Living Near Fort Knox",
+    title: "Living in Brandenburg, KY: Rural Living Near Fort Knox",
     metaTitle: "Brandenburg KY Guide | Near Fort Knox",
     metaDesc: "Guide to living in Brandenburg, KY. Rural Ohio River town about 20 minutes from Fort Knox with affordable homes and outdoor recreation.",
     content: `<p>Brandenburg is the Meade County seat, a small Ohio River town of about <strong>2,800 residents</strong> located roughly <strong>20 minutes</strong> west of Fort Knox. It's the most rural of the Fort Knox-adjacent communities, offering a distinctly different lifestyle for military families who want space, privacy, and a connection to the outdoors.</p>

@@ -44,7 +44,7 @@ export default function VALoans() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        VA Loans in Elizabethtown, KY, A Fort Knox Buyer&apos;s Guide
+        VA Loans in Elizabethtown, KY: A Fort Knox Buyer&apos;s Guide
       </h1>
 
       <p className="text-lg text-gray-body mb-6">

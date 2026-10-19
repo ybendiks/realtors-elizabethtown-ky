@@ -73,7 +73,7 @@ export default function DirectoryPage() {
               >
                 Compare the best realtors in Elizabethtown side by side
               </Link>{" "}
-what each agency is, verified against the local REALTORS association roster,
+to see what each agency is, verified against the local REALTORS association roster,
               and which situations each one suits.
             </p>
           </div>

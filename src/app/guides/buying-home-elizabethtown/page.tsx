@@ -32,7 +32,7 @@ export default function BuyingHomeGuide() {
       }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Buying a Home in Elizabethtown, KY, From Search to Close
+        Buying a Home in Elizabethtown, KY: From Search to Close
       </h1>
 
       <p className="text-lg text-gray-body mb-6">

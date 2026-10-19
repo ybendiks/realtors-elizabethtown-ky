@@ -56,7 +56,7 @@ export default function SchoolsHub() {
       <div className="flex flex-col lg:flex-row gap-10">
         <main className="flex-1 min-w-0">
           <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-            Schools in Elizabethtown, KY, Complete Guide for Families
+            Schools in Elizabethtown, KY: Complete Guide for Families
           </h1>
           <p className="text-lg text-gray-body mb-4">
             Families moving to Elizabethtown have access to three distinct school systems:

@@ -72,7 +72,7 @@ export default function PCSGuide() {
       }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        PCS to Fort Knox, Complete Guide for 2026
+        PCS to Fort Knox: Complete Guide for 2026
       </h1>
 
       <p className="text-lg text-gray-body mb-6">

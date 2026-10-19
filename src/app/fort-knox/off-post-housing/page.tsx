@@ -52,8 +52,8 @@ export default function OffPostHousing() {
         If you&apos;ve decided to live off-post at Fort Knox, or you&apos;re weighing it against{" "}
         <Link href="/fort-knox/knox-hills-housing/" className="text-navy font-semibold hover:text-gold-dark">
           Knox Hills on-post housing
-        </Link>{" "}
-the next question is <em>where</em>. Four communities surround Fort Knox, each with a
+        </Link>
+        , the next question is <em>where</em>. Four communities surround Fort Knox, each with a
         different character, price point, and commute. This guide breaks them down side by side so
         you can make an informed decision before your boots hit Kentucky soil.
       </p>

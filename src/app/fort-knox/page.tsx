@@ -47,7 +47,7 @@ export default function FortKnoxHub() {
       />
 
       <h1 className="text-3xl md:text-4xl font-bold text-navy mb-6">
-        Fort Knox, KY, Complete Guide for Military Families
+        Fort Knox, KY: Complete Guide for Military Families
       </h1>
 
       <p className="text-lg text-gray-body mb-6">

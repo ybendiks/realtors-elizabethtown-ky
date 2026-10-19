@@ -395,7 +395,7 @@ export default function CKGProfilePage() {
                     ))}
                   </div>
                   <p className="text-gray-body italic mb-3">&quot;{review.text}&quot;</p>
-                  <p className="text-sm font-semibold text-navy">, {review.name}</p>
+                  <p className="text-sm font-semibold text-navy">{review.name}</p>
                 </div>
               ))}
             </div>

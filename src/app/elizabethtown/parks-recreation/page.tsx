@@ -81,8 +81,8 @@ export default function ParksRecreationHub() {
               className="text-navy font-semibold hover:text-gold-dark"
             >
               PCSing to Fort Knox
-            </Link>{" "}
-access to quality parks and recreation is a major factor in choosing a neighborhood.
+            </Link>
+, access to quality parks and recreation is a major factor in choosing a neighborhood.
             Below you&apos;ll find detailed guides for each park, including amenities, activities,
             nearby neighborhoods, and practical visiting information to help you evaluate the
             outdoor lifestyle in different parts of the city.
