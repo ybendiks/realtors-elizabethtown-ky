@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AgentList from "@/components/AgentList";
+import { agentsFor } from "@/data/agents";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CKG, SITE_URL } from "@/lib/constants";
 
@@ -35,6 +37,12 @@ export default function CKGProfilePage() {
             addressRegion: "KY",
             postalCode: "42701",
           },
+          employee: agentsFor("compass-and-key-group").map((a) => ({
+            "@type": "Person",
+            name: a.name,
+            telephone: a.phone,
+            worksFor: { "@type": "RealEstateAgent", name: CKG.name },
+          })),
           founder: {
             "@type": "Person",
             name: "Austin Kutz",
@@ -265,6 +273,19 @@ export default function CKGProfilePage() {
                 </p>
               </div>
             </div>
+          </section>
+
+          {/* Team */}
+          <section className="mb-12">
+            <AgentList
+              brokerageSlug="compass-and-key-group"
+              heading="The team"
+            />
+            <p className="text-sm text-gray-body">
+              Compass and Key Group operates under {CKG.brokerage}. The association roster
+              lists ten Real Broker members across several independent teams in this area, so
+              only the agents confirmed to be part of Compass and Key Group are shown here.
+            </p>
           </section>
 
           {/* Services */}

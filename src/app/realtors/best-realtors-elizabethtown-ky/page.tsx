@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import Faq from "@/components/Faq";
 import { SITE_URL, SITE_NAME, CKG } from "@/lib/constants";
 import { realtors } from "@/data/realtors";
+import { agents, agentsFor } from "@/data/agents";
 import {
   MEDIAN_SALE_PRICE,
   DAYS_ON_MARKET,
@@ -162,6 +163,7 @@ export default function BestRealtorsPage() {
             <tr className="bg-navy text-white" style={{ backgroundColor: "#1B365D" }}>
               <th className="p-3 text-left">Agency</th>
               <th className="p-3 text-left">Office</th>
+              <th className="p-3 text-left">Agents</th>
               <th className="p-3 text-left">Best suited to</th>
             </tr>
           </thead>
@@ -177,6 +179,9 @@ export default function BestRealtorsPage() {
                 <span className="block text-xs text-gray-medium">Featured &middot; veteran-owned</span>
               </td>
               <td className="p-3 text-gray-body">{CKG.address.split(",")[0]}</td>
+              <td className="p-3 text-gray-body">
+                {agentsFor("compass-and-key-group").length}
+              </td>
               <td className="p-3 text-gray-body">{BEST_FOR["compass-and-key-group"]}</td>
             </tr>
             {verified.map((r) => (
@@ -190,14 +195,22 @@ export default function BestRealtorsPage() {
                   </Link>
                 </td>
                 <td className="p-3 text-gray-body">
-                  {r.address ? r.address.split(",")[0]: ", "}
+                  {r.address ? r.address.split(",")[0] : "n/a"}
                 </td>
+                <td className="p-3 text-gray-body">{agentsFor(r.slug).length}</td>
                 <td className="p-3 text-gray-body">{BEST_FOR[r.slug] ?? "General residential sales"}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
+      <p className="text-sm text-gray-body mb-8">
+        Agent counts come from the Heart of Kentucky Association of REALTORS roster, checked
+        in {REVIEW_MONTH}, covering {agents.length} licensed agents across these six offices.
+        Size cuts both ways: a bigger office gives you more people to choose between, and
+        makes choosing the right individual matter more than choosing the brand.
+      </p>
 
       {/* Featured */}
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">
