@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
 import JsonLd from "@/components/JsonLd";
