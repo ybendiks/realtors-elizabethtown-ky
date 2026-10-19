@@ -122,25 +122,29 @@ wrong because nothing about it looks broken.
 | Keller Williams Heartland | 19 |
 | Olive + Oak Realty | 11 |
 | Coldwell Banker McMahan | 9 |
-| Compass and Key Group | 2 |
-| **Total** | **114** |
+| Compass and Key Group | 3 |
+| **Total** | **115** |
 
-### Compass and Key Group: 2 of 10, deliberately
+### Compass and Key Group: 3 of 10, confirmed by the owner
 
 CKG is not a separate HKAR office. It trades under **Real Broker, LLC**, which
-has 10 HKAR members spread across several independent teams in this area.
-Only two are confirmed to be Compass and Key Group:
+has 10 HKAR members spread across several independent teams in this area, so
+the roster on its own cannot say who belongs to CKG.
+
+The owner confirmed the team on 2026-10-18: **Austin Kutz**, **Ciara Hardesty**
+and **Steve Nikirk**. Two of the three corroborate independently:
 
 - **Austin Kutz** (HKAR 35704) - roster phone `270-735-3897` matches `CKG.phone` exactly.
 - **Steve Nikirk** (HKAR 33303) - his own Google Business Profile reads
   "Steve Nikirk, Compass and Key Group - Real Broker, LLC" at 617 N Mulberry St #105B,
   the same address as CKG.
+- **Ciara Hardesty** (HKAR 37235, `270-734-5552`) - on the Real Broker roster;
+  team membership is on the owner's confirmation, which is the authoritative
+  source for who works there.
 
-The other eight Real Broker members (Andrew Pruitt, Christopher Harris, Ciara
-Hardesty, Denise Wisdom, Kelly Crutcher, Melody Duvall, Terry Brown, Thue
-Ignacio) are **excluded**. They may or may not be part of the team; the roster
-does not say, and inflating the client's apparent headcount with unaffiliated
-agents would be exactly the kind of unverified claim this file exists to prevent.
+The remaining seven Real Broker members (Andrew Pruitt, Christopher Harris,
+Denise Wisdom, Kelly Crutcher, Melody Duvall, Terry Brown, Thue Ignacio) are
+not Compass and Key Group and are excluded.
 
 ### Cross-validation
 

@@ -13,12 +13,13 @@
  * without logging it in tasks/data-sources.md.
  *
  * Compass and Key Group trades under Real Broker, LLC, which has 10 HKAR
- * members across several independent teams. Only two are confirmed to be
- * Compass and Key Group: Austin Kutz, whose roster phone matches CKG.phone
- * exactly, and Steve Nikirk, whose own Google Business Profile reads
- * "Steve Nikirk, Compass and Key Group - Real Broker, LLC" at the same
- * address. The other eight Real Broker members are deliberately omitted
- * rather than claimed.
+ * members across several independent teams, so the roster alone cannot say
+ * who belongs to CKG. The three listed here were confirmed by the owner on
+ * 2026-10-18: Austin Kutz, Ciara Hardesty and Steve Nikirk. Two corroborate
+ * independently -- Kutz's roster phone matches CKG.phone exactly, and
+ * Nikirk's own Google Business Profile reads "Steve Nikirk, Compass and Key
+ * Group - Real Broker, LLC" at the same address. The remaining seven Real
+ * Broker members are not CKG and are deliberately omitted.
  *
  * No individual agent pages: name, phone and membership class is not enough
  * substance for a page, and three brokerage pages were removed from this site
@@ -55,7 +56,8 @@ export const agents: Agent[] = [
   { hkarId: "33153", name: "Kelly Smith", brokerageSlug: "coldwell-banker-mcmahan", phone: "502-727-6236", role: "realtor" },
   { hkarId: "33874", name: "Matthew Weaver", brokerageSlug: "coldwell-banker-mcmahan", phone: "502-376-0884", role: "designated-realtor" },
 
-  // compass-and-key-group (2)
+  // compass-and-key-group (3)
+  { hkarId: "37235", name: "Ciara Hardesty", brokerageSlug: "compass-and-key-group", phone: "270-734-5552", role: "realtor" },
   { hkarId: "35704", name: "Austin Kutz", brokerageSlug: "compass-and-key-group", phone: "270-735-3897", role: "realtor" },
   { hkarId: "33303", name: "Steve Nikirk", brokerageSlug: "compass-and-key-group", phone: "270-872-3077", role: "realtor" },
 
