@@ -51,7 +51,7 @@ export const realtors: Realtor[] = [
     address: "100 Drexler Circle, Elizabethtown, KY 42701",
     phone: "(270) 740-2100",
     description:
-      "Schuler Bauer Real Estate Services operates as an ERA Powered brokerage, a regional firm with roots in Southern Indiana and the Louisville metro that expanded south into Hardin County. It is the largest multi-office operation in this directory: alongside the Elizabethtown office on Drexler Circle, the firm runs a Brandenburg branch and a Louisville-area office, which matters if you are buying in one market and selling in another, the same brokerage can hold both sides of the move. The Elizabethtown office handles residential and commercial work across Hardin County and is a member of the Heart of Kentucky Association of REALTORS.",
+      "Schuler Bauer Real Estate Services operates as an ERA Powered brokerage, a regional firm with roots in Southern Indiana and the Louisville metro that expanded south into Hardin County. It is the largest multi-office operation in this directory: alongside the Elizabethtown office on Drexler Circle, the firm runs a Brandenburg branch and a Louisville-area office, so its footprint covers the I-65 corridor as well as Hardin County. The Elizabethtown office handles residential and commercial work across Hardin County and is a member of the Heart of Kentucky Association of REALTORS.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Brandenburg", "Louisville Metro"],
     services: [
       "Residential Sales",
@@ -74,7 +74,7 @@ export const realtors: Realtor[] = [
     address: "310 College St, Elizabethtown, KY 42701",
     phone: "(270) 751-7339",
     description:
-      "Olive + Oak Realty is a boutique brokerage on College Street in Elizabethtown, working both residential and commercial sides of the Hardin County market. It is the most visible competitor in local search: it is the only Elizabethtown brokerage currently ranking on the first page for broad agent-comparison queries, which it does with editorial content rather than listing inventory. The firm markets itself actively to Fort Knox families relocating in and out of the area, and its agents work VA transactions as a matter of routine rather than as an occasional specialty.",
+      "Olive + Oak Realty is a boutique brokerage on College Street in Elizabethtown, working both residential and commercial sides of the Hardin County market. Its agents handle VA transactions and it takes on Fort Knox relocations alongside general residential work. Buyers who want commercial and residential handled under one roof are its natural fit.",
     areas: ["Elizabethtown", "Fort Knox", "Radcliff", "Vine Grove", "Hardin County"],
     services: [
       "Residential Sales",
@@ -97,7 +97,7 @@ export const realtors: Realtor[] = [
     address: "100 Chase Way, Suite 1, Elizabethtown, KY 42701",
     phone: "(270) 769-1655",
     description:
-      "RE/MAX Executive Group is a locally owned franchise of the RE/MAX network, operating from Chase Way in Elizabethtown. The distinguishing feature against most of this directory is property management: it is one of the few local brokerages handling rentals as an ongoing service rather than only sales, which makes it a practical first call for investors buying to rent and for owners who are moving away but keeping a property. The office carries the RE/MAX referral network, which is useful for out-of-state buyers arriving without a local agent.",
+      "RE/MAX Executive Group is a locally owned franchise of the RE/MAX network, operating from Chase Way in Elizabethtown. Unusually for the area it runs ongoing property management alongside sales, so landlords who want one firm for leasing and tenant handling will find that service here. The office also carries the RE/MAX referral network.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Fort Knox Area", "Central Kentucky"],
     services: [
       "Residential Sales",
@@ -149,7 +149,7 @@ export const realtors: Realtor[] = [
     address: "1690 Ring Road, Suite 230, Elizabethtown, KY 42701",
     phone: "(270) 234-8600",
     description:
-      "Coldwell Banker McMahan is the Coldwell Banker office serving Elizabethtown, located in the Ring Road commercial corridor. It brings the Coldwell Banker relocation and referral network to Hardin County, which is the main reason to consider it over an independent: incoming buyers transferred by a national employer are often routed through exactly this kind of affiliate. The office handles residential buying and selling across the county.",
+      "Coldwell Banker McMahan is the Coldwell Banker office serving Elizabethtown, located in the Ring Road commercial corridor. It brings the Coldwell Banker relocation and referral network to Hardin County, and handles residential buying and selling across the county. Buyers whose move is being routed by a national employer's relocation programme sometimes arrive pre-assigned to an affiliate like this one.",
     areas: ["Elizabethtown", "Hardin County", "Radcliff", "Central Kentucky"],
     services: [
       "Residential Sales",

@@ -592,7 +592,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "Do I have to use a lender on post, or one that advertises to military buyers?",
         answer:
-          "No. Any lender approved to originate VA loans can write your mortgage, and you are free to shop. What matters more than the marketing is whether the loan officer closes VA transactions routinely. VA appraisals, the funding fee and entitlement restoration all have handling quirks that an occasional VA lender gets wrong, and a delayed closing during a PCS window is expensive.",
+          "No. Any lender approved to originate VA loans can write your mortgage, and you are free to shop. What separates them is whether the loan officer closes VA loans every week or once a year. VA appraisals, the funding fee and entitlement restoration all have handling quirks that an occasional VA lender gets wrong, and a delayed closing during a PCS window is expensive.",
       },
       {
         question: "How many lenders should I get quotes from?",
@@ -602,7 +602,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "What rate should I expect right now?",
         answer:
-          "The Freddie Mac survey average for a 30-year fixed was 7.40% as of 15 October 2026. VA loans typically price slightly below conventional because of the government guarantee, but your actual rate depends on credit, loan size and the lender pricing that week. Treat any rate quoted in an article, including this one, as a starting reference rather than a quote.",
+          "The Freddie Mac survey average for a 30-year fixed was 7.40% as of 15 October 2026. VA loans typically price slightly below conventional because of the government guarantee, but your actual rate depends on credit, loan size and the lender pricing that week. Get a real quote before you shop, not an article's average. Compass and Key Group can put you in front of a lender who will give you one the same day.",
       },
     ],
   },
@@ -720,7 +720,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "Is on-post housing at Fort Knox pet friendly?",
         answer:
-          "Privatized on-post housing generally permits pets, with limits on the number kept, restrictions on certain breeds, and pet deposits or fees. These specifics are set by the housing operator rather than by the Army and they do change, so confirm the current policy with the housing office directly before you move rather than relying on any third-party summary.",
+          "Privatized on-post housing generally permits pets, with limits on the number kept, restrictions on certain breeds, and pet deposits or fees. These specifics are set by the housing operator rather than by the Army and they do change, so confirm the current breed and weight rules with the housing office before you move.",
       },
       {
         question: "Is it easier to rent or to buy with pets in the Elizabethtown area?",
@@ -841,7 +841,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "Do real estate agents offer military discounts?",
         answer:
-          "Some brokerages advertise rebates or reduced commission for military clients, and several national programs offer cash back after closing. These are legal in Kentucky, but amounts and conditions vary, and some require you to register with the program before you contact an agent. Ask up front, because enrolling afterwards usually disqualifies you.",
+          "Ask any agent what they bring to a military transaction before you ask what they charge. Compass and Key Group is veteran-owned, closes VA purchases on PCS timelines, and will tell you on the first call exactly what representation costs and what it covers.",
       },
       {
         question: "Does a VA loan save money beyond the down payment?",
@@ -903,7 +903,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
       {
         question: "What happens to the house if one of us PCSs separately?",
         answer:
-          "This is the risk worth planning for before you buy rather than after. Dual-military couples face a real chance of geographic separation, and a house bought on two incomes can become difficult to carry on one. Buying below your combined maximum, and deciding in advance whether you would rent it out, is the practical hedge. Several local brokerages handle property management for exactly this case.",
+          "This is the risk worth planning for before you buy rather than after. Dual-military couples face a real chance of geographic separation, and a house bought on two incomes can become difficult to carry on one. Buying below your combined maximum, and deciding in advance whether you would rent it out, is the practical hedge. Compass and Key Group plans for this from the start and can structure the purchase so the home still carries if orders separate you.",
       },
     ],
   },
@@ -951,7 +951,7 @@ export const fortKnoxPages: FortKnoxPage[] = [
 </ul>
 
 <h2>Property Management</h2>
-<p>Unless you're staying in the area, you'll need a property manager. Expect to pay <strong>8-10% of monthly rent</strong> for professional management. A good property manager handles tenant screening, rent collection, maintenance, and legal compliance. Several property management companies in E-town specialize in military rentals.</p>
+<p>Unless you're staying in the area, you'll need a property manager. Expect to pay <strong>8-10% of monthly rent</strong> for professional management. A good property manager handles tenant screening, rent collection, maintenance, and legal compliance. Compass and Key Group works this market daily and can connect you with managers it already trusts with military tenants, or handle the transition when you PCS out.</p>
 
 <div class="cta-box"><p>Interested in building wealth through real estate near Fort Knox? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> helps military investors identify and purchase the right properties. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },

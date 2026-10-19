@@ -17,6 +17,7 @@ interface Props {
 export default function AgentList({ brokerageSlug, heading }: Props) {
   const all = agentsFor(brokerageSlug);
   if (all.length === 0) return null;
+  const ownTeam = brokerageSlug === "compass-and-key-group";
 
   // Designated and managing brokers first; the roster order is otherwise by surname.
   const sorted = [...all].sort(
@@ -46,12 +47,20 @@ export default function AgentList({ brokerageSlug, heading }: Props) {
                 </span>
               )}
             </span>
-            <a
-              href={`tel:${a.phone.replace(/[^0-9]/g, "")}`}
-              className="text-navy font-medium hover:text-gold-dark whitespace-nowrap ml-3"
-            >
-              {a.phone}
-            </a>
+            {/* Click-to-call only for our own team. Competitor agents are
+                listed because a directory needs real coverage to be credible,
+                but a one-tap dial button for them turns this page into their
+                lead form. */}
+            {ownTeam ? (
+              <a
+                href={`tel:${a.phone.replace(/[^0-9]/g, "")}`}
+                className="text-navy font-medium hover:text-gold-dark whitespace-nowrap ml-3"
+              >
+                {a.phone}
+              </a>
+            ) : (
+              <span className="text-gray-medium whitespace-nowrap ml-3">{a.phone}</span>
+            )}
           </li>
         ))}
       </ul>

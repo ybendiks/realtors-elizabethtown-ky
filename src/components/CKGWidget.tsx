@@ -35,7 +35,12 @@ export default function CKGWidget() {
       </a>
       </div>
 
-      <p className="text-center text-sm text-gray-medium mt-2">{CKG.phone}</p>
+      <a
+        href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+        className="block text-center text-sm font-semibold text-navy hover:text-gold-dark mt-2"
+      >
+        {CKG.phone}
+      </a>
       <p className="text-center text-xs text-gold font-medium mt-1">Veteran-Owned</p>
 
       <Link
