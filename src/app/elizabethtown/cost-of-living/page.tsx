@@ -8,6 +8,9 @@ import {
   PROPERTY_TAX_RATES,
   LAST_DATA_REVIEW,
   usd,
+  AVG_RENT_ALL_BEDS,
+  AVG_RENT_YOY_CHANGE,
+  RENTALS_AVAILABLE,
 } from "@/data/market-facts";
 
 export const metadata: Metadata = {
@@ -83,13 +86,13 @@ export default function CostOfLiving() {
 
       <h3 className="text-xl font-bold text-navy mt-8 mb-3">Rental Costs</h3>
       <p className="text-gray-body mb-4">
-        Renters also benefit from E-town&apos;s lower cost of living. Expect to pay approximately
-        <strong> $850 per month</strong> for a one-bedroom apartment, <strong>$1,050</strong> for a
-        two-bedroom, and around <strong>$1,250</strong> for a three-bedroom unit. Single-family
-        rental homes, particularly popular with military families on shorter assignments, run
-        slightly higher at $1,200-$1,500 depending on the neighborhood and condition. Compared to
-        Louisville, where a two-bedroom apartment averages $1,200-$1,400, E-town saves renters
-        $150-$350 per month.
+        Average asking rent across all bedroom counts and property types is{" "}
+          <strong>{usd(AVG_RENT_ALL_BEDS.value)}</strong> as of {AVG_RENT_ALL_BEDS.asOf}, and it is{" "}
+          <strong>{usd(Math.abs(AVG_RENT_YOY_CHANGE.value))} lower</strong> than a year ago, with{" "}
+          {RENTALS_AVAILABLE.value} units on the market. One-bedroom apartments sit well below that
+          average and single-family homes above it. Rents here have stopped climbing while prices
+          have not, which is worth the arithmetic: a rent payment builds no equity, and at Fort Knox
+          BAH rates the allowance goes further against a mortgage than most people assume.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">

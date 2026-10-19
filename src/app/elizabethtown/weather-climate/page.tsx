@@ -122,9 +122,11 @@ export default function WeatherClimate() {
         Spring is also the start of severe weather season. April through June brings the highest
         risk for <strong>thunderstorms, high winds, and tornadoes</strong>. Elizabethtown sits
         within the general tornado risk zone for the mid-South, and while direct hits are
-        infrequent, the region does experience tornado warnings several times each spring. Most
-        homes in the area have basements or interior safe rooms, and the county&apos;s storm
-        warning sirens are tested regularly.
+        infrequent, the region does experience tornado warnings several times each spring. Basements
+        are common in Hardin County housing stock, which is the main reason most families here
+        have somewhere to go, and the county&apos;s storm warning sirens are tested regularly. If
+        a basement matters to you, say so early: it is a filter worth applying before you start
+        touring rather than after.
       </p>
 
       <h2 className="text-2xl font-bold text-navy mt-10 mb-4">Annual Averages at a Glance</h2>

@@ -172,14 +172,9 @@ business line, so its "Get a Quote" button stays where it is.
 - 2027 BAH rates publish around December. `BAH_NEXT_UPDATE_DUE` flags it.
 
 **Factual, unresolved**
-- Cost-of-living rents still read $850 / $1,050 / $1,250 against the sourced
-  $1,380 average. Understates by 10-40% on a page crediting Redfin.
 - Vine Grove and Brandenburg populations differ between hub and `[slug]` pages.
 - T.K. Stone appears as an E-town Independent elementary on one page and a
   Hardin County middle school on another.
-- The weather page asserts "most homes in the area have basements or interior
-  safe rooms". That is a safety claim about housing stock, unverified, in a
-  slab-and-crawlspace market. Highest-risk item remaining.
 - "15-20% below the national average" on cost-of-living is unsourced.
 - Eight school enrolment figures carry no source or year.
 
@@ -196,3 +191,12 @@ business line, so its "Get a Quote" button stays where it is.
 - `/contact/` ranks for Middlesboro, Morehead and Leitchfield, towns the
   business does not serve.
 - Neighbourhood hub cards truncate mid-word via `slice(0, 150)`.
+
+### Resolved 2026-10-19
+
+- Weather page: "interior safe rooms" removed. Basements are common in Hardin
+  County stock, confirmed by the owner, so that half of the claim stands and
+  is now framed as a search criterion. The safe-rooms half was not real.
+- Cost-of-living rents now use the sourced $1,380 all-bedroom average (Zillow,
+  October 2026) with its year-over-year decline, replacing the unsourced
+  $850 / $1,050 / $1,250 per-bedroom figures that understated the market.
