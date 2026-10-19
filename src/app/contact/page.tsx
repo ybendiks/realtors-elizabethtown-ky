@@ -112,12 +112,21 @@ export default function ContactPage() {
       </ul>
 
       <div className="bg-navy rounded-lg p-6 text-white" style={{ backgroundColor: "#1B365D" }}>
-        <h3 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>Are You a Local Real Estate Agent?</h3>
-        <p className="text-sm" style={{ color: "#d1d5db" }}>
-          If you&apos;re a real estate agent or agency serving the Elizabethtown and Hardin County area and
-          would like to be included in our directory, please email us at question@agentmail.to
-          with your agency information.
+        <h3 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
+          Ready to talk to someone today?
+        </h3>
+        <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
+          {CKG.owner} answers his own phone. Buying, selling, first home, investment property or a
+          PCS move, you get the same person from the first call to closing.{" "}
+          {CKG.rating.toFixed(1)} from {CKG.reviewCount} {CKG.reviewSource} reviews.
         </p>
+        <a
+          href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+          className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors"
+          style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
+        >
+          Call {CKG.phone}
+        </a>
       </div>
     </ContentLayout>
   );

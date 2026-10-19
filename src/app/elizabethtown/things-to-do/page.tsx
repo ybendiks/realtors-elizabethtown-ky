@@ -55,17 +55,22 @@ export default function ThingsToDoHub() {
             ))}
           </div>
 
-          <div className="mt-10 bg-gray-light rounded-lg p-6">
-            <h2 className="text-xl font-bold text-navy mb-2">Moving to E-town?</h2>
-            <p className="text-gray-body text-sm mb-3">
-              Lifestyle matters when choosing where to live. If you want to be close to E-town&apos;s best
-              dining, shopping, and entertainment, let{" "}
-              <Link href="/realtors/compass-and-key-group/" className="text-navy font-semibold hover:text-gold-dark">
-                Compass and Key Group
-              </Link>{" "}
-              help you find a home in the right neighborhood. Call Austin Kutz at {CKG.phone}.
-            </p>
-          </div>
+          <div className="mt-10 bg-navy rounded-lg p-6" style={{ backgroundColor: "#1B365D" }}>
+          <h2 className="text-xl font-bold mb-2" style={{ color: "#ffffff" }}>
+            Want to live near the parts of E-town you actually use?
+          </h2>
+          <p className="text-sm mb-4" style={{ color: "#d1d5db" }}>
+            Tell {CKG.owner} which restaurants, parks and schools matter to you and he will show
+            you what is for sale within a short drive of them.
+          </p>
+          <a
+            href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+            className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors"
+            style={{ backgroundColor: "#D4A843", color: "#1B365D" }}
+          >
+            Call {CKG.phone}
+          </a>
+        </div>
         </main>
         <div className="w-full lg:w-80 flex-shrink-0">
           <div className="lg:sticky lg:top-24 space-y-6">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ContentLayout from "@/components/ContentLayout";
-import { SITE_URL, SITE_NAME } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, CKG } from "@/lib/constants";
 import JsonLd from "@/components/JsonLd";
 import { thingsToDo } from "@/data/things-to-do";
 import { LAST_DATA_REVIEW } from "@/data/market-facts";
@@ -94,6 +94,20 @@ export default async function ThingToDoPage({ params }: Props) {
 
       <div className="bg-gold/10 border-2 border-gold rounded-lg p-6">
         <p className="text-gray-body font-medium">{t.ctaText}</p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <a
+              href={`tel:${CKG.phone.replace(/[^0-9]/g, "")}`}
+              className="inline-block bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+            >
+              Call {CKG.phone}
+            </a>
+            <Link
+              href="/realtors/compass-and-key-group/"
+              className="inline-block bg-navy hover:bg-navy/90 text-white font-semibold px-5 py-2.5 rounded transition-colors text-sm"
+            >
+              View CKG Profile
+            </Link>
+          </div>
       </div>
     </ContentLayout>
   );
