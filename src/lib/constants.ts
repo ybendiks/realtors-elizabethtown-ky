@@ -12,6 +12,10 @@ export const CKG = {
    * 2026-11-07. Publishing the line behind it would defeat the screening, so
    * do not "helpfully" swap it back.
    *
+   * The Google Business Profile shows this same number, so site and profile
+   * agree. The HKAR roster still lists the underlying line, which is expected
+   * and is not a citation problem worth chasing.
+   *
    * The Google Business Profile shows (270) 817-3311, which is call tracking
    * rather than an error, so do NOT "correct" either one to match the other.
    * Keeping the tracking number as the profile's primary and this one listed
@@ -34,8 +38,8 @@ export const CKG = {
    * but it is published as aggregateRating structured data, so re-check it
    * when convenient and update reviewsAsOf with it.
    */
-  reviewCount: 94,
-  reviewsAsOf: "October 2026",
+  reviewCount: 96,
+  reviewsAsOf: "November 2026",
   reviewSource: "Google",
   /**
    * Canonical Google Business Profile link, in Google's documented stable

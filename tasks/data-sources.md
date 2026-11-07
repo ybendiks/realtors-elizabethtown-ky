@@ -127,26 +127,27 @@ wrong because nothing about it looks broken.
 
 ### Phone numbers in play
 
-Three numbers, all current, none of them an error:
-
-| Number | What it is | Where it appears |
+| Number | What it is | Where |
 |---|---|---|
-| **(270) 491-3450** | Quo screening number masking the business line | the whole site, via `CKG.phone` |
+| **(270) 491-3450** | Quo screening number masking the business line | the whole site, and the Google Business Profile |
 | (270) 735-3897 | the real business line, still live | HKAR roster listing for Austin Kutz |
-| (270) 817-3311 | call tracking | Google Business Profile |
 
-The site publishes the **screening** number everywhere, because publishing the
-line behind it defeats the point of screening. `CKG.phone` in `constants.ts`
-is the single source, so changing it is one line and reaches ~109 pages.
+The site and the Google profile both publish the screening number, so they
+agree and there is no citation mismatch to chase. `CKG.phone` in
+`constants.ts` is the single source for the site; changing it is one line and
+reaches about 109 pages.
 
-Two things that look like bugs and are not, so nobody "fixes" them:
+**Austin Kutz's entry in `src/data/agents.ts` deliberately does not match the
+HKAR roster.** The roster lists the underlying line; the site carries the
+screening number, because publishing the line behind it defeats the point. A
+roster refresh must not revert it, and the file says so at the entry.
 
-- **Austin Kutz's entry in `src/data/agents.ts` does not match the HKAR
-  roster.** The roster lists the underlying line; the site carries the
-  screening number. A roster refresh must not revert it, and the file says so
-  at the entry.
-- **The Google profile does not match the site.** That number is call
-  tracking. Correcting either one to match the other would break attribution.
+**Correction, 2026-11-07.** An earlier version of this file recorded the
+profile as showing (270) 817-3311 and called it call tracking. That was read
+from Google Maps on 2026-10-18, before the screening number was in place, and
+is no longer what the profile shows. Checked again on 2026-11-07: the profile
+shows (270) 491-3450. The 817 number is not in evidence anywhere now, and
+nothing should be inferred about what it was.
 
 ### Compass and Key Group: 3 of 10, confirmed by the owner
 
@@ -200,3 +201,13 @@ An earlier draft said there was "steady inventory at that level across
 Elizabethtown, Radcliff and Vine Grove". The scrape supports neither the other
 two cities nor the word "steady": all 23 qualifying listings were in
 Elizabethtown. Corrected to the measured one-in-seven figure.
+
+### Review count
+
+| Value | Source | As of |
+|---|---|---|
+| 5.0 from **96** reviews | Google Business Profile, read directly | 2026-11-07 |
+
+Was 94 when first recorded on 2026-10-18. Counts only grow, so a stale value
+understates, but it is published as `aggregateRating` structured data, so
+re-check it when convenient and move `CKG.reviewsAsOf` with it.
