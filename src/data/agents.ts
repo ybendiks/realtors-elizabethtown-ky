@@ -7,7 +7,9 @@
  * continued until all 643 association members had been seen at least once.
  *
  * RULE, as everywhere else in this codebase: nothing here is inferred. Name,
- * phone and membership class come from the roster and nothing else. HKAR
+ * phone and membership class come from the roster and nothing else, with one
+ * documented exception: Austin Kutz's entry carries the Quo screening number
+ * the site publishes rather than the underlying line the roster lists. HKAR
  * publishes no tenure, sales volume or licence number on the public listing,
  * so this file carries none of those -- do not add them from another source
  * without logging it in tasks/data-sources.md.
@@ -58,7 +60,12 @@ export const agents: Agent[] = [
 
   // compass-and-key-group (3)
   { hkarId: "37235", name: "Ciara Hardesty", brokerageSlug: "compass-and-key-group", phone: "270-734-5552", role: "realtor" },
-  { hkarId: "35704", name: "Austin Kutz", brokerageSlug: "compass-and-key-group", phone: "270-735-3897", role: "realtor" },
+  // Deliberately NOT the roster value. 270-491-3450 is a Quo screening number
+  // that masks Austin's real line, 270-735-3897, which is still live and is
+  // what HKAR publishes. The site shows the screening number everywhere,
+  // because publishing the number behind it defeats the point of screening.
+  // Do not let a roster refresh revert this one.
+  { hkarId: "35704", name: "Austin Kutz", brokerageSlug: "compass-and-key-group", phone: "270-491-3450", role: "realtor" },
   { hkarId: "33303", name: "Steve Nikirk", brokerageSlug: "compass-and-key-group", phone: "270-872-3077", role: "realtor" },
 
   // keller-williams-elizabethtown (19)

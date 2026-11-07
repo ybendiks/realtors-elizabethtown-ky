@@ -127,21 +127,26 @@ wrong because nothing about it looks broken.
 
 ### Phone numbers in play
 
-| Number | Where | Note |
+Three numbers, all current, none of them an error:
+
+| Number | What it is | Where it appears |
 |---|---|---|
-| **(270) 491-3450** | the site, everywhere | canonical, set 2026-11-07 by the owner |
-| (270) 817-3311 | Google Business Profile | call tracking, not an error |
-| (270) 735-3897 | HKAR roster entry for Austin Kutz | the site's previous main number |
+| **(270) 491-3450** | Quo screening number masking the business line | the whole site, via `CKG.phone` |
+| (270) 735-3897 | the real business line, still live | HKAR roster listing for Austin Kutz |
+| (270) 817-3311 | call tracking | Google Business Profile |
 
-The profile number is deliberate call tracking; neither it nor the site number
-should be "corrected" to match the other. `CKG.phone` in `constants.ts` is the
-single source for the site, so a change is one line.
+The site publishes the **screening** number everywhere, because publishing the
+line behind it defeats the point of screening. `CKG.phone` in `constants.ts`
+is the single source, so changing it is one line and reaches ~109 pages.
 
-**Open:** Austin Kutz's individual entry in `src/data/agents.ts` still carries
-(270) 735-3897, because that is what the HKAR roster publishes. It renders in
-the team list on the CKG profile page beside the new main number. If 735-3897
-is being retired, that entry needs updating here and at HKAR; if it remains his
-direct line, it is correct as it stands.
+Two things that look like bugs and are not, so nobody "fixes" them:
+
+- **Austin Kutz's entry in `src/data/agents.ts` does not match the HKAR
+  roster.** The roster lists the underlying line; the site carries the
+  screening number. A roster refresh must not revert it, and the file says so
+  at the entry.
+- **The Google profile does not match the site.** That number is call
+  tracking. Correcting either one to match the other would break attribution.
 
 ### Compass and Key Group: 3 of 10, confirmed by the owner
 

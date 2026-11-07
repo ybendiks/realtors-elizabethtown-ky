@@ -7,8 +7,10 @@ export const CKG = {
   name: "Compass and Key Group",
   owner: "Austin Kutz",
   /**
-   * The canonical number for the site. Changed from (270) 735-3897 on
-   * 2026-11-07 at the owner's direction.
+   * The number the site publishes everywhere. It is a Quo screening number
+   * that masks the business line, (270) 735-3897, which is still live. Set
+   * 2026-11-07. Publishing the line behind it would defeat the screening, so
+   * do not "helpfully" swap it back.
    *
    * The Google Business Profile shows (270) 817-3311, which is call tracking
    * rather than an error, so do NOT "correct" either one to match the other.
