@@ -183,9 +183,6 @@ business line, so its "Get a Quote" button stays where it is.
 - Ryan Wheeler's review count of 311 is unverified.
 
 **Content opportunities not taken**
-- Glendale's page describes BlueOval SK as "large-scale manufacturing
-  projects" rather than naming the largest economic event in the county in a
-  generation.
 - `/contact/` ranks for Middlesboro, Morehead and Leitchfield, towns the
   business does not serve.
 - Neighbourhood hub cards truncate mid-word via `slice(0, 150)`.
@@ -198,3 +195,37 @@ business line, so its "Get a Quote" button stays where it is.
 - Cost-of-living rents now use the sourced $1,380 all-bedroom average (Zillow,
   October 2026) with its year-over-year decline, replacing the unsourced
   $850 / $1,050 / $1,250 per-bedroom figures that understated the market.
+
+## Banked for December 2026
+
+Deferred deliberately, to be done in one pass alongside the BAH update.
+
+### The one with a deadline
+- [ ] **2027 BAH rates.** Publish around December, effective 1 January 2027.
+      `BAH_NEXT_UPDATE_DUE` in `market-facts.ts` flags it; the full 24-grade
+      table for MHA KY110 swaps in one edit. This cluster
+      (`bah fort knox 2026` at p9) is the site's only near-page-one position,
+      so whoever updates first takes the 2027 variants from a standing start.
+      Re-derive the PITI budgets at the same time, since they depend on both
+      the new rates and the then-current mortgage rate.
+
+### Unsourced or contradictory, all minor
+- [ ] Vine Grove and Brandenburg populations differ between the hub pages and
+      the `[slug]` pages.
+- [ ] T.K. Stone appears as an Elizabethtown Independent elementary in
+      `schools.ts` and as a Hardin County middle school in `neighborhoods.ts`.
+      Both cannot be right, and The Cedars' feeder school depends on it.
+- [ ] "15-20% below the national average" on cost-of-living has no source.
+- [ ] Eight school enrolment figures in `schools.ts` carry no source or year,
+      and are quoted on the hub and in three neighbourhood entries.
+- [ ] Ryan Wheeler's `reviewCount: 311` is unverified.
+- [ ] Re-check CKG's review count, which moves (94 on 2026-10-18, 96 on
+      2026-11-07).
+
+### Resolved rather than banked
+- **BlueOval SK is effectively dead.** It had been noted as an unused content
+  opportunity; it was the opposite. Five claims on the Glendale page sold the
+  area on that development: "growing economic activity", "poised for growth",
+  "property values may see appreciation", "getting in early on a growing
+  area". All removed 2026-11-07. The page now sells Glendale on what is true
+  without it, and asserts nothing about the project either way.

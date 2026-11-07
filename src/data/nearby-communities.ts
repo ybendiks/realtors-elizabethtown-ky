@@ -45,12 +45,12 @@ export const communities: Community[] = [
     slug: "glendale",
     name: "Glendale, KY",
     metaTitle: "Glendale KY Guide | Near Elizabethtown",
-    metaDesc: "Guide to living in Glendale, KY: a small historic town 10 minutes north of Elizabethtown with convenient I-65 access and growing economic activity.",
-    shortDesc: "A small historic town 10 minutes north of Elizabethtown with convenient I-65 access and growing economic activity.",
-    content: `<p>Glendale is a small Hardin County community of about <strong>1,000 residents</strong> located roughly <strong>10 minutes north</strong> of Elizabethtown along I-65 and US-31W. Despite its small size, Glendale has drawn significant attention in recent years due to major economic development in the area, including large-scale manufacturing and industrial projects along the I-65 corridor that are bringing jobs and investment to the region.</p>
+    metaDesc: "Guide to living in Glendale, KY: a small historic village 10 minutes north of Elizabethtown, with I-65 access and some of the lowest prices in Hardin County.",
+    shortDesc: "A small historic village 10 minutes north of Elizabethtown, with I-65 access and some of the lowest prices in Hardin County.",
+    content: `<p>Glendale is a small Hardin County community of about <strong>1,000 residents</strong> located roughly <strong>10 minutes north</strong> of Elizabethtown along I-65 and US-31W. What Glendale has that villages this size usually do not is an I-65 interchange, which puts Elizabethtown, Fort Knox and the Louisville corridor all within a practical drive of a place with a few hundred residents.</p>
 
 <h2>Housing &amp; Real Estate</h2>
-<p>Glendale offers a mix of historic homes in the village center and more rural properties on the outskirts. Home prices typically range from <strong>$120,000 to $250,000</strong>, with larger rural parcels available at various price points. The area is poised for growth as economic development brings new residents and demand.</p>
+<p>Glendale offers a mix of historic homes in the village center and more rural properties on the outskirts. Home prices typically range from <strong>$120,000 to $250,000</strong>, with larger rural parcels available at various price points. Larger rural parcels come up here more often than they do closer to town, which is the main reason buyers look at Glendale over Cecilia or Rineyville.</p>
 
 <h2>Community Character</h2>
 <p>Glendale has a charming historic village center with antique shops and local businesses that make it a popular day-trip destination. The community maintains a distinctly small-town identity despite its proximity to larger E-town. The annual events and historic architecture give Glendale a character that newer communities can't replicate.</p>
@@ -67,7 +67,7 @@ export const communities: Community[] = [
 <p>Glendale's position between <a href="/elizabethtown/">Elizabethtown</a> and <a href="/fort-knox/">Fort Knox</a> gives it strategic commuting advantages in both directions. The I-65 access is excellent for Louisville commuters.</p>
 
 <h2>The Glendale case</h2>
-<p>A village of a thousand people with an I-65 interchange and a shorter Fort Knox run than parts of E-town itself. <strong>Historic character with genuine access</strong> is an unusual combination at this price. With the area's economic growth, property values may see appreciation as the community expands. It's worth watching for anyone interested in getting in early on a growing area.</p>
+<p>A village of a thousand people with an I-65 interchange and a shorter Fort Knox run than parts of E-town itself. <strong>Historic character with genuine access</strong> is an unusual combination at this price. Buyers come here for the price and the quiet, not for a forecast. If you want acreage and a village centre rather than a subdivision, and you can live with driving to everything, Glendale is worth a look.</p>
 
 <div class="cta-box"><p>Interested in properties near Glendale? <a href="/realtors/compass-and-key-group/">Compass and Key Group</a> tracks opportunities throughout Hardin County. Call <strong>${CKG.phone}</strong>.</p></div>`,
   },
