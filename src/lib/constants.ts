@@ -7,15 +7,19 @@ export const CKG = {
   name: "Compass and Key Group",
   owner: "Austin Kutz",
   /**
-   * The canonical number, used on compassandkeygroup.com and across this site.
+   * The canonical number for the site. Changed from (270) 735-3897 on
+   * 2026-11-07 at the owner's direction.
    *
-   * The Google Business Profile shows (270) 817-3311 instead. That is call
-   * tracking, not an error, so do NOT "correct" either one to match the other.
-   * The usual way to keep both is to leave the tracking number as the profile's
-   * primary and list this one there as an additional number, so citations still
-   * reconcile; worth confirming that is how the profile is set up.
+   * The Google Business Profile shows (270) 817-3311, which is call tracking
+   * rather than an error, so do NOT "correct" either one to match the other.
+   * Keeping the tracking number as the profile's primary and this one listed
+   * there as an additional number is what keeps citations reconcilable.
+   *
+   * Everything on the site resolves from here: prose interpolates it, JSON-LD
+   * reads it, and tel: links derive the digits from it. Changing the number is
+   * this one line.
    */
-  phone: "(270) 735-3897",
+  phone: "(270) 491-3450",
   address: "617 N Mulberry St #105B, Elizabethtown, KY 42701",
   website: "https://compassandkeygroup.com",
   brokerage: "Real Broker, LLC",

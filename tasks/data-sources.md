@@ -125,11 +125,23 @@ wrong because nothing about it looks broken.
 | Compass and Key Group | 3 |
 | **Total** | **115** |
 
-### Phone: the profile mismatch is call tracking, not an error
+### Phone numbers in play
 
-The site uses (270) 735-3897; the Google Business Profile shows
-(270) 817-3311. The owner confirms the profile number is call tracking.
-Neither should be "corrected" to match the other.
+| Number | Where | Note |
+|---|---|---|
+| **(270) 491-3450** | the site, everywhere | canonical, set 2026-11-07 by the owner |
+| (270) 817-3311 | Google Business Profile | call tracking, not an error |
+| (270) 735-3897 | HKAR roster entry for Austin Kutz | the site's previous main number |
+
+The profile number is deliberate call tracking; neither it nor the site number
+should be "corrected" to match the other. `CKG.phone` in `constants.ts` is the
+single source for the site, so a change is one line.
+
+**Open:** Austin Kutz's individual entry in `src/data/agents.ts` still carries
+(270) 735-3897, because that is what the HKAR roster publishes. It renders in
+the team list on the CKG profile page beside the new main number. If 735-3897
+is being retired, that entry needs updating here and at HKAR; if it remains his
+direct line, it is correct as it stands.
 
 ### Compass and Key Group: 3 of 10, confirmed by the owner
 
